@@ -1,23 +1,35 @@
 # 暗香集网页
 
-静态站点源文件位于此目录。诗题、诗句及中文注释维护在 `poems.js`，翻页与语言切换在 `reader.js`，视觉样式在 `styles.css`。资源均使用相对路径，可部署在 GitHub Pages 项目子路径。
+此目录即 GitHub Pages 发布的静态站点根目录；完整说明见仓库根目录的 [README.md](../README.md)。
 
-诗作插图放在 `images/`，并在对应的 `poems.js` 条目中设置相对路径 `image` 与无障碍描述 `imageAlt`。设置后阅读器会在该诗的三语页面之前生成独立插画页，保留诗页的阅读空间。
+| 文件 | 作用 |
+|---|---|
+| `poems.js` | 内容数据：`window.POEMS`（诗题、三语诗句、创作日期、注释、插画）与 `window.MATTER`（版权页、献词、题记、前言、后记、作者简介及页码） |
+| `reader.js` | 阅读顺序、翻页、目录、深链、离线缓存注册与字体预热 |
+| `styles.css` | 版式与字体角色 |
+| `index.html` | 页面骨架、应用清单与 iOS 全屏 meta |
+| `manifest.webmanifest` | 应用清单（`display: fullscreen`） |
+| `sw.js` | 离线外壳：缓存页面骨架与字体、插画、音乐 |
+| `icons/` | 印章应用图标（192 / 512 / maskable / apple-touch） |
+| `fonts/`、`images/`、`audio/` | 字体、插画、背景音乐 |
+| `preview.mjs` | 本地预览服务器 |
+
+资源均使用相对路径，可部署在 GitHub Pages 项目子路径。
+
+诗作插图放在 `images/`，并在对应的 `poems.js` 条目中设置相对路径 `image` 与无障碍描述 `imageAlt`。设置后阅读器会在该诗的三语页面之前生成独立插画页，并在图下用 Poetica Chancery IV 排一行英文题词。
 
 ## 本地预览
 
-在项目根目录运行：
+在仓库根目录运行：
 
 ```powershell
 node site/preview.mjs
 ```
 
-然后访问 `http://127.0.0.1:8000`。字体文件随站点发布；字体加载失败时会回退至系统字体。
+然后访问 <http://127.0.0.1:8000>。预览服务器按扩展名发送 MIME（含 `.webmanifest`），字体加载失败时会回退至系统字体。
 
-## GitHub Pages
+## 约定
 
-`.github/workflows/jekyll-gh-pages.yml` 将 `site/` 作为静态产物发布。将 GitHub 仓库 Pages Source 设为 **GitHub Actions**，推送到 `main` 或在 Actions 页手动运行工作流即可。
-
-## 字体
-
-LXGW WenKai 与 Alegreya 字体文件位于 `site/fonts/`，对应 SIL Open Font License 文本也一并提供。Adobe Fonts Web Project 代码尚未提供；作者建立项目后，将官方嵌入代码添加到 `index.html` 的标记处，并把 `styles.css` 中 `--latin-title` 与 `--latin-label` 指向项目公布的 CSS 字体家族名。未确认网页授权前，不发布 Aaxiaolishu 字体文件。Poetica 若纳入网页，须按其 Adobe Web Project 官方代码加载。
+- 改动 `styles.css`、`reader.js`、`poems.js` 后，同步 `index.html` 里的 `?v=ebook-ui-N`。
+- 改动页面骨架后，升一版 `sw.js` 顶部的 `CACHE`，否则老读者的离线副本不会更新。
+- 字体分工见根目录 README 的「字体」一节；阿霞小隶书必须用本目录 `fonts/` 下的修正版。
