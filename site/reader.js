@@ -92,7 +92,8 @@
     coverInner.append(branch);
     const seal = appendText("span", "cover-seal", "紫薇", coverInner);
     seal.setAttribute("aria-label", "作者紫薇");
-    appendText("p", "cover-author", "紫薇 · Ziwei", coverInner);
+    appendText("p", "cover-author", "紫薇", coverInner).lang = "zh-Hans";
+    appendText("p", "cover-signature", "Ziwei", coverInner);
     page.append(coverInner);
   }
 
@@ -150,6 +151,7 @@
     image.decoding = "async";
     image.loading = "eager";
     figure.append(image);
+    appendText("p", "illustration-epigraph", poem.titles.en, figure).lang = "en";
     appendText("figcaption", "illustration-caption", poem.titles.zh, figure).lang = "zh-Hans";
     page.append(figure);
   }
