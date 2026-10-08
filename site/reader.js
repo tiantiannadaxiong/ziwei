@@ -333,4 +333,9 @@
     if (target >= 0) current = target;
   }
   render({ animate: false });
+
+  // Register the offline shell; failures are fine, the reader works online anyway.
+  if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  }
 })();

@@ -6,8 +6,15 @@
   <meta name="theme-color" content="#f5f3ed">
   <meta name="description" content="《暗香集》——中、英、法三语诗集。">
   <title>暗香集 · Whispers of Hidden Fragrance</title>
+  <!-- Added to the home screen, the reader opens without browser chrome. -->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="暗香集">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <!-- Add the Adobe Fonts Web Project embed code here when the author supplies it. -->
-  <link rel="stylesheet" href="./styles.css?v=ebook-ui-12">
+  <link rel="stylesheet" href="./styles.css?v=ebook-ui-13">
 </head>
 <body>
   <main class="book" id="book" aria-label="《暗香集》电子书">
@@ -43,7 +50,7 @@
 
   <audio id="ambient-audio" src="./audio/1.mp3" loop preload="none"></audio>
 
-  <script src="./poems.js?v=ebook-ui-12"></script>
-  <script src="./reader.js?v=ebook-ui-12" defer></script>
+  <script src="./poems.js?v=ebook-ui-13"></script>
+  <script src="./reader.js?v=ebook-ui-13" defer></script>
 </body>
 </html>

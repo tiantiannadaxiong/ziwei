@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "暗香集 · Whispers of Hidden Fragrance",
+  "short_name": "暗香集",
+  "description": "中、英、法三语诗集《暗香集》。",
+  "lang": "zh-Hans",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "portrait",
+  "background_color": "#263438",
+  "theme_color": "#263438",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
