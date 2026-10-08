@@ -2,6 +2,8 @@
 window.POEMS = [
   {
     id: "jiaolong", page: 1,
+    image: "./images/jiaolong.png",
+    imageAlt: "淡墨远山间江流汇入海面，月色初升，一道若隐若现的蛟龙影子穿过水雾，画面一隅有疏梅枝。",
     titles: { zh: "《蛟龙》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
     verses: {
       zh: "辽河水，哺我初心故土浓；\n东江水，兰馨又绽莞城东；\n香江水，紫荆园里我从容；\n海之融，百川终入大洋中；\n海之翱，蔚蓝图卷属蛟龙。",

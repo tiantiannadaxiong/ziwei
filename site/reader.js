@@ -14,6 +14,7 @@
   const sequence = [{ type: "cover" }];
 
   poems.forEach((poem) => {
+    if (poem.image) sequence.push({ type: "illustration", poem });
     ["zh", "en", "fr"].forEach((language) => sequence.push({ type: "poem", poem, language }));
     if (poem.note) sequence.push({ type: "note", poem, language: "zh" });
   });
@@ -87,7 +88,7 @@
     const branch = document.createElement("div");
     branch.className = "cover-branch";
     branch.setAttribute("aria-hidden", "true");
-    branch.innerHTML = '<svg viewBox="0 0 240 150" role="presentation"><path d="M18 128C73 106 92 71 128 45c22-16 47-18 88-25M89 85c-5-21-1-37 12-49m26 10c-2-18 4-29 15-39m-48 67c-19-5-34-2-47 7m88-34c15 0 27 7 36 20"/><path class="water-line" d="M32 139c46-12 82-11 127-4m-83 12c42-8 76-7 111-1"/><circle cx="192" cy="44" r="20"/></svg>';
+    branch.innerHTML = '<svg viewBox="0 0 240 150" role="presentation"><circle class="moon-halo" cx="192" cy="44" r="33"/><circle class="moon" cx="192" cy="44" r="20"/><path d="M18 128C73 106 92 71 128 45c22-16 47-18 88-25M89 85c-5-21-1-37 12-49m26 10c-2-18 4-29 15-39m-48 67c-19-5-34-2-47 7m88-34c15 0 27 7 36 20"/><path class="water-line" d="M32 139c46-12 82-11 127-4m-83 12c42-8 76-7 111-1"/></svg>';
     coverInner.append(branch);
     const seal = appendText("span", "cover-seal", "紫薇", coverInner);
     seal.setAttribute("aria-label", "作者紫薇");
@@ -130,6 +131,29 @@
     page.append(languageNav);
   }
 
+  function makeIllustration(item) {
+    const { poem } = item;
+    page.className = "book-page illustration-page";
+    page.replaceChildren();
+    const header = document.createElement("div");
+    header.className = "page-running-head illustration-heading";
+    appendText("span", "page-language", "插画", header).lang = "zh-Hans";
+    appendText("span", "illustration-mark", "ILLUSTRATION", header);
+    page.append(header);
+
+    const figure = document.createElement("figure");
+    figure.className = "illustration-figure";
+    const image = document.createElement("img");
+    image.className = "illustration-art";
+    image.src = poem.image;
+    image.alt = poem.imageAlt || poem.titles.zh;
+    image.decoding = "async";
+    image.loading = "eager";
+    figure.append(image);
+    appendText("figcaption", "illustration-caption", poem.titles.zh, figure).lang = "zh-Hans";
+    page.append(figure);
+  }
+
   function makeNote(item) {
     const { poem } = item;
     page.className = "book-page note-page";
@@ -147,16 +171,19 @@
     page.append(content);
   }
 
-  function render({ animate = true } = {}) {
+  function render({ animate = true, direction = 1 } = {}) {
     const item = sequence[current];
-    if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      page.classList.add("page-turning");
-      window.clearTimeout(animationTimer);
-      animationTimer = window.setTimeout(() => page.classList.remove("page-turning"), 190);
-    } else page.classList.remove("page-turning");
+    window.clearTimeout(animationTimer);
+    page.classList.remove("page-turning-forward", "page-turning-backward");
     if (item.type === "cover") makeCover();
+    else if (item.type === "illustration") makeIllustration(item);
     else if (item.type === "poem") makePoem(item);
     else makeNote(item);
+    if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const turnClass = direction < 0 ? "page-turning-backward" : "page-turning-forward";
+      page.classList.add(turnClass);
+      animationTimer = window.setTimeout(() => page.classList.remove(turnClass), 320);
+    }
 
     const onCover = current === 0;
     progress.textContent = onCover ? "封面" : `${String(current).padStart(2, "0")} / ${String(sequence.length - 1).padStart(2, "0")}`;
@@ -165,7 +192,10 @@
     next.disabled = current === sequence.length - 1;
     document.documentElement.lang = item.language === "en" || item.language === "fr" ? item.language : "zh-Hans";
     const poem = item.poem;
-    if (poem) history.replaceState(null, "", `#${poem.id}-${item.type === "note" ? "notes" : item.language}`);
+    if (poem) {
+      const suffix = item.type === "note" ? "notes" : item.type === "illustration" ? "image" : item.language;
+      history.replaceState(null, "", `#${poem.id}-${suffix}`);
+    }
     else history.replaceState(null, "", location.pathname);
   }
 
@@ -173,7 +203,7 @@
     const target = Math.max(0, Math.min(sequence.length - 1, current + direction));
     if (target === current) return;
     current = target;
-    render();
+    render({ direction });
   }
 
   function goToPoem(id, language = "zh") {
@@ -228,9 +258,14 @@
   });
   stage.addEventListener("pointercancel", () => { touchStart = null; });
 
-  const match = location.hash.slice(1).match(/^([a-z-]+)-(zh|en|fr)$/);
+  const match = location.hash.slice(1).match(/^([a-z-]+)-(zh|en|fr|notes|image)$/);
   if (match && poems.some((poem) => poem.id === match[1])) {
-    const target = sequence.findIndex((item) => item.type === "poem" && item.poem.id === match[1] && item.language === match[2]);
+    const target = sequence.findIndex((item) => {
+      if (!item.poem || item.poem.id !== match[1]) return false;
+      if (match[2] === "image") return item.type === "illustration";
+      if (match[2] === "notes") return item.type === "note";
+      return item.type === "poem" && item.language === match[2];
+    });
     if (target >= 0) current = target;
   }
   render({ animate: false });
