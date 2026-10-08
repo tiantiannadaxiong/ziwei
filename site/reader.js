@@ -231,7 +231,7 @@
       history.replaceState(null, "", `#${poem.id}-${suffix}`);
     }
     else if (item.type === "matter") history.replaceState(null, "", `#${item.item.id}`);
-    else history.replaceState(null, "", location.pathname);
+    else history.replaceState(null, "", "#cover");
   }
 
   function turn(direction) {
@@ -241,25 +241,30 @@
     render({ direction });
   }
 
+  function showPage(target) {
+    if (target < 0 || target >= sequence.length) return;
+    current = target;
+    render({ animate: false });
+    if (dialog.open) dialog.close();
+    page.focus({ preventScroll: true });
+  }
+
   function goToPoem(id, language = "zh") {
-    const target = sequence.findIndex((item) => item.type === "poem" && item.poem.id === id && item.language === language);
-    if (target >= 0) {
-      current = target;
-      render({ animate: false });
-      if (dialog.open) dialog.close();
-      page.focus({ preventScroll: true });
-    }
+    showPage(sequence.findIndex((item) => item.type === "poem" && item.poem.id === id && item.language === language));
   }
 
   function goToMatter(id) {
-    const target = sequence.findIndex((item) => item.type === "matter" && item.item.id === id);
-    if (target >= 0) {
-      current = target;
-      render({ animate: false });
-      if (dialog.open) dialog.close();
-      page.focus({ preventScroll: true });
-    }
+    showPage(sequence.findIndex((item) => item.type === "matter" && item.item.id === id));
   }
+
+  // The title page doubles as the cover, so it opens the contents list.
+  const matterList = document.querySelector("#matter-list");
+  const coverEntry = document.createElement("button");
+  coverEntry.type = "button";
+  coverEntry.textContent = "封面";
+  coverEntry.lang = "zh-Hans";
+  coverEntry.addEventListener("click", () => showPage(sequence.findIndex((item) => item.type === "cover")));
+  matterList.append(coverEntry);
 
   [...matter.front, ...matter.back].forEach((entry) => {
     const button = document.createElement("button");
@@ -267,7 +272,7 @@
     button.textContent = entry.nav || entry.label;
     button.lang = "zh-Hans";
     button.addEventListener("click", () => goToMatter(entry.id));
-    document.querySelector("#matter-list").append(button);
+    matterList.append(button);
   });
 
   poems.forEach((poem) => {
@@ -315,7 +320,9 @@
   const hash = location.hash.slice(1);
   const matterTarget = sequence.findIndex((item) => item.type === "matter" && item.item.id === hash);
   const match = hash.match(/^([a-z-]+)-(zh|en|fr|notes|image)$/);
-  if (matterTarget >= 0) {
+  if (hash === "cover") {
+    current = 0;
+  } else if (matterTarget >= 0) {
     current = matterTarget;
   } else if (match && poems.some((poem) => poem.id === match[1])) {
     const target = sequence.findIndex((item) => {
