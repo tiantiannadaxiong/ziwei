@@ -2,7 +2,7 @@
 <html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f5f3ed">
   <meta name="description" content="《暗香集》——中、英、法三语诗集。">
   <title>暗香集 · Whispers of Hidden Fragrance</title>
@@ -10,55 +10,33 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#reading">跳至诗篇 / Skip to poems</a>
-  <header class="masthead">
-    <a class="wordmark" href="./" aria-label="暗香集首页"><span>暗香集</span><i>Whispers of Hidden Fragrance</i></a>
-  </header>
+  <main class="book" id="book" aria-label="《暗香集》电子书">
+    <header class="book-toolbar">
+      <button class="toolbar-button" id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc-dialog" aria-label="打开目录">目录</button>
+      <span class="book-toolbar-title">暗香集</span>
+      <span class="reading-progress" id="reading-progress" aria-live="polite">封面</span>
+    </header>
 
-  <main class="layout">
-    <aside class="contents" aria-label="诗篇目录">
-      <p class="eyebrow">POEMS · 诗篇</p>
-      <form class="search" role="search" id="search-form">
-        <label class="visually-hidden" for="search-input">搜索全书诗题与诗文</label>
-        <input id="search-input" type="search" placeholder="搜索诗题与诗句" autocomplete="off">
-        <button type="submit" aria-label="搜索">⌕</button>
-      </form>
-      <div class="search-results" id="search-results" aria-live="polite"></div>
-      <ol id="contents-list"></ol>
-      <div class="contents-note"><span class="seal" aria-hidden="true">暗<br>香</span><p>疏影横斜水清浅<br>暗香浮动月黄昏</p></div>
-    </aside>
-
-    <section class="reader" id="reading" aria-live="polite">
-      <div class="reader-topline"><span id="folio">01</span><span class="ornament" aria-hidden="true">—　✳　—</span><span class="book-name">暗香集</span></div>
-      <nav class="languages" aria-label="诗歌语言">
-        <button type="button" data-language="zh" lang="zh-Hans" aria-pressed="true">中文</button>
-        <button type="button" data-language="en" lang="en" aria-pressed="false">English</button>
-        <button type="button" data-language="fr" lang="fr" aria-pressed="false">Français</button>
-      </nav>
-      <article class="poem-page">
-        <p class="language-label" id="language-label">中文</p>
-        <h1 id="poem-title"></h1>
-        <div class="title-rule" aria-hidden="true"><span></span></div>
-        <div class="poem-body" id="poem-body"></div>
-        <p class="poem-meta" id="poem-meta"></p>
-        <details class="annotation" id="annotation">
-          <summary>中文注释</summary>
-          <p id="annotation-text"></p>
-        </details>
-        <figure class="artwork-placeholder" aria-label="插图预留位置">
-          <span class="branch" aria-hidden="true">梅　枝</span>
-          <figcaption>月下疏影 · 插图位置</figcaption>
-        </figure>
-      </article>
-      <nav class="page-turn" aria-label="前后诗篇">
-        <button type="button" id="previous" aria-label="上一篇">← <span>上一篇</span></button>
-        <span id="position"></span>
-        <button type="button" id="next" aria-label="下一篇"><span>下一篇</span> →</button>
-      </nav>
+    <section class="reading-stage" id="reading" aria-label="诗集页面" aria-live="polite">
+      <article class="book-page cover-page" id="book-page" tabindex="-1"></article>
     </section>
+
+    <nav class="page-controls" aria-label="翻页">
+      <button type="button" id="previous" aria-label="向前翻页" disabled><span aria-hidden="true">‹</span></button>
+      <span class="swipe-hint" id="swipe-hint">左右滑动，开始阅读</span>
+      <button type="button" id="next" aria-label="向后翻页"><span aria-hidden="true">›</span></button>
+    </nav>
   </main>
 
-  <footer><span>© 2026 紫薇</span><span>水有来处，香有归处。</span></footer>
+  <dialog class="toc-dialog" id="toc-dialog" aria-labelledby="toc-title">
+    <div class="toc-heading">
+      <div><p class="eyebrow">CONTENTS</p><h2 id="toc-title">目录</h2></div>
+      <button class="dialog-close" id="toc-close" type="button" aria-label="关闭目录">×</button>
+    </div>
+    <ol class="toc-list" id="contents-list"></ol>
+    <div class="toc-footer"><span>© 2026 紫薇</span><span>三语诗集</span></div>
+  </dialog>
+
   <script src="./poems.js"></script>
   <script src="./reader.js" defer></script>
 </body>
