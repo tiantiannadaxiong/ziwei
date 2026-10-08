@@ -39,3 +39,37 @@ window.POEMS = [
     note: "五月初五，端午节又到了。端午节又称五五节、重午节、端阳节，流传着纪念屈原、曹娥、伍子胥的不同传说。每逢此日，江水深处仿佛又响起悲切的歌声，渔樵斗笠下似有低低的哭声。\n\n诗中的“三江”指汨罗江、曹娥江和钱塘江，分别与三位逝者的传说相关。《离骚》《天问》是屈原的代表作，也是流传千古的名篇。端午时节，人们以香粽祭祀先人，赛龙舟、挂艾草，寄托哀思，祈愿逝者安息、天下太平。"
   }
 ];
+
+/* Front and back matter, transcribed from frontmatter/*.tex of the print book.
+   Folios keep the print book's page numbers; the colophon is printed without
+   one, and only the colophon carries a navigation label instead of a heading. */
+window.MATTER = {
+  front: [
+    {
+      id: "colophon", nav: "版权",
+      body: "© 2026 紫薇。保留所有权利。\n2026 年初版（暂定）\n出版者：作者自印（暂定）\nISBN：待申请"
+    },
+    {
+      id: "dedication", folio: "iii", label: "献词",
+      body: "献给故土与远方，献给所有在流转岁月中仍愿守护初心的人。"
+    },
+    {
+      id: "epigraph", folio: "iv", label: "题记",
+      body: "水有来处，香有归处。"
+    },
+    {
+      id: "foreword", folio: "v", label: "前言",
+      body: "诗从水土与记忆中生长，也在不同语言间找到回声。本书由一首写水、故土与远方的诗开始，愿它在不同语言的节奏里，仍保有同一股眷恋。"
+    }
+  ],
+  back: [
+    {
+      id: "afterword", folio: "15", label: "后记",
+      body: "愿这些诗句如水入海，也愿每一缕未曾说尽的幽香，都能抵达懂得它的人心中。"
+    },
+    {
+      id: "about", folio: "16", label: "作者简介",
+      body: "紫薇以诗记录水土、记忆与心中未散的幽香。《暗香集》以中文、英文和法文呈现诗作。"
+    }
+  ]
+};

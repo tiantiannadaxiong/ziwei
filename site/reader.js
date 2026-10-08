@@ -1,5 +1,6 @@
 (() => {
   const poems = window.POEMS;
+  const matter = window.MATTER ?? { front: [], back: [] };
   const page = document.querySelector("#book-page");
   const progress = document.querySelector("#reading-progress");
   const hint = document.querySelector("#swipe-hint");
@@ -13,11 +14,13 @@
   const languageTags = { zh: "中文", en: "EN", fr: "FR" };
   const sequence = [{ type: "cover" }];
 
+  matter.front.forEach((item) => sequence.push({ type: "matter", item }));
   poems.forEach((poem) => {
     if (poem.image) sequence.push({ type: "illustration", poem });
     ["zh", "en", "fr"].forEach((language) => sequence.push({ type: "poem", poem, language }));
     if (poem.note) sequence.push({ type: "note", poem, language: "zh" });
   });
+  matter.back.forEach((item) => sequence.push({ type: "matter", item }));
 
   let current = 0;
   let touchStart = null;
@@ -85,6 +88,7 @@
     appendText("p", "cover-kicker", "三语诗集 · A TRILINGUAL COLLECTION", coverInner);
     appendText("h1", "cover-title", "暗香集", coverInner);
     appendText("p", "cover-english", "Whispers of Hidden Fragrance", coverInner);
+    appendText("p", "cover-french", "Parfums secrets", coverInner).lang = "fr";
     const branch = document.createElement("div");
     branch.className = "cover-branch";
     branch.setAttribute("aria-hidden", "true");
@@ -173,11 +177,39 @@
     page.append(content);
   }
 
+  function makeMatter(item) {
+    page.className = `book-page matter-page matter-${item.id}`;
+    page.replaceChildren();
+    if (item.folio) {
+      const header = document.createElement("div");
+      header.className = "page-running-head";
+      appendText("span", "page-language", item.label || "", header).lang = "zh-Hans";
+      appendText("span", "page-print-folio", item.folio, header);
+      page.append(header);
+    }
+    const content = document.createElement("div");
+    content.className = "matter-content";
+    if (item.label) {
+      const mark = document.createElement("span");
+      mark.className = "matter-mark";
+      mark.setAttribute("aria-hidden", "true");
+      content.append(mark);
+      appendText("h1", "matter-title", item.label, content).lang = "zh-Hans";
+      const rule = document.createElement("div");
+      rule.className = "matter-rule";
+      rule.setAttribute("aria-hidden", "true");
+      content.append(rule);
+    }
+    appendText("p", "matter-text", item.body, content).lang = "zh-Hans";
+    page.append(content);
+  }
+
   function render({ animate = true, direction = 1 } = {}) {
     const item = sequence[current];
     window.clearTimeout(animationTimer);
     page.classList.remove("page-turning-forward", "page-turning-backward");
     if (item.type === "cover") makeCover();
+    else if (item.type === "matter") makeMatter(item.item);
     else if (item.type === "illustration") makeIllustration(item);
     else if (item.type === "poem") makePoem(item);
     else makeNote(item);
@@ -198,6 +230,7 @@
       const suffix = item.type === "note" ? "notes" : item.type === "illustration" ? "image" : item.language;
       history.replaceState(null, "", `#${poem.id}-${suffix}`);
     }
+    else if (item.type === "matter") history.replaceState(null, "", `#${item.item.id}`);
     else history.replaceState(null, "", location.pathname);
   }
 
@@ -217,6 +250,25 @@
       page.focus({ preventScroll: true });
     }
   }
+
+  function goToMatter(id) {
+    const target = sequence.findIndex((item) => item.type === "matter" && item.item.id === id);
+    if (target >= 0) {
+      current = target;
+      render({ animate: false });
+      if (dialog.open) dialog.close();
+      page.focus({ preventScroll: true });
+    }
+  }
+
+  [...matter.front, ...matter.back].forEach((entry) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = entry.nav || entry.label;
+    button.lang = "zh-Hans";
+    button.addEventListener("click", () => goToMatter(entry.id));
+    document.querySelector("#matter-list").append(button);
+  });
 
   poems.forEach((poem) => {
     const item = document.createElement("li");
@@ -260,8 +312,12 @@
   });
   stage.addEventListener("pointercancel", () => { touchStart = null; });
 
-  const match = location.hash.slice(1).match(/^([a-z-]+)-(zh|en|fr|notes|image)$/);
-  if (match && poems.some((poem) => poem.id === match[1])) {
+  const hash = location.hash.slice(1);
+  const matterTarget = sequence.findIndex((item) => item.type === "matter" && item.item.id === hash);
+  const match = hash.match(/^([a-z-]+)-(zh|en|fr|notes|image)$/);
+  if (matterTarget >= 0) {
+    current = matterTarget;
+  } else if (match && poems.some((poem) => poem.id === match[1])) {
     const target = sequence.findIndex((item) => {
       if (!item.poem || item.poem.id !== match[1]) return false;
       if (match[2] === "image") return item.type === "illustration";
