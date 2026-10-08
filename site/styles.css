@@ -15,7 +15,7 @@
 }
 @font-face {
   font-family: "Aaxiaolishu";
-  src: url("./fonts/Aaxiaolishu.ttf") format("truetype");
+  src: url("./fonts/Aaxiaolishu.ttf?v=2") format("truetype");
   font-style: normal; font-weight: 400; font-display: swap;
 }
 @font-face {
