@@ -6,6 +6,9 @@
   const previous = document.querySelector("#previous");
   const next = document.querySelector("#next");
   const dialog = document.querySelector("#toc-dialog");
+  const ambientAudio = document.querySelector("#ambient-audio");
+  const musicToggle = document.querySelector("#music-toggle");
+  const mobileViewport = window.matchMedia("(max-width: 759px)");
   const languageNames = { zh: "中文", en: "English", fr: "Français" };
   const languageTags = { zh: "中文", en: "EN", fr: "FR" };
   const sequence = [{ type: "cover" }];
@@ -18,6 +21,52 @@
   let current = 0;
   let touchStart = null;
   let animationTimer = 0;
+  let userPausedMusic = false;
+
+  function updateMusicControl() {
+    const playing = !ambientAudio.paused && !ambientAudio.ended;
+    musicToggle.hidden = !mobileViewport.matches;
+    musicToggle.setAttribute("aria-pressed", String(playing));
+    musicToggle.setAttribute("aria-label", playing ? "暂停背景音乐" : "播放背景音乐");
+    musicToggle.title = playing ? "暂停背景音乐" : "播放背景音乐";
+    musicToggle.firstElementChild.textContent = playing ? "♫" : "♪";
+  }
+
+  async function playAmbientMusic() {
+    if (!mobileViewport.matches) return false;
+    try {
+      await ambientAudio.play();
+      updateMusicControl();
+      return true;
+    } catch {
+      updateMusicControl();
+      return false;
+    }
+  }
+
+  ambientAudio.volume = 0.32;
+  ambientAudio.addEventListener("play", updateMusicControl);
+  ambientAudio.addEventListener("pause", updateMusicControl);
+  musicToggle.addEventListener("click", () => {
+    if (ambientAudio.paused) {
+      userPausedMusic = false;
+      playAmbientMusic();
+    } else {
+      userPausedMusic = true;
+      ambientAudio.pause();
+      updateMusicControl();
+    }
+  });
+  mobileViewport.addEventListener("change", (event) => {
+    updateMusicControl();
+    if (event.matches && !userPausedMusic) playAmbientMusic();
+    else if (!event.matches) ambientAudio.pause();
+  });
+  document.addEventListener("pointerdown", (event) => {
+    if (mobileViewport.matches && !userPausedMusic && ambientAudio.paused && !event.target.closest("#music-toggle")) playAmbientMusic();
+  }, { capture: true });
+  updateMusicControl();
+  if (mobileViewport.matches) playAmbientMusic();
 
   const appendText = (tag, className, value, parent = page) => {
     const node = document.createElement(tag);

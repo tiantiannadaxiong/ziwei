@@ -10,6 +10,7 @@ const mime = {
   ".js": "text/javascript; charset=utf-8",
   ".mjs": "text/javascript; charset=utf-8",
   ".svg": "image/svg+xml",
+  ".mp3": "audio/mpeg",
 };
 
 createServer(async (request, response) => {

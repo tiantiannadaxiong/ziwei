@@ -40,6 +40,10 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .book-toolbar { height: 44px; flex: 0 0 44px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; color: #888980; }
 .toolbar-button { justify-self: start; min-width: 48px; padding: 8px 4px; border: 0; background: transparent; color: var(--jade); font-size: 13px; cursor: pointer; }
 .book-toolbar-title { color: #6f7773; font-size: 13px; letter-spacing: .2em; }
+.toolbar-right { justify-self: end; display: flex; align-items: center; gap: 10px; }
+.music-toggle { width: 30px; height: 32px; display: inline-grid; place-items: center; padding: 0; border: 0; background: transparent; color: var(--jade); font: 20px/1 var(--latin); cursor: pointer; }
+.music-toggle[hidden] { display: none; }
+.music-toggle[aria-pressed="true"] { color: var(--seal); }
 .reading-progress { justify-self: end; min-width: 45px; text-align: right; color: #96948a; font: 12px var(--latin); }
 .reading-stage { position: relative; flex: 1 1 auto; min-height: 0; display: grid; place-items: center; padding: 10px 0; touch-action: pan-y; }
 .book-page { position: relative; width: min(100%, 680px); height: 100%; max-height: 820px; overflow: auto; display: flex; flex-direction: column; background: var(--page); box-shadow: 0 15px 50px #343b3c0b, 0 0 0 1px #dfdcd3; scrollbar-width: thin; scrollbar-color: #dedbd1 transparent; }

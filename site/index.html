@@ -7,14 +7,17 @@
   <meta name="description" content="《暗香集》——中、英、法三语诗集。">
   <title>暗香集 · Whispers of Hidden Fragrance</title>
   <!-- Add the Adobe Fonts Web Project embed code here when the author supplies it. -->
-  <link rel="stylesheet" href="./styles.css?v=ebook-ui-2">
+  <link rel="stylesheet" href="./styles.css?v=ebook-ui-3">
 </head>
 <body>
   <main class="book" id="book" aria-label="《暗香集》电子书">
     <header class="book-toolbar">
       <button class="toolbar-button" id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc-dialog" aria-label="打开目录">目录</button>
       <span class="book-toolbar-title">暗香集</span>
-      <span class="reading-progress" id="reading-progress" aria-live="polite">封面</span>
+      <div class="toolbar-right">
+        <button class="music-toggle" id="music-toggle" type="button" aria-label="播放背景音乐" aria-pressed="false" hidden><span aria-hidden="true">♪</span></button>
+        <span class="reading-progress" id="reading-progress" aria-live="polite">封面</span>
+      </div>
     </header>
 
     <section class="reading-stage" id="reading" aria-label="诗集页面" aria-live="polite">
@@ -37,7 +40,9 @@
     <div class="toc-footer"><span>© 2026 紫薇</span><span>三语诗集</span></div>
   </dialog>
 
-  <script src="./poems.js?v=ebook-ui-2"></script>
-  <script src="./reader.js?v=ebook-ui-2" defer></script>
+  <audio id="ambient-audio" src="./audio/1.mp3" autoplay loop preload="none"></audio>
+
+  <script src="./poems.js?v=ebook-ui-3"></script>
+  <script src="./reader.js?v=ebook-ui-3" defer></script>
 </body>
 </html>
