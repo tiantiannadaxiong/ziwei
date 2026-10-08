@@ -163,7 +163,7 @@
   previous.addEventListener("click", () => turn(-1));
   next.addEventListener("click", () => turn(1));
   document.addEventListener("keydown", (event) => {
-    if (dialog.open || event.altKey || event.ctrlKey || event.metaKey || /^(INPUT|TEXTAREA|SELECT|BUTTON)$/.test(document.activeElement.tagName)) return;
+    if (dialog.open || event.altKey || event.ctrlKey || event.metaKey || /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) return;
     if (event.key === "ArrowLeft") turn(-1);
     if (event.key === "ArrowRight") turn(1);
     if (event.key === "Escape" && dialog.open) dialog.close();
