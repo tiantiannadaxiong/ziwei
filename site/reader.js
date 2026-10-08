@@ -87,7 +87,7 @@
     coverInner.className = "cover-inner";
     const coverArt = document.createElement("img");
     coverArt.className = "cover-art";
-    coverArt.src = "./images/cover.png";
+    coverArt.src = "./images/cover.png?v=2";
     coverArt.alt = "月色下的梅枝、远山与水纹水墨画";
     coverArt.decoding = "async";
     coverArt.loading = "eager";
