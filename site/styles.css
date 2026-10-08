@@ -110,8 +110,7 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .cover-branch .moon-halo { fill: #d7d0b844; }
 .cover-branch .moon { fill: var(--moonlight); stroke: #f4f0e4; stroke-width: .8; filter: drop-shadow(0 0 10px #d7d0b877); }
 .cover-seal { display: inline-grid; place-items: center; width: 36px; height: 42px; border: 1px solid var(--seal); color: var(--seal); font-size: 12px; line-height: 1.15; }
-.cover-author { margin: 12px 0 0; color: #7e8179; font-family: var(--cjk-support); font-size: 12px; letter-spacing: .14em; }
-.cover-signature { margin: 2px 0 0; color: #6f756e; font: 700 clamp(22px, 5vw, 30px)/1.25 var(--latin-signature); letter-spacing: .02em; }
+.cover-signature { margin: 13px 0 0; color: #6f756e; font: 700 clamp(22px, 5vw, 30px)/1.25 var(--latin-signature); letter-spacing: .02em; }
 .poem-page { padding: clamp(24px, 6vh, 54px) clamp(28px, 9vw, 82px) 25px; }
 .page-running-head { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; color: #96988d; font-size: 11px; letter-spacing: .06em; }
 .page-language[lang="en"], .page-language[lang="fr"] { font: 12px var(--latin-label); letter-spacing: .1em; }

@@ -96,7 +96,6 @@
     coverInner.append(branch);
     const seal = appendText("span", "cover-seal", "紫薇", coverInner);
     seal.setAttribute("aria-label", "作者紫薇");
-    appendText("p", "cover-author", "紫薇", coverInner).lang = "zh-Hans";
     appendText("p", "cover-signature", "Ziwei", coverInner);
     page.append(coverInner);
   }
