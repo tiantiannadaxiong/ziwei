@@ -85,18 +85,15 @@
     page.replaceChildren();
     const coverInner = document.createElement("div");
     coverInner.className = "cover-inner";
-    appendText("p", "cover-kicker", "三语诗集 · A TRILINGUAL COLLECTION", coverInner);
-    appendText("h1", "cover-title", "暗香集", coverInner);
-    appendText("p", "cover-english", "Whispers of Hidden Fragrance", coverInner);
-    appendText("p", "cover-french", "Parfums secrets", coverInner).lang = "fr";
-    const branch = document.createElement("div");
-    branch.className = "cover-branch";
-    branch.setAttribute("aria-hidden", "true");
-    branch.innerHTML = '<svg viewBox="0 0 240 150" role="presentation"><circle class="moon-halo" cx="192" cy="44" r="33"/><circle class="moon" cx="192" cy="44" r="20"/><path d="M18 128C73 106 92 71 128 45c22-16 47-18 88-25M89 85c-5-21-1-37 12-49m26 10c-2-18 4-29 15-39m-48 67c-19-5-34-2-47 7m88-34c15 0 27 7 36 20"/><path class="water-line" d="M32 139c46-12 82-11 127-4m-83 12c42-8 76-7 111-1"/></svg>';
-    coverInner.append(branch);
-    const seal = appendText("span", "cover-seal", "紫薇", coverInner);
-    seal.setAttribute("aria-label", "作者紫薇");
-    appendText("p", "cover-signature", "Ziwei", coverInner);
+    const coverArt = document.createElement("img");
+    coverArt.className = "cover-art";
+    coverArt.src = "./images/cover.png";
+    coverArt.alt = "月色下的梅枝、远山与水纹水墨画";
+    coverArt.decoding = "async";
+    coverArt.loading = "eager";
+    coverInner.append(coverArt);
+    appendText("h1", "visually-hidden", "暗香集", coverInner);
+    appendText("p", "visually-hidden", "作者：紫薇", coverInner);
     page.append(coverInner);
   }
 

@@ -49,7 +49,6 @@
   --muted: #b9bbb1;
   --seal: #a84d43;
   --rule: #dedbd1;
-  --moonlight: #d7d0b8;
   /* Chinese poetry titles and verses are set in Aaxiaolishu; notes, dates and
      interface text stay in WenKai. Latin runs fall back to WenKai for the few
      mixed lines such as the reading progress. */
@@ -96,22 +95,11 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .page-turning-backward { animation: page-turn-backward .28s cubic-bezier(.2,.72,.24,1); }
 @keyframes page-turn-forward { from { opacity: .64; transform: perspective(1100px) translateX(13px) rotateY(-3deg); box-shadow: -14px 0 24px #10191c28; } to { opacity: 1; transform: perspective(1100px) translateX(0) rotateY(0); box-shadow: 0 24px 72px #10191c55, 0 3px 10px #10191c26; } }
 @keyframes page-turn-backward { from { opacity: .64; transform: perspective(1100px) translateX(-13px) rotateY(3deg); box-shadow: 14px 0 24px #10191c28; } to { opacity: 1; transform: perspective(1100px) translateX(0) rotateY(0); box-shadow: 0 24px 72px #10191c55, 0 3px 10px #10191c26; } }
-.cover-page { overflow: hidden; justify-content: center; align-items: center; background-color: #f2f0e7; background-image: radial-gradient(ellipse at 62% 24%, #e8e2d2a8 0, #e8e2d200 35%), linear-gradient(105deg, #ece9df, #f6f4ec 24%, #f2f0e7); }
-.cover-page::before { width: 14px; background: linear-gradient(90deg, #d2cdbf, #efede4 75%, #f2f0e7); }
-.cover-inner { position: relative; width: calc(100% - 38px); height: calc(100% - 38px); min-height: 0; border: 1px solid #cfcbbd; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 30px 16px; }
-.cover-inner::after { position: absolute; inset: 5px; border: 1px solid #cfcbbd72; content: ""; pointer-events: none; }
-.cover-kicker { margin: 0 0 22px; color: #7b8983; font: 12px var(--latin-label); letter-spacing: .17em; }
-.cover-title { margin: 0; color: var(--ink); font: 400 clamp(38px, 8vw, 62px)/1.5 var(--cjk-poetry); letter-spacing: .28em; text-indent: .28em; }
-.cover-english { margin: 6px 0 0; color: #687773; font: 400 clamp(18px, 4vw, 23px)/1.3 var(--latin-title); letter-spacing: .02em; }
-.cover-french { margin: 3px 0 0; color: #83918c; font: 400 clamp(14px, 3.1vw, 17px)/1.3 var(--latin-title); letter-spacing: .03em; }
-.cover-branch { width: min(52vw, 238px); margin: clamp(24px, 7vh, 64px) auto clamp(22px, 6vh, 54px); }
-.cover-branch svg { display: block; width: 100%; overflow: visible; }
-.cover-branch path { fill: none; stroke: #71837d; stroke-width: 1.05; stroke-linecap: round; opacity: .79; }
-.cover-branch path.water-line { stroke: #99a79f; stroke-width: .75; opacity: .8; }
-.cover-branch .moon-halo { fill: #d7d0b844; }
-.cover-branch .moon { fill: var(--moonlight); stroke: #f4f0e4; stroke-width: .8; filter: drop-shadow(0 0 10px #d7d0b877); }
-.cover-seal { display: inline-grid; place-items: center; width: 36px; height: 42px; border: 1px solid var(--seal); color: var(--seal); font-size: 12px; line-height: 1.15; }
-.cover-signature { margin: 13px 0 0; color: #6f756e; font: 700 clamp(22px, 5vw, 30px)/1.25 var(--latin-signature); letter-spacing: .02em; }
+.cover-page { overflow: hidden; justify-content: center; align-items: center; background-color: #f3f0e8; background-image: none; }
+.cover-page::before { width: 14px; background: linear-gradient(90deg, #d2cdbf, #efede4 75%, #f3f0e8); }
+.cover-inner { position: relative; width: 100%; height: 100%; min-height: 0; overflow: hidden; background: #f3f0e8; }
+.cover-art { display: block; width: 100%; height: 100%; object-fit: contain; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .poem-page { padding: clamp(24px, 6vh, 54px) clamp(28px, 9vw, 82px) 25px; }
 .page-running-head { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; color: #96988d; font-size: 11px; letter-spacing: .06em; }
 .page-language[lang="en"], .page-language[lang="fr"] { font: 12px var(--latin-label); letter-spacing: .1em; }
@@ -177,7 +165,6 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
   .book { padding-top: max(20px, env(safe-area-inset-top)); padding-bottom: max(14px, env(safe-area-inset-bottom)); }
   .reading-stage { padding: 12px 28px; }
   .book-page { box-shadow: 0 24px 72px #10191c55, 0 3px 10px #10191c26, 7px 0 0 -1px #f1efe8, 8px 0 0 0 #c9c5ba, 11px 0 0 0 #f1efe8, 12px 0 0 1px #c9c5ba; }
-  .cover-inner { width: calc(100% - 60px); height: calc(100% - 60px); }
   .poem-content { padding: 35px 0; }
   .illustration-art { max-height: min(64svh, 640px); }
 }
@@ -188,7 +175,6 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
   .illustration-art { max-height: min(54svh, 500px); }
   .poem-body { font-size: 18px; line-height: 2; }
   .poem-body[lang="en"], .poem-body[lang="fr"] { font-size: 17px; line-height: 1.8; }
-  .cover-kicker { font-size: 9px; }
 }
 @media (max-height: 620px) {
   .book-toolbar { height: 36px; flex-basis: 36px; }
