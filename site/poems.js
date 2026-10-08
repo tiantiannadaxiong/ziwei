@@ -1,4 +1,4 @@
-/* Transcribed from poems/*.tex. Page numbers follow the print contents: 1, 5, 9. */
+/* Poetry content and print folios used by the static reader. */
 window.POEMS = [
   {
     id: "jiaolong", page: 1,
@@ -40,9 +40,8 @@ window.POEMS = [
   }
 ];
 
-/* Front and back matter, transcribed from frontmatter/*.tex of the print book.
-   Folios keep the print book's page numbers; the colophon is printed without
-   one, and only the colophon carries a navigation label instead of a heading. */
+/* Front and back matter for the static reader. Folios follow the print edition;
+   the colophon has no folio and uses a short navigation label. */
 window.MATTER = {
   front: [
     {

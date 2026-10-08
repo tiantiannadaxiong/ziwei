@@ -16,7 +16,8 @@
 @font-face {
   font-family: "Aaxiaolishu";
   src: url("./fonts/Aaxiaolishu.ttf?v=2") format("truetype");
-  font-style: normal; font-weight: 400; font-display: swap;
+  /* Don't replace a visible fallback mid-read if this large face arrives late. */
+  font-style: normal; font-weight: 400; font-display: optional;
 }
 @font-face {
   font-family: "Poetica Std";
