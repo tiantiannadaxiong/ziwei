@@ -72,7 +72,12 @@ self.addEventListener("fetch", (event) => {
   event.respondWith((async () => {
     try {
       const response = await fetch(request);
-      if (response.ok) await put(request, response.clone());
+      if (response.ok) {
+        await put(request, response.clone());
+        // keep the unversioned shell entry current too, so the offline fallback
+        // is never an older build than the page that asked for it
+        if (url.search) await put(url.origin + url.pathname, response.clone());
+      }
       return response;
     } catch {
       const hit = await caches.match(request, { ignoreSearch: true });

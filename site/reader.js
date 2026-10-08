@@ -334,8 +334,31 @@
   }
   render({ animate: false });
 
+  // Copy every declared @font-face into the offline cache. By the time the
+  // worker controls the page these files are already in the HTTP cache, so this
+  // usually moves bytes rather than downloading them again.
+  async function warmFontCache() {
+    const urls = new Set();
+    for (const sheet of document.styleSheets) {
+      let rules;
+      try { rules = sheet.cssRules; } catch { continue; }
+      for (const rule of rules) {
+        if (typeof CSSFontFaceRule !== "function" || !(rule instanceof CSSFontFaceRule)) continue;
+        for (const match of rule.style.src.matchAll(/url\(["']?([^"')]+)["']?\)/g)) {
+          urls.add(new URL(match[1], sheet.href).href);
+        }
+      }
+    }
+    await Promise.all([...urls].map((url) => fetch(url, { cache: "force-cache" }).catch(() => {})));
+  }
+
   // Register the offline shell; failures are fine, the reader works online anyway.
+  // Register the offline shell; failures are fine, the reader works online anyway.
+  // The warm-up waits for control rather than `ready`, which only settles once
+  // the page is already being served by an active worker.
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
     navigator.serviceWorker.register("./sw.js").catch(() => {});
+    if (navigator.serviceWorker.controller) warmFontCache();
+    else navigator.serviceWorker.addEventListener("controllerchange", () => warmFontCache(), { once: true });
   }
 })();
