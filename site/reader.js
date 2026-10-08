@@ -358,4 +358,45 @@
     if (navigator.serviceWorker.controller) warmFontCache();
     else navigator.serviceWorker.addEventListener("controllerchange", () => warmFontCache(), { once: true });
   }
+
+  // Mobile PWAs can resume an old document from memory without navigating.
+  // Compare the deployed asset URLs on return and reload only when the edition
+  // changed; the current reading page is preserved in the URL hash.
+  let wasHidden = false;
+  let updateCheckInProgress = false;
+  async function checkForNewEdition() {
+    if (!navigator.onLine || updateCheckInProgress) return;
+    updateCheckInProgress = true;
+    try {
+      const response = await fetch("./index.html", { cache: "no-store" });
+      if (!response.ok) return;
+      const latestDocument = new DOMParser().parseFromString(await response.text(), "text/html");
+      const assetSelectors = [
+        'link[rel="stylesheet"][href*="styles.css"]',
+        'script[src*="poems.js"]',
+        'script[src*="reader.js"]'
+      ];
+      const deployedAssets = assetSelectors.map((selector) => latestDocument.querySelector(selector)?.getAttribute("href")
+        ?? latestDocument.querySelector(selector)?.getAttribute("src") ?? "");
+      const loadedAssets = assetSelectors.map((selector) => document.querySelector(selector)?.getAttribute("href")
+        ?? document.querySelector(selector)?.getAttribute("src") ?? "");
+      if (deployedAssets.some((asset, index) => asset !== loadedAssets[index])) location.reload();
+    } catch {
+      // Keep the current reading session if the network is unavailable.
+    } finally {
+      updateCheckInProgress = false;
+    }
+  }
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      wasHidden = true;
+    } else if (wasHidden) {
+      wasHidden = false;
+      checkForNewEdition();
+    }
+  });
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) checkForNewEdition();
+  });
 })();
