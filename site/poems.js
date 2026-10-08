@@ -15,6 +15,8 @@ window.POEMS = [
   },
   {
     id: "mid-autumn", page: 5,
+    image: "./images/mid-autumn.png",
+    imageAlt: "窗外秋月映着远山，屋内家人围桌团聚，桌上摆着切开的莲蓉月饼。",
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
     verses: {
       zh: "秋月凝光寒，\n莲蓉掌中暖。\n窗外风虽冽，\n阖家笑语欢。",
@@ -25,6 +27,8 @@ window.POEMS = [
   },
   {
     id: "double-fifth", page: 9,
+    image: "./images/double-fifth.png",
+    imageAlt: "薄雾笼罩江面与远山，远处有一叶龙舟，近岸摆着粽子和艾草，白鹤掠过天空。",
     titles: { zh: "《话端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
     verses: {
       zh: "五五重午岁又重，\n青箬裹粽意正浓。\n曹娥子胥悲歌起，\n渔樵笠下泣无穷。\n\n三江哀咽东逝水，\n离骚天问传千岁。\n祭罢魂随驾鹤归，\n龙舟艾香驱邪祟。",
