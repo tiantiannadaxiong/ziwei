@@ -117,11 +117,12 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .page-languages { align-self: center; display: flex; justify-content: center; gap: 2px; padding: 3px; border: 1px solid #e6e3da; border-radius: 999px; background: #f2f0e9; }
 .page-languages button { min-width: 46px; min-height: 34px; padding: 6px 9px; border: 0; border-radius: 999px; background: transparent; color: #838980; font-family: var(--latin-label); font-size: 15px; cursor: pointer; transition: background .2s ease, color .2s ease; }
 .page-languages button[aria-current="true"] { background: #e7e1d5; color: #934d43; }
-.note-page { padding: clamp(24px, 6vh, 54px) clamp(28px, 9vw, 82px) 30px; }
-.note-content { width: min(100%, 500px); margin: auto; padding: 28px 0; }
 .eyebrow { margin: 0 0 18px; color: var(--jade); font: 12px var(--latin-label); letter-spacing: .15em; }
-.note-content .poem-title { margin-bottom: 25px; font-size: 27px; }
-.annotation-text { margin: 0; color: #686f6b; font: 15px/2.05 var(--cjk-support); white-space: pre-line; }
+.annotation-section { width: min(100%, 500px); margin: 46px auto 8px; padding-top: 19px; border-top: 1px solid var(--rule); text-align: left; }
+.annotation-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; color: var(--jade); }
+.annotation-title { margin: 0; font: 400 16px/1.5 var(--cjk-support); letter-spacing: .08em; }
+.annotation-folio { color: #99978d; font: 12px var(--latin); }
+.annotation-text { margin: 0; color: #686f6b; font: 17px/2.05 var(--cjk-support); white-space: pre-line; }
 .illustration-page { padding: clamp(20px, 5vh, 42px) clamp(18px, 5vw, 34px) 22px; }
 .illustration-heading { flex: 0 0 auto; }
 .illustration-mark { color: #9a9c91; font: 11px var(--latin-label); letter-spacing: .14em; }
@@ -170,11 +171,9 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 }
 @media (max-width: 400px) {
   .book { padding-inline: max(10px, env(safe-area-inset-left)) max(10px, env(safe-area-inset-right)); }
-  .poem-page, .note-page { padding-inline: 22px; }
+  .poem-page { padding-inline: 22px; }
   .illustration-page { padding-inline: 15px; }
   .illustration-art { max-height: min(54svh, 500px); }
-  .poem-body { font-size: 18px; line-height: 2; }
-  .poem-body[lang="en"], .poem-body[lang="fr"] { font-size: 17px; line-height: 1.8; }
 }
 @media (max-height: 620px) {
   .book-toolbar { height: 36px; flex-basis: 36px; }
@@ -187,28 +186,30 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
   .poem-meta { margin-top: 14px; }
 }
 @media (max-width: 759px) {
-  .toolbar-button { font-size: 15px; }
-  .reading-progress { font-size: 14px; }
-  .swipe-hint { font-size: 14px; }
-  .page-running-head { font-size: 13px; }
+  .toolbar-button { font-size: 16px; }
+  .reading-progress { font-size: 15px; }
+  .swipe-hint { font-size: 15px; }
+  .page-running-head { font-size: 14px; }
   .page-language[lang="en"], .page-language[lang="fr"] { font-size: 14px; }
-  .page-print-folio { font-size: 13px; }
-  .poem-title { font-size: clamp(29px, 7vw, 33px); line-height: 1.5; }
-  .poem-title[lang="en"], .poem-title[lang="fr"] { font-size: clamp(27px, 6.5vw, 31px); line-height: 1.45; }
-  .note-content .poem-title { font-size: 30px; }
-  .poem-body { font-size: 22px; line-height: 2.05; letter-spacing: .03em; }
-  .poem-body[lang="en"], .poem-body[lang="fr"] { font-size: 19px; line-height: 1.95; letter-spacing: 0; }
-  .poem-meta { font-size: 13px; }
-  .page-languages button { min-width: 50px; min-height: 40px; }
-  .annotation-text { font-size: 18px; line-height: 2.15; }
-  .matter-text { font-size: 18px; line-height: 2.1; }
-  .matter-colophon .matter-text { font-size: 15px; }
-  .page-controls button { width: 46px; height: 46px; }
-  .toc-heading h2 { font-size: 27px; }
-  .toc-matter button { font-size: 14px; }
-  .toc-poem-title { font-size: 18px; }
-  .toc-languages button { font-size: 15px; }
-  .toc-footer { font-size: 13px; }
+  .page-print-folio { font-size: 14px; }
+  .poem-title { font-size: clamp(32px, 8vw, 36px); line-height: 1.5; }
+  .poem-title[lang="en"], .poem-title[lang="fr"] { font-size: clamp(29px, 7.5vw, 34px); line-height: 1.45; }
+  .poem-body { font-size: 24px; line-height: 2.05; letter-spacing: .03em; }
+  .poem-body[lang="en"], .poem-body[lang="fr"] { font-size: 21px; line-height: 1.9; letter-spacing: 0; }
+  .poem-meta { font-size: 14px; }
+  .page-languages button { min-width: 52px; min-height: 44px; font-size: 16px; }
+  .annotation-section { margin-top: 40px; padding-top: 17px; }
+  .annotation-title { font-size: 18px; }
+  .annotation-folio { font-size: 14px; }
+  .annotation-text { font-size: 21px; line-height: 2.1; }
+  .matter-text { font-size: 19px; line-height: 2.05; }
+  .matter-colophon .matter-text { font-size: 16px; }
+  .page-controls button { width: 48px; height: 48px; }
+  .toc-heading h2 { font-size: 28px; }
+  .toc-matter button { font-size: 15px; }
+  .toc-poem-title { font-size: 20px; }
+  .toc-languages button { font-size: 16px; }
+  .toc-footer { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }

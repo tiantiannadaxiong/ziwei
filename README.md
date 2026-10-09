@@ -16,12 +16,12 @@
 
 ## 阅读顺序与交互
 
-封面 → 版权页 → 献词 → 题记 → 前言 → 每首诗（插画 → 中文 → 英文 → 法文 → 中文注释）→ 后记 → 作者简介，共 22 页；前后页页码沿用纸书（iii–v、15–16），诗页显示纸书页码。
+封面 → 版权页 → 献词 → 题记 → 前言 → 每首诗（插画 → 中文原诗与中文注释 → 英文 → 法文）→ 后记 → 作者简介，共 19 页；前后页页码沿用纸书（iii–v、15–16），中文注释保留纸书页码，诗页显示纸书页码。
 
 翻页支持左右滑动、方向键与底部按钮。顶部「目录」列出封面、前后页，以及三首诗的各语种入口。地址栏 hash 可直达任意页：
 
 - `#cover`
-- `#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#jiaolong-notes`、`#jiaolong-image`（`mid-autumn`、`double-fifth` 同理）
+- `#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#jiaolong-image`（`mid-autumn`、`double-fifth` 同理）；旧的 `#jiaolong-notes` 链接会定位到中文原诗页的注释段落。
 - `#colophon`、`#dedication`、`#epigraph`、`#foreword`、`#afterword`、`#about`
 
 背景音乐只在窄屏（`max-width: 759px`）自动播放，工具栏有开关。

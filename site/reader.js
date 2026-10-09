@@ -18,7 +18,6 @@
   poems.forEach((poem) => {
     if (poem.image) sequence.push({ type: "illustration", poem });
     ["zh", "en", "fr"].forEach((language) => sequence.push({ type: "poem", poem, language }));
-    if (poem.note) sequence.push({ type: "note", poem, language: "zh" });
   });
   matter.back.forEach((item) => sequence.push({ type: "matter", item }));
 
@@ -115,6 +114,21 @@
     content.append(rule);
     appendText("p", "poem-body", poem.verses[language], content).lang = language === "zh" ? "zh-Hans" : language;
     if (language === "zh" && poem.meta) appendText("p", "poem-meta", poem.meta, content);
+    if (language === "zh" && poem.note) {
+      const annotation = document.createElement("section");
+      annotation.className = "annotation-section";
+      annotation.id = `notes-${poem.id}`;
+      const annotationHeader = document.createElement("div");
+      annotationHeader.className = "annotation-header";
+      const annotationTitle = appendText("h2", "annotation-title", "中文注释", annotationHeader);
+      annotationTitle.id = `${annotation.id}-title`;
+      annotationTitle.lang = "zh-Hans";
+      annotation.setAttribute("aria-labelledby", annotationTitle.id);
+      appendText("span", "annotation-folio", String(poem.page + 3).padStart(2, "0"), annotationHeader);
+      annotation.append(annotationHeader);
+      appendText("p", "annotation-text", poem.note, annotation).lang = "zh-Hans";
+      content.append(annotation);
+    }
     page.append(content);
     const languageNav = document.createElement("nav");
     languageNav.className = "page-languages";
@@ -156,23 +170,6 @@
     page.append(figure);
   }
 
-  function makeNote(item) {
-    const { poem } = item;
-    page.className = "book-page note-page";
-    page.replaceChildren();
-    const header = document.createElement("div");
-    header.className = "page-running-head";
-    appendText("span", "page-language", "中文注释", header).lang = "zh-Hans";
-    appendText("span", "page-print-folio", String(poem.page + 3).padStart(2, "0"), header);
-    page.append(header);
-    const content = document.createElement("div");
-    content.className = "note-content";
-    appendText("p", "eyebrow", "NOTES · 中文注释", content);
-    appendText("h1", "poem-title", poem.titles.zh, content).lang = "zh-Hans";
-    appendText("p", "annotation-text", poem.note, content).lang = "zh-Hans";
-    page.append(content);
-  }
-
   function makeMatter(item) {
     page.className = `book-page matter-page matter-${item.id}`;
     page.replaceChildren();
@@ -203,12 +200,12 @@
   function render({ animate = true, direction = 1 } = {}) {
     const item = sequence[current];
     window.clearTimeout(animationTimer);
+    page.scrollTop = 0;
     page.classList.remove("page-turning-forward", "page-turning-backward");
     if (item.type === "cover") makeCover();
     else if (item.type === "matter") makeMatter(item.item);
     else if (item.type === "illustration") makeIllustration(item);
     else if (item.type === "poem") makePoem(item);
-    else makeNote(item);
     if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       const turnClass = direction < 0 ? "page-turning-backward" : "page-turning-forward";
       page.classList.add(turnClass);
@@ -223,7 +220,7 @@
     document.documentElement.lang = item.language === "en" || item.language === "fr" ? item.language : "zh-Hans";
     const poem = item.poem;
     if (poem) {
-      const suffix = item.type === "note" ? "notes" : item.type === "illustration" ? "image" : item.language;
+      const suffix = item.type === "illustration" ? "image" : item.language;
       history.replaceState(null, "", `#${poem.id}-${suffix}`);
     }
     else if (item.type === "matter") history.replaceState(null, "", `#${item.item.id}`);
@@ -324,12 +321,16 @@
     const target = sequence.findIndex((item) => {
       if (!item.poem || item.poem.id !== match[1]) return false;
       if (match[2] === "image") return item.type === "illustration";
-      if (match[2] === "notes") return item.type === "note";
+      if (match[2] === "notes") return item.type === "poem" && item.language === "zh";
       return item.type === "poem" && item.language === match[2];
     });
     if (target >= 0) current = target;
   }
   render({ animate: false });
+  if (match?.[2] === "notes") {
+    page.querySelector(`#notes-${match[1]}`)?.scrollIntoView({ block: "start" });
+    history.replaceState(null, "", `#${match[1]}-notes`);
+  }
 
   // Copy every declared @font-face into the offline cache. By the time the
   // worker controls the page these files are already in the HTTP cache, so this
