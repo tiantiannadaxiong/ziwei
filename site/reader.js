@@ -12,7 +12,7 @@
   const mobileViewport = window.matchMedia("(max-width: 759px)");
   const languageNames = { zh: "中文", en: "English", fr: "Français" };
   const languageTags = { zh: "中文", en: "EN", fr: "FR" };
-  const sequence = [{ type: "cover" }];
+  const sequence = [{ type: "cover" }, { type: "cover-art" }];
 
   matter.front.forEach((item) => sequence.push({ type: "matter", item }));
   poems.forEach((poem) => {
@@ -84,6 +84,26 @@
     page.replaceChildren();
     const coverInner = document.createElement("div");
     coverInner.className = "cover-inner";
+    appendText("p", "cover-kicker", "三语诗集 · A TRILINGUAL COLLECTION", coverInner);
+    appendText("h1", "cover-title", "暗香集", coverInner);
+    appendText("p", "cover-english", "Whispers of Hidden Fragrance", coverInner);
+    appendText("p", "cover-french", "Parfums secrets", coverInner).lang = "fr";
+    const branch = document.createElement("div");
+    branch.className = "cover-branch";
+    branch.setAttribute("aria-hidden", "true");
+    branch.innerHTML = '<svg viewBox="0 0 240 150" role="presentation"><circle class="moon-halo" cx="192" cy="44" r="33"/><circle class="moon" cx="192" cy="44" r="20"/><path d="M18 128C73 106 92 71 128 45c22-16 47-18 88-25M89 85c-5-21-1-37 12-49m26 10c-2-18 4-29 15-39m-48 67c-19-5-34-2-47 7m88-34c15 0 27 7 36 20"/><path class="water-line" d="M32 139c46-12 82-11 127-4m-83 12c42-8 76-7 111-1"/><g transform="translate(101 38)"><circle class="plum-petal" cx="0" cy="-4" r="3.4"/><circle class="plum-petal" cx="4" cy="-1" r="3.4"/><circle class="plum-petal" cx="2" cy="4" r="3.4"/><circle class="plum-petal" cx="-3" cy="3" r="3.4"/><circle class="plum-petal" cx="-4" cy="-2" r="3.4"/><circle class="plum-center" r="1.8"/></g><g transform="translate(156 24) scale(.8)"><circle class="plum-petal" cx="0" cy="-4" r="3.4"/><circle class="plum-petal" cx="4" cy="-1" r="3.4"/><circle class="plum-petal" cx="2" cy="4" r="3.4"/><circle class="plum-petal" cx="-3" cy="3" r="3.4"/><circle class="plum-petal" cx="-4" cy="-2" r="3.4"/><circle class="plum-center" r="1.8"/></g></svg>';
+    coverInner.append(branch);
+    const seal = appendText("span", "cover-seal", "紫薇", coverInner);
+    seal.setAttribute("aria-label", "作者紫薇");
+    appendText("p", "cover-signature", "Ziwei", coverInner);
+    page.append(coverInner);
+  }
+
+  function makeCoverArt() {
+    page.className = "book-page cover-art-page";
+    page.replaceChildren();
+    const coverInner = document.createElement("div");
+    coverInner.className = "cover-art-inner";
     const coverArt = document.createElement("img");
     coverArt.className = "cover-art";
     coverArt.src = "./images/cover.png?v=2";
@@ -203,6 +223,7 @@
     page.scrollTop = 0;
     page.classList.remove("page-turning-forward", "page-turning-backward");
     if (item.type === "cover") makeCover();
+    else if (item.type === "cover-art") makeCoverArt();
     else if (item.type === "matter") makeMatter(item.item);
     else if (item.type === "illustration") makeIllustration(item);
     else if (item.type === "poem") makePoem(item);
@@ -219,7 +240,9 @@
     next.disabled = current === sequence.length - 1;
     document.documentElement.lang = item.language === "en" || item.language === "fr" ? item.language : "zh-Hans";
     const poem = item.poem;
-    if (poem) {
+    if (item.type === "cover") history.replaceState(null, "", "#cover");
+    else if (item.type === "cover-art") history.replaceState(null, "", "#cover-art");
+    else if (poem) {
       const suffix = item.type === "illustration" ? "image" : item.language;
       history.replaceState(null, "", `#${poem.id}-${suffix}`);
     }
@@ -250,14 +273,19 @@
     showPage(sequence.findIndex((item) => item.type === "matter" && item.item.id === id));
   }
 
-  // The title page doubles as the cover, so it opens the contents list.
+  // Make both covers available as direct entries in the contents list.
   const matterList = document.querySelector("#matter-list");
-  const coverEntry = document.createElement("button");
-  coverEntry.type = "button";
-  coverEntry.textContent = "封面";
-  coverEntry.lang = "zh-Hans";
-  coverEntry.addEventListener("click", () => showPage(sequence.findIndex((item) => item.type === "cover")));
-  matterList.append(coverEntry);
+  [
+    { type: "cover", label: "文字封面" },
+    { type: "cover-art", label: "图像封面" }
+  ].forEach(({ type, label }) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = label;
+    button.lang = "zh-Hans";
+    button.addEventListener("click", () => showPage(sequence.findIndex((item) => item.type === type)));
+    matterList.append(button);
+  });
 
   [...matter.front, ...matter.back].forEach((entry) => {
     const button = document.createElement("button");
@@ -315,6 +343,8 @@
   const match = hash.match(/^([a-z-]+)-(zh|en|fr|notes|image)$/);
   if (hash === "cover") {
     current = 0;
+  } else if (hash === "cover-art") {
+    current = 1;
   } else if (matterTarget >= 0) {
     current = matterTarget;
   } else if (match && poems.some((poem) => poem.id === match[1])) {
