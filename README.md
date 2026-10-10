@@ -47,14 +47,14 @@ node site/preview.mjs
 | 用途 | 字体 |
 |---|---|
 | 中文诗题、中文诗句 | 王汉宗中隶书繁（HanWang LiSu） |
-| 中文注释、创作日期、目录与界面文字 | LXGW WenKai |
+| 中文注释、创作日期、目录与界面文字 | LXGW WenKai TC |
 | 英、法诗句 | Alegreya（含 Italic） |
 | 英、法诗题，封面英文与法文副题 | Poetica Std |
 | 英、法语种标签、页眉小标题 | Poetica Roman Small Capitals |
 | 插画页的短英文题词 | Poetica Chancery IV |
 | 封面英文署名 | Bickham Script Pro 3 Bold |
 
-字体文件位于 `site/fonts/`。Alegreya 与文楷的 SIL Open Font License 文本一并提供；王汉宗中隶书繁为 GPL 字体，字体目录内附授权文本和来源说明；其余字体由作者提供。
+字体文件位于 `site/fonts/`。Alegreya 与霞鹜文楷 TC 的 SIL Open Font License 文本一并提供；王汉宗中隶书繁为 GPL 字体，字体目录内附授权文本和来源说明；其余字体由作者提供。
 
 ## 装到手机
 
@@ -63,7 +63,7 @@ node site/preview.mjs
 `site/sw.js` 负责离线：
 
 - 安装时缓存页面骨架；页面与 CSS/JS 走网络优先（新版本始终能到达），离线时回退缓存。
-- 字体、插画、音乐按 URL 永久缓存。worker 接管页面的瞬间会把 8 个 `@font-face` 文件预热进缓存，因此**访问一次即可离线阅读**（约 25 MB 字体）；插画在首次浏览到那张时才缓存。
+- 字体、插画、音乐按 URL 永久缓存。worker 接管页面的瞬间会把 8 个 `@font-face` 文件预热进缓存，因此**访问一次即可离线阅读**（约 26 MB 字体）；插画在首次浏览到那张时才缓存。
 - 改动页面骨架（例如 `styles.css` 的结构）时，把 `sw.js` 顶部的 `CACHE` 升一版，老读者的离线副本才会更新。
 
 “添加到主屏幕”的操作在 Android Chrome 是菜单里的「安装应用／添加到主屏幕」，在 iOS Safari 是分享菜单里的「添加到主屏幕」。

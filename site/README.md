@@ -32,4 +32,4 @@ node site/preview.mjs
 
 - 改动 `styles.css`、`reader.js`、`poems.js` 后，同步 `index.html` 里的 `?v=ebook-ui-N`。
 - 改动页面骨架后，升一版 `sw.js` 顶部的 `CACHE`，否则老读者的离线副本不会更新。
-- 字体分工见根目录 README 的「字体」一节；王汉宗中隶书繁的来源与授权说明见 `fonts/` 目录。
+- 字体分工见根目录 README 的「字体」一节；LXGW WenKai TC 与王汉宗中隶书繁的授权文本和来源信息见 `fonts/` 目录。

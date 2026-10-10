@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "LXGW WenKai";
-  src: url("./fonts/LXGWWenKaiGBLite-Regular.ttf") format("truetype");
+  font-family: "LXGW WenKai TC";
+  src: url("./fonts/LXGWWenKaiTC-Regular.ttf") format("truetype");
   font-style: normal; font-weight: 400; font-display: swap;
 }
 @font-face {
@@ -53,11 +53,11 @@
   /* Chinese poetry titles and verses are set in HanWang LiSu; notes, dates and
      interface text stay in WenKai. Latin runs fall back to WenKai for the few
      mixed lines such as the reading progress. */
-  --cjk-poetry: "HanWang LiSu", "LXGW WenKai", "Kaiti SC", "KaiTi", "STKaiti", "Songti SC", "Microsoft YaHei", "Noto Serif CJK SC", serif;
-  --cjk-support: "LXGW WenKai", "Kaiti SC", "KaiTi", "STKaiti", "Songti SC", "Microsoft YaHei", "Noto Serif CJK SC", serif;
-  --latin: "Alegreya", "LXGW WenKai", Georgia, serif;
-  --latin-title: "Poetica Std", "Alegreya", "LXGW WenKai", Georgia, serif;
-  --latin-label: "Poetica Roman Small Caps", "LXGW WenKai", Georgia, serif;
+  --cjk-poetry: "HanWang LiSu", "LXGW WenKai TC", "Kaiti SC", "KaiTi", "STKaiti", "Songti SC", "Microsoft YaHei", "Noto Serif CJK SC", serif;
+  --cjk-support: "LXGW WenKai TC", "Kaiti SC", "KaiTi", "STKaiti", "Songti SC", "Microsoft YaHei", "Noto Serif CJK SC", serif;
+  --latin: "Alegreya", "LXGW WenKai TC", Georgia, serif;
+  --latin-title: "Poetica Std", "Alegreya", "LXGW WenKai TC", Georgia, serif;
+  --latin-label: "Poetica Roman Small Caps", "LXGW WenKai TC", Georgia, serif;
   --latin-epigraph: "Poetica Chancery IV", "Alegreya", Georgia, serif;
   --latin-signature: "Bickham Script Pro 3", "Poetica Chancery IV", Georgia, serif;
   font-synthesis: none;
