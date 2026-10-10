@@ -4,6 +4,12 @@
   font-style: normal; font-weight: 400; font-display: swap;
 }
 @font-face {
+  font-family: "Quan Zi Ku Seal";
+  src: url("./fonts/QuanZiKuShuoWenJieZi-2glyph.ttf") format("truetype");
+  font-style: normal; font-weight: 400; font-display: swap;
+  unicode-range: U+7D2B, U+8587;
+}
+@font-face {
   font-family: "Alegreya";
   src: url("./fonts/Alegreya-Regular.otf") format("opentype");
   font-style: normal; font-weight: 400; font-display: swap;
@@ -112,7 +118,7 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .cover-branch .moon { fill: var(--moonlight); stroke: #fff8e8; stroke-width: .8; filter: drop-shadow(0 0 10px #dfb65370); }
 .cover-branch .plum-petal { fill: #d9887d; opacity: .9; }
 .cover-branch .plum-center { fill: #e8bf69; }
-.cover-seal { display: inline-grid; place-items: center; width: 36px; height: 42px; border: 1px solid var(--seal); color: var(--seal); font-size: 12px; line-height: 1.15; }
+.cover-seal { display: inline-grid; place-items: center; width: 36px; height: 42px; border: 1px solid #a94d44; background: var(--seal); color: #fff8ec; font: 12px/1.15 "Quan Zi Ku Seal", var(--cjk-support); }
 .cover-signature { margin: 13px 0 0; color: #6f756e; font: 700 clamp(22px, 5vw, 30px)/1.25 var(--latin-signature); letter-spacing: .02em; }
 .cover-art-page { overflow: hidden; justify-content: center; align-items: center; background-color: #f7f1e4; background-image: none; }
 .cover-art-page::before { width: 14px; background: linear-gradient(90deg, #d8cfba, #f5efdf 75%, #f7f1e4); }
