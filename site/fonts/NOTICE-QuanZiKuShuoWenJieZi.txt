@@ -1,7 +1,8 @@
 全字庫說文解字（EBAS）字型來源與授權
 
 原始字型：全字庫說文解字 True Type 字型，檔名 ebas927.ttf，Version 001.000。
-網站檔案：QuanZiKuShuoWenJieZi-2glyph.ttf，僅保留「紫」「薇」兩字的字型子集；字形輪廓未重繪。
+網站字型檔：QuanZiKuShuoWenJieZi-2glyph.ttf，僅保留「紫」「薇」兩字的字型子集；字形輪廓未重繪。
+插畫印章：三張 SVG 插畫中的「暗」「香」「集」採用同一原始字型的字形輪廓，不包含完整字型檔。
 原始來源：CNS11643 中文標準交換碼全字庫（數位發展部）。
 官方下載頁：https://www.cns11643.gov.tw/downloadList.jsp?ID=2&ID2=20
 授權說明：https://www.cns11643.gov.tw/pageView.jsp?ID=59&SN=&la=0&lang=tw
@@ -10,4 +11,4 @@
 公開使用時的來源標示：數位發展部，CNS11643 中文標準交換碼全字庫網站，
 https://www.cns11643.gov.tw/
 
-本字型僅用於封面紅戳「紫薇」兩字。
+字型子集僅用於封面紅戳「紫薇」兩字；「暗香集」字形輪廓用於插畫頁紅戳。

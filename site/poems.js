@@ -2,7 +2,7 @@
 window.POEMS = [
   {
     id: "jiaolong", page: 1,
-    image: "./images/jiaolong.svg?v=art-10",
+    image: "./images/jiaolong.svg?v=art-11",
     imageAlt: "淡月與遠山隱在江霧之中，幾道水脈於留白間緩緩相合，舒展向遼闊江海。",
     titles: { zh: "《蛟龍》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
     verses: {
@@ -15,7 +15,7 @@ window.POEMS = [
   },
   {
     id: "mid-autumn", page: 5,
-    image: "./images/mid-autumn.svg?v=art-10",
+    image: "./images/mid-autumn.svg?v=art-11",
     imageAlt: "疏梅枝影斜過秋月，遠山映在水面，幾縷淡金色光影留住團圓的暖意。",
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
     verses: {
@@ -27,7 +27,7 @@ window.POEMS = [
   },
   {
     id: "double-fifth", page: 9,
-    image: "./images/double-fifth.svg?v=art-10",
+    image: "./images/double-fifth.svg?v=art-11",
     imageAlt: "艾葉疏疏映在江岸，薄霧與淡金水痕勾出端午時節江面的清寂。",
     titles: { zh: "《話端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
     verses: {
