@@ -14,9 +14,9 @@
   font-style: italic; font-weight: 400; font-display: swap;
 }
 @font-face {
-  font-family: "Aaxiaolishu";
-  src: url("./fonts/Aaxiaolishu.ttf?v=2") format("truetype");
-  /* Don't replace a visible fallback mid-read if this large face arrives late. */
+  font-family: "HanWang LiSu";
+  src: url("./fonts/HanWangLiSuMedium-TC.ttf?v=1") format("truetype");
+  /* Keep the poem readable on first visit and avoid a late font swap. */
   font-style: normal; font-weight: 400; font-display: optional;
 }
 @font-face {
@@ -50,10 +50,10 @@
   --seal: #b95449;
   --rule: #e3d9c8;
   --moonlight: #f2c66d;
-  /* Chinese poetry titles and verses are set in Aaxiaolishu; notes, dates and
+  /* Chinese poetry titles and verses are set in HanWang LiSu; notes, dates and
      interface text stay in WenKai. Latin runs fall back to WenKai for the few
      mixed lines such as the reading progress. */
-  --cjk-poetry: "Aaxiaolishu", "LXGW WenKai", "Kaiti SC", "KaiTi", "STKaiti", "Songti SC", "Microsoft YaHei", "Noto Serif CJK SC", serif;
+  --cjk-poetry: "HanWang LiSu", "LXGW WenKai", "Kaiti SC", "KaiTi", "STKaiti", "Songti SC", "Microsoft YaHei", "Noto Serif CJK SC", serif;
   --cjk-support: "LXGW WenKai", "Kaiti SC", "KaiTi", "STKaiti", "Songti SC", "Microsoft YaHei", "Noto Serif CJK SC", serif;
   --latin: "Alegreya", "LXGW WenKai", Georgia, serif;
   --latin-title: "Poetica Std", "Alegreya", "LXGW WenKai", Georgia, serif;

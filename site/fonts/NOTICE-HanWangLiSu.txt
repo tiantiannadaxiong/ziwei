@@ -1,0 +1,8 @@
+王漢宗中隸書繁 (HanWangLiSuMedium, wt021)
+
+Font file in this site: HanWangLiSuMedium-TC.ttf
+Original filename: 王漢宗中隸書繁.ttf
+Source: https://github.com/wordshub/free-font/tree/master/assets/font/%E4%B8%AD%E6%96%87/%E7%8E%8B%E6%B1%89%E5%AE%97%E5%AD%97%E4%BD%93%E7%B3%BB%E5%88%97
+The wordshub/free-font repository identifies the Wang Hanzong family as GNU GPL fonts. The accompanying GPL-2.0.txt contains the license text.
+
+The source repository's font table marks wt021 as subject to an Arphic Technology infringement claim. This note records that claim as reported by the repository; it is not a finding that infringement occurred. The rights status should be confirmed with the relevant rights holders.

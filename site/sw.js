@@ -2,10 +2,10 @@
  *
  * Fonts, illustrations and music are immutable per URL, so they are cached on
  * first use and then served straight from the cache (this also spares the
- * reader a 5.9 MB revalidation of the poetry face on every visit). Styles,
+ * reader an 8 MB revalidation of the poetry face on every visit). Styles,
  * scripts and pages stay network-first, so a new edition always arrives; the
  * cache is only the offline fallback. Bump CACHE when the shell changes. */
-const CACHE = "anxiangji-v7";
+const CACHE = "anxiangji-v8";
 const SHELL = [
   "./",
   "./index.html",
