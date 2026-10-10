@@ -246,6 +246,19 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
   .cover-seal { width: 28px; height: 32px; font-size: 11px; }
   .cover-signature { margin-top: 4px; font-size: 20px; }
 }
+@media (orientation: landscape) and (max-height: 500px) {
+  .book { min-height: 0; padding: max(4px, env(safe-area-inset-top)) max(10px, env(safe-area-inset-right)) max(4px, env(safe-area-inset-bottom)) max(10px, env(safe-area-inset-left)); }
+  .reading-stage { padding: 6px 0; }
+  .page-controls { height: 42px; flex-basis: 42px; }
+  .cover-inner { width: calc(100% - 18px); height: calc(100% - 10px); padding: 4px 12px; }
+  .cover-kicker { margin-bottom: 3px; font-size: 9px; }
+  .cover-title { font-size: clamp(30px, 7vh, 38px); line-height: 1.05; }
+  .cover-english { margin-top: 1px; font-size: clamp(14px, 3vw, 17px); line-height: 1.1; }
+  .cover-french { margin-top: 1px; font-size: 12px; line-height: 1.1; }
+  .cover-branch { width: clamp(116px, 27vw, 190px); margin: 2px auto; }
+  .cover-seal { width: 26px; height: 28px; font-size: 10px; }
+  .cover-signature { margin-top: 2px; font-size: 18px; line-height: 1; }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
