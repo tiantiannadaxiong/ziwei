@@ -91,7 +91,10 @@
     const branch = document.createElement("div");
     branch.className = "cover-branch";
     branch.setAttribute("aria-hidden", "true");
-    branch.innerHTML = '<svg viewBox="0 0 240 150" role="presentation"><circle class="moon-halo" cx="192" cy="44" r="33"/><circle class="moon" cx="192" cy="44" r="20"/><path d="M18 128C73 106 92 71 128 45c22-16 47-18 88-25M89 85c-5-21-1-37 12-49m26 10c-2-18 4-29 15-39m-48 67c-19-5-34-2-47 7m88-34c15 0 27 7 36 20"/><path class="water-line" d="M32 139c46-12 82-11 127-4m-83 12c42-8 76-7 111-1"/><g transform="translate(101 38)"><circle class="plum-petal" cx="0" cy="-4" r="3.4"/><circle class="plum-petal" cx="4" cy="-1" r="3.4"/><circle class="plum-petal" cx="2" cy="4" r="3.4"/><circle class="plum-petal" cx="-3" cy="3" r="3.4"/><circle class="plum-petal" cx="-4" cy="-2" r="3.4"/><circle class="plum-center" r="1.8"/></g><g transform="translate(156 24) scale(.8)"><circle class="plum-petal" cx="0" cy="-4" r="3.4"/><circle class="plum-petal" cx="4" cy="-1" r="3.4"/><circle class="plum-petal" cx="2" cy="4" r="3.4"/><circle class="plum-petal" cx="-3" cy="3" r="3.4"/><circle class="plum-petal" cx="-4" cy="-2" r="3.4"/><circle class="plum-center" r="1.8"/></g></svg>';
+    const artwork = document.createElement("img");
+    artwork.src = "./images/cover-branch.svg?v=cover-art-2";
+    artwork.alt = "";
+    branch.append(artwork);
     coverInner.append(branch);
     const seal = appendText("span", "cover-seal", "紫薇", coverInner);
     seal.setAttribute("aria-label", "作者紫薇");

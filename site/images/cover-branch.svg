@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" role="img" aria-labelledby="cover-art-title cover-art-description">
+  <title id="cover-art-title">梅枝映月</title>
+  <desc id="cover-art-description">疏梅枝影掠过一轮淡金月色，远山与水纹隐在薄雾之间。</desc>
+  <defs>
+    <radialGradient id="moon-glow">
+      <stop stop-color="#efd08c" stop-opacity=".34" />
+      <stop offset=".62" stop-color="#efd08c" stop-opacity=".13" />
+      <stop offset="1" stop-color="#efd08c" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="dusk-haze">
+      <stop stop-color="#d9a66d" stop-opacity=".15" />
+      <stop offset="1" stop-color="#d9a66d" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="moon-face" x1=".18" y1=".12" x2=".82" y2=".92">
+      <stop stop-color="#fff5d8" />
+      <stop offset=".7" stop-color="#f1dfb4" />
+      <stop offset="1" stop-color="#dfcfaa" />
+    </linearGradient>
+    <linearGradient id="water-wash" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#91afa0" stop-opacity="0" />
+      <stop offset=".46" stop-color="#91afa0" stop-opacity=".23" />
+      <stop offset="1" stop-color="#91afa0" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="plum-petal" x1="0" y1="-1" x2="0" y2="1">
+      <stop stop-color="#e8b4a4" />
+      <stop offset="1" stop-color="#c97870" />
+    </linearGradient>
+    <g id="plum-blossom">
+      <path class="petal" d="M0 0C-4-3-4-8-.7-10.5 2-8.8 3.4-4 0 0Z" />
+      <path class="petal petal-light" d="M0 0C-4-3-4-8-.7-10.5 2-8.8 3.4-4 0 0Z" transform="rotate(72)" />
+      <path class="petal" d="M0 0C-4-3-4-8-.7-10.5 2-8.8 3.4-4 0 0Z" transform="rotate(144)" />
+      <path class="petal petal-light" d="M0 0C-4-3-4-8-.7-10.5 2-8.8 3.4-4 0 0Z" transform="rotate(216)" />
+      <path class="petal" d="M0 0C-4-3-4-8-.7-10.5 2-8.8 3.4-4 0 0Z" transform="rotate(288)" />
+      <circle cx="0" cy="0" r="1.7" fill="#e8bf69" />
+      <path d="M0-1.5 0-5m1.1 4.8 2-2.7M-1-1.4l-2-2.7" fill="none" stroke="#d5a85b" stroke-linecap="round" stroke-width=".55" />
+      <circle cx="0" cy="-5.2" r=".6" fill="#d5a85b" />
+      <circle cx="3.4" cy="-4.2" r=".55" fill="#d5a85b" />
+      <circle cx="-3.4" cy="-4.2" r=".55" fill="#d5a85b" />
+    </g>
+    <style>
+      .petal { fill: url(#plum-petal); }
+      .petal-light { fill: #f1d2bd; }
+    </style>
+  </defs>
+
+  <!-- A quiet moon and distant ridges hold the open space. -->
+  <ellipse cx="210" cy="100" rx="88" ry="48" fill="url(#dusk-haze)" />
+  <circle cx="222" cy="49" r="48" fill="url(#moon-glow)" />
+  <circle cx="222" cy="49" r="25" fill="url(#moon-face)" stroke="#c4aa76" stroke-opacity=".42" stroke-width=".65" />
+  <path d="M211 40c4-4 8-5 13-4m-16 18c5 2 10 2 15 0m-7 10c3 0 5-.8 7-2" fill="none" stroke="#c7b386" stroke-linecap="round" stroke-opacity=".37" stroke-width=".7" />
+  <path d="M15 134c21-12 38-15 56-12 17 3 26 1 43-5 19-7 31-6 47-1 17 5 31 5 48-2 18-7 32-7 54 1v13c-22-6-37-4-55 2-19 7-35 7-53 1-16-5-29-5-47 2-19 7-31 8-50 4-15-4-27-2-43 5Z" fill="#b9cbbf" fill-opacity=".22" />
+  <path d="M19 133c21-11 36-13 52-10m22-1c15-2 25-8 39-10m37 4c15 4 29 4 42-1m14-2c11-3 21-3 34 0" fill="none" stroke="#8b9f91" stroke-linecap="round" stroke-opacity=".58" stroke-width=".8" />
+
+  <!-- Water gathers the moonlight in a few broken strokes. -->
+  <path d="M24 151c36-8 64-9 91-5 26 4 50 4 78-1 21-4 39-4 60 0l-1 13c-21-4-39-3-61 1-28 5-53 5-79 1-28-4-54-3-87 4Z" fill="url(#water-wash)" />
+  <!-- The branch returns as a broken, shallow-water shadow. -->
+  <g fill="none" stroke="#536f62" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".24">
+    <path d="M39 145c19-7 34-11 48-14m9-3c15-4 27-8 38-14m9 12c17-5 31-10 44-17m9 14c12-4 22-7 34-9" stroke-width="1.35" />
+    <path d="M63 138c-4-4-7-7-10-12m37 5c3-5 5-8 6-12m38 0c-3-5-5-9-5-13m42 4c2-5 5-8 9-11" stroke-width=".8" />
+  </g>
+  <path d="M30 153c23-5 44-6 64-4m13 1c25 3 46 4 69 0m22-2c14-2 27-2 40 1" fill="none" stroke="#7c9c8d" stroke-linecap="round" stroke-opacity=".67" stroke-width=".85" />
+  <path d="M44 162c19-3 33-3 48-1m44 1c20 2 37 1 54-2m21-1c10-1 18 0 27 2" fill="none" stroke="#c7d2c6" stroke-linecap="round" stroke-width="1.1" />
+  <path d="M69 170c13-1 23-.5 33 1m72-1c12-2 23-2 34-.5" fill="none" stroke="#90a89a" stroke-linecap="round" stroke-opacity=".48" stroke-width=".65" />
+  <g fill="none" stroke="#d0ad78" stroke-linecap="round" stroke-opacity=".43">
+    <path d="M217 137c4 2 8 2 12 0m-14 7c5 2 10 2 16 0m-14 7c4 1 8 1 12 0" stroke-width=".9" />
+  </g>
+
+  <!-- Fine, asymmetrical plum branches. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 151c22-12 41-21 59-34 18-12 29-26 44-42 17-18 38-31 66-41" stroke="#4f7162" stroke-width="3" />
+    <path d="M56 132c-5-14-7-28-4-43 2-9 6-17 12-24m-1 56c11 0 22-4 32-10m-20-4c-2-13-1-25 4-37m-2 36c12 1 22-3 33-10m-5-4c-2-13 0-24 6-34m8 17c12 5 23 5 35 0m-10-12c-1-12 1-22 6-32m4 27c10 4 19 4 29 1m-15-9c1-9 4-17 10-24m-89 74c-9-9-15-17-18-27m57 6c5-10 7-19 6-29m28 14c7-8 11-16 13-24" stroke="#5e7f6f" stroke-width="1.65" />
+    <path d="M34 144c5-1 9-3 13-6m35-22c4-4 7-8 10-12m22-16c4-5 7-9 11-12m28-18c4-3 8-5 12-7m-88 54c4 0 7-1 10-3m29-26c3 1 6 2 9 2" stroke="#9aab9c" stroke-opacity=".8" stroke-width=".65" />
+  </g>
+
+  <!-- Blossoms open sparsely along the branch; a few buds remain closed. -->
+  <g fill="#c97870">
+    <use href="#plum-blossom" transform="translate(64 68) scale(.72) rotate(-9)" />
+    <use href="#plum-blossom" transform="translate(91 102) scale(.62) rotate(15)" />
+    <use href="#plum-blossom" transform="translate(132 63) scale(.8) rotate(-7)" />
+    <use href="#plum-blossom" transform="translate(164 51) scale(.68) rotate(12)" />
+    <use href="#plum-blossom" transform="translate(111 91) scale(.52) rotate(-18)" />
+  </g>
+  <g fill="#e2aaa0" stroke="#688373" stroke-linecap="round" stroke-width=".7">
+    <path d="M58 83c-4-3-5-7-2-10 4 1 6 5 4 9Z" />
+    <path d="M122 43c-2-4-1-8 3-10 3 3 2 7-1 10Z" />
+    <path d="M177 32c-1-4 1-7 5-8 2 3 0 7-3 9Z" />
+  </g>
+  <path d="M75 77c-3-2-5-4-6-7m48 15c-3-2-4-5-4-8m49-12c-3-2-4-4-4-7" fill="none" stroke="#d99b8e" stroke-linecap="round" stroke-width=".7" />
+  <!-- Fragrance is suggested by a barely-there drift of warm evening air. -->
+  <path d="M137 58c-7-5-2-9 1-13 3-4 2-7-1-10m19 13c-5-4-2-8 1-11 2-3 2-5 0-7" fill="none" stroke="#c9a77f" stroke-linecap="round" stroke-opacity=".35" stroke-width=".75" />
+  <path d="M105 55c1.2-2 3.3-2.3 4.8-.2-1 2-2.8 2.4-4.8.2Zm68 2c1-1.8 3.1-2 4.4-.2-.8 1.8-2.6 2-4.4.2Z" fill="#e4bca5" fill-opacity=".75" />
+</svg>
