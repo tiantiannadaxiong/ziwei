@@ -12,7 +12,7 @@
   const mobileViewport = window.matchMedia("(max-width: 759px)");
   const languageNames = { zh: "繁體中文", en: "English", fr: "Français" };
   const languageTags = { zh: "繁中", en: "EN", fr: "FR" };
-  const sequence = [{ type: "cover" }, { type: "cover-art" }];
+  const sequence = [{ type: "cover" }];
 
   matter.front.forEach((item) => sequence.push({ type: "matter", item }));
   poems.forEach((poem) => {
@@ -99,23 +99,6 @@
     page.append(coverInner);
   }
 
-  function makeCoverArt() {
-    page.className = "book-page cover-art-page";
-    page.replaceChildren();
-    const coverInner = document.createElement("div");
-    coverInner.className = "cover-art-inner";
-    const coverArt = document.createElement("img");
-    coverArt.className = "cover-art";
-    coverArt.src = "./images/cover.png?v=2";
-    coverArt.alt = "月色下的梅枝、遠山與水紋水墨畫";
-    coverArt.decoding = "async";
-    coverArt.loading = "eager";
-    coverInner.append(coverArt);
-    appendText("h1", "visually-hidden", "暗香集", coverInner);
-    appendText("p", "visually-hidden", "作者：紫薇", coverInner);
-    page.append(coverInner);
-  }
-
   function makePoem(item) {
     const { poem, language } = item;
     page.className = `book-page poem-page lang-${language}`;
@@ -172,9 +155,12 @@
     page.replaceChildren();
     const header = document.createElement("div");
     header.className = "page-running-head illustration-heading";
-    appendText("span", "page-language", "插畫", header).lang = "zh-Hant";
+    appendText("span", "page-language", "暗香集", header).lang = "zh-Hant";
     appendText("span", "illustration-mark", "ILLUSTRATION", header);
     page.append(header);
+
+    const title = appendText("h1", "illustration-title", poem.titles.zh);
+    title.lang = "zh-Hant";
 
     const figure = document.createElement("figure");
     figure.className = "illustration-figure";
@@ -186,7 +172,6 @@
     image.loading = "eager";
     figure.append(image);
     appendText("p", "illustration-epigraph", poem.titles.en, figure).lang = "en";
-    appendText("figcaption", "illustration-caption", poem.titles.zh, figure).lang = "zh-Hant";
     page.append(figure);
   }
 
@@ -223,7 +208,6 @@
     page.scrollTop = 0;
     page.classList.remove("page-turning-forward", "page-turning-backward");
     if (item.type === "cover") makeCover();
-    else if (item.type === "cover-art") makeCoverArt();
     else if (item.type === "matter") makeMatter(item.item);
     else if (item.type === "illustration") makeIllustration(item);
     else if (item.type === "poem") makePoem(item);
@@ -241,7 +225,6 @@
     document.documentElement.lang = item.language === "en" || item.language === "fr" ? item.language : "zh-Hant";
     const poem = item.poem;
     if (item.type === "cover") history.replaceState(null, "", "#cover");
-    else if (item.type === "cover-art") history.replaceState(null, "", "#cover-art");
     else if (poem) {
       const suffix = item.type === "illustration" ? "image" : item.language;
       history.replaceState(null, "", `#${poem.id}-${suffix}`);
@@ -273,12 +256,9 @@
     showPage(sequence.findIndex((item) => item.type === "matter" && item.item.id === id));
   }
 
-  // Make both covers available as direct entries in the contents list.
+  // Make the title cover available as a direct entry in the contents list.
   const matterList = document.querySelector("#matter-list");
-  [
-    { type: "cover", label: "文字封面" },
-    { type: "cover-art", label: "圖像封面" }
-  ].forEach(({ type, label }) => {
+  [{ type: "cover", label: "文字封面" }].forEach(({ type, label }) => {
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = label;
@@ -344,7 +324,8 @@
   if (hash === "cover") {
     current = 0;
   } else if (hash === "cover-art") {
-    current = 1;
+    // Older saved links to the removed image cover return to the title cover.
+    current = 0;
   } else if (matterTarget >= 0) {
     current = matterTarget;
   } else if (match && poems.some((poem) => poem.id === match[1])) {

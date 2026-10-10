@@ -2,8 +2,8 @@
 window.POEMS = [
   {
     id: "jiaolong", page: 1,
-    image: "./images/jiaolong.png",
-    imageAlt: "淡墨遠山間江流匯入海面，月色初升，一道若隱若現的蛟龍影子穿過水霧，畫面一隅有疏梅枝。",
+    image: "./images/jiaolong.svg?v=art-10",
+    imageAlt: "淡月與遠山隱在江霧之中，幾道水脈於留白間緩緩相合，舒展向遼闊江海。",
     titles: { zh: "《蛟龍》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
     verses: {
       zh: "遼河水，哺我初心故土濃；\n東江水，蘭馨又綻莞城東；\n香江水，紫荊園裡我從容；\n海之融，百川終入大洋中；\n海之翱，蔚藍圖卷屬蛟龍。",
@@ -15,8 +15,8 @@ window.POEMS = [
   },
   {
     id: "mid-autumn", page: 5,
-    image: "./images/mid-autumn.png",
-    imageAlt: "窗外秋月映著遠山，屋內家人圍桌團聚，桌上擺著切開的蓮蓉月餅。",
+    image: "./images/mid-autumn.svg?v=art-10",
+    imageAlt: "疏梅枝影斜過秋月，遠山映在水面，幾縷淡金色光影留住團圓的暖意。",
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
     verses: {
       zh: "秋月凝光寒，\n蓮蓉掌中暖。\n窗外風雖冽，\n闔家笑語歡。",
@@ -27,8 +27,8 @@ window.POEMS = [
   },
   {
     id: "double-fifth", page: 9,
-    image: "./images/double-fifth.png",
-    imageAlt: "薄霧籠罩江面與遠山，遠處有一葉龍舟，近岸擺著粽子和艾草，白鶴掠過天空。",
+    image: "./images/double-fifth.svg?v=art-10",
+    imageAlt: "艾葉疏疏映在江岸，薄霧與淡金水痕勾出端午時節江面的清寂。",
     titles: { zh: "《話端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
     verses: {
       zh: "五五重午歲又重，\n青箬裹粽意正濃。\n曹娥子胥悲歌起，\n漁樵笠下泣無窮。\n\n三江哀咽東逝水，\n離騷天問傳千歲。\n祭罷魂隨駕鶴歸，\n龍舟艾香驅邪祟。",
