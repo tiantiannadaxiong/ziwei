@@ -10,8 +10,8 @@
   const ambientAudio = document.querySelector("#ambient-audio");
   const musicToggle = document.querySelector("#music-toggle");
   const mobileViewport = window.matchMedia("(max-width: 759px)");
-  const languageNames = { zh: "中文", en: "English", fr: "Français" };
-  const languageTags = { zh: "中文", en: "EN", fr: "FR" };
+  const languageNames = { zh: "繁體中文", en: "English", fr: "Français" };
+  const languageTags = { zh: "繁中", en: "EN", fr: "FR" };
   const sequence = [{ type: "cover" }, { type: "cover-art" }];
 
   matter.front.forEach((item) => sequence.push({ type: "matter", item }));
@@ -30,8 +30,8 @@
     const playing = !ambientAudio.paused && !ambientAudio.ended;
     musicToggle.hidden = !mobileViewport.matches;
     musicToggle.setAttribute("aria-pressed", String(playing));
-    musicToggle.setAttribute("aria-label", playing ? "暂停背景音乐" : "播放背景音乐");
-    musicToggle.title = playing ? "暂停背景音乐" : "播放背景音乐";
+    musicToggle.setAttribute("aria-label", playing ? "暫停背景音樂" : "播放背景音樂");
+    musicToggle.title = playing ? "暫停背景音樂" : "播放背景音樂";
     musicToggle.firstElementChild.textContent = playing ? "♫" : "♪";
   }
 
@@ -84,7 +84,7 @@
     page.replaceChildren();
     const coverInner = document.createElement("div");
     coverInner.className = "cover-inner";
-    appendText("p", "cover-kicker", "三语诗集 · A TRILINGUAL COLLECTION", coverInner);
+    appendText("p", "cover-kicker", "三語詩集 · A TRILINGUAL COLLECTION", coverInner);
     appendText("h1", "cover-title", "暗香集", coverInner);
     appendText("p", "cover-english", "Whispers of Hidden Fragrance", coverInner);
     appendText("p", "cover-french", "Parfums secrets", coverInner).lang = "fr";
@@ -107,7 +107,7 @@
     const coverArt = document.createElement("img");
     coverArt.className = "cover-art";
     coverArt.src = "./images/cover.png?v=2";
-    coverArt.alt = "月色下的梅枝、远山与水纹水墨画";
+    coverArt.alt = "月色下的梅枝、遠山與水紋水墨畫";
     coverArt.decoding = "async";
     coverArt.loading = "eager";
     coverInner.append(coverArt);
@@ -122,17 +122,17 @@
     page.replaceChildren();
     const header = document.createElement("div");
     header.className = "page-running-head";
-    appendText("span", "page-language", languageNames[language], header).lang = language === "zh" ? "zh-Hans" : language;
+    appendText("span", "page-language", languageNames[language], header).lang = language === "zh" ? "zh-Hant" : language;
     appendText("span", "page-print-folio", String(poem.page + ["zh", "en", "fr"].indexOf(language)).padStart(2, "0"), header);
     page.append(header);
     const content = document.createElement("div");
     content.className = "poem-content";
-    appendText("h1", "poem-title", poem.titles[language], content).lang = language === "zh" ? "zh-Hans" : language;
+    appendText("h1", "poem-title", poem.titles[language], content).lang = language === "zh" ? "zh-Hant" : language;
     const rule = document.createElement("div");
     rule.className = "title-rule";
     rule.setAttribute("aria-hidden", "true");
     content.append(rule);
-    appendText("p", "poem-body", poem.verses[language], content).lang = language === "zh" ? "zh-Hans" : language;
+    appendText("p", "poem-body", poem.verses[language], content).lang = language === "zh" ? "zh-Hant" : language;
     if (language === "zh" && poem.meta) appendText("p", "poem-meta", poem.meta, content);
     if (language === "zh" && poem.note) {
       const annotation = document.createElement("section");
@@ -140,24 +140,24 @@
       annotation.id = `notes-${poem.id}`;
       const annotationHeader = document.createElement("div");
       annotationHeader.className = "annotation-header";
-      const annotationTitle = appendText("h2", "annotation-title", "中文注释", annotationHeader);
+      const annotationTitle = appendText("h2", "annotation-title", "中文註釋", annotationHeader);
       annotationTitle.id = `${annotation.id}-title`;
-      annotationTitle.lang = "zh-Hans";
+      annotationTitle.lang = "zh-Hant";
       annotation.setAttribute("aria-labelledby", annotationTitle.id);
       appendText("span", "annotation-folio", String(poem.page + 3).padStart(2, "0"), annotationHeader);
       annotation.append(annotationHeader);
-      appendText("p", "annotation-text", poem.note, annotation).lang = "zh-Hans";
+      appendText("p", "annotation-text", poem.note, annotation).lang = "zh-Hant";
       content.append(annotation);
     }
     page.append(content);
     const languageNav = document.createElement("nav");
     languageNav.className = "page-languages";
-    languageNav.setAttribute("aria-label", "同一首诗的其他语言版本");
+    languageNav.setAttribute("aria-label", "同一首詩的其他語言版本");
     ["zh", "en", "fr"].forEach((code) => {
       const button = document.createElement("button");
       button.type = "button";
       button.textContent = languageTags[code];
-      button.lang = code === "zh" ? "zh-Hans" : code;
+      button.lang = code === "zh" ? "zh-Hant" : code;
       button.setAttribute("aria-label", `${languageNames[code]}：${poem.titles[code]}`);
       button.setAttribute("aria-current", String(code === language));
       button.addEventListener("click", () => goToPoem(poem.id, code));
@@ -172,7 +172,7 @@
     page.replaceChildren();
     const header = document.createElement("div");
     header.className = "page-running-head illustration-heading";
-    appendText("span", "page-language", "插画", header).lang = "zh-Hans";
+    appendText("span", "page-language", "插畫", header).lang = "zh-Hant";
     appendText("span", "illustration-mark", "ILLUSTRATION", header);
     page.append(header);
 
@@ -186,7 +186,7 @@
     image.loading = "eager";
     figure.append(image);
     appendText("p", "illustration-epigraph", poem.titles.en, figure).lang = "en";
-    appendText("figcaption", "illustration-caption", poem.titles.zh, figure).lang = "zh-Hans";
+    appendText("figcaption", "illustration-caption", poem.titles.zh, figure).lang = "zh-Hant";
     page.append(figure);
   }
 
@@ -196,7 +196,7 @@
     if (item.folio) {
       const header = document.createElement("div");
       header.className = "page-running-head";
-      appendText("span", "page-language", item.label || "", header).lang = "zh-Hans";
+      appendText("span", "page-language", item.label || "", header).lang = "zh-Hant";
       appendText("span", "page-print-folio", item.folio, header);
       page.append(header);
     }
@@ -207,13 +207,13 @@
       mark.className = "matter-mark";
       mark.setAttribute("aria-hidden", "true");
       content.append(mark);
-      appendText("h1", "matter-title", item.label, content).lang = "zh-Hans";
+      appendText("h1", "matter-title", item.label, content).lang = "zh-Hant";
       const rule = document.createElement("div");
       rule.className = "matter-rule";
       rule.setAttribute("aria-hidden", "true");
       content.append(rule);
     }
-    appendText("p", "matter-text", item.body, content).lang = "zh-Hans";
+    appendText("p", "matter-text", item.body, content).lang = "zh-Hant";
     page.append(content);
   }
 
@@ -235,10 +235,10 @@
 
     const onCover = current === 0;
     progress.textContent = onCover ? "封面" : `${String(current).padStart(2, "0")} / ${String(sequence.length - 1).padStart(2, "0")}`;
-    hint.textContent = onCover ? "左右滑动，开始阅读" : "左右滑动翻页";
+    hint.textContent = onCover ? "左右滑動，開始閱讀" : "左右滑動翻頁";
     previous.disabled = onCover;
     next.disabled = current === sequence.length - 1;
-    document.documentElement.lang = item.language === "en" || item.language === "fr" ? item.language : "zh-Hans";
+    document.documentElement.lang = item.language === "en" || item.language === "fr" ? item.language : "zh-Hant";
     const poem = item.poem;
     if (item.type === "cover") history.replaceState(null, "", "#cover");
     else if (item.type === "cover-art") history.replaceState(null, "", "#cover-art");
@@ -277,12 +277,12 @@
   const matterList = document.querySelector("#matter-list");
   [
     { type: "cover", label: "文字封面" },
-    { type: "cover-art", label: "图像封面" }
+    { type: "cover-art", label: "圖像封面" }
   ].forEach(({ type, label }) => {
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = label;
-    button.lang = "zh-Hans";
+    button.lang = "zh-Hant";
     button.addEventListener("click", () => showPage(sequence.findIndex((item) => item.type === type)));
     matterList.append(button);
   });
@@ -291,7 +291,7 @@
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = entry.nav || entry.label;
-    button.lang = "zh-Hans";
+    button.lang = "zh-Hant";
     button.addEventListener("click", () => goToMatter(entry.id));
     matterList.append(button);
   });
@@ -308,7 +308,7 @@
       const button = document.createElement("button");
       button.type = "button";
       button.textContent = languageNames[language];
-      button.lang = language === "zh" ? "zh-Hans" : language;
+      button.lang = language === "zh" ? "zh-Hant" : language;
       button.addEventListener("click", () => goToPoem(poem.id, language));
       links.append(button);
     });

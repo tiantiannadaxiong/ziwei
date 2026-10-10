@@ -3,40 +3,40 @@ window.POEMS = [
   {
     id: "jiaolong", page: 1,
     image: "./images/jiaolong.png",
-    imageAlt: "淡墨远山间江流汇入海面，月色初升，一道若隐若现的蛟龙影子穿过水雾，画面一隅有疏梅枝。",
-    titles: { zh: "《蛟龙》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
+    imageAlt: "淡墨遠山間江流匯入海面，月色初升，一道若隱若現的蛟龍影子穿過水霧，畫面一隅有疏梅枝。",
+    titles: { zh: "《蛟龍》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
     verses: {
-      zh: "辽河水，哺我初心故土浓；\n东江水，兰馨又绽莞城东；\n香江水，紫荆园里我从容；\n海之融，百川终入大洋中；\n海之翱，蔚蓝图卷属蛟龙。",
+      zh: "遼河水，哺我初心故土濃；\n東江水，蘭馨又綻莞城東；\n香江水，紫荊園裡我從容；\n海之融，百川終入大洋中；\n海之翱，蔚藍圖卷屬蛟龍。",
       en: "River Liao, you nourished my love of home;\nAlong Dongjiang, white magnolias bloom anew in Dongguan;\nAlong Xiangjiang, among the bauhinias, I wander at ease;\nA hundred rivers join and flow into the open sea;\nAcross the boundless blue, the dragon takes flight.",
       fr: "Fleuve Liao, tu as nourri en moi l'amour du pays natal ;\nAu bord du Dongjiang, les magnolias blancs refleurissent à Dongguan ;\nLe long du Xiangjiang, je flâne en paix parmi les bauhinias ;\nCent fleuves se rejoignent et se jettent dans la mer ;\nDans l'immense azur, le dragon prend son essor."
     },
-    meta: "2018年10月　写于香港大埔宝湖",
-    note: "白兰花是东莞市花，紫荆花象征香港。东江流经东莞，是东莞的母亲河；战功赫赫的“东江支队”也因这条母亲河而得名。“香江”是香港的别称。一种说法认为，香港原有一条水质清甜的小溪，英国人登岸后，开始以“香江”称呼这一带天然海湾。另有说法认为，“香江”之名源于东莞一种有香味的莞草；莞草经香港口岸运往海外，因此得名。"
+    meta: "2018年10月　寫於香港大埔寶湖",
+    note: "白蘭花是東莞市花，紫荊花象徵香港。東江流經東莞，是東莞的母親河；戰功赫赫的「東江支隊」也因這條母親河而得名。「香江」是香港的別稱。一種說法認為，香港原有一條水質清甜的小溪，英國人登岸後，開始以「香江」稱呼這一帶天然海灣。另有說法認為，「香江」之名源於東莞一種有香味的莞草；莞草經香港口岸運往海外，因此得名。"
   },
   {
     id: "mid-autumn", page: 5,
     image: "./images/mid-autumn.png",
-    imageAlt: "窗外秋月映着远山，屋内家人围桌团聚，桌上摆着切开的莲蓉月饼。",
+    imageAlt: "窗外秋月映著遠山，屋內家人圍桌團聚，桌上擺著切開的蓮蓉月餅。",
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
     verses: {
-      zh: "秋月凝光寒，\n莲蓉掌中暖。\n窗外风虽冽，\n阖家笑语欢。",
+      zh: "秋月凝光寒，\n蓮蓉掌中暖。\n窗外風雖冽，\n闔家笑語歡。",
       en: "The autumn moon shines, clear and cold;\nA lotus-paste mooncake warms my hands.\nThough cold winds blow beyond the window,\nOur family's laughter fills the room.",
       fr: "La lune d'automne luit, froide et claire ;\nUn gâteau de lune à la pâte de lotus réchauffe mes mains.\nDehors, le vent d'automne mord les joues ;\nDedans, les rires des miens emplissent la maison."
     },
-    note: "中秋时节，人们仰望星空中的秋月，品尝手中的月饼，心中暖意融融。渐入深秋，窗外秋风瑟瑟，却挡不住阖家团圆的欢声笑语。"
+    note: "中秋時節，人們仰望星空中的秋月，品嚐手中的月餅，心中暖意融融。漸入深秋，窗外秋風瑟瑟，卻擋不住闔家團圓的歡聲笑語。"
   },
   {
     id: "double-fifth", page: 9,
     image: "./images/double-fifth.png",
-    imageAlt: "薄雾笼罩江面与远山，远处有一叶龙舟，近岸摆着粽子和艾草，白鹤掠过天空。",
-    titles: { zh: "《话端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
+    imageAlt: "薄霧籠罩江面與遠山，遠處有一葉龍舟，近岸擺著粽子和艾草，白鶴掠過天空。",
+    titles: { zh: "《話端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
     verses: {
-      zh: "五五重午岁又重，\n青箬裹粽意正浓。\n曹娥子胥悲歌起，\n渔樵笠下泣无穷。\n\n三江哀咽东逝水，\n离骚天问传千岁。\n祭罢魂随驾鹤归，\n龙舟艾香驱邪祟。",
+      zh: "五五重午歲又重，\n青箬裹粽意正濃。\n曹娥子胥悲歌起，\n漁樵笠下泣無窮。\n\n三江哀咽東逝水，\n離騷天問傳千歲。\n祭罷魂隨駕鶴歸，\n龍舟艾香驅邪祟。",
       en: "The Double Fifth comes round again;\nGreen leaves enfold the fragrant rice dumplings.\nSongs of grief for Cao E and Wu Zixu arise;\nBeneath their hats, fishers and woodcutters weep.\n\nThree rivers mourn as their waters flow east;\nLi Sao and Tianwen echo through the ages.\nThe rites are done; the souls ride home on cranes;\nDragon boats race; mugwort wards off evil spirits.",
       fr: "La fête du Double Cinq revient chaque année ;\nLe riz gluant embaume, enveloppé de feuilles vertes.\nLes chants de deuil pour Cao E et Wu Zixu s'élèvent ;\nSous leurs chapeaux, pêcheurs et bûcherons pleurent sans fin.\n\nTrois fleuves se lamentent et roulent vers l'est ;\nLi Sao et Tianwen résonnent à travers les siècles.\nLe rite achevé, les âmes rentrent, portées par les grues ;\nLes bateaux-dragons s'élancent ; l'armoise chasse les mauvais esprits."
     },
-    meta: "2018年6月18日　写于香港大埔宝湖",
-    note: "五月初五，端午节又到了。端午节又称五五节、重午节、端阳节，流传着纪念屈原、曹娥、伍子胥的不同传说。每逢此日，江水深处仿佛又响起悲切的歌声，渔樵斗笠下似有低低的哭声。\n\n诗中的“三江”指汨罗江、曹娥江和钱塘江，分别与三位逝者的传说相关。《离骚》《天问》是屈原的代表作，也是流传千古的名篇。端午时节，人们以香粽祭祀先人，赛龙舟、挂艾草，寄托哀思，祈愿逝者安息、天下太平。"
+    meta: "2018年6月18日　寫於香港大埔寶湖",
+    note: "五月初五，端午節又到了。端午節又稱五五節、重午節、端陽節，流傳著紀念屈原、曹娥、伍子胥的不同傳說。每逢此日，江水深處彷彿又響起悲切的歌聲，漁樵斗笠下似有低低的哭聲。\n\n詩中的「三江」指汨羅江、曹娥江和錢塘江，分別與三位逝者的傳說相關。《離騷》《天問》是屈原的代表作，也是流傳千古的名篇。端午時節，人們以香粽祭祀先人，賽龍舟、掛艾草，寄託哀思，祈願逝者安息、天下太平。"
   }
 ];
 
@@ -45,30 +45,30 @@ window.POEMS = [
 window.MATTER = {
   front: [
     {
-      id: "colophon", nav: "版权",
-      body: "© 2026 紫薇。保留所有权利。\n2026 年初版（暂定）\n出版者：作者自印（暂定）\nISBN：待申请"
+      id: "colophon", nav: "版權",
+      body: "© 2026 紫薇。保留所有權利。\n2026 年初版（暫定）\n出版者：作者自印（暫定）\nISBN：待申請"
     },
     {
-      id: "dedication", folio: "iii", label: "献词",
-      body: "献给故土与远方，献给所有在流转岁月中仍愿守护初心的人。"
+      id: "dedication", folio: "iii", label: "獻詞",
+      body: "獻給故土與遠方，獻給所有在流轉歲月中仍願守護初心的人。"
     },
     {
-      id: "epigraph", folio: "iv", label: "题记",
-      body: "水有来处，香有归处。"
+      id: "epigraph", folio: "iv", label: "題記",
+      body: "水有來處，香有歸處。"
     },
     {
       id: "foreword", folio: "v", label: "前言",
-      body: "诗从水土与记忆中生长，也在不同语言间找到回声。本书由一首写水、故土与远方的诗开始，愿它在不同语言的节奏里，仍保有同一股眷恋。"
+      body: "詩從水土與記憶中生長，也在不同語言間找到回聲。本書由一首寫水、故土與遠方的詩開始，願它在不同語言的節奏裡，仍保有同一股眷戀。"
     }
   ],
   back: [
     {
-      id: "afterword", folio: "15", label: "后记",
-      body: "愿这些诗句如水入海，也愿每一缕未曾说尽的幽香，都能抵达懂得它的人心中。"
+      id: "afterword", folio: "15", label: "後記",
+      body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "16", label: "作者简介",
-      body: "紫薇以诗记录水土、记忆与心中未散的幽香。《暗香集》以中文、英文和法文呈现诗作。"
+      id: "about", folio: "16", label: "作者簡介",
+      body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]
 };
