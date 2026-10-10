@@ -70,7 +70,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { width: 100%; min-width: 320px; min-height: 100%; margin: 0; }
+html, body { width: 100%; min-width: 320px; min-height: 100%; margin: 0; touch-action: manipulation; }
 html { background: var(--paper); }
 body {
   min-height: 100svh;
@@ -94,7 +94,7 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .music-toggle[hidden] { display: none; }
 .music-toggle[aria-pressed="true"] { border-color: #c8796d99; background: #e9b6a344; color: #a54840; }
 .reading-progress { justify-self: end; min-width: 45px; text-align: right; color: #728278; font: 12px var(--latin); letter-spacing: .04em; }
-.reading-stage { position: relative; flex: 1 1 auto; min-height: 0; display: grid; place-items: center; padding: 14px 0; touch-action: pan-y; }
+.reading-stage { position: relative; flex: 1 1 auto; min-height: 0; display: grid; place-items: center; padding: 14px 0; touch-action: pan-y pinch-zoom; }
 .reading-stage::before { position: absolute; inset: 9% 7% 7%; border-radius: 50%; background: radial-gradient(ellipse, #e6cfa44a 0, #e6cfa400 68%); content: ""; pointer-events: none; }
 .book-page { position: relative; z-index: 1; width: min(100%, 680px); height: 100%; max-height: 820px; overflow: auto; display: flex; flex-direction: column; border: 1px solid #d7d2c4; border-radius: 2px; background: var(--page); background-image: radial-gradient(ellipse at 95% 4%, #efd9c43d, transparent 34%), linear-gradient(90deg, #f0eee5 0, #fffdf7 2.5%, #fffdf7 100%); box-shadow: 0 24px 72px #53685c30, 0 3px 10px #53685c20; scrollbar-width: thin; scrollbar-color: #d7d3c7 transparent; }
 .book-page::before { position: absolute; z-index: 1; inset: 0 auto 0 0; width: 9px; background: linear-gradient(90deg, #ded9cb, #f5f2e9 76%, #fffdf7); content: ""; pointer-events: none; }
