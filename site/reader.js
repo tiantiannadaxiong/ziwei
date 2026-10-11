@@ -169,7 +169,6 @@
     page.replaceChildren();
     const header = document.createElement("div");
     header.className = "page-running-head illustration-heading";
-    appendText("span", "page-language", "暗香集", header).lang = "zh-Hant";
     appendText("span", "illustration-mark", "ILLUSTRATION", header);
     page.append(header);
 
@@ -190,8 +189,8 @@
     image.loading = "eager";
     imageFrame.append(image);
     if (!poem.artworkHasSeal) {
-      const seal = appendText("span", "illustration-seal", "紫薇", imageFrame);
-      seal.setAttribute("aria-label", "作者紫薇");
+      const seal = appendText("span", "illustration-seal", "暗香集", imageFrame);
+      seal.setAttribute("aria-label", "暗香集印");
     }
     artwork.append(imageFrame);
     figure.append(artwork);
