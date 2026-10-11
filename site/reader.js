@@ -190,7 +190,7 @@
     imageFrame.append(image);
     if (!poem.artworkHasSeal) {
       const seal = appendText("span", "illustration-seal", "暗香集", imageFrame);
-      seal.setAttribute("aria-label", "暗香集印");
+      seal.setAttribute("aria-label", "暗香集小篆印");
     }
     artwork.append(imageFrame);
     figure.append(artwork);
@@ -331,6 +331,11 @@
     if (event.key === "Escape" && dialog.open) dialog.close();
   });
   const stage = document.querySelector("#reading");
+  // Keep the book gesture model consistent on Safari/iOS: single-finger swipes
+  // turn pages, while browser double-tap and pinch zoom remain disabled.
+  ["gesturestart", "gesturechange", "gestureend"].forEach((type) => {
+    document.addEventListener(type, (event) => event.preventDefault(), { passive: false });
+  });
   const activeTouchPointers = new Set();
   stage.addEventListener("pointerdown", (event) => {
     if (event.pointerType === "touch") {
