@@ -169,7 +169,7 @@
     page.replaceChildren();
     const header = document.createElement("div");
     header.className = "page-running-head illustration-heading";
-    appendText("span", "illustration-mark", "ILLUSTRATION", header);
+    appendText("span", "illustration-mark", "插圖", header);
     page.append(header);
 
     const title = appendText("h1", "illustration-title", poem.titles.zh);

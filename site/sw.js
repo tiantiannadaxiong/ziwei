@@ -5,7 +5,7 @@
  * reader an 8 MB revalidation of the poetry face on every visit). Styles,
  * scripts and pages stay network-first, so a new edition always arrives; the
  * cache is only the offline fallback. Bump CACHE when the shell changes. */
-const CACHE = "anxiangji-v32";
+const CACHE = "anxiangji-v33";
 const SHELL = [
   "./",
   "./index.html",
