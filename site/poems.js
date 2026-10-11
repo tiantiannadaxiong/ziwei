@@ -37,6 +37,16 @@ window.POEMS = [
     },
     meta: "2018年6月18日　寫於香港大埔寶湖",
     note: "五月初五，端午節又到了。端午節又稱五五節、重午節、端陽節，流傳著紀念屈原、曹娥、伍子胥的不同傳說。每逢此日，江水深處彷彿又響起悲切的歌聲，漁樵斗笠下似有低低的哭聲。\n\n詩中的「三江」指汨羅江、曹娥江和錢塘江，分別與三位逝者的傳說相關。《離騷》《天問》是屈原的代表作，也是流傳千古的名篇。端午時節，人們以香粽祭祀先人，賽龍舟、掛艾草，寄託哀思，祈願逝者安息、天下太平。"
+  },
+  {
+    id: "mother-son", page: 13,
+    titles: { zh: "《母子情》", en: "Mother and Son", fr: "Mère et fils" },
+    verses: {
+      zh: "端陽翌日偉兒生，\n母子相攜歲月悠。\n猶憶蹣跚頑稚子，\n天涯遠遊母心憂。\n母念兒兮兒念母，\n鶴髮漸添暮歲愁。\n他年衣錦還鄉笑，\n寸草心酬春暉厚。",
+      en: "The day past Dragon Boat, my Wei was born;\nTogether we walked the years, from dusk to morn.\nA wobbling, wilful child, so small and free,\nNow roams the world, and worry stays with me.\nMother thinks of son, and son of mother dear;\nMy hair turns white, and age and sorrow near.\nOne day he’ll come home proud in splendid dress,\nAnd, like grass to spring, repay my tenderness.",
+      fr: "Le lendemain de la fête des Dragons, mon Wei vit le jour,\nEt nous avons suivi les ans, côte à côte, avec amour.\nUn enfant malicieux, chancelant à chaque pas,\nVoyage au loin, et mon souci le suit là-bas.\nJe pense à lui, il pense à moi, sa mère chère;\nMes cheveux ont blanchi, la vieillesse est amère.\nUn jour il reviendra, fier, souriant, tout de soie,\nRendre, telle l’herbe au printemps, la douceur qu’il reçoit."
+    },
+    meta: "2017.05.31 於大埔寶湖"
   }
 ];
 
@@ -63,11 +73,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "15", label: "後記",
+      id: "afterword", folio: "16", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "16", label: "作者簡介",
+      id: "about", folio: "17", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]
