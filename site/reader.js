@@ -180,15 +180,20 @@
     figure.className = "illustration-figure";
     const artwork = document.createElement("div");
     artwork.className = "illustration-artwork";
+    const imageFrame = document.createElement("div");
+    imageFrame.className = "illustration-frame";
     const image = document.createElement("img");
     image.className = "illustration-art";
     image.src = poem.image;
     image.alt = poem.imageAlt || poem.titles.zh;
     image.decoding = "async";
     image.loading = "eager";
-    artwork.append(image);
-    const seal = appendText("span", "illustration-seal", "紫薇", artwork);
-    seal.setAttribute("aria-label", "作者紫薇");
+    imageFrame.append(image);
+    if (!poem.artworkHasSeal) {
+      const seal = appendText("span", "illustration-seal", "紫薇", imageFrame);
+      seal.setAttribute("aria-label", "作者紫薇");
+    }
+    artwork.append(imageFrame);
     figure.append(artwork);
     appendText("p", "illustration-epigraph", poem.titles.en, figure).lang = "en";
     page.append(figure);

@@ -4,6 +4,7 @@ window.POEMS = [
     id: "jiaolong", page: 1,
     image: "./images/jiaolong.svg?v=art-11",
     imageAlt: "淡月與遠山隱在江霧之中，幾道水脈於留白間緩緩相合，舒展向遼闊江海。",
+    artworkHasSeal: true,
     titles: { zh: "《蛟龍》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
     verses: {
       zh: "遼河水，哺我初心故土濃；\n東江水，蘭馨又綻莞城東；\n香江水，紫荊園裡我從容；\n海之融，百川終入大洋中；\n海之翱，蔚藍圖卷屬蛟龍。",
@@ -17,6 +18,7 @@ window.POEMS = [
     id: "mid-autumn", page: 5,
     image: "./images/mid-autumn.svg?v=art-11",
     imageAlt: "疏梅枝影斜過秋月，遠山映在水面，幾縷淡金色光影留住團圓的暖意。",
+    artworkHasSeal: true,
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
     verses: {
       zh: "秋月凝光寒，\n蓮蓉掌中暖。\n窗外風雖冽，\n闔家笑語歡。",
@@ -29,6 +31,7 @@ window.POEMS = [
     id: "double-fifth", page: 9,
     image: "./images/double-fifth.svg?v=art-11",
     imageAlt: "艾葉疏疏映在江岸，薄霧與淡金水痕勾出端午時節江面的清寂。",
+    artworkHasSeal: true,
     titles: { zh: "《話端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
     verses: {
       zh: "五五重午歲又重，\n青箬裹粽意正濃。\n曹娥子胥悲歌起，\n漁樵笠下泣無窮。\n\n三江哀咽東逝水，\n離騷天問傳千歲。\n祭罷魂隨駕鶴歸，\n龍舟艾香驅邪祟。",
@@ -160,6 +163,28 @@ window.POEMS = [
       en: "Deep autumn at Victoria Harbour, the west wind chases fast;\nGreen waves roll and billow, white sands hold footprints that last.\nWaves beat the warm cliffs, fish glide through shallows like glass;\nAcross both shores, tall towers stand like forests in mass.\nA hundred streams push waves and onward steer;\nTai Mo Shan soars high, Lion Rock's spirit clear.\nHardworking Hongkongers, diligent and strong,\nWill see their banners wave again, and sing their song!",
       fr: "Au port, plein automne, le vent d'ouest chasse et passe,\nLes vagues roulent vertes, le sable blanc garde sa trace.\nLes flots frappent la falaise tiède, les poissons filent en eau claire;\nDe part et d'autre, les tours se dressent en forêt, altières.\nCent ruisseaux, en fleuve, poussent les flots sans trêve;\nLe Tai Mo Shan se dresse, l'esprit de Lion Rock s'en élève.\nPeuple laborieux, vos bannières\nFlotteront de nouveau dans la lumière !"
     }
+  },
+  {
+    id: "yuanxi-stroll", page: 40,
+    image: "./images/yuanxi-stroll.svg?v=art-15",
+    imageAlt: "元宵夜獨行長街，燈火漸疏，遠處燈下有佳人流連，行人在時光流轉中安靜地自賞。",
+    masthead: {
+      zh: "紫薇·暗香集",
+      en: "Ziwei · Hidden Fragrance Collection",
+      fr: "Ziwei · Recueil de parfums discrets"
+    },
+    titles: { zh: "《元夕逛街》", en: "A Stroll on Lantern Night", fr: "Promenade de la fête des Lanternes" },
+    verses: {
+      zh: "獨行香街覓舊痕，\n燈火闌珊駐佳人。\n忽覺流年事已遷，\n孤芳自賞亦溫存。",
+      en: "Alone I walk the fragrant street to find old trace,\nWhere lanterns dim, a lovely one lingers in that place.\nI feel the years have fled, the scene has changed its face;\nA lone bloom, self-admired, still finds a tender grace.",
+      fr: "Seule dans la rue parfumée, je cherche les traces d'autrefois,\nLà où les lanternes pâlissent, une belle s'attarde, je la vois.\nSoudain, je sens que les ans ont fui, tout a changé;\nFleur solitaire, je m'admire et trouve un doux réconfort, apaisée."
+    },
+    meta: {
+      zh: "2025.2.12 於香港",
+      en: "12 February 2025, Hong Kong",
+      fr: "Écrit à Hong Kong, le 12 février 2025"
+    },
+    note: "元宵佳節，獨自漫步街頭，尋覓歲月留下的依稀印跡。燈火稀疏處，佳人流連忘返。忽覺時光飛逝，已是時過境遷，唯有自賞自憐，聊得一份慰藉。"
   }
 ];
 
@@ -186,11 +211,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "40", label: "後記",
+      id: "afterword", folio: "44", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "41", label: "作者簡介",
+      id: "about", folio: "45", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]
