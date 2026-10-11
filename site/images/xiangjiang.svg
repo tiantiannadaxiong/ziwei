@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
+  <title id="title">香江</title>
+  <desc id="desc">深秋的維多利亞港，青綠水色在微風裡層層舒展；兩岸樓影、遠山與一縷淡金暮光隱約相連。</desc>
+  <defs>
+    <radialGradient id="xj-glow">
+      <stop stop-color="#efcc85" stop-opacity=".38" />
+      <stop offset=".48" stop-color="#efcc85" stop-opacity=".14" />
+      <stop offset="1" stop-color="#efcc85" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="xj-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#e4e8d8" stop-opacity=".04" />
+      <stop offset="1" stop-color="#c9d8ca" stop-opacity=".18" />
+    </linearGradient>
+    <linearGradient id="xj-ridge" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#91a99a" stop-opacity=".34" />
+      <stop offset="1" stop-color="#aabcae" stop-opacity=".16" />
+    </linearGradient>
+    <linearGradient id="xj-water" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#a9c3b6" stop-opacity=".28" />
+      <stop offset=".58" stop-color="#a9c7bb" stop-opacity=".2" />
+      <stop offset="1" stop-color="#d9e0d0" stop-opacity=".16" />
+    </linearGradient>
+    <linearGradient id="xj-reflection" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#e7c579" stop-opacity=".35" />
+      <stop offset="1" stop-color="#e7c579" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- A pale late-autumn glow rests behind the ridgeline. -->
+  <circle cx="133" cy="53" r="44" fill="url(#xj-glow)" />
+  <circle cx="133" cy="53" r="12" fill="#efe1b2" fill-opacity=".48" />
+  <circle cx="133" cy="53" r="12" fill="none" stroke="#cbb982" stroke-opacity=".34" stroke-width=".55" />
+  <path d="M128 51c2-2 5-2 7 0m-5 5c2 1 4 1 6 0" fill="none" stroke="#b9a879" stroke-opacity=".45" stroke-width=".5" stroke-linecap="round" />
+
+  <!-- Long, almost transparent strokes suggest the west wind. -->
+  <g fill="none" stroke="#829b8d" stroke-linecap="round">
+    <path d="M5 47c18-8 34-10 51-5 12 3 22 4 34 1" stroke-opacity=".3" stroke-width=".85" />
+    <path d="M13 61c16-5 28-5 41-1m13 1c13 3 25 2 38-2" stroke-opacity=".24" stroke-width=".65" />
+    <path d="M28 75c14-3 26-2 37 1m46-6c12-3 22-3 34 1" stroke-opacity=".2" stroke-width=".55" />
+  </g>
+
+  <!-- Far hills and two soft, uneven banks frame the harbor. -->
+  <path d="M0 119c16-8 26-13 39-12 12 1 20 9 31 7 12-2 20-14 31-17 12-4 22 5 34 4 13-1 23-11 36-12 8 0 14 3 20 5v40H0Z" fill="#c2d0c3" fill-opacity=".26" />
+  <path d="M0 125c14-7 24-15 38-14 11 1 18 8 27 7 11-1 20-15 31-19 11-4 19 4 29 4 14 0 24-13 36-14 10-1 19 3 30 8v28H0Z" fill="url(#xj-ridge)" />
+  <path d="M0 125c14-7 24-15 38-14 11 1 18 8 27 7 11-1 20-15 31-19 11-4 19 4 29 4 14 0 24-13 36-14 10-1 19 3 30 8" fill="none" stroke="#789283" stroke-opacity=".46" stroke-width=".7" />
+  <path d="M11 127c17-5 28-7 41-5m57-2c12 2 22 1 32-4m13 0c10-3 19-2 29 2" fill="none" stroke="#e7ecdf" stroke-opacity=".8" stroke-width=".75" stroke-linecap="round" />
+
+  <!-- Quiet clusters of distant towers, softened by sea haze. -->
+  <g fill="#819b8d" fill-opacity=".48">
+    <path d="M13 119v-16h5v16Zm7 0V96h6v23Zm8 0v-13h5v13Zm8 0V89h6v30Zm9 0v-21h5v21Zm7 0V98h7v21Zm10 0v-17h5v17Z" />
+    <path d="M121 119v-15h6v15Zm8 0V94h5v25Zm7 0v-20h7v20Zm9 0V86h5v33Zm7 0v-14h6v14Zm8 0V99h5v20Zm7 0v-18h6v18Z" />
+  </g>
+  <g fill="none" stroke="#829b8d" stroke-opacity=".36" stroke-width=".45">
+    <path d="M24 96v-4m21 27v-20m93-1v-9m21 30v-13" />
+  </g>
+  <g fill="#e4c77e" fill-opacity=".72">
+    <rect x="22" y="102" width="1.2" height="1.4" /><rect x="31" y="110" width="1.2" height="1.4" />
+    <rect x="41" y="94" width="1.2" height="1.4" /><rect x="57" y="105" width="1.2" height="1.4" />
+    <rect x="124" y="110" width="1.2" height="1.4" /><rect x="138" y="100" width="1.2" height="1.4" />
+    <rect x="151" y="92" width="1.2" height="1.4" /><rect x="171" y="105" width="1.2" height="1.4" />
+  </g>
+
+  <!-- A few sandy shallows remain visible beneath the layered water. -->
+  <path d="M0 142c23-6 43-5 62 0 19 5 35 4 51-1 24-8 49-6 78 1v65H0Z" fill="url(#xj-water)" />
+  <path d="M0 147c22-5 40-4 59 1 19 5 38 4 57-2 24-7 48-6 75 1" fill="none" stroke="#779487" stroke-opacity=".5" stroke-width=".72" />
+  <path d="M0 163c19-5 39-5 59 0 20 5 37 5 56 0 25-7 50-6 76 0v46H0Z" fill="#e6e2ce" fill-opacity=".22" />
+  <path d="M0 165c20-5 39-4 58 1 21 5 39 4 57-1 24-7 48-6 75 0" fill="none" stroke="#fbf7ea" stroke-opacity=".9" stroke-width="1.1" />
+  <path d="M9 178c15-3 29-2 42 1m13 1c14 3 28 3 42-1m18-3c16-3 30-3 44 1m11 1c4 0 7 0 11-1" fill="none" stroke="#78968a" stroke-opacity=".4" stroke-width=".75" stroke-linecap="round" />
+  <path d="M16 192c14-2 27-2 39 1m41 1c17 2 31 1 45-2m12-1c9-1 17-.5 26 1" fill="none" stroke="#9fb2a5" stroke-opacity=".42" stroke-width=".65" stroke-linecap="round" />
+  <path d="M105 135h15l16 70h-46Z" fill="url(#xj-reflection)" />
+  <g fill="none" stroke="#e3c276" stroke-linecap="round" stroke-opacity=".75">
+    <path d="M109 151h7m-9 7h11m-13 8h15m-17 9h18m-21 9h23" stroke-width=".9" />
+  </g>
+
+  <!-- Small reed tips and a few quiet fish-like strokes, kept at the margins. -->
+  <g fill="none" stroke="#718f7f" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 204c2-15 5-24 10-31m-5 31c2-11 5-17 10-22m139 21c-2-11-5-18-9-23" stroke-width=".85" />
+    <path d="M24 180q3-5 6 0-3 4-6 0Zm7 7q3-5 6 0-3 4-6 0Zm129-7q3-5 6 0-3 4-6 0Z" fill="#a6bba9" fill-opacity=".46" stroke-opacity=".56" stroke-width=".55" />
+  </g>
+  <g fill="#d9b96d" fill-opacity=".74">
+    <circle cx="25" cy="173" r="1" /><circle cx="31" cy="181" r=".8" /><circle cx="160" cy="181" r=".9" />
+  </g>
+</svg>

@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, viewport-fit=cover">
   <meta name="theme-color" content="#e6eee5">
   <meta name="description" content="《暗香集》——中、英、法三語詩集。">
   <title>暗香集 · Whispers of Hidden Fragrance</title>
@@ -35,9 +35,9 @@
       viewport?.addEventListener("resize", updateHeight, { passive: true });
     })();
   </script>
-  <link rel="preload" href="./fonts/HanWangLiSuMedium-TC.ttf?v=1" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./fonts/HanWangLiSuMedium-TC.ttf?v=1" as="font" type="font/ttf" crossorigin fetchpriority="high">
   <!-- Add the Adobe Fonts Web Project embed code here when the author supplies it. -->
-  <link rel="stylesheet" href="./styles.css?v=ebook-ui-40">
+  <link rel="stylesheet" href="./styles.css?v=ebook-ui-41">
 </head>
 <body>
   <main class="book" id="book" aria-label="《暗香集》電子書">
@@ -73,7 +73,7 @@
 
   <audio id="ambient-audio" src="./audio/1.mp3" loop preload="none"></audio>
 
-  <script src="./poems.js?v=ebook-ui-44"></script>
-  <script src="./reader.js?v=ebook-ui-33" defer></script>
+  <script src="./poems.js?v=ebook-ui-46"></script>
+  <script src="./reader.js?v=ebook-ui-34" defer></script>
 </body>
 </html>

@@ -40,8 +40,8 @@ window.POEMS = [
   },
   {
     id: "mother-son", page: 13,
-    image: "./images/mother-son.svg?v=art-12",
-    imageAlt: "兩岸遠山隔著淡霧相望，一道溫柔的水光把遠行與牽掛連在一起。",
+    image: "./images/mother-son.svg?v=art-14",
+    imageAlt: "一盞燈火留在岸邊的家，遠方的小舟正穿過水面；蘆葦與細浪把母子牽念連在一起。",
     titles: { zh: "《母子情》", en: "Mother and Son", fr: "Mère et fils" },
     verses: {
       zh: "端陽翌日偉兒生，\n母子相攜歲月悠。\n猶憶蹣跚頑稚子，\n天涯遠遊母心憂。\n母念兒兮兒念母，\n鶴髮漸添暮歲愁。\n他年衣錦還鄉笑，\n寸草心酬春暉厚。",
@@ -52,8 +52,8 @@ window.POEMS = [
   },
   {
     id: "autumn-moon", page: 16,
-    image: "./images/autumn-moon.svg?v=art-12",
-    imageAlt: "一輪清秋月映在兩處相望的水面上，幾筆微光把遠方的團圓連起來。",
+    image: "./images/autumn-moon.svg?v=art-14",
+    imageAlt: "香港與巴黎隔海相望，一輪明月和一道淡金色的水上光路將兩岸連在一起。",
     titles: { zh: "《秋月》", en: "Autumn Moon", fr: "Lune d'automne" },
     verses: {
       zh: "皎月灑清寒，\n蓮蓉餅裡言。\n相隔天涯遠，\n共賞月圓歡。",
@@ -68,8 +68,8 @@ window.POEMS = [
   },
   {
     id: "double-ninth-song", page: 19,
-    image: "./images/double-ninth-song.svg?v=art-12",
-    imageAlt: "秋山小徑向高處延伸，淡金菊影與遠去的雁影留住重陽時節。",
+    image: "./images/double-ninth-song.svg?v=art-14",
+    imageAlt: "秋山上的亭子沐浴在暖陽下；紙鳶、雁影與山腳的菊花點出重陽時節。",
     titles: { zh: "《九九歌》(1)", en: "The Double Ninth Song (1)", fr: "Chant du Double Neuf (1)" },
     verses: {
       zh: "九九重陽今又重，\n登高賞菊祭先宗。\n秋風秋水越椒香，\n桂花陳釀醉深巷。\n花糕菊糕五色糕，\n遍插茱萸紙鳶搖。\n辭青吟詩寒雁別，\n祈福癸巳好時節。",
@@ -79,8 +79,8 @@ window.POEMS = [
   },
   {
     id: "farewell-to-green", page: 22,
-    image: "./images/farewell-to-green.svg?v=art-12",
-    imageAlt: "青綠與秋金的葉影沿著流轉的風相接，呈現四季更替與生生不息。",
+    image: "./images/farewell-to-green.svg?v=art-14",
+    imageAlt: "一枝嫩綠新芽從淡金色的落葉間生長，在循環的風中迎向下一季。",
     titles: { zh: "《重陽辭青歌》(2)", en: "Song of Bidding Green Farewell (2)", fr: "Chant des adieux au vert (2)" },
     verses: {
       zh: "春來踏青秋辭青，\n秋染黃葉春萌青。\n四季輪迴光陰逝，\n青出於藍青更青。",
@@ -91,8 +91,8 @@ window.POEMS = [
   },
   {
     id: "cold-clothes-festival", page: 25,
-    image: "./images/cold-clothes-festival.svg?v=art-12",
-    imageAlt: "幽深街巷在薄霜與暮色中收向遠處一點溫暖的微光，煙氣安靜升起。",
+    image: "./images/cold-clothes-festival.svg?v=art-14",
+    imageAlt: "幽深街巷盡頭透出溫暖的門燈，前景的小火與一縷煙氣寄託對先人的思念。",
     titles: { zh: "《寒衣節》", en: "Cold Clothes Festival", fr: "Fête des Habits d'hiver" },
     verses: {
       zh: "秋色漸休霜降中，\n寒衣節至祭先宗。\n深巷煙火燃正旺，\n先人得暖心亦融。",
@@ -108,8 +108,8 @@ window.POEMS = [
   },
   {
     id: "singing-to-myself", page: 29,
-    image: "./images/singing-to-myself.svg?v=art-12",
-    imageAlt: "月色從深巷一路引向遼闊的地中海，銀白細浪在安靜的夜色裡回響。",
+    image: "./images/singing-to-myself.svg?v=art-14",
+    imageAlt: "月光落在寧靜的地中海，金色倒影沿著細浪伸向岸邊獨行的人。",
     titles: { zh: "《自吟》", en: "Singing to Myself", fr: "Chant intime" },
     verses: {
       zh: "月色灑深巷，\n吟詠寄心想。\n漫步遨蒼穹，\n白沙細浪響。",
@@ -125,8 +125,8 @@ window.POEMS = [
   },
   {
     id: "sleeping-lotus", page: 33,
-    image: "./images/sleeping-lotus.svg?v=art-12",
-    imageAlt: "一片青荷輕浮碧水，粉色蓮蕊低垂，蓮房裡的種子安然沉睡。",
+    image: "./images/sleeping-lotus.svg?v=art-14",
+    imageAlt: "粉色蓮花在碧水上盛開，蓮蓬裡的種子安然入睡，荷葉輕浮在旁。",
     masthead: {
       zh: "紫薇·暗香集",
       en: "Ziwei · Hidden Fragrance Collection",
@@ -144,6 +144,22 @@ window.POEMS = [
       fr: "Écrit à Hong Kong, le 9 février 2025"
     },
     note: "青青荷葉浮於湖面，粉色蓮花垂立在綠葉與碧波之上；成熟的蓮子在蓮房中睡意正酣，不覺間已過深秋。"
+  },
+  {
+    id: "xiangjiang", page: 37,
+    image: "./images/xiangjiang.svg?v=art-14",
+    imageAlt: "深秋的維多利亞港由遠山與兩岸樓影環抱，西風掠過碧綠水面，淡金暮光落在波紋間。",
+    masthead: {
+      zh: "紫薇·暗香集",
+      en: "Ziwei · Hidden Fragrance Collection",
+      fr: "Ziwei · Recueil de parfums discrets"
+    },
+    titles: { zh: "《香江》", en: "Xiangjiang (Hong Kong)", fr: "Xiangjiang (Hong Kong)" },
+    verses: {
+      zh: "維港深秋，西風疾鳴。\n碧波翻卷，白沙留影。\n浪拍崖暖，魚游淺清。\n遠眺兩岸，高樓如星。\n百川奔流，推浪前行。\n帽山高聳，獅子精神。\n勤奮港人，旌旗再擎！",
+      en: "Deep autumn at Victoria Harbour, the west wind chases fast;\nGreen waves roll and billow, white sands hold footprints that last.\nWaves beat the warm cliffs, fish glide through shallows like glass;\nAcross both shores, tall towers stand like forests in mass.\nA hundred streams push waves and onward steer;\nTai Mo Shan soars high, Lion Rock's spirit clear.\nHardworking Hongkongers, diligent and strong,\nWill see their banners wave again, and sing their song!",
+      fr: "Au port, plein automne, le vent d'ouest chasse et passe,\nLes vagues roulent vertes, le sable blanc garde sa trace.\nLes flots frappent la falaise tiède, les poissons filent en eau claire;\nDe part et d'autre, les tours se dressent en forêt, altières.\nCent ruisseaux, en fleuve, poussent les flots sans trêve;\nLe Tai Mo Shan se dresse, l'esprit de Lion Rock s'en élève.\nPeuple laborieux, vos bannières\nFlotteront de nouveau dans la lumière !"
+    }
   }
 ];
 
@@ -170,11 +186,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "37", label: "後記",
+      id: "afterword", folio: "40", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "38", label: "作者簡介",
+      id: "about", folio: "41", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]

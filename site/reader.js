@@ -178,13 +178,18 @@
 
     const figure = document.createElement("figure");
     figure.className = "illustration-figure";
+    const artwork = document.createElement("div");
+    artwork.className = "illustration-artwork";
     const image = document.createElement("img");
     image.className = "illustration-art";
     image.src = poem.image;
     image.alt = poem.imageAlt || poem.titles.zh;
     image.decoding = "async";
     image.loading = "eager";
-    figure.append(image);
+    artwork.append(image);
+    const seal = appendText("span", "illustration-seal", "紫薇", artwork);
+    seal.setAttribute("aria-label", "作者紫薇");
+    figure.append(artwork);
     appendText("p", "illustration-epigraph", poem.titles.en, figure).lang = "en";
     page.append(figure);
   }
@@ -322,15 +327,29 @@
     if (event.key === "Escape" && dialog.open) dialog.close();
   });
   const stage = document.querySelector("#reading");
-  stage.addEventListener("pointerdown", (event) => { touchStart = { x: event.clientX, y: event.clientY, id: event.pointerId }; });
+  const activeTouchPointers = new Set();
+  stage.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "touch") {
+      activeTouchPointers.add(event.pointerId);
+      if (activeTouchPointers.size > 1) {
+        touchStart = null;
+        return;
+      }
+    }
+    touchStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
+  });
   stage.addEventListener("pointerup", (event) => {
+    if (event.pointerType === "touch") activeTouchPointers.delete(event.pointerId);
     if (!touchStart || touchStart.id !== event.pointerId) return;
     const dx = event.clientX - touchStart.x;
     const dy = event.clientY - touchStart.y;
     if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.25) turn(dx < 0 ? 1 : -1);
     touchStart = null;
   });
-  stage.addEventListener("pointercancel", () => { touchStart = null; });
+  stage.addEventListener("pointercancel", (event) => {
+    if (event.pointerType === "touch") activeTouchPointers.delete(event.pointerId);
+    touchStart = null;
+  });
 
   const hash = location.hash.slice(1);
   const matterTarget = sequence.findIndex((item) => item.type === "matter" && item.item.id === hash);
@@ -357,22 +376,11 @@
     history.replaceState(null, "", `#${match[1]}-notes`);
   }
 
-  // Copy every declared @font-face into the offline cache. By the time the
-  // worker controls the page these files are already in the HTTP cache, so this
-  // usually moves bytes rather than downloading them again.
-  async function warmFontCache() {
-    const urls = new Set();
-    for (const sheet of document.styleSheets) {
-      let rules;
-      try { rules = sheet.cssRules; } catch { continue; }
-      for (const rule of rules) {
-        if (typeof CSSFontFaceRule !== "function" || !(rule instanceof CSSFontFaceRule)) continue;
-        for (const match of rule.style.src.matchAll(/url\(["']?([^"')]+)["']?\)/g)) {
-          urls.add(new URL(match[1], sheet.href).href);
-        }
-      }
-    }
-    await Promise.all([...urls].map((url) => fetch(url, { cache: "force-cache" }).catch(() => {})));
+  // Cache the Chinese poetry face without making every other book font compete
+  // with it on a first visit. The service worker caches other fonts on demand.
+  async function warmPoetryFont() {
+    const url = new URL("./fonts/HanWangLiSuMedium-TC.ttf?v=1", document.baseURI);
+    await fetch(url, { cache: "force-cache" }).catch(() => {});
   }
 
   // Register the offline shell; failures are fine, the reader works online anyway.
@@ -381,8 +389,8 @@
   // the page is already being served by an active worker.
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
     navigator.serviceWorker.register("./sw.js").catch(() => {});
-    if (navigator.serviceWorker.controller) warmFontCache();
-    else navigator.serviceWorker.addEventListener("controllerchange", () => warmFontCache(), { once: true });
+    if (navigator.serviceWorker.controller) warmPoetryFont();
+    else navigator.serviceWorker.addEventListener("controllerchange", () => warmPoetryFont(), { once: true });
   }
 
   // Mobile PWAs can resume an old document from memory without navigating.

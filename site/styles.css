@@ -22,8 +22,8 @@
 @font-face {
   font-family: "HanWang LiSu";
   src: url("./fonts/HanWangLiSuMedium-TC.ttf?v=1") format("truetype");
-  /* Keep the poem readable on first visit and avoid a late font swap. */
-  font-style: normal; font-weight: 400; font-display: optional;
+  /* Keep the fallback readable, then replace it as soon as this large face arrives. */
+  font-style: normal; font-weight: 400; font-display: swap;
 }
 @font-face {
   font-family: "Poetica Std";
@@ -72,7 +72,7 @@
 * { box-sizing: border-box; }
 :root { --viewport-height: 100vh; }
 @supports (height: 100dvh) { :root { --viewport-height: 100dvh; } }
-html, body { width: 100%; min-width: 320px; height: var(--viewport-height); min-height: 0; margin: 0; touch-action: manipulation; }
+html, body { width: 100%; min-width: 320px; height: var(--viewport-height); min-height: 0; margin: 0; touch-action: pan-x pan-y pinch-zoom; }
 html {
   overflow: hidden;
   overscroll-behavior: none;
@@ -108,7 +108,7 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .music-toggle[hidden] { display: none; }
 .music-toggle[aria-pressed="true"] { border-color: #c8796d99; background: #e9b6a344; color: #a54840; }
 .reading-progress { justify-self: end; min-width: 45px; text-align: right; color: #728278; font: 12px var(--latin); letter-spacing: .04em; }
-.reading-stage { position: relative; flex: 1 1 auto; min-height: 0; display: grid; place-items: center; padding: 14px 0; touch-action: pan-y pinch-zoom; }
+.reading-stage { position: relative; flex: 1 1 auto; min-height: 0; display: grid; place-items: center; padding: 14px 0; touch-action: pan-x pan-y pinch-zoom; }
 .reading-stage::before { position: absolute; inset: 9% 7% 7%; border-radius: 50%; background: radial-gradient(ellipse, #e6cfa44a 0, #e6cfa400 68%); content: ""; pointer-events: none; }
 .book-page { position: relative; z-index: 1; width: min(100%, 680px); height: 100%; max-height: 820px; overflow: auto; display: flex; flex-direction: column; border: 1px solid #d7d2c4; border-radius: 2px; background: var(--page); background-image: radial-gradient(ellipse at 95% 4%, #efd9c43d, transparent 34%), linear-gradient(90deg, #f0eee5 0, #fffdf7 2.5%, #fffdf7 100%); box-shadow: 0 24px 72px #53685c30, 0 3px 10px #53685c20; scrollbar-width: thin; scrollbar-color: #d7d3c7 transparent; }
 .book-page::before { position: absolute; z-index: 1; inset: 0 auto 0 0; width: 9px; background: linear-gradient(90deg, #ded9cb, #f5f2e9 76%, #fffdf7); content: ""; pointer-events: none; }
@@ -160,7 +160,9 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .illustration-mark { color: #708a79; font: 11px var(--latin-label); letter-spacing: .14em; }
 .illustration-title { flex: 0 0 auto; margin: 8px 0 0; color: var(--ink); text-align: center; font: 400 clamp(20px, 3.8vw, 28px)/1.35 var(--cjk-poetry); letter-spacing: .1em; }
 .illustration-figure { flex: 1 1 auto; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; justify-items: center; align-items: center; gap: 5px; margin: 0; padding: 5px 0 2px; }
+.illustration-artwork { position: relative; width: min(100%, 480px); height: 100%; min-height: 0; display: grid; place-items: center; margin: 0 auto; }
 .illustration-art { display: block; width: auto; height: min(54svh, 520px); max-width: 100%; max-height: 100%; object-fit: contain; }
+.illustration-seal { position: absolute; z-index: 1; right: clamp(12px, 5%, 24px); bottom: clamp(10px, 4%, 22px); width: 34px; height: 40px; display: grid; place-items: center; border: 1px solid #a94d44; background: var(--seal); color: #fff8ec; box-shadow: 2px 2px 0 #a94d4466; font: 11px/1.1 "Quan Zi Ku Seal", var(--cjk-support); }
 .illustration-epigraph { margin: 0; color: #7d8178; font: 400 clamp(15px, 3.4vw, 18px)/1.4 var(--latin-epigraph); letter-spacing: .02em; }
 .matter-page { padding: clamp(24px, 6vh, 54px) clamp(28px, 9vw, 82px) 30px; }
 .matter-content { width: min(100%, 500px); margin: auto; padding: 26px 0; }

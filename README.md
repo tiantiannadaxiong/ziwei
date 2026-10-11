@@ -16,12 +16,12 @@
 
 ## 阅读顺序与交互
 
-文字封面 → 版权页 → 献词 → 题记 → 前言 → 各诗（先显示插画；中文原诗后附中文注释；再读英文、法文）→ 后记 → 作者简介，共 47 个阅读页。前后页及诗页页码沿用纸书；新增诗作《母子情》《秋月》为 13–18，《九九歌》(1)、《重阳辞青歌》(2)为 19–24，《寒衣节》为 25–28，《自吟》为 29–32，《睡蓮》为 33–36（中文注释分别占纸本第 28、32、36 页）；插画单独成阅读页，不改变纸本页码；后记、作者简介为 37–38。
+文字封面 → 版权页 → 献词 → 题记 → 前言 → 各诗（先显示插画；中文原诗后附中文注释；再读英文、法文）→ 后记 → 作者简介，共 51 个阅读页。前后页及诗页页码沿用纸书；新增诗作《母子情》《秋月》为 13–18，《九九歌》(1)、《重阳辞青歌》(2)为 19–24，《寒衣节》为 25–28，《自吟》为 29–32，《睡蓮》为 33–36，《香江》为 37–39（中文注释分别占纸本第 28、32、36 页）；插画单独成阅读页，不改变纸本页码；后记、作者简介为 40–41。
 
 翻页支持左右滑动、方向键与底部按钮。顶部「目录」列出文字封面、前后页，以及十首诗的各语种入口。地址栏 hash 可直达任意页：
 
 - `#cover`（文字封面）
-- `#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#jiaolong-image`（十首詩現均有插畫頁；詩作 ID 後加 `-image` 可直達插畫；`cold-clothes-festival-notes`、`singing-to-myself-notes`、`sleeping-lotus-notes` 會定位到中文注釋）；舊的 `#jiaolong-notes` 連結會定位到中文原詩頁的注釋段落。
+- `#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#jiaolong-image`、`#xiangjiang-zh`、`#xiangjiang-en`、`#xiangjiang-fr`、`#xiangjiang-image`（十一首詩現均有插畫頁；詩作 ID 後加 `-image` 可直達插畫；`cold-clothes-festival-notes`、`singing-to-myself-notes`、`sleeping-lotus-notes` 會定位到中文注釋）；舊的 `#jiaolong-notes` 連結會定位到中文原詩頁的注釋段落。
 - `#colophon`、`#dedication`、`#epigraph`、`#foreword`、`#afterword`、`#about`
 
 背景音乐只在窄屏（`max-width: 759px`）自动播放，工具栏有开关。
