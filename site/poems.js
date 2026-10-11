@@ -201,6 +201,28 @@ window.POEMS = [
       en: "Alone by Hong Kong’s waters, maples blaze red,\nGreen autumn waves, a thin strip of sky overhead.\nI look up, look down; heaven and earth now meet,\nAs if I roamed scenic hills in a dream, so sweet.",
       fr: "Seul au bord de Hong Kong, les érables rougeoient,\nEaux vertes, vagues d’automne, un fil de ciel les côtoie.\nJe lève les yeux, les baisse : ciel et terre se confondent,\nComme en rêve je flâne en des monts où la beauté abonde."
     }
+  },
+  {
+    id: "farewell-song", page: 47,
+    image: "./images/farewell-song.svg?v=art-17",
+    imageAlt: "晨光中的層層遠山與香江水色，岸邊長亭下兩位同窗舉杯作別，左上角垂著柳枝。",
+    masthead: {
+      zh: "紫薇·暗香集",
+      en: "Ziwei · Hidden Fragrance Collection",
+      fr: "Ziwei · Recueil de parfums discrets"
+    },
+    titles: { zh: "《離別》", en: "Parting", fr: "Séparation" },
+    verses: {
+      zh: "嶼山外，香江邊，山水碧連天。\n晨曦初照露水殘，朝陽山外山。\n山之崖，地之角，同窗半零落。\n一杯清酒盡餘歡，離別更比相見難。",
+      en: "Beyond Lantau, by Hong Kong's shore,\nHills and waters meet the sky once more.\nDawn breaks pale, the dew fades away,\nHills beyond hills, and the rising day.\nAt mountain's edge, at earth's last end,\nHalf my old classmates scattered, friend by friend.\nOne cup of clear wine, our last bit of cheer;\nParting is harder than meeting, year on year.",
+      fr: "Par-delà Lantau, au bord de la mer,\nMonts et eaux verts rejoignent l'éther.\nL'aube se lève, la rosée se retire,\nMontagne après montagne, le soleil s'étire.\nAu bord des monts, au bout du monde,\nLa moitié des amis de classe se disperse à la ronde.\nUne coupe de vin clair vide la gaieté ;\nSe quitter est plus dur que se retrouver, en vérité."
+    },
+    meta: {
+      zh: "2025.3.17 於香港",
+      en: "Written in Hong Kong, 17 March 2025",
+      fr: "Écrit à Hong Kong, le 17 mars 2025"
+    },
+    note: "大嶼山是香港最大的島嶼，海拔934米。此小詩根據李叔同填詞的歌曲《送別》改編。"
   }
 ];
 
@@ -227,11 +249,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "47", label: "後記",
+      id: "afterword", folio: "51", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "48", label: "作者簡介",
+      id: "about", folio: "52", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]
