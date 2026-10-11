@@ -95,8 +95,6 @@
     artwork.src = "./images/cover-branch.svg?v=cover-art-3";
     artwork.alt = "";
     branch.append(artwork);
-    const branchSeal = appendText("span", "cover-branch-seal", "暗香集", branch);
-    branchSeal.setAttribute("aria-label", "暗香集小篆印");
     coverInner.append(branch);
     const seal = appendText("span", "cover-seal", "紫薇", coverInner);
     seal.setAttribute("aria-label", "作者紫薇");
