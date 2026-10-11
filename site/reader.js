@@ -119,7 +119,13 @@
     rule.setAttribute("aria-hidden", "true");
     content.append(rule);
     appendText("p", "poem-body", poem.verses[language], content).lang = language === "zh" ? "zh-Hant" : language;
-    if (language === "zh" && poem.meta) appendText("p", "poem-meta", poem.meta, content);
+    const metaText = typeof poem.meta === "string"
+      ? (language === "zh" ? poem.meta : "")
+      : poem.meta?.[language];
+    if (metaText) {
+      const meta = appendText("p", "poem-meta", metaText, content);
+      meta.lang = language === "zh" ? "zh-Hant" : language;
+    }
     if (language === "zh" && poem.note) {
       const annotation = document.createElement("section");
       annotation.className = "annotation-section";

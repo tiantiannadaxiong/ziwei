@@ -47,6 +47,20 @@ window.POEMS = [
       fr: "Le lendemain de la fête des Dragons, mon Wei vit le jour,\nEt nous avons suivi les ans, côte à côte, avec amour.\nUn enfant malicieux, chancelant à chaque pas,\nVoyage au loin, et mon souci le suit là-bas.\nJe pense à lui, il pense à moi, sa mère chère;\nMes cheveux ont blanchi, la vieillesse est amère.\nUn jour il reviendra, fier, souriant, tout de soie,\nRendre, telle l’herbe au printemps, la douceur qu’il reçoit."
     },
     meta: "2017.05.31 於大埔寶湖"
+  },
+  {
+    id: "autumn-moon", page: 16,
+    titles: { zh: "《秋月》", en: "Autumn Moon", fr: "Lune d'automne" },
+    verses: {
+      zh: "皎月灑清寒，\n蓮蓉餅裡言。\n相隔天涯遠，\n共賞月圓歡。",
+      en: "Bright moon spills cold and silver light,\nWords lie in lotus cakes tonight.\nThough far apart, at the world's two ends,\nOne shared full moon our joy extends.",
+      fr: "Claire lune, sa froide lueur;\nDans le gâteau au lotus, des mots de douceur.\nSi loin l'un de l'autre aux confins de la terre,\nNous partageons la joie de la lune et sa lumière."
+    },
+    meta: {
+      zh: "2017.10 於大埔寶湖\n香港—巴黎 共賞中秋明月",
+      en: "Hong Kong – Paris, sharing the Mid-Autumn moon",
+      fr: "Hong Kong – Paris, sous la même lune de la mi-automne"
+    }
   }
 ];
 
@@ -73,11 +87,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "16", label: "後記",
+      id: "afterword", folio: "19", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "17", label: "作者簡介",
+      id: "about", folio: "20", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]

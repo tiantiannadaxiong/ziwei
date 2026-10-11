@@ -131,7 +131,7 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .title-rule::after { background: linear-gradient(90deg, var(--rule), transparent); }
 .poem-body { margin: 0; max-width: 100%; color: #343736; white-space: pre-line; font: 400 clamp(19px, 2.5vw, 23px)/2 var(--cjk-poetry); letter-spacing: .04em; }
 .poem-body[lang="en"], .poem-body[lang="fr"] { font: 400 clamp(18px, 2.1vw, 21px)/1.85 var(--latin); letter-spacing: .005em; }
-.poem-meta { margin: 28px 0 0; color: #99978d; font-family: var(--cjk-support); font-size: 11px; }
+.poem-meta { margin: 28px 0 0; color: #99978d; font-family: var(--cjk-support); font-size: 11px; white-space: pre-line; }
 .page-languages { align-self: center; display: flex; justify-content: center; gap: 2px; padding: 3px; border: 1px solid #e2d8c7; border-radius: 999px; background: #f1f5ed; }
 .page-languages button { min-width: 46px; min-height: 34px; padding: 6px 9px; border: 0; border-radius: 999px; background: transparent; color: #838980; font-family: var(--latin-label); font-size: 15px; cursor: pointer; transition: background .2s ease, color .2s ease; }
 .page-languages button[aria-current="true"] { background: #f2dfcf; color: #9b4c43; }
