@@ -185,6 +185,22 @@ window.POEMS = [
       fr: "Écrit à Hong Kong, le 12 février 2025"
     },
     note: "元宵佳節，獨自漫步街頭，尋覓歲月留下的依稀印跡。燈火稀疏處，佳人流連忘返。忽覺時光飛逝，已是時過境遷，唯有自賞自憐，聊得一份慰藉。"
+  },
+  {
+    id: "deep-autumn", page: 44,
+    image: "./images/deep-autumn.svg?v=art-16",
+    imageAlt: "香江岸邊楓林染紅，綠水秋波之上只留一線天光，行人獨立江畔，抬頭俯身之間天地相連，如入夢境。",
+    masthead: {
+      zh: "紫薇·暗香集",
+      en: "Ziwei · Hidden Fragrance Collection",
+      fr: "Ziwei · Recueil de parfums discrets"
+    },
+    titles: { zh: "《深秋》", en: "Deep Autumn", fr: "Plein automne" },
+    verses: {
+      zh: "獨立香江楓林染，\n綠水秋波一線天。\n舉目俯瞰天地連，\n恍如夢中遊畫山！",
+      en: "Alone by Hong Kong’s waters, maples blaze red,\nGreen autumn waves, a thin strip of sky overhead.\nI look up, look down; heaven and earth now meet,\nAs if I roamed scenic hills in a dream, so sweet.",
+      fr: "Seul au bord de Hong Kong, les érables rougeoient,\nEaux vertes, vagues d’automne, un fil de ciel les côtoie.\nJe lève les yeux, les baisse : ciel et terre se confondent,\nComme en rêve je flâne en des monts où la beauté abonde."
+    }
   }
 ];
 
@@ -211,11 +227,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "44", label: "後記",
+      id: "afterword", folio: "47", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "45", label: "作者簡介",
+      id: "about", folio: "48", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]

@@ -124,8 +124,9 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .cover-title { margin: 0; color: #3f5146; font: 400 clamp(38px, 8vw, 62px)/1.5 var(--cjk-poetry); letter-spacing: .28em; text-indent: .28em; }
 .cover-english { margin: 6px 0 0; color: #557b6e; font: 400 clamp(18px, 4vw, 23px)/1.3 var(--latin-title); letter-spacing: .02em; }
 .cover-french { margin: 3px 0 0; color: #9a7569; font: 400 clamp(14px, 3.1vw, 17px)/1.3 var(--latin-title); letter-spacing: .03em; }
-.cover-branch { width: min(62vw, 280px); margin: clamp(24px, 7vh, 64px) auto clamp(22px, 6vh, 54px); }
+.cover-branch { position: relative; width: min(62vw, 280px); margin: clamp(24px, 7vh, 64px) auto clamp(22px, 6vh, 54px); }
 .cover-branch img { display: block; width: 100%; height: auto; }
+.cover-branch-seal { position: absolute; right: 7%; bottom: 10%; z-index: 1; width: clamp(12px, 5.5vw, 16px); height: clamp(24px, 10.5vw, 32px); display: grid; place-items: center; border: 1px solid #a94d44; background: var(--seal); color: #fff8ec; box-shadow: 1px 1px 0 #a94d4466; writing-mode: vertical-rl; text-orientation: upright; font: clamp(6px, 2.7vw, 8px)/1 "Quan Zi Ku Seal", var(--cjk-support); }
 .cover-seal { display: inline-grid; place-items: center; width: 36px; height: 42px; border: 1px solid #a94d44; background: var(--seal); color: #fff8ec; font: 12px/1.15 "Quan Zi Ku Seal", var(--cjk-support); }
 .cover-signature { margin: 13px 0 0; color: #6f756e; font: 700 clamp(22px, 5vw, 30px)/1.25 var(--latin-signature); letter-spacing: .02em; }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
