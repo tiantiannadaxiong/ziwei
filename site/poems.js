@@ -95,6 +95,21 @@ window.POEMS = [
       fr: "Écrit à Hong Kong, le 1er novembre 2024"
     },
     note: "深巷，即幽深的街巷。\n寒衣節，為已故親人送去禦寒的衣物。\n後輩亦頓覺心中溫暖。"
+  },
+  {
+    id: "singing-to-myself", page: 29,
+    titles: { zh: "《自吟》", en: "Singing to Myself", fr: "Chant intime" },
+    verses: {
+      zh: "月色灑深巷，\n吟詠寄心想。\n漫步遨蒼穹，\n白沙細浪響。",
+      en: "Moonlight sifts down the lane so deep,\nMy chanting stirs the thoughts I keep.\nI wander through the heavens wide,\nWhite sand, fine waves, a murmuring tide.",
+      fr: "La lune baigne la ruelle endormie,\nMes vers murmurent ma rêverie.\nJe vogue dans l'azur infini,\nSable blanc, vaguelettes : doux bruit."
+    },
+    meta: {
+      zh: "2025.2.15",
+      en: "15 February 2025",
+      fr: "15 février 2025"
+    },
+    note: "月色初現天邊，我的冥想曲就此開始，彷彿漫步遨遊於碧海藍天，靜聽地中海白沙細浪之聲。\n\n★地中海深度遊，盡情享受那份寧靜。溫暖的陽光灑滿大地，白沙細浪慵懶、緩慢而有節奏地湧向你，內心充滿感激，感恩大自然賜予人類的美好饋贈！"
   }
 ];
 
@@ -121,11 +136,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "29", label: "後記",
+      id: "afterword", folio: "33", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "30", label: "作者簡介",
+      id: "about", folio: "34", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]
