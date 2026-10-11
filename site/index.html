@@ -13,9 +13,31 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="暗香集">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const viewport = window.visualViewport;
+      const updateHeight = () => {
+        const isStandalone = navigator.standalone
+          || window.matchMedia("(display-mode: standalone)").matches;
+        const visibleHeight = viewport?.height || window.innerHeight;
+        // iOS standalone PWAs can report a visual viewport shorter than the
+        // actual display, leaving the home-indicator area on the root canvas.
+        const height = isStandalone
+          ? Math.max(visibleHeight, window.innerHeight, window.screen?.height || 0)
+          : visibleHeight;
+        root.style.setProperty("--viewport-height", `${Math.ceil(height)}px`);
+      };
+      updateHeight();
+      window.addEventListener("resize", updateHeight, { passive: true });
+      window.addEventListener("orientationchange", updateHeight, { passive: true });
+      window.addEventListener("pageshow", updateHeight, { passive: true });
+      viewport?.addEventListener("resize", updateHeight, { passive: true });
+    })();
+  </script>
   <link rel="preload" href="./fonts/HanWangLiSuMedium-TC.ttf?v=1" as="font" type="font/ttf" crossorigin>
   <!-- Add the Adobe Fonts Web Project embed code here when the author supplies it. -->
-  <link rel="stylesheet" href="./styles.css?v=ebook-ui-39">
+  <link rel="stylesheet" href="./styles.css?v=ebook-ui-40">
 </head>
 <body>
   <main class="book" id="book" aria-label="《暗香集》電子書">
