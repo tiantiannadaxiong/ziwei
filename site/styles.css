@@ -71,20 +71,23 @@
 
 * { box-sizing: border-box; }
 html, body { width: 100%; min-width: 320px; min-height: 100%; margin: 0; touch-action: manipulation; }
-html { background: var(--paper); }
-body {
-  min-height: 100svh;
-  overflow: hidden;
-  color: var(--ink);
-  font-family: var(--cjk-support);
+html {
   background:
     radial-gradient(ellipse at 82% 10%, #f2c9a65c 0, #f2c9a600 29%),
     radial-gradient(ellipse at 13% 83%, #a9cfc473 0, #a9cfc400 39%),
     linear-gradient(148deg, #f2f1e6 0%, #e6eee5 52%, #dce9e7 100%);
 }
+body {
+  min-height: 100svh;
+  min-height: 100dvh;
+  overflow: hidden;
+  color: var(--ink);
+  font-family: var(--cjk-support);
+  background: transparent;
+}
 button { color: inherit; font: inherit; }
 button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
-.book { width: min(100%, 1060px); height: 100svh; min-height: 500px; margin: 0 auto; display: flex; flex-direction: column; padding: max(12px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left)); }
+.book { width: min(100%, 1060px); height: 100svh; height: 100dvh; min-height: 500px; margin: 0 auto; display: flex; flex-direction: column; padding: max(12px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left)); }
 .book-toolbar { height: 46px; flex: 0 0 46px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; border-bottom: 1px solid #64857436; color: #536d60; }
 .toolbar-button { justify-self: start; min-width: 48px; padding: 8px 4px; border: 0; background: transparent; color: #537564; font-size: 13px; letter-spacing: .08em; cursor: pointer; transition: color .2s ease; }
 .toolbar-button:hover { color: var(--seal); }
