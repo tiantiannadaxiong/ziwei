@@ -61,6 +61,40 @@ window.POEMS = [
       en: "Hong Kong – Paris, sharing the Mid-Autumn moon",
       fr: "Hong Kong – Paris, sous la même lune de la mi-automne"
     }
+  },
+  {
+    id: "double-ninth-song", page: 19,
+    titles: { zh: "《九九歌》(1)", en: "The Double Ninth Song (1)", fr: "Chant du Double Neuf (1)" },
+    verses: {
+      zh: "九九重陽今又重，\n登高賞菊祭先宗。\n秋風秋水越椒香，\n桂花陳釀醉深巷。\n花糕菊糕五色糕，\n遍插茱萸紙鳶搖。\n辭青吟詩寒雁別，\n祈福癸巳好時節。",
+      en: "Ninth of the ninth, it comes round once more;\nWe climb, view chrysanthemums, and honor those before.\nAutumn wind, autumn stream, cornel's scent in the air,\nOsmanthus wine, long aged, makes the lane drunk with its care.\nFlower cakes, mum cakes, cakes of five hues bright,\nCornel sprigs pinned on, kites sway in flight.\nWe bid green farewell, chant verse as the last geese go;\nGuisi, year of the Snake, may blessed times flow.",
+      fr: "Double Neuf revient, le neuvième jour du neuvième mois, une fois de plus,\nNous montons admirer les chrysanthèmes et saluer nos aïeux disparus.\nVent d'automne, eau d'automne, parfum de cornouiller flottant,\nLe vin vieux d'osmanthus enivre la ruelle en chantant.\nGâteaux de fleurs, de chrysanthème, gâteaux de cinq couleurs,\nRameaux de cornouiller partout, cerfs-volants en hauteur.\nOn dit adieu au vert, on récite des vers, les dernières oies sauvages s'en vont;\nAnnée du Serpent, Guisi, apporte-nous de beaux jours, c'est notre vœu profond."
+    }
+  },
+  {
+    id: "farewell-to-green", page: 22,
+    titles: { zh: "《重陽辭青歌》(2)", en: "Song of Bidding Green Farewell (2)", fr: "Chant des adieux au vert (2)" },
+    verses: {
+      zh: "春來踏青秋辭青，\n秋染黃葉春萌青。\n四季輪迴光陰逝，\n青出於藍青更青。",
+      en: "Spring walks on green, autumn bids it goodbye,\nAutumn turns leaves gold, spring buds green to the sky.\nSeasons revolve, and time slips quietly by;\nThe dye outshines its plant, green rising ever high.",
+      fr: "Le printemps foule le vert, l'automne lui dit adieu,\nL'automne jaunit les feuilles, le printemps rend les bourgeons radieux.\nLes saisons tournent, le temps fuit en vitesse;\nLe bleu surpasse l'indigo, et le vert verdit sans cesse."
+    },
+    meta: "2024.10.11 於香港\n九九重陽節筆"
+  },
+  {
+    id: "cold-clothes-festival", page: 25,
+    titles: { zh: "《寒衣節》", en: "Cold Clothes Festival", fr: "Fête des Habits d'hiver" },
+    verses: {
+      zh: "秋色漸休霜降中，\n寒衣節至祭先宗。\n深巷煙火燃正旺，\n先人得暖心亦融。",
+      en: "Autumn's colors fade as frost descends,\nOn Cold Clothes Day our reverence to the ancestors extends.\nIn deep lanes the offering fires burn bright,\nThe departed grow warm, and our hearts glow with light.",
+      fr: "L'automne s'efface quand le givre descend,\nFête des Habits d'hiver : on honore les aïeux pieusement.\nDans les ruelles, les feux d'offrandes brûlent haut,\nLes défunts sont au chaud, et nos cœurs, aussitôt."
+    },
+    meta: {
+      zh: "2024.11.1 寫於香港",
+      en: "Written in Hong Kong, 1 November 2024",
+      fr: "Écrit à Hong Kong, le 1er novembre 2024"
+    },
+    note: "深巷，即幽深的街巷。\n寒衣節，為已故親人送去禦寒的衣物。\n後輩亦頓覺心中溫暖。"
   }
 ];
 
@@ -87,11 +121,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "19", label: "後記",
+      id: "afterword", folio: "29", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "20", label: "作者簡介",
+      id: "about", folio: "30", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]
