@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
+  <title id="title">重陽辭青歌</title>
+  <desc id="desc">青綠與秋金的葉影沿著流轉的風相接，呈現四季更替與生生不息。</desc>
+  <defs>
+    <radialGradient id="fg-halo">
+      <stop stop-color="#e9c889" stop-opacity=".35" />
+      <stop offset="1" stop-color="#e9c889" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="fg-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8ca995" stop-opacity=".75" />
+      <stop offset="1" stop-color="#d0ae70" stop-opacity=".7" />
+    </linearGradient>
+    <g id="fg-leaf-shape">
+      <path d="M0 0C10-12 25-10 31-2 22 7 9 9 0 0Z" fill="url(#fg-leaf)" />
+      <path d="M2 0c9-1 17-2 26-2" fill="none" stroke="#718d7d" stroke-opacity=".6" stroke-width=".7" />
+    </g>
+  </defs>
+  <circle cx="97" cy="104" r="70" fill="url(#fg-halo)" />
+  <path d="M28 142c20-34 53-52 88-47 27 4 45 22 45 44 0 25-22 44-52 45-31 1-58-10-79-27" fill="none" stroke="#8da899" stroke-opacity=".25" stroke-width="12" stroke-linecap="round" />
+  <path d="M29 143c20-29 49-44 77-39 25 4 39 18 39 35 0 18-18 32-42 33-24 1-47-8-66-23" fill="none" stroke="#b48f5b" stroke-opacity=".34" stroke-width="1.2" stroke-linecap="round" />
+  <path d="M23 166c30-9 52-8 75-2m24 0c17 2 32-1 48-7M35 183c24-3 43-1 61 4m33-3c13-2 24-2 36 0" fill="none" stroke="#849c8d" stroke-opacity=".48" stroke-width=".85" stroke-linecap="round" />
+  <path d="M47 68c24-12 47-16 69-11 20 5 35 16 48 30" fill="none" stroke="#9aaa98" stroke-opacity=".34" stroke-width=".9" stroke-linecap="round" />
+  <use href="#fg-leaf-shape" transform="translate(37 111) rotate(-38) scale(.9)" />
+  <use href="#fg-leaf-shape" transform="translate(67 87) rotate(-15) scale(.75)" />
+  <use href="#fg-leaf-shape" transform="translate(119 80) rotate(24) scale(.68)" />
+  <use href="#fg-leaf-shape" transform="translate(151 109) rotate(65) scale(.86)" />
+  <use href="#fg-leaf-shape" transform="translate(142 166) rotate(165) scale(.72)" />
+  <use href="#fg-leaf-shape" transform="translate(86 178) rotate(204) scale(.7)" />
+  <path d="M49 52c6 2 10 5 13 10m73 112c5 1 9 1 13 0" fill="none" stroke="#bd9a65" stroke-opacity=".52" stroke-width="1" stroke-linecap="round" />
+</svg>

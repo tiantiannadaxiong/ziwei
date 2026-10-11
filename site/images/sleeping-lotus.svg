@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
+  <title id="title">睡蓮</title>
+  <desc id="desc">一片青荷輕浮碧水，粉色蓮蕊低垂，蓮房裡的種子安然沉睡。</desc>
+  <defs>
+    <radialGradient id="sl-light">
+      <stop stop-color="#efcfa0" stop-opacity=".35" />
+      <stop offset="1" stop-color="#efcfa0" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="sl-water" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#a3b8a9" stop-opacity=".1" />
+      <stop offset="1" stop-color="#84a395" stop-opacity=".3" />
+    </linearGradient>
+    <linearGradient id="sl-petal" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#f0c9bd" />
+      <stop offset="1" stop-color="#d98f84" />
+    </linearGradient>
+  </defs>
+  <circle cx="108" cy="92" r="62" fill="url(#sl-light)" />
+  <path d="M0 135c26-9 49-9 68-2 20 8 36 8 56 0 20-8 43-7 67 2v57H0Z" fill="url(#sl-water)" />
+  <path d="M14 151c25-5 44-3 62 2m22 1c20 1 36-3 55-7m15 1c6 0 12 1 18 3" fill="none" stroke="#789888" stroke-opacity=".55" stroke-width=".9" stroke-linecap="round" />
+  <path d="M20 177c22-4 43-3 61 1m29 1c18-1 35-4 53-2m8 1c5 0 9 .5 13 2" fill="none" stroke="#d4e0d3" stroke-opacity=".68" stroke-width=".9" stroke-linecap="round" />
+  <path d="M39 199c20-3 37-2 53 1m31 0c13-2 24-2 36 0" fill="none" stroke="#8ca698" stroke-opacity=".48" stroke-width=".8" stroke-linecap="round" />
+  <path d="M38 154c2-27 17-47 44-56-1 26-14 45-44 56Z" fill="#829f87" fill-opacity=".62" />
+  <path d="M42 151c14-17 24-31 37-49m-25 34c-1-8-1-14 1-20m9 9c7-1 12-4 17-8" fill="none" stroke="#647f6b" stroke-opacity=".68" stroke-width=".8" stroke-linecap="round" />
+  <path d="M108 150c1-23 11-39 29-47 3 20-6 37-29 47Z" fill="#9db29b" fill-opacity=".54" />
+  <path d="M111 148c8-14 15-25 24-39m-16 27c-1-6 0-11 2-15" fill="none" stroke="#758f7b" stroke-opacity=".58" stroke-width=".75" stroke-linecap="round" />
+  <path d="M78 143c3-13 9-23 17-31 5 8 7 16 6 25-7-1-15 1-23 6Z" fill="url(#sl-petal)" fill-opacity=".86" />
+  <path d="M90 139c2-15 8-26 17-34 8 11 10 23 6 35-8-4-15-4-23-1Z" fill="#e8b1a3" fill-opacity=".9" />
+  <path d="M102 141c7-12 16-19 27-22 1 11-4 21-14 29-3-4-7-6-13-7Z" fill="#d98f84" fill-opacity=".72" />
+  <path d="M89 132c9-1 17 1 24 5" fill="none" stroke="#b87970" stroke-opacity=".5" stroke-width=".7" />
+  <ellipse cx="116" cy="129" rx="5.8" ry="3.4" transform="rotate(-19 116 129)" fill="#a28b60" fill-opacity=".72" />
+  <circle cx="114" cy="128" r=".8" fill="#526f5d" />
+  <circle cx="117" cy="127" r=".8" fill="#526f5d" />
+  <circle cx="119" cy="129" r=".8" fill="#526f5d" />
+  <path d="M95 152c5 2 11 3 16 2m-25 8c7 1 13 1 19 0" fill="none" stroke="#c6aa7a" stroke-opacity=".52" stroke-width=".8" stroke-linecap="round" />
+</svg>

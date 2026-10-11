@@ -40,6 +40,8 @@ window.POEMS = [
   },
   {
     id: "mother-son", page: 13,
+    image: "./images/mother-son.svg?v=art-12",
+    imageAlt: "兩岸遠山隔著淡霧相望，一道溫柔的水光把遠行與牽掛連在一起。",
     titles: { zh: "《母子情》", en: "Mother and Son", fr: "Mère et fils" },
     verses: {
       zh: "端陽翌日偉兒生，\n母子相攜歲月悠。\n猶憶蹣跚頑稚子，\n天涯遠遊母心憂。\n母念兒兮兒念母，\n鶴髮漸添暮歲愁。\n他年衣錦還鄉笑，\n寸草心酬春暉厚。",
@@ -50,6 +52,8 @@ window.POEMS = [
   },
   {
     id: "autumn-moon", page: 16,
+    image: "./images/autumn-moon.svg?v=art-12",
+    imageAlt: "一輪清秋月映在兩處相望的水面上，幾筆微光把遠方的團圓連起來。",
     titles: { zh: "《秋月》", en: "Autumn Moon", fr: "Lune d'automne" },
     verses: {
       zh: "皎月灑清寒，\n蓮蓉餅裡言。\n相隔天涯遠，\n共賞月圓歡。",
@@ -64,6 +68,8 @@ window.POEMS = [
   },
   {
     id: "double-ninth-song", page: 19,
+    image: "./images/double-ninth-song.svg?v=art-12",
+    imageAlt: "秋山小徑向高處延伸，淡金菊影與遠去的雁影留住重陽時節。",
     titles: { zh: "《九九歌》(1)", en: "The Double Ninth Song (1)", fr: "Chant du Double Neuf (1)" },
     verses: {
       zh: "九九重陽今又重，\n登高賞菊祭先宗。\n秋風秋水越椒香，\n桂花陳釀醉深巷。\n花糕菊糕五色糕，\n遍插茱萸紙鳶搖。\n辭青吟詩寒雁別，\n祈福癸巳好時節。",
@@ -73,6 +79,8 @@ window.POEMS = [
   },
   {
     id: "farewell-to-green", page: 22,
+    image: "./images/farewell-to-green.svg?v=art-12",
+    imageAlt: "青綠與秋金的葉影沿著流轉的風相接，呈現四季更替與生生不息。",
     titles: { zh: "《重陽辭青歌》(2)", en: "Song of Bidding Green Farewell (2)", fr: "Chant des adieux au vert (2)" },
     verses: {
       zh: "春來踏青秋辭青，\n秋染黃葉春萌青。\n四季輪迴光陰逝，\n青出於藍青更青。",
@@ -83,6 +91,8 @@ window.POEMS = [
   },
   {
     id: "cold-clothes-festival", page: 25,
+    image: "./images/cold-clothes-festival.svg?v=art-12",
+    imageAlt: "幽深街巷在薄霜與暮色中收向遠處一點溫暖的微光，煙氣安靜升起。",
     titles: { zh: "《寒衣節》", en: "Cold Clothes Festival", fr: "Fête des Habits d'hiver" },
     verses: {
       zh: "秋色漸休霜降中，\n寒衣節至祭先宗。\n深巷煙火燃正旺，\n先人得暖心亦融。",
@@ -98,6 +108,8 @@ window.POEMS = [
   },
   {
     id: "singing-to-myself", page: 29,
+    image: "./images/singing-to-myself.svg?v=art-12",
+    imageAlt: "月色從深巷一路引向遼闊的地中海，銀白細浪在安靜的夜色裡回響。",
     titles: { zh: "《自吟》", en: "Singing to Myself", fr: "Chant intime" },
     verses: {
       zh: "月色灑深巷，\n吟詠寄心想。\n漫步遨蒼穹，\n白沙細浪響。",
@@ -110,6 +122,28 @@ window.POEMS = [
       fr: "15 février 2025"
     },
     note: "月色初現天邊，我的冥想曲就此開始，彷彿漫步遨遊於碧海藍天，靜聽地中海白沙細浪之聲。\n\n★地中海深度遊，盡情享受那份寧靜。溫暖的陽光灑滿大地，白沙細浪慵懶、緩慢而有節奏地湧向你，內心充滿感激，感恩大自然賜予人類的美好饋贈！"
+  },
+  {
+    id: "sleeping-lotus", page: 33,
+    image: "./images/sleeping-lotus.svg?v=art-12",
+    imageAlt: "一片青荷輕浮碧水，粉色蓮蕊低垂，蓮房裡的種子安然沉睡。",
+    masthead: {
+      zh: "紫薇·暗香集",
+      en: "Ziwei · Hidden Fragrance Collection",
+      fr: "Ziwei · Recueil de parfums discrets"
+    },
+    titles: { zh: "《睡蓮》", en: "Sleeping Lotus", fr: "Lotus endormi" },
+    verses: {
+      zh: "青荷浮碧水，\n粉蕊倚波垂。\n蓮子房中夢，\n不覺深秋歸。",
+      en: "Green leaves drift on the jade-green lake,\nPink blossoms bow where soft ripples wake.\nBaby seeds in their pod lie dreaming deep,\nUnaware that autumn has passed while they sleep.",
+      fr: "Les feuilles vertes flottent sur l'eau claire,\nLes lotus roses penchent sur l'onde légère.\nDans leur loge, les graines rêvent, bercées de sommeil,\nSans voir l'automne s'en aller sous son pâle soleil."
+    },
+    meta: {
+      zh: "2025.2.9 於香港",
+      en: "Written in Hong Kong, 9 February 2025",
+      fr: "Écrit à Hong Kong, le 9 février 2025"
+    },
+    note: "青青荷葉浮於湖面，粉色蓮花垂立在綠葉與碧波之上；成熟的蓮子在蓮房中睡意正酣，不覺間已過深秋。"
   }
 ];
 
@@ -136,11 +170,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "33", label: "後記",
+      id: "afterword", folio: "37", label: "後記",
       body: "願這些詩句如水入海，也願每一縷未曾說盡的幽香，都能抵達懂得它的人心中。"
     },
     {
-      id: "about", folio: "34", label: "作者簡介",
+      id: "about", folio: "38", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]

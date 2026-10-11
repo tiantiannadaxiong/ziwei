@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
+  <title id="title">九九歌</title>
+  <desc id="desc">秋山小徑向高處延伸，淡金菊影與遠去的雁影留住重陽時節。</desc>
+  <defs>
+    <radialGradient id="dn-sun">
+      <stop stop-color="#efca83" stop-opacity=".5" />
+      <stop offset="1" stop-color="#efca83" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="dn-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#9eae9c" stop-opacity=".25" />
+      <stop offset="1" stop-color="#c2c8b7" stop-opacity=".1" />
+    </linearGradient>
+    <g id="dn-flower" fill="none" stroke="#b99b62" stroke-width="1.1" stroke-linecap="round">
+      <path d="M0-5v2m3-4-1 2m5 1-2 1m2 4-2-1M3 5 2 3m-5 4V4m-4 1 2-1m-1-5 2 1m0-5 1 2" />
+      <circle r="1.5" fill="#d6b572" stroke="none" />
+    </g>
+  </defs>
+  <circle cx="139" cy="52" r="51" fill="url(#dn-sun)" />
+  <circle cx="139" cy="52" r="18" fill="#f2dfb7" fill-opacity=".74" />
+  <path d="M0 127c25-21 45-25 65-17 15 6 25 9 40 2 22-11 39-20 58-14 12 4 19 9 28 8v58H0Z" fill="#9eafa2" fill-opacity=".22" />
+  <path d="M0 151c23-12 46-15 65-8 20 8 34 10 51 0 22-14 45-15 75-4v53H0Z" fill="url(#dn-hill)" />
+  <path d="M12 169c28-16 53-20 71-12 18 8 34 11 49 0 13-9 28-13 46-10" fill="none" stroke="#738a79" stroke-opacity=".48" stroke-width="1.1" />
+  <path d="M29 198c19-13 28-27 39-39 10-11 19-15 30-15 9 0 16 5 25 4 9-1 17-8 28-16" fill="none" stroke="#ba9b65" stroke-opacity=".61" stroke-width="1.15" stroke-linecap="round" />
+  <path d="M22 185c20-7 39-8 54-2m44 1c19 2 34-1 51-7m-89 27c17-4 31-4 43-1" fill="none" stroke="#a5b2a4" stroke-opacity=".56" stroke-width=".8" stroke-linecap="round" />
+  <use href="#dn-flower" transform="translate(46 169) scale(.9)" />
+  <use href="#dn-flower" transform="translate(61 161) scale(.62)" />
+  <use href="#dn-flower" transform="translate(153 153) scale(.8)" />
+  <path d="M98 93q7-6 14 0-7 5-14 0Zm24-9q6-5 12 0-6 4-12 0Zm18 1q5-4 10 0-5 4-10 0Z" fill="none" stroke="#778a7f" stroke-opacity=".56" stroke-width=".8" />
+  <path d="M91 115c4 2 6 5 7 8m-2-10c4-1 7-1 10 1" fill="none" stroke="#c58c70" stroke-opacity=".68" stroke-width="1.2" stroke-linecap="round" />
+</svg>

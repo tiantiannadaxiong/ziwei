@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
+  <title id="title">自吟</title>
+  <desc id="desc">月色從深巷一路引向遼闊的地中海，銀白細浪在安靜的夜色裡回響。</desc>
+  <defs>
+    <radialGradient id="sm-moon-halo">
+      <stop stop-color="#ecd096" stop-opacity=".4" />
+      <stop offset="1" stop-color="#ecd096" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="sm-sea" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#9aafa6" stop-opacity=".14" />
+      <stop offset="1" stop-color="#7f9c91" stop-opacity=".33" />
+    </linearGradient>
+  </defs>
+  <circle cx="133" cy="55" r="53" fill="url(#sm-moon-halo)" />
+  <path d="M119 42a20 20 0 1 0 29 26 18 18 0 1 1-29-26Z" fill="#f1dfb7" fill-opacity=".82" />
+  <path d="M0 128c27-15 53-20 75-15 20 5 35 4 53-5 23-12 42-12 63-2v61H0Z" fill="#a9b8ad" fill-opacity=".18" />
+  <path d="M0 151c25-7 48-8 70-3 18 4 35 5 54-2 22-8 43-8 67-1v48H0Z" fill="url(#sm-sea)" />
+  <path d="M20 157c27-7 46-6 67-1m19 1c19 2 37-1 54-7m13 2c5 0 10 1 15 3" fill="none" stroke="#ecdfc5" stroke-opacity=".7" stroke-width="1.1" stroke-linecap="round" />
+  <path d="M12 175c26-5 46-4 63 0m26 2c23 0 42-4 60-6m12 2c5 0 9 1 13 2" fill="none" stroke="#d5ded2" stroke-opacity=".7" stroke-width=".8" stroke-linecap="round" />
+  <path d="M22 193c22-3 40-2 58 2m31-1c18-2 33-4 48-2" fill="none" stroke="#c6d3c8" stroke-opacity=".66" stroke-width=".8" stroke-linecap="round" />
+  <path d="M47 126c17 2 31 0 43-6m33-4c15-5 30-5 43-1" fill="none" stroke="#71877b" stroke-opacity=".34" stroke-width=".8" stroke-linecap="round" />
+  <path d="M31 140c6-1 12-1 17 1m47 0c5 0 10-.5 15-2" fill="none" stroke="#d6b77f" stroke-opacity=".5" stroke-width=".8" stroke-linecap="round" />
+</svg>

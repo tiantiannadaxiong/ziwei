@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
+  <title id="title">秋月</title>
+  <desc id="desc">一輪清秋月映在兩處相望的水面上，幾筆微光把遠方的團圓連起來。</desc>
+  <defs>
+    <radialGradient id="am-halo">
+      <stop stop-color="#efd08c" stop-opacity=".36" />
+      <stop offset="1" stop-color="#efd08c" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="am-disc" x1=".2" y1=".1" x2=".8" y2="1">
+      <stop stop-color="#fff4d5" />
+      <stop offset="1" stop-color="#e6d2a5" />
+    </linearGradient>
+    <linearGradient id="am-reflection" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#e8d6a8" stop-opacity=".36" />
+      <stop offset="1" stop-color="#e8d6a8" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="63" r="62" fill="url(#am-halo)" />
+  <circle cx="128" cy="63" r="24" fill="url(#am-disc)" stroke="#c9ad75" stroke-opacity=".44" stroke-width=".7" />
+  <path d="M118 57c5-4 11-5 17-3m-19 17c7 2 13 2 20-1" fill="none" stroke="#c4b184" stroke-opacity=".34" stroke-width=".8" stroke-linecap="round" />
+  <path d="M0 139c20-9 39-11 56-5 17 6 29 5 43-2 18-9 35-7 49 0 16 8 27 7 43 2v44H0Z" fill="#acbdb0" fill-opacity=".24" />
+  <path d="M0 159c22-5 44-4 63 2 19 6 35 5 53-2 22-8 45-7 75 0v34H0Z" fill="#a6bbb0" fill-opacity=".19" />
+  <path d="M126 90c-3 22-1 42 4 57 4 14 3 26-1 44h-16c5-18 6-31 1-46-5-16-6-34-2-53Z" fill="url(#am-reflection)" />
+  <path d="M15 165c21-4 39-3 55 2m17 1c18 1 33-2 48-8m18 1c11-1 22 1 34 4" fill="none" stroke="#849d8f" stroke-opacity=".57" stroke-width=".8" stroke-linecap="round" />
+  <path d="M21 183c26-3 46 0 66 3m24 0c20 0 37-3 56-2" fill="none" stroke="#9caf9e" stroke-opacity=".56" stroke-width=".8" stroke-linecap="round" />
+  <path d="M47 196c19-1 33 1 48 4m29-2c14-2 27-2 40 0" fill="none" stroke="#d0b27b" stroke-opacity=".57" stroke-width=".85" stroke-linecap="round" />
+  <path d="M20 126c24 2 41 1 60-3m47-1c18-4 34-3 49 1" fill="none" stroke="#7f9588" stroke-opacity=".3" stroke-width=".7" stroke-linecap="round" />
+</svg>

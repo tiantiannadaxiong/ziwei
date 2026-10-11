@@ -123,6 +123,8 @@ button:focus-visible { outline: 2px solid var(--seal); outline-offset: 4px; }
 .page-language[lang="en"], .page-language[lang="fr"] { font: 12px var(--latin-label); letter-spacing: .1em; }
 .page-print-folio { color: #a18a65; font: 12px var(--latin); }
 .poem-content { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 25px 0; }
+.poem-masthead { margin: 0 0 12px; color: var(--jade); font: 12px/1.6 var(--cjk-support); letter-spacing: .14em; }
+.poem-masthead[lang="en"], .poem-masthead[lang="fr"] { font: 12px/1.6 var(--latin-label); letter-spacing: .1em; }
 .poem-title { margin: 0; color: var(--ink); font: 400 clamp(26px, 4vw, 36px)/1.4 var(--cjk-poetry); letter-spacing: .12em; }
 .poem-title[lang="en"], .poem-title[lang="fr"] { font: 400 clamp(24px, 4vw, 35px)/1.35 var(--latin-title); letter-spacing: .02em; }
 .title-rule { position: relative; width: min(100%, 330px); height: 5px; margin: 20px 0 27px; display: flex; align-items: center; gap: 9px; background: radial-gradient(circle, var(--seal) 0 1.8px, transparent 2.3px) center / 7px 7px no-repeat; }

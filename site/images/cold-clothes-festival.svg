@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
+  <title id="title">寒衣節</title>
+  <desc id="desc">幽深街巷在薄霜與暮色中收向遠處一點溫暖的微光，煙氣安靜升起。</desc>
+  <defs>
+    <radialGradient id="cf-light">
+      <stop stop-color="#e8bb72" stop-opacity=".52" />
+      <stop offset="1" stop-color="#e8bb72" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cf-ground" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#aab8ab" stop-opacity=".08" />
+      <stop offset="1" stop-color="#81998a" stop-opacity=".28" />
+    </linearGradient>
+  </defs>
+  <circle cx="96" cy="112" r="59" fill="url(#cf-light)" />
+  <path d="M0 48c31 4 58 21 80 48l16 21-96 33Z" fill="#8e9c8f" fill-opacity=".12" />
+  <path d="M191 44c-32 8-58 25-78 52l-17 21 95 33Z" fill="#8e9c8f" fill-opacity=".14" />
+  <path d="M0 52c35 10 63 29 86 58m105-61c-34 12-62 31-84 61" fill="none" stroke="#7d9184" stroke-opacity=".3" stroke-width="1" />
+  <path d="M0 145c39-9 69-15 96-15 31 0 61 7 95 16v56H0Z" fill="url(#cf-ground)" />
+  <path d="M13 151c26-7 48-10 69-9m29 0c22 1 42 4 64 10" fill="none" stroke="#9baa9c" stroke-opacity=".54" stroke-width=".8" />
+  <path d="M20 181c30-9 53-13 76-12 21 1 43 5 74 14" fill="none" stroke="#d3c7ac" stroke-opacity=".56" stroke-width=".9" />
+  <path d="M36 196c21-5 38-7 57-6m17 0c16 1 29 3 45 7" fill="none" stroke="#91a398" stroke-opacity=".48" stroke-width=".8" />
+  <circle cx="95" cy="140" r="3.4" fill="#c98158" fill-opacity=".6" />
+  <circle cx="95" cy="140" r="9" fill="none" stroke="#d3a66d" stroke-opacity=".34" stroke-width=".8" />
+  <path d="M95 133c-4-10 6-13 3-21-2-5-7-7-4-14m5 33c8-9-1-13 3-19" fill="none" stroke="#aab8ad" stroke-opacity=".48" stroke-width="1" stroke-linecap="round" />
+  <path d="M80 126c5 1 9 1 13 0m8 0c4 1 8 1 12 0" fill="none" stroke="#d8bd8b" stroke-opacity=".62" stroke-width=".75" stroke-linecap="round" />
+</svg>

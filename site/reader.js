@@ -113,6 +113,11 @@
     page.append(header);
     const content = document.createElement("div");
     content.className = "poem-content";
+    const mastheadText = poem.masthead?.[language];
+    if (mastheadText) {
+      const masthead = appendText("p", "poem-masthead", mastheadText, content);
+      masthead.lang = language === "zh" ? "zh-Hant" : language;
+    }
     appendText("h1", "poem-title", poem.titles[language], content).lang = language === "zh" ? "zh-Hant" : language;
     const rule = document.createElement("div");
     rule.className = "title-rule";

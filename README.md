@@ -6,7 +6,7 @@
 
 | 路径 | 作用 |
 |---|---|
-| `site/poems.js` | 内容数据：`window.POEMS`（诗题、三语诗句、创作日期、中文注释、SVG 插画路径与替代文字）与 `window.MATTER`（前后页文案与页码） |
+| `site/poems.js` | 内容数据：`window.POEMS`（诗题、可选三语眉题、三语诗句、创作日期、中文注释、SVG 插画路径与替代文字）与 `window.MATTER`（前后页文案与页码） |
 | `site/reader.js` | 阅读顺序、翻页、目录、语言切换、深链、离线缓存注册与字体预热 |
 | `site/styles.css` | 版式与字体角色 |
 | `site/index.html` | 页面骨架、应用清单与 iOS 全屏 meta |
@@ -16,12 +16,12 @@
 
 ## 阅读顺序与交互
 
-文字封面 → 版权页 → 献词 → 题记 → 前言 → 各诗（有插画时先显示；中文原诗后附中文注释；再读英文、法文）→ 后记 → 作者简介，共 37 个阅读页。前后页及诗页页码沿用纸书；新增诗作《母子情》《秋月》为 13–18，《九九歌》(1)、《重阳辞青歌》(2)为 19–24，《寒衣节》为 25–28、《自吟》为 29–32（两首均含单独纸本注释页）；后记、作者简介顺延为 33–34。
+文字封面 → 版权页 → 献词 → 题记 → 前言 → 各诗（先显示插画；中文原诗后附中文注释；再读英文、法文）→ 后记 → 作者简介，共 47 个阅读页。前后页及诗页页码沿用纸书；新增诗作《母子情》《秋月》为 13–18，《九九歌》(1)、《重阳辞青歌》(2)为 19–24，《寒衣节》为 25–28，《自吟》为 29–32，《睡蓮》为 33–36（中文注释分别占纸本第 28、32、36 页）；插画单独成阅读页，不改变纸本页码；后记、作者简介为 37–38。
 
-翻页支持左右滑动、方向键与底部按钮。顶部「目录」列出文字封面、前后页，以及九首诗的各语种入口。地址栏 hash 可直达任意页：
+翻页支持左右滑动、方向键与底部按钮。顶部「目录」列出文字封面、前后页，以及十首诗的各语种入口。地址栏 hash 可直达任意页：
 
 - `#cover`（文字封面）
-- `#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#jiaolong-image`（`mid-autumn`、`double-fifth` 也有插畫頁；其他詩作可用三語後綴直達；`cold-clothes-festival-notes`、`singing-to-myself-notes` 會定位到中文注釋）；舊的 `#jiaolong-notes` 連結會定位到中文原詩頁的注釋段落。
+- `#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#jiaolong-image`（十首詩現均有插畫頁；詩作 ID 後加 `-image` 可直達插畫；`cold-clothes-festival-notes`、`singing-to-myself-notes`、`sleeping-lotus-notes` 會定位到中文注釋）；舊的 `#jiaolong-notes` 連結會定位到中文原詩頁的注釋段落。
 - `#colophon`、`#dedication`、`#epigraph`、`#foreword`、`#afterword`、`#about`
 
 背景音乐只在窄屏（`max-width: 759px`）自动播放，工具栏有开关。
