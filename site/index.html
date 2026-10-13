@@ -38,7 +38,7 @@
   <link rel="preload" href="./fonts/QuanZiKuShuoWenJieZi-5glyph.ttf" as="font" type="font/ttf" crossorigin fetchpriority="high">
   <link rel="preload" href="./fonts/HanWangLiSuMedium-TC.ttf?v=1" as="font" type="font/ttf" crossorigin fetchpriority="high">
   <!-- Add the Adobe Fonts Web Project embed code here when the author supplies it. -->
-  <link rel="stylesheet" href="./styles.css?v=ebook-ui-49">
+  <link rel="stylesheet" href="./styles.css?v=ebook-ui-52">
 </head>
 <body>
   <main class="book" id="book" aria-label="《暗香集》電子書">
@@ -52,7 +52,10 @@
     </header>
 
     <section class="reading-stage" id="reading" aria-label="詩集頁面" aria-live="polite">
-      <article class="book-page cover-page" id="book-page" tabindex="-1"></article>
+      <div class="book-spread" id="book-spread">
+        <article class="book-page cover-page" id="book-page" tabindex="-1"></article>
+        <article class="book-page" id="book-page-secondary" tabindex="-1" hidden></article>
+      </div>
     </section>
 
     <nav class="page-controls" aria-label="翻頁">
@@ -74,7 +77,7 @@
 
   <audio id="ambient-audio" src="./audio/1.mp3" loop preload="none"></audio>
 
-  <script src="./poems.js?v=ebook-ui-51"></script>
-  <script src="./reader.js?v=ebook-ui-39" defer></script>
+  <script src="./poems.js?v=ebook-ui-52"></script>
+  <script src="./reader.js?v=ebook-ui-42" defer></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ import { extname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const siteRoot = resolve(fileURLToPath(new URL(".", import.meta.url)));
+const port = Number(process.env.PORT) || 8000;
 const mime = {
   ".css": "text/css; charset=utf-8",
   ".html": "text/html; charset=utf-8",
@@ -33,6 +34,6 @@ createServer(async (request, response) => {
   } catch {
     response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" }).end("Not found");
   }
-}).listen(8000, "127.0.0.1", () => {
-  process.stdout.write("暗香集预览：http://127.0.0.1:8000\n按 Ctrl+C 停止。\n");
+}).listen(port, "127.0.0.1", () => {
+  process.stdout.write(`暗香集预览：http://127.0.0.1:${port}\n按 Ctrl+C 停止。\n`);
 });
