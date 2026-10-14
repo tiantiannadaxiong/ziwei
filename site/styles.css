@@ -85,7 +85,7 @@ button[hidden]{display:none!important}
 .language-nav button[aria-current="true"]{border-bottom-color:var(--stone);color:var(--ink)}
 .language-nav button[lang="zh-Hant"]{font:16px/1 var(--support)}
 .poem-content{width:100%;max-width:610px;margin:0 auto}
-.poem-body{margin:0;color:var(--ink);font:400 27px/1.8 var(--support);letter-spacing:.015em;overflow-wrap:break-word}
+.poem-body{margin:0;color:var(--ink);font:400 27px/1.8 var(--title);letter-spacing:.015em;overflow-wrap:break-word}
 .poem-body[lang="en"],.poem-body[lang="fr"]{font:400 23px/1.65 var(--latin);letter-spacing:0}
 .verse-line{display:block;padding-left:1em;text-indent:-1em}
 .verse-line.stanza-space{height:.85em}

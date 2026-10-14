@@ -10,7 +10,7 @@
 
 | 用途 | 字体与字号 |
 |---|---|
-| 中文诗句 | LXGW WenKai TC，手机 27px、桌面 29px，行高 1.8 |
+| 中文诗句 | 王汉宗中隶书繁（HanWang LiSu），手机 27px、桌面 29px，行高 1.8 |
 | 中文诗题、封面书名 | 王汉宗中隶书繁（HanWang LiSu） |
 | 中文注释 | LXGW WenKai TC，22px，行高 1.85 |
 | 英法诗句 | Alegreya，23px，行高 1.65 |
@@ -55,7 +55,7 @@ node tools/review-browser.mjs artifacts/artbook-review http://127.0.0.1:8000/
 node tools/review-browser.mjs artifacts/artbook-sample http://127.0.0.1:8000/ review
 ```
 
-浏览器工具需已有 Playwright，必要时通过 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安装的 Edge；仅用于开发，网站没有新增运行依赖。输出目录包含整页截图、绘画局部、`index.html` 图集和 `checks.json` 验收记录；`artifacts/` 不纳入版本管理。当前资源版为 `artbook-5`，离线缓存为 `anxiangji-v49`；检查结果和实体设备待复验范围见 [评审记录](site/design-review.md)。
+浏览器工具需已有 Playwright，必要时通过 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安装的 Edge；仅用于开发，网站没有新增运行依赖。输出目录包含整页截图、绘画局部、`index.html` 图集和 `checks.json` 验收记录；`artifacts/` 不纳入版本管理。当前资源版为 `artbook-6`，离线缓存为 `anxiangji-v50`；检查结果和实体设备待复验范围见 [评审记录](site/design-review.md)。
 
 ## 发布与离线
 

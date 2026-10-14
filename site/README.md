@@ -8,7 +8,7 @@
 
 在仓库根目录执行 `node site/preview.mjs`，访问 <http://127.0.0.1:8000/>。样板另有 `preview-review.mjs`，使用 8014 端口。全部资源为相对路径，支持 GitHub Pages 项目子路径。
 
-当前资源版本为 `artbook-5`，缓存为 `anxiangji-v49`。更改资源时同步入口 URL 的版本，更改外壳时递增 `sw.js` 的缓存名。
+当前资源版本为 `artbook-6`，缓存为 `anxiangji-v50`。更改资源时同步入口 URL 的版本，更改外壳时递增 `sw.js` 的缓存名。
 
 运行 `node tools/check-artbook.mjs` 检查全书资源与缓存；已有 Playwright 时，运行 `node tools/review-browser.mjs artifacts/artbook-review http://127.0.0.1:8000/` 生成浏览器验收记录与截图。详情见 [评审记录](design-review.md)。
 
