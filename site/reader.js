@@ -1,445 +1,375 @@
 (() => {
-  const poems = window.POEMS;
-  const matter = window.MATTER ?? { front: [], back: [] };
-  const page = document.querySelector("#book-page");
-  const progress = document.querySelector("#reading-progress");
-  const hint = document.querySelector("#swipe-hint");
-  const previous = document.querySelector("#previous");
-  const next = document.querySelector("#next");
-  const dialog = document.querySelector("#toc-dialog");
-  const ambientAudio = document.querySelector("#ambient-audio");
-  const musicToggle = document.querySelector("#music-toggle");
-  const mobileViewport = window.matchMedia("(max-width: 759px)");
-  const languageNames = { zh: "繁體中文", en: "English", fr: "Français" };
-  const languageTags = { zh: "繁中", en: "EN", fr: "FR" };
-  const sequence = [{ type: "cover" }];
-
-  matter.front.forEach((item) => sequence.push({ type: "matter", item }));
-  poems.forEach((poem) => {
-    if (poem.image) sequence.push({ type: "illustration", poem });
-    ["zh", "en", "fr"].forEach((language) => sequence.push({ type: "poem", poem, language }));
+  'use strict';
+  const edition = window.ARTBOOK_EDITION || window.ARTBOOK_REVIEW;
+  const poems = window.POEMS.filter(poem => !edition.poemIds || edition.poemIds.includes(poem.id)).map(poem => edition.artwork ? {
+    ...poem, image: undefined, artworkHasSeal: false, ...edition.artwork[poem.id]
+  } : { ...poem });
+  const matter = window.MATTER;
+  const page = document.querySelector('#book-page');
+  const stage = document.querySelector('#reading');
+  const dialog = document.querySelector('#toc-dialog');
+  const previous = document.querySelector('#previous');
+  const next = document.querySelector('#next');
+  const progress = document.querySelector('#reading-progress');
+  const pageFolio = document.querySelector('#page-folio');
+  const hint = document.querySelector('#swipe-hint');
+  const audio = document.querySelector('#ambient-audio');
+  const music = document.querySelector('#music-toggle');
+  const mobile = matchMedia('(max-width: 759px)');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const languages = { zh: '繁體中文', en: 'English', fr: 'Français' };
+  const tags = { zh: '中', en: 'EN', fr: 'FR' };
+  const langTag = code => code === 'zh' ? 'zh-Hant' : code;
+  const sequence = [{ type: 'cover', hash: 'cover' }];
+  matter.front.forEach(item => sequence.push({ type: 'matter', item, hash: item.id }));
+  poems.forEach(poem => {
+    if (poem.image) sequence.push({ type: 'illustration', poem, hash: `${poem.id}-image` });
+    for (const language of ['zh', 'en', 'fr']) sequence.push({ type: 'poem', poem, language, hash: `${poem.id}-${language}` });
   });
-  matter.back.forEach((item) => sequence.push({ type: "matter", item }));
-
+  matter.back.forEach(item => sequence.push({ type: 'matter', item, hash: item.id }));
   let current = 0;
-  let touchStart = null;
   let animationTimer = 0;
   let userPausedMusic = false;
-
-  function updateMusicControl() {
-    const playing = !ambientAudio.paused && !ambientAudio.ended;
-    musicToggle.hidden = !mobileViewport.matches;
-    musicToggle.setAttribute("aria-pressed", String(playing));
-    musicToggle.setAttribute("aria-label", playing ? "暫停背景音樂" : "播放背景音樂");
-    musicToggle.title = playing ? "暫停背景音樂" : "播放背景音樂";
-    musicToggle.firstElementChild.textContent = playing ? "♫" : "♪";
-  }
-
-  async function playAmbientMusic() {
-    if (!mobileViewport.matches) return false;
-    try {
-      await ambientAudio.play();
-      updateMusicControl();
-      return true;
-    } catch {
-      updateMusicControl();
-      return false;
-    }
-  }
-
-  ambientAudio.volume = 0.32;
-  ambientAudio.addEventListener("play", updateMusicControl);
-  ambientAudio.addEventListener("pause", updateMusicControl);
-  musicToggle.addEventListener("click", () => {
-    if (ambientAudio.paused) {
-      userPausedMusic = false;
-      playAmbientMusic();
-    } else {
-      userPausedMusic = true;
-      ambientAudio.pause();
-      updateMusicControl();
+  let renderEpoch = 0;
+  const artworkSizer = new ResizeObserver(entries => {
+    for (const { target: well } of entries) {
+      const frame = well.querySelector('.illustration-frame');
+      if (!frame) continue;
+      const width = Math.max(0, Math.min(well.clientWidth, well.clientHeight * 760 / 900));
+      frame.style.width = `${width}px`;
+      frame.style.height = `${width * 900 / 760}px`;
     }
   });
-  mobileViewport.addEventListener("change", (event) => {
-    updateMusicControl();
-    if (event.matches && !userPausedMusic) playAmbientMusic();
-    else if (!event.matches) ambientAudio.pause();
-  });
-  document.addEventListener("pointerdown", (event) => {
-    if (mobileViewport.matches && !userPausedMusic && ambientAudio.paused && !event.target.closest("#music-toggle")) playAmbientMusic();
-  }, { capture: true });
-  updateMusicControl();
-  if (mobileViewport.matches) playAmbientMusic();
 
-  const appendText = (tag, className, value, parent = page) => {
-    const node = document.createElement(tag);
-    if (className) node.className = className;
-    node.textContent = value;
-    parent.append(node);
-    return node;
-  };
+  function node(tag, className, text, parent) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    if (parent) parent.append(element);
+    return element;
+  }
+
+  function seal(name, className, parent) {
+    const image = node('img', `seal ${className}`, undefined, parent);
+    image.src = `${edition.sealBase || './images/'}seal-${name}.svg?v=${edition.version}`;
+    image.alt = name === 'ziwei' ? '紫薇小篆印' : '暗香集小篆印';
+    image.width = name === 'ziwei' ? 44 : 38;
+    image.height = name === 'ziwei' ? 56 : 68;
+    return image;
+  }
 
   function makeCover() {
-    page.className = "book-page cover-page editorial-sample";
-    page.replaceChildren();
-    const coverInner = document.createElement("div");
-    coverInner.className = "cover-inner";
-    appendText("p", "cover-kicker", "三語詩集 · A TRILINGUAL COLLECTION", coverInner);
-    appendText("h1", "cover-title", "暗香集", coverInner);
-    appendText("p", "cover-english", "Whispers of Hidden Fragrance", coverInner);
-    appendText("p", "cover-french", "Parfums secrets", coverInner).lang = "fr";
-    const branch = document.createElement("div");
-    branch.className = "cover-branch";
-    branch.setAttribute("aria-hidden", "true");
-    const artwork = document.createElement("img");
-    artwork.src = "./images/cover-branch.svg?v=cover-art-4";
-    artwork.alt = "";
-    branch.append(artwork);
-    coverInner.append(branch);
-    const seal = appendText("span", "cover-seal", "紫薇", coverInner);
-    seal.setAttribute("aria-label", "作者紫薇");
-    appendText("p", "cover-signature", "Ziwei", coverInner);
-    page.append(coverInner);
+    page.className = 'book-page cover-page';
+    const titling = node('div', 'cover-titling', undefined, page);
+    node('p', 'cover-kicker', '紫薇 · 三語詩集', titling);
+    node('h1', 'cover-title', '暗香集', titling);
+    node('p', 'cover-english', 'Whispers of Hidden Fragrance', titling).lang = 'en';
+    node('p', 'cover-french', 'Parfums secrets', titling).lang = 'fr';
+    const plate = node('figure', 'cover-plate', undefined, page);
+    const image = node('img', '', undefined, plate);
+    image.src = edition.cover;
+    image.alt = '斜梅疏影映入清淺水面，淡月與花香停留在黃昏的留白間。';
+    image.decoding = 'async';
+    const author = node('div', 'cover-author', undefined, page);
+    const epigraph = node('p', 'cover-epigraph', '疏影橫斜水清淺', author);
+    epigraph.append(document.createElement('br'), document.createTextNode('暗香浮動月黃昏'));
+    const signature = node('div', 'author-signature', undefined, author);
+    seal('ziwei', 'author-seal', signature);
+    node('p', 'signature', 'Ziwei', signature).lang = 'en';
   }
 
-  function makePoem(item) {
-    const { poem, language } = item;
+  function languageNav(poem, language, parent) {
+    const nav = node('nav', 'language-nav', undefined, parent);
+    nav.setAttribute('aria-label', '同一首詩的語言版本');
+    for (const code of ['zh', 'en', 'fr']) {
+      const button = node('button', '', tags[code], nav);
+      button.type = 'button';
+      button.lang = langTag(code);
+      button.setAttribute('aria-current', String(code === language));
+      button.setAttribute('aria-label', `${languages[code]}：${poem.titles[code]}`);
+      button.addEventListener('click', () => go(`${poem.id}-${code}`));
+    }
+  }
+
+  function makePoem({ poem, language }) {
     page.className = `book-page poem-page lang-${language}`;
-    page.replaceChildren();
-    const header = document.createElement("div");
-    header.className = "page-running-head";
-    appendText("span", "page-language", languageNames[language], header).lang = language === "zh" ? "zh-Hant" : language;
-    appendText("span", "page-print-folio", String(poem.page + ["zh", "en", "fr"].indexOf(language)).padStart(2, "0"), header);
-    page.append(header);
-    const content = document.createElement("div");
-    content.className = "poem-content";
-    const mastheadText = poem.masthead?.[language];
-    if (mastheadText) {
-      const masthead = appendText("p", "poem-masthead", mastheadText, content);
-      masthead.lang = language === "zh" ? "zh-Hant" : language;
-    }
-    appendText("h1", "poem-title", poem.titles[language], content).lang = language === "zh" ? "zh-Hant" : language;
-    const rule = document.createElement("div");
-    rule.className = "title-rule";
-    rule.setAttribute("aria-hidden", "true");
-    content.append(rule);
-    appendText("p", "poem-body", poem.verses[language], content).lang = language === "zh" ? "zh-Hant" : language;
-    const metaText = typeof poem.meta === "string"
-      ? (language === "zh" ? poem.meta : "")
-      : poem.meta?.[language];
-    if (metaText) {
-      const meta = appendText("p", "poem-meta", metaText, content);
-      meta.lang = language === "zh" ? "zh-Hant" : language;
-    }
-    if (language === "zh" && poem.note) {
-      const annotation = document.createElement("section");
-      annotation.className = "annotation-section";
-      annotation.id = `notes-${poem.id}`;
-      const annotationHeader = document.createElement("div");
-      annotationHeader.className = "annotation-header";
-      const annotationTitle = appendText("h2", "annotation-title", "中文註釋", annotationHeader);
-      annotationTitle.id = `${annotation.id}-title`;
-      annotationTitle.lang = "zh-Hant";
-      annotation.setAttribute("aria-labelledby", annotationTitle.id);
-      appendText("span", "annotation-folio", String(poem.page + 3).padStart(2, "0"), annotationHeader);
-      annotation.append(annotationHeader);
-      appendText("p", "annotation-text", poem.note, annotation).lang = "zh-Hant";
-      content.append(annotation);
-    }
-    page.append(content);
-    const languageNav = document.createElement("nav");
-    languageNav.className = "page-languages";
-    languageNav.setAttribute("aria-label", "同一首詩的其他語言版本");
-    ["zh", "en", "fr"].forEach((code) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.textContent = languageTags[code];
-      button.lang = code === "zh" ? "zh-Hant" : code;
-      button.setAttribute("aria-label", `${languageNames[code]}：${poem.titles[code]}`);
-      button.setAttribute("aria-current", String(code === language));
-      button.addEventListener("click", () => goToPoem(poem.id, code));
-      languageNav.append(button);
+    page.lang = langTag(language);
+    const running = node('div', 'page-running-head', undefined, page);
+    const languageAndFolio = node('div', '', undefined, running);
+    node('span', 'page-language', languages[language], languageAndFolio);
+    const folio = node('span', 'page-print-folio', ` · ${String(poem.page + ['zh', 'en', 'fr'].indexOf(language)).padStart(2, '0')}`, languageAndFolio);
+    folio.setAttribute('aria-label', `紙本第 ${poem.page + ['zh', 'en', 'fr'].indexOf(language)} 頁`);
+    languageNav(poem, language, running);
+    const content = node('div', 'poem-content', undefined, page);
+    const heading = node('header', 'poem-heading', undefined, content);
+    if (poem.masthead?.[language]) node('p', 'poem-masthead', poem.masthead[language], heading);
+    node('h1', 'poem-title', poem.titles[language], heading).lang = langTag(language);
+    const body = node('p', 'poem-body', undefined, content);
+    body.lang = langTag(language);
+    // Keep the author's line breaks as real text; a hanging continuation only
+    // affects naturally wrapped lines, not the words or stanza structure.
+    poem.verses[language].split('\n').forEach((line, index, lines) => {
+      node('span', `verse-line${line ? '' : ' stanza-space'}`, line, body);
+      if (index < lines.length - 1) body.append(document.createTextNode('\n'));
     });
-    page.append(languageNav);
+    const meta = typeof poem.meta === 'string' ? (language === 'zh' ? poem.meta : '') : poem.meta?.[language];
+    if (meta) node('p', 'poem-meta', meta, content).lang = langTag(language);
+    if (language === 'zh' && poem.note) {
+      const notes = node('section', 'annotation-section', undefined, content);
+      notes.id = `notes-${poem.id}`;
+      notes.setAttribute('aria-labelledby', `${notes.id}-title`);
+      const header = node('header', 'annotation-header', undefined, notes);
+      node('h2', 'annotation-title', '中文註釋', header).id = `${notes.id}-title`;
+      node('span', 'annotation-folio', String(poem.page + 3).padStart(2, '0'), header);
+      node('p', 'annotation-text', poem.note, notes).lang = 'zh-Hant';
+    }
   }
 
-  function makeIllustration(item) {
-    const { poem } = item;
-    page.className = "book-page illustration-page";
-    page.replaceChildren();
-    const header = document.createElement("div");
-    header.className = "page-running-head illustration-heading";
-    appendText("span", "illustration-mark", "插圖", header);
-    page.append(header);
-
-    const title = appendText("h1", "illustration-title", poem.titles.zh);
-    title.lang = "zh-Hant";
-
-    const figure = document.createElement("figure");
-    figure.className = "illustration-figure";
-    const artwork = document.createElement("div");
-    artwork.className = "illustration-artwork";
-    const imageFrame = document.createElement("div");
-    imageFrame.className = "illustration-frame";
-    const image = document.createElement("img");
-    image.className = "illustration-art";
+  function makeIllustration({ poem }) {
+    page.className = 'book-page illustration-page';
+    node('div', 'illustration-heading', '插圖', page);
+    node('h1', 'illustration-title', poem.titles.zh, page);
+    const figure = node('figure', 'illustration-figure', undefined, page);
+    const well = node('div', 'illustration-well', undefined, figure);
+    const frame = node('div', 'illustration-frame', undefined, well);
+    const image = node('img', 'illustration-art', undefined, frame);
     image.src = poem.image;
-    image.alt = poem.imageAlt || poem.titles.zh;
-    image.decoding = "async";
-    image.loading = "eager";
-    imageFrame.append(image);
-    if (!poem.artworkHasSeal) {
-      const seal = appendText("span", "illustration-seal", "暗香集", imageFrame);
-      seal.setAttribute("aria-label", "暗香集小篆印");
-    }
-    artwork.append(imageFrame);
-    figure.append(artwork);
-    appendText("p", "illustration-epigraph", poem.titles.en, figure).lang = "en";
-    page.append(figure);
+    image.alt = poem.imageAlt;
+    image.width = 760;
+    image.height = 900;
+    image.decoding = 'async';
+    const stamp = seal('anxiangji', 'illustration-seal', frame);
+    const position = poem.sealPosition || { x: 86, y: 84 };
+    stamp.style.setProperty('--seal-x', `${position.x}%`);
+    stamp.style.setProperty('--seal-y', `${position.y}%`);
+    artworkSizer.observe(well);
+    node('figcaption', 'illustration-epigraph', poem.titles.en, figure).lang = 'en';
   }
 
-  function makeMatter(item) {
+  function makeMatter({ item }) {
     page.className = `book-page matter-page matter-${item.id}`;
-    page.replaceChildren();
     if (item.folio) {
-      const header = document.createElement("div");
-      header.className = "page-running-head";
-      appendText("span", "page-language", item.label || "", header).lang = "zh-Hant";
-      appendText("span", "page-print-folio", item.folio, header);
-      page.append(header);
+      const header = node('div', 'page-running-head', undefined, page);
+      node('span', '', '暗香集', header);
+      node('span', 'page-print-folio', item.folio, header);
     }
-    const content = document.createElement("div");
-    content.className = "matter-content";
+    const content = node('div', 'matter-content', undefined, page);
     if (item.label) {
-      const mark = document.createElement("span");
-      mark.className = "matter-mark";
-      mark.setAttribute("aria-hidden", "true");
-      content.append(mark);
-      appendText("h1", "matter-title", item.label, content).lang = "zh-Hant";
-      const rule = document.createElement("div");
-      rule.className = "matter-rule";
-      rule.setAttribute("aria-hidden", "true");
-      content.append(rule);
+      node('p', 'matter-index', item.folio || '', content);
+      node('h1', 'matter-title', item.label, content);
     }
-    appendText("p", "matter-text", item.body, content).lang = "zh-Hant";
-    page.append(content);
+    node('p', 'matter-text', item.body, content);
   }
 
-  function render({ animate = true, direction = 1 } = {}) {
-    const item = sequence[current];
-    window.clearTimeout(animationTimer);
+  function render({ animate = false, direction = 1, notes = false } = {}) {
+    const epoch = ++renderEpoch;
+    clearTimeout(animationTimer);
+    artworkSizer.disconnect();
+    page.replaceChildren();
+    page.removeAttribute('lang');
+    const entry = sequence[current];
+    if (entry.type === 'cover') makeCover();
+    else if (entry.type === 'poem') makePoem(entry);
+    else if (entry.type === 'illustration') makeIllustration(entry);
+    else makeMatter(entry);
     page.scrollTop = 0;
-    page.classList.remove("page-turning-forward", "page-turning-backward");
-    if (item.type === "cover") makeCover();
-    else if (item.type === "matter") makeMatter(item.item);
-    else if (item.type === "illustration") makeIllustration(item);
-    else if (item.type === "poem") makePoem(item);
-    if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      const turnClass = direction < 0 ? "page-turning-backward" : "page-turning-forward";
-      page.classList.add(turnClass);
-      animationTimer = window.setTimeout(() => page.classList.remove(turnClass), 320);
+    if (animate && !reducedMotion.matches) {
+      const className = direction < 0 ? 'page-turn-backward' : 'page-turn-forward';
+      page.classList.add(className);
+      animationTimer = setTimeout(() => page.classList.remove(className), 220);
     }
-
-    const onCover = current === 0;
-    progress.textContent = onCover ? "封面" : `${String(current).padStart(2, "0")} / ${String(sequence.length - 1).padStart(2, "0")}`;
-    hint.textContent = onCover ? "左右滑動，開始閱讀" : "左右滑動翻頁";
-    previous.disabled = onCover;
+    previous.disabled = current === 0;
     next.disabled = current === sequence.length - 1;
-    document.documentElement.lang = item.language === "en" || item.language === "fr" ? item.language : "zh-Hant";
-    const poem = item.poem;
-    if (item.type === "cover") history.replaceState(null, "", "#cover");
-    else if (poem) {
-      const suffix = item.type === "illustration" ? "image" : item.language;
-      history.replaceState(null, "", `#${poem.id}-${suffix}`);
+    progress.textContent = current === 0 ? '開卷' : `${String(current).padStart(2, '0')} / ${sequence.length - 1}`;
+    progress.style.fontFamily = current === 0 ? 'var(--support)' : '';
+    const folio = entry.type === 'poem'
+      ? entry.poem.page + ['zh', 'en', 'fr'].indexOf(entry.language)
+      : entry.item?.folio;
+    pageFolio.textContent = entry.type === 'cover' ? '封面'
+      : entry.type === 'illustration' ? `${entry.poem.titles.zh} · 插圖`
+      : folio ? `第 ${folio} 頁` : '版權';
+    hint.textContent = current === 0 ? '左右滑動，開始閱讀' : '左右滑動翻頁';
+    document.documentElement.lang = entry.language ? langTag(entry.language) : 'zh-Hant';
+    history.replaceState(null, '', `#${notes ? `${entry.poem.id}-notes` : entry.hash}`);
+    if (notes) {
+      const alignNotes = () => {
+        if (renderEpoch !== epoch) return;
+        const annotation = page.querySelector('.annotation-section');
+        if (annotation) {
+          page.scrollTop += annotation.getBoundingClientRect().top - page.getBoundingClientRect().top - 24;
+          pageFolio.textContent = `第 ${entry.poem.page + 3} 頁 · 中文註釋`;
+        }
+      };
+      alignNotes();
+      document.fonts?.ready.then(alignNotes);
     }
-    else if (item.type === "matter") history.replaceState(null, "", `#${item.item.id}`);
-    else history.replaceState(null, "", "#cover");
+    const upcoming = sequence[current + 1];
+    if (upcoming?.type === 'illustration') {
+      const preload = new Image();
+      preload.src = upcoming.poem.image;
+    }
+  }
+
+  function go(hash, focus = true) {
+    const notes = hash.endsWith('-notes');
+    const targetHash = notes ? hash.replace(/-notes$/, '-zh') : hash;
+    const target = sequence.findIndex(entry => entry.hash === targetHash);
+    current = target >= 0 ? target : 0;
+    if (dialog.open) dialog.close();
+    render({ notes: notes && target >= 0 });
+    if (focus) page.focus({ preventScroll: true });
   }
 
   function turn(direction) {
     const target = Math.max(0, Math.min(sequence.length - 1, current + direction));
     if (target === current) return;
     current = target;
-    render({ direction });
+    render({ animate: true, direction });
   }
 
-  function showPage(target) {
-    if (target < 0 || target >= sequence.length) return;
-    current = target;
-    render({ animate: false });
-    if (dialog.open) dialog.close();
-    page.focus({ preventScroll: true });
+  page.addEventListener('scroll', () => {
+    const entry = sequence[current];
+    if (entry.type !== 'poem' || entry.language !== 'zh' || !entry.poem.note) return;
+    const annotation = page.querySelector('.annotation-section');
+    const readingNotes = annotation.getBoundingClientRect().top < page.getBoundingClientRect().top + page.clientHeight * .45;
+    pageFolio.textContent = readingNotes ? `第 ${entry.poem.page + 3} 頁 · 中文註釋` : `第 ${entry.poem.page} 頁`;
+  }, { passive: true });
+
+  function contentsButton(text, parent, hash, className = '') {
+    const button = node('button', className, text, parent);
+    button.type = 'button';
+    button.addEventListener('click', () => go(hash));
+    return button;
   }
-
-  function goToPoem(id, language = "zh") {
-    showPage(sequence.findIndex((item) => item.type === "poem" && item.poem.id === id && item.language === language));
+  const matterList = document.querySelector('#matter-list');
+  contentsButton('封面', matterList, 'cover');
+  [...matter.front, ...matter.back].forEach(item => contentsButton(item.nav || item.label, matterList, item.id));
+  const contents = document.querySelector('#contents-list');
+  for (const poem of poems) {
+    const item = node('li', '', undefined, contents);
+    contentsButton(poem.titles.zh, item, `${poem.id}-zh`, 'toc-title-button');
+    const links = node('div', 'toc-links', undefined, item);
+    for (const language of ['zh', 'en', 'fr']) {
+      contentsButton(languages[language], links, `${poem.id}-${language}`).lang = langTag(language);
+    }
+    if (poem.image) contentsButton('插圖', links, `${poem.id}-image`, 'toc-art');
   }
-
-  function goToMatter(id) {
-    showPage(sequence.findIndex((item) => item.type === "matter" && item.item.id === id));
-  }
-
-  // Make the title cover available as a direct entry in the contents list.
-  const matterList = document.querySelector("#matter-list");
-  [{ type: "cover", label: "文字封面" }].forEach(({ type, label }) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.textContent = label;
-    button.lang = "zh-Hant";
-    button.addEventListener("click", () => showPage(sequence.findIndex((item) => item.type === type)));
-    matterList.append(button);
-  });
-
-  [...matter.front, ...matter.back].forEach((entry) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.textContent = entry.nav || entry.label;
-    button.lang = "zh-Hant";
-    button.addEventListener("click", () => goToMatter(entry.id));
-    matterList.append(button);
-  });
-
-  poems.forEach((poem) => {
-    const item = document.createElement("li");
-    const title = document.createElement("p");
-    title.className = "toc-poem-title";
-    title.textContent = poem.titles.zh;
-    item.append(title);
-    const links = document.createElement("div");
-    links.className = "toc-languages";
-    ["zh", "en", "fr"].forEach((language) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.textContent = languageNames[language];
-      button.lang = language === "zh" ? "zh-Hant" : language;
-      button.addEventListener("click", () => goToPoem(poem.id, language));
-      links.append(button);
-    });
-    item.append(links);
-    document.querySelector("#contents-list").append(item);
-  });
-
-  document.querySelector("#toc-open").addEventListener("click", () => dialog.showModal());
-  document.querySelector("#toc-close").addEventListener("click", () => dialog.close());
-  dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
-  previous.addEventListener("click", () => turn(-1));
-  next.addEventListener("click", () => turn(1));
-  document.addEventListener("keydown", (event) => {
+  document.querySelector('#toc-open').addEventListener('click', () => dialog.showModal());
+  document.querySelector('#toc-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  previous.addEventListener('click', () => turn(-1));
+  next.addEventListener('click', () => turn(1));
+  document.addEventListener('keydown', event => {
     if (dialog.open || event.altKey || event.ctrlKey || event.metaKey || /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) return;
-    if (event.key === "ArrowLeft") turn(-1);
-    if (event.key === "ArrowRight") turn(1);
-    if (event.key === "Escape" && dialog.open) dialog.close();
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      turn(event.key === 'ArrowLeft' ? -1 : 1);
+    }
   });
-  const stage = document.querySelector("#reading");
-  // Keep the book gesture model consistent on Safari/iOS: single-finger swipes
-  // turn pages, while browser double-tap and pinch zoom remain disabled.
-  ["gesturestart", "gesturechange", "gestureend"].forEach((type) => {
-    document.addEventListener(type, (event) => event.preventDefault(), { passive: false });
-  });
-  const activeTouchPointers = new Set();
-  stage.addEventListener("pointerdown", (event) => {
-    if (event.pointerType === "touch") {
-      activeTouchPointers.add(event.pointerId);
-      if (activeTouchPointers.size > 1) {
-        touchStart = null;
-        return;
-      }
+  addEventListener('hashchange', () => go(location.hash.slice(1), false));
+
+  // Single-finger horizontal page turns coexist with native vertical reading.
+  // Multi-touch never turns a page; Safari pinch gestures remain disabled.
+  for (const type of ['gesturestart', 'gesturechange', 'gestureend']) document.addEventListener(type, event => event.preventDefault(), { passive: false });
+  const pointers = new Set();
+  let touchStart = null;
+  stage.addEventListener('pointerdown', event => {
+    pointers.add(event.pointerId);
+    if (pointers.size > 1 || event.target.closest('button,a') || (event.pointerType === 'mouse' && event.button !== 0)) {
+      touchStart = null;
+      return;
     }
     touchStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
   });
-  stage.addEventListener("pointerup", (event) => {
-    if (event.pointerType === "touch") activeTouchPointers.delete(event.pointerId);
+  stage.addEventListener('pointerup', event => {
+    pointers.delete(event.pointerId);
     if (!touchStart || touchStart.id !== event.pointerId) return;
     const dx = event.clientX - touchStart.x;
     const dy = event.clientY - touchStart.y;
-    if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.25) turn(dx < 0 ? 1 : -1);
+    if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.3 && !getSelection()?.toString()) turn(dx < 0 ? 1 : -1);
     touchStart = null;
   });
-  stage.addEventListener("pointercancel", (event) => {
-    if (event.pointerType === "touch") activeTouchPointers.delete(event.pointerId);
+  for (const type of ['pointercancel', 'lostpointercapture']) stage.addEventListener(type, event => {
+    pointers.delete(event.pointerId);
     touchStart = null;
   });
 
-  const hash = location.hash.slice(1);
-  const matterTarget = sequence.findIndex((item) => item.type === "matter" && item.item.id === hash);
-  const match = hash.match(/^([a-z-]+)-(zh|en|fr|notes|image)$/);
-  if (hash === "cover") {
-    current = 0;
-  } else if (hash === "cover-art") {
-    // Older saved links to the removed image cover return to the title cover.
-    current = 0;
-  } else if (matterTarget >= 0) {
-    current = matterTarget;
-  } else if (match && poems.some((poem) => poem.id === match[1])) {
-    const target = sequence.findIndex((item) => {
-      if (!item.poem || item.poem.id !== match[1]) return false;
-      if (match[2] === "image") return item.type === "illustration";
-      if (match[2] === "notes") return item.type === "poem" && item.language === "zh";
-      return item.type === "poem" && item.language === match[2];
-    });
-    if (target >= 0) current = target;
+  function updateMusic() {
+    const playing = !audio.paused && !audio.ended;
+    music.setAttribute('aria-pressed', String(playing));
+    music.setAttribute('aria-label', playing ? '暫停背景音樂' : '播放背景音樂');
   }
-  render({ animate: false });
-  if (match?.[2] === "notes") {
-    page.querySelector(`#notes-${match[1]}`)?.scrollIntoView({ block: "start" });
-    history.replaceState(null, "", `#${match[1]}-notes`);
+  async function playMusic(manual = false) {
+    if ((!manual && !mobile.matches) || userPausedMusic) return;
+    try { await audio.play(); } catch { /* Retry on the first reader interaction. */ }
+    updateMusic();
   }
+  audio.volume = .32;
+  audio.addEventListener('play', updateMusic);
+  audio.addEventListener('pause', updateMusic);
+  music.addEventListener('click', () => {
+    userPausedMusic = !audio.paused;
+    if (userPausedMusic) audio.pause();
+    else playMusic(true);
+    updateMusic();
+  });
+  document.addEventListener('pointerdown', event => {
+    if (audio.paused && !event.target.closest('#music-toggle')) playMusic();
+  }, { passive: true });
+  mobile.addEventListener('change', () => {
+    if (!mobile.matches) audio.pause();
+    else playMusic();
+    updateMusic();
+  });
+  updateMusic();
+  playMusic();
 
-  // Cache the Chinese poetry face without making every other book font compete
-  // with it on a first visit. The service worker caches other fonts on demand.
-  async function warmPoetryFont() {
-    const url = new URL("./fonts/HanWangLiSuMedium-TC.ttf?v=1", document.baseURI);
-    await fetch(url, { cache: "force-cache" }).catch(() => {});
-  }
-
-  // Register the offline shell; failures are fine, the reader works online anyway.
-  // Register the offline shell; failures are fine, the reader works online anyway.
-  // The warm-up waits for control rather than `ready`, which only settles once
-  // the page is already being served by an active worker.
-  if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
-    if (navigator.serviceWorker.controller) warmPoetryFont();
-    else navigator.serviceWorker.addEventListener("controllerchange", () => warmPoetryFont(), { once: true });
-  }
-
-  // Mobile PWAs can resume an old document from memory without navigating.
-  // Compare the deployed asset URLs on return and reload only when the edition
-  // changed; the current reading page is preserved in the URL hash.
-  let wasHidden = false;
-  let updateCheckInProgress = false;
-  async function checkForNewEdition() {
-    if (!navigator.onLine || updateCheckInProgress) return;
-    updateCheckInProgress = true;
-    try {
-      const response = await fetch("./index.html", { cache: "no-store" });
-      if (!response.ok) return;
-      const latestDocument = new DOMParser().parseFromString(await response.text(), "text/html");
-      const assetSelectors = [
-        'link[rel="stylesheet"][href*="styles.css"]',
-        'script[src*="poems.js"]',
-        'script[src*="reader.js"]'
+  go(location.hash.slice(1) || 'cover', false);
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register('./sw.js').then(async () => {
+      await navigator.serviceWorker.ready;
+      if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener('controllerchange', resolve, { once: true }));
+      await document.fonts?.ready;
+      // The first document can load its fonts before the worker takes control.
+      // Request them once through the active worker, along with all plates, so
+      // a complete downloaded edition is readable without visiting every leaf.
+      document.documentElement.dataset.offline = 'preparing';
+      const resources = [
+        edition.cover, ...poems.map(poem => poem.image).filter(Boolean),
+        ...['ziwei', 'anxiangji'].map(name => `${edition.sealBase || './images/'}seal-${name}.svg?v=${edition.version}`),
+        './fonts/LXGWWenKaiTC-Regular.ttf', './fonts/HanWangLiSuMedium-TC.ttf?v=1',
+        './fonts/Alegreya-Regular.otf', './fonts/Alegreya-Italic.otf',
+        './fonts/PoeticaStd.otf', './fonts/Poetica-RomanSmallCaps.otf',
+        './fonts/Poetica Chancery IV Regular.otf', './fonts/Bickham Script Pro 3 Bold.otf'
       ];
-      const deployedAssets = assetSelectors.map((selector) => latestDocument.querySelector(selector)?.getAttribute("href")
-        ?? latestDocument.querySelector(selector)?.getAttribute("src") ?? "");
-      const loadedAssets = assetSelectors.map((selector) => document.querySelector(selector)?.getAttribute("href")
-        ?? document.querySelector(selector)?.getAttribute("src") ?? "");
-      if (deployedAssets.some((asset, index) => asset !== loadedAssets[index])) location.reload();
-    } catch {
-      // Keep the current reading session if the network is unavailable.
-    } finally {
-      updateCheckInProgress = false;
-    }
+      const loaded = await Promise.allSettled(resources.map(async url => {
+        const response = await fetch(url, { priority: 'low' });
+        if (!response.ok) throw new Error('Resource unavailable');
+      }));
+      document.documentElement.dataset.offline = loaded.every(result => result.status === 'fulfilled') ? 'ready' : 'partial';
+    }).catch(() => { document.documentElement.dataset.offline = 'partial'; });
   }
 
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      wasHidden = true;
-    } else if (wasHidden) {
-      wasHidden = false;
-      checkForNewEdition();
-    }
-  });
-  window.addEventListener("pageshow", (event) => {
-    if (event.persisted) checkForNewEdition();
-  });
+  // Preserve the current deep link when a newer edition has been deployed.
+  let checking = false;
+  async function checkEdition() {
+    if (checking || !navigator.onLine) return;
+    checking = true;
+    try {
+      const response = await fetch(edition.document || './index.html', { cache: 'no-store' });
+      if (!response.ok) return;
+      const latest = new DOMParser().parseFromString(await response.text(), 'text/html');
+      for (const selector of ['link[href*="styles.css"]', 'script[src*="poems.js"]', 'script[src*="edition.js"]', 'script[src*="review-data.js"]', 'script[src*="reader.js"]']) {
+        const live = document.querySelector(selector);
+        const fresh = latest.querySelector(selector);
+        if (live && fresh && (live.getAttribute('src') || live.getAttribute('href')) !== (fresh.getAttribute('src') || fresh.getAttribute('href'))) {
+          location.reload();
+          return;
+        }
+      }
+    } catch { /* Preserve offline reading. */ }
+    finally { checking = false; }
+  }
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) checkEdition(); });
+  addEventListener('pageshow', event => { if (event.persisted) checkEdition(); });
 })();

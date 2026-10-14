@@ -1,44 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpkNzljNDM1Yy1lNDA0LTRiNTctOTVmNS0zMmRkMTNlZTczZWUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaJsg+TR6OVAjqSVjfNPB8yEAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1OGIwZWVmNy0xOTgzLTRkZDYtYWQwMS00ZDNkYjhjNjgwYWNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoH2a5pVmsqqqPOQR0ed3nkQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggi2GvzaZGsMCpFAlgd4S/3L+VQ9pQ8KLBEQy9QGpBkeWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaCaeHfGJhgOZDsfLvLDxMSUAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCDPswl0c+ApgoAMpgTWSATG65CEv0DHMmMDY3N9SooILWRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBilZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmQ3OWM0MzVjLWU0MDQtNGI1Ny05NWY1LTMyZGQxM2VlNzNlZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjhlNDBmMTJmLTVhMjQtNDIzYi1iMTgyLTM4NmYxNDFjMjIxOHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCLYa/NpkawwKkUCWB3hL/cv5VD2lDwosERDL1AakGR5aJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggykjnYjCO5zdKksFzYst5Lr12QG5apbbLFaZzAvTUbRSiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggZGop7wbeGqHXt+dD/pq6pgiwqLnNt94Gepb8TTe1Zl90Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQH+YOZbrTd9xcQYfw8HZWEImc71lji5avk8TA+Pi1kuyDUD1vhrWbOUm3jzbVmRkUGmvUYe8R9lJJyhBAYT14u8=</c2pa:manifest></metadata>
-  <title id="title">元夕逛街</title>
-  <desc id="desc">元宵夜獨行長街，燈火漸疏，遠處燈下有佳人流連，行人在時光流轉中安靜地自賞。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="yuanxi-title yuanxi-desc">
+  <title id="yuanxi-title">元夕逛街 · 燈影與空巷</title>
+  <desc id="yuanxi-desc">元宵的舊街向左前方迂迴而去。近處簷下的一盞長燈、遠處兩點燈火，在淺色石路留下斷續暖影。一位極小的行人在街角停步，空巷與衣影相伴。</desc>
   <defs>
-    <radialGradient id="ln-glow"><stop stop-color="#f2c66d" stop-opacity="0.5" /><stop offset=".5" stop-color="#f2c66d" stop-opacity="0.15" /><stop offset="1" stop-color="#f2c66d" stop-opacity="0" /></radialGradient>
-    <radialGradient id="ln-body" cx=".4" cy=".35" r=".8"><stop stop-color="#f0a48f" /><stop offset="1" stop-color="#c9594d" /></radialGradient>
-    <linearGradient id="ln-street" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a8b9ad" stop-opacity="0.08" /><stop offset="1" stop-color="#e9bf72" stop-opacity="0.28" /></linearGradient>
-    <linearGradient id="ln-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8da18f" stop-opacity="0.3" /><stop offset="1" stop-color="#b9c6b8" stop-opacity="0.1" /></linearGradient>
+    <linearGradient id="yx-wall" x1="0" y1="0" x2="1" y2=".25">
+      <stop stop-color="#263D34" stop-opacity=".15"/>
+      <stop offset=".55" stop-color="#326B75" stop-opacity=".065"/>
+      <stop offset="1" stop-color="#326B75" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="yx-quiet-wall" x1="0" y1="0" x2=".5" y2="1">
+      <stop stop-color="#326B75" stop-opacity=".045"/>
+      <stop offset="1" stop-color="#326B75" stop-opacity=".14"/>
+    </linearGradient>
+    <linearGradient id="yx-road" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#B59255" stop-opacity=".015"/>
+      <stop offset=".52" stop-color="#B59255" stop-opacity=".085"/>
+      <stop offset="1" stop-color="#326B75" stop-opacity=".025"/>
+    </linearGradient>
+    <linearGradient id="yx-lantern" x1="0" y1="0" x2="1" y2=".1">
+      <stop stop-color="#B44D3B" stop-opacity=".95"/>
+      <stop offset=".24" stop-color="#C56946" stop-opacity=".88"/>
+      <stop offset=".58" stop-color="#DDB46F" stop-opacity=".84"/>
+      <stop offset="1" stop-color="#B44D3B" stop-opacity=".94"/>
+    </linearGradient>
+    <radialGradient id="yx-warmth">
+      <stop stop-color="#E8CA86" stop-opacity=".27"/>
+      <stop offset=".48" stop-color="#E8CA86" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#E8CA86" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="yx-floor-light" x1="0" y1="0" x2=".3" y2="1">
+      <stop stop-color="#B59255" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#B59255" stop-opacity="0"/>
+    </linearGradient>
   </defs>
-  <circle cx="150" cy="30" r="9" fill="#f6e3b2" fill-opacity=".8" />
-  <circle cx="150" cy="30" r="34" fill="url(#ln-glow)" />
-  <path d="M0 92L56 112V176L0 206Z" fill="url(#ln-wall)" />
-  <path d="M191 80L132 108V176L191 210Z" fill="url(#ln-wall)" />
-  <path d="M0 92c18-4 40-4 56 4M191 80c-18 0-40 4-59 12" fill="none" stroke="#8aa093" stroke-opacity=".6" stroke-width="1" />
-  <g fill="#f2c66d" fill-opacity=".85"><rect x="14" y="124" width="5" height="6" rx=".6"/><rect x="30" y="130" width="5" height="6" rx=".6"/><rect x="164" y="118" width="5" height="6" rx=".6"/><rect x="146" y="126" width="5" height="6" rx=".6"/></g>
-  <path d="M56 176L0 206v20h191v-16L132 176Z" fill="url(#ln-street)" />
-  <path d="M0 24C40 52 70 56 96 44S150 26 191 56" fill="none" stroke="#8a7f6a" stroke-opacity=".55" stroke-width=".6" />
-  <path d="M0 12C30 34 60 36 90 26" fill="none" stroke="#8a7f6a" stroke-opacity=".4" stroke-width=".5" />
-  <circle cx="20" cy="43" r="18.2" fill="url(#ln-glow)" /><path d="M20 35.0v-3" stroke="#8a7f6a" stroke-width=".5" /><rect x="17.6" y="35.3" width="4.9" height="2.1" fill="#8a6a45" /><ellipse cx="20" cy="43" rx="7.0" ry="6.0" fill="url(#ln-body)" stroke="#a9524a" stroke-opacity=".5" stroke-width=".4"/><path d="M16.9 37.4q-1.4 5.6 0 11.2M23.1 37.4q1.4 5.6 0 11.2" stroke="#a9524a" stroke-opacity=".4" stroke-width=".35" fill="none"/><path d="M20 49.0v6.3" stroke="#e0b062" stroke-width=".6" /><circle cx="20" cy="56.0" r="1.1" fill="#e0b062"/>
-  <circle cx="52" cy="54" r="19.5" fill="url(#ln-glow)" /><path d="M52 45.4v-3" stroke="#8a7f6a" stroke-width=".5" /><rect x="49.4" y="45.8" width="5.2" height="2.2" fill="#8a6a45" /><ellipse cx="52" cy="54" rx="7.5" ry="6.4" fill="url(#ln-body)" stroke="#a9524a" stroke-opacity=".5" stroke-width=".4"/><path d="M48.6 48.0q-1.5 6.0 0 12.0M55.4 48.0q1.5 6.0 0 12.0" stroke="#a9524a" stroke-opacity=".4" stroke-width=".35" fill="none"/><path d="M52 60.4v6.8" stroke="#e0b062" stroke-width=".6" /><circle cx="52" cy="67.9" r="1.2" fill="#e0b062"/>
-  <circle cx="96" cy="47" r="21.3" fill="url(#ln-glow)" /><path d="M96 37.6v-3" stroke="#8a7f6a" stroke-width=".5" /><rect x="93.1" y="38.0" width="5.7" height="2.5" fill="#8a6a45" /><ellipse cx="96" cy="47" rx="8.2" ry="7.0" fill="url(#ln-body)" stroke="#a9524a" stroke-opacity=".5" stroke-width=".4"/><path d="M92.3 40.4q-1.6 6.6 0 13.1M99.7 40.4q1.6 6.6 0 13.1" stroke="#a9524a" stroke-opacity=".4" stroke-width=".35" fill="none"/><path d="M96 54.0v7.4" stroke="#e0b062" stroke-width=".6" /><circle cx="96" cy="62.2" r="1.3" fill="#e0b062"/>
-  <circle cx="136" cy="38" r="18.2" fill="url(#ln-glow)" /><path d="M136 30.0v-3" stroke="#8a7f6a" stroke-width=".5" /><rect x="133.6" y="30.3" width="4.9" height="2.1" fill="#8a6a45" /><ellipse cx="136" cy="38" rx="7.0" ry="6.0" fill="url(#ln-body)" stroke="#a9524a" stroke-opacity=".5" stroke-width=".4"/><path d="M132.8 32.4q-1.4 5.6 0 11.2M139.2 32.4q1.4 5.6 0 11.2" stroke="#a9524a" stroke-opacity=".4" stroke-width=".35" fill="none"/><path d="M136 44.0v6.3" stroke="#e0b062" stroke-width=".6" /><circle cx="136" cy="51.0" r="1.1" fill="#e0b062"/>
-  <circle cx="174" cy="48" r="16.9" fill="url(#ln-glow)" /><path d="M174 40.5v-3" stroke="#8a7f6a" stroke-width=".5" /><rect x="171.7" y="40.9" width="4.5" height="1.9" fill="#8a6a45" /><ellipse cx="174" cy="48" rx="6.5" ry="5.5" fill="url(#ln-body)" stroke="#a9524a" stroke-opacity=".5" stroke-width=".4"/><path d="M171.1 42.8q-1.3 5.2 0 10.4M176.9 42.8q1.3 5.2 0 10.4" stroke="#a9524a" stroke-opacity=".4" stroke-width=".35" fill="none"/><path d="M174 53.5v5.9" stroke="#e0b062" stroke-width=".6" /><circle cx="174" cy="60.0" r="1.1" fill="#e0b062"/>
-  <circle cx="36" cy="26" r="11.7" fill="url(#ln-glow)" /><path d="M36 20.8v-3" stroke="#8a7f6a" stroke-width=".5" /><rect x="34.4" y="21.1" width="3.1" height="1.3" fill="#8a6a45" /><ellipse cx="36" cy="26" rx="4.5" ry="3.8" fill="url(#ln-body)" stroke="#a9524a" stroke-opacity=".5" stroke-width=".4"/><path d="M34.0 22.4q-0.9 3.6 0 7.2M38.0 22.4q0.9 3.6 0 7.2" stroke="#a9524a" stroke-opacity=".4" stroke-width=".35" fill="none"/><path d="M36 29.8v4.0" stroke="#e0b062" stroke-width=".6" /><circle cx="36" cy="34.3" r="0.8" fill="#e0b062"/>
-  <circle cx="66" cy="28" r="10.9" fill="url(#ln-glow)" /><path d="M66 23.2v-3" stroke="#8a7f6a" stroke-width=".5" /><rect x="64.5" y="23.4" width="2.9" height="1.3" fill="#8a6a45" /><ellipse cx="66" cy="28" rx="4.2" ry="3.6" fill="url(#ln-body)" stroke="#a9524a" stroke-opacity=".5" stroke-width=".4"/><path d="M64.1 24.6q-0.8 3.4 0 6.7M67.9 24.6q0.8 3.4 0 6.7" stroke="#a9524a" stroke-opacity=".4" stroke-width=".35" fill="none"/><path d="M66 31.6v3.8" stroke="#e0b062" stroke-width=".6" /><circle cx="66" cy="35.8" r="0.8" fill="#e0b062"/>
-  <circle cx="108" cy="150" r="18" fill="url(#ln-glow)" />
-  <path d="M108 140v22" stroke="#8a7f6a" stroke-width=".8" />
-  <path d="M108 138c-4 0-6 2-6 4h12c0-2-2-4-6-4Z" fill="#b95449" fill-opacity=".8" />
-  <path d="M105.5 152c-.5 6-1 10-2 14h9c-1-5-1-9-1-14Z" fill="#9aae9f" fill-opacity=".85" />
-  <circle cx="108" cy="149.5" r="1.9" fill="#9aae9f" fill-opacity=".9" />
-  <g>
-    <ellipse cx="72" cy="214" rx="8" ry="1.8" fill="#8a9a8f" fill-opacity=".3" />
-    <circle cx="72" cy="168" r="3.4" fill="#5f776b" />
-    <path d="M67.5 173c-2 12-5 26-7 40h24c-3-13-6-27-6-40Z" fill="#6f877a" fill-opacity=".92" />
-    <path d="M68.4 175q-3 9-3 17M76.6 175q3 8 5 14" stroke="#6f877a" stroke-width="1.7" stroke-linecap="round" fill="none" />
-    <path d="M82 189v4" stroke="#8a7f6a" stroke-width=".5" />
-    <circle cx="82" cy="198" r="9" fill="url(#ln-glow)" />
-    <ellipse cx="82" cy="196" rx="2.6" ry="2.2" fill="url(#ln-body)" />
+
+  <!-- The street is suggested by incomplete planes, rather than enclosed. -->
+  <path d="M135 305 307 364 314 495 420 612 625 822 721 826 489 569 359 476 346 358 175 288Z" fill="url(#yx-road)"/>
+  <path d="m67 240 98 29 47 11 73 23 10 43 8 24 8 54 12 25-11 47-31 34-3-147-38-10-28-11-44-11-62-27-43-24Z" fill="url(#yx-wall)"/>
+  <path d="m293 354 64 21 1 103-40 28-4-95Z" fill="#326B75" fill-opacity=".065"/>
+  <path d="m471 400 34-16 36-15 44 17 34 10 42 18 2 42 10 52 1 43 13 67-34-4-33-3-35-42-29-30-47-54Z" fill="url(#yx-quiet-wall)"/>
+  <path d="m537 376 21-8 126 41-2 11-125-34Z" fill="#263D34" fill-opacity=".10"/>
+  <path d="m566 396 4 124 88 96-2-145-7-47Z" fill="#326B75" fill-opacity=".035"/>
+  <path d="m368 410 19-10 59 21 1 49-33 11-41-29Z" fill="#B59255" fill-opacity=".065"/>
+  <path d="m358 411 29-15 62 23-3 6-59-20-28 12Z" fill="#263D34" fill-opacity=".18"/>
+
+  <!-- A broken, weight-bearing eave: the darkest mass sits away from the centre. -->
+  <path d="M57 238c29 5 57 13 86 21l140 41 22 10-4 9-42-9-116-34-60-21-25-2-9-6Z" fill="#263D34"/>
+  <path d="m63 234 24-2 58 18 130 38 26 14-21-3-137-39-55-18-18 1Z" fill="#263D34" fill-opacity=".34"/>
+  <path d="m84 255 14 10 119 34 51 11 19 12-4 6-21-8-128-39-42-16Z" fill="#263D34" fill-opacity=".69"/>
+  <path d="m98 262 1 12 6 3 3-11m38 10-1 12 7 4 4-13m39 10-1 13 7 4 3-14m34 10-1 13 7 5 2-15" fill="#263D34" fill-opacity=".68"/>
+  <g fill="none" stroke="#F7F3E8" stroke-linecap="round">
+    <path d="m77 244 38 12m12 3 49 15m18 5 58 17m12 4 25 7" stroke-width="1.3" stroke-opacity=".61"/>
+    <path d="m120 254 6 7m32 4 6 8m32 4 6 8m32 4 7 8m-158-44 13 4" stroke-width=".9" stroke-opacity=".5"/>
   </g>
+  <path d="m121 289 5 168m-2 17 1 25m126-170 8 186" fill="none" stroke="#263D34" stroke-opacity=".24" stroke-width="2"/>
+  <path d="m143 319 1 125 85 24-3-125Z" fill="#263D34" fill-opacity=".055"/>
+  <path d="m145 321 1 119 79 24m-65-129 1 108m20-101 2 107m20-101 3 107m-59-81 76 23m-76 8 77 22" fill="none" stroke="#263D34" stroke-opacity=".18" stroke-width="1.1"/>
+  <path d="m95 492 38 12 47 18m18 6 45 15 21-8m-158-28 77 24m12 7 30 9" fill="none" stroke="#263D34" stroke-opacity=".16" stroke-width="1.4"/>
+  <path d="m116 510 10 8 16 1 24 9 25 3 32 10-19 2-40-10-31-10Z" fill="#263D34" fill-opacity=".10"/>
+  <path d="m75 274 9 4-3 34-4-3Zm34 16 6 3-2 89-4-4Zm21 64 4 1-1 52-3-1Zm119 42 5 1 1 43-4-3Zm-90 75 39 12-4 3-36-11Zm49 15 12 4-1 8-11-3Z" fill="#263D34" fill-opacity=".065"/>
+  <path d="m89 327 7 2-1 9-7-3Zm32 66 8 2-1 17-7-2Zm113 76 11 5-2 4-10-4Zm362 23 9 5 2 33-8-4Zm26 42 6 2 1 17-4-1Z" fill="#326B75" fill-opacity=".055"/>
+
+  <!-- Three lanterns have different scale, geometry and posture. -->
+  <ellipse cx="205" cy="375" rx="99" ry="140" fill="url(#yx-warmth)"/>
+  <path d="m205 293-2 31" fill="none" stroke="#263D34" stroke-width="1.1"/>
+  <path d="m190 324 27 1 5 6-38-1Z" fill="#263D34" fill-opacity=".82"/>
+  <path d="M185 330c-9 13-13 35-9 56 2 13 7 24 16 32l24-1c8-10 12-25 12-43 0-18-5-32-11-43Z" fill="url(#yx-lantern)"/>
+  <path d="M185 334c-5 19-6 42-2 59m3 9 6 12m24-79c7 21 7 50 0 72m-17-74c-5 20-4 55 1 82m7-82c5 26 5 56 1 82" fill="none" stroke="#8F4937" stroke-opacity=".48" stroke-width="1.2"/>
+  <path d="m183 345 38 2m-44 12 48 2m-48 16 49 1m-46 17 41 1" fill="none" stroke="#F7E3B0" stroke-opacity=".23" stroke-width=".8"/>
+  <path d="m191 415 25-1 1 6-26 1Z" fill="#263D34" fill-opacity=".67"/>
+  <path d="m203 421-2 15 3 3-3 17m4-17 3 15m-6-16-5 14" fill="none" stroke="#B59255" stroke-width="1.35" stroke-linecap="round"/>
+  <path d="m192 338 7-1c-3 12-4 31-2 47l-8-4c-1-14 0-28 3-42Z" fill="#F7E3B0" fill-opacity=".18"/>
+
+  <ellipse cx="515" cy="438" rx="63" ry="88" fill="url(#yx-warmth)"/>
+  <path d="m544 387-25 13-2 16" fill="none" stroke="#263D34" stroke-opacity=".64" stroke-width="1.3"/>
+  <path d="m506 418 21-3 4 35-20 4Z" fill="#B59255" fill-opacity=".72"/>
+  <path d="m509 421 15-2 3 28-14 3Z" fill="#E2C587" fill-opacity=".76"/>
+  <path d="m505 417 23-3 1 4-23 3m4 33 22-4 1 4-23 4" fill="#263D34" fill-opacity=".71"/>
+  <path d="m516 420 4 29m-9-19 14-2m-12 13 13-3" fill="none" stroke="#9E754C" stroke-opacity=".6" stroke-width=".7"/>
+  <path d="m521 456 2 11-2 8m2-6 3 5" fill="none" stroke="#B44D3B" stroke-opacity=".7" stroke-width=".85"/>
+
+  <path d="m350 415 2 13" fill="none" stroke="#263D34" stroke-opacity=".38" stroke-width=".8"/>
+  <path d="M346 429c-3 3-3 11 0 15 3 2 8 2 10-1 2-4 2-10-1-14Z" fill="#B44D3B" fill-opacity=".55"/>
+  <path d="m347 428 8-1m-7 19 6-1 1 8" fill="none" stroke="#B59255" stroke-width=".85"/>
+
+  <!-- Quiet upper edges and a distant turn leave the sky mostly unpainted. -->
+  <g fill="none" stroke="#263D34" stroke-linecap="round">
+    <path d="m305 359 12-8 43 13m6 2 24 8m-69-12 31 9m-30 7 1 34m0 9 1 39" stroke-opacity=".2" stroke-width="1.1"/>
+    <path d="m478 400 59-28 55 17m9 3 63 20m-124-29 5 58m2 20 2 32m-4-66 16 5" stroke-opacity=".22" stroke-width="1.15"/>
+    <path d="m580 438 43 17 2 57-43-29Zm16 7 1 44m12-39 2 44m-28-32 41 15" stroke-opacity=".15" stroke-width="1"/>
+    <path d="m426 446 19-4m-18 9 19-4m-5 27 38 35m9 9 36 37" stroke-opacity=".14" stroke-width=".9"/>
+  </g>
+  <path d="m626 508 21 8 8 91-17-8Z" fill="#263D34" fill-opacity=".13"/>
+  <path d="m641 519 2 27m0 10 3 31" fill="none" stroke="#263D34" stroke-width="1.15" stroke-opacity=".3"/>
+  <path d="m354 478 20-9 15 9-15 8Z" fill="#326B75" fill-opacity=".1"/>
+
+  <!-- One paused figure is a profile, sleeve and two parted feet, not an icon. -->
+  <g transform="translate(464 614) scale(.68) translate(-464 -614)">
+    <path d="M459 542c-2-4-2-8 1-10 4-3 9-1 9 3l-2 5 2 3-4 2-1 4-5-2Z" fill="#263D34" fill-opacity=".88"/>
+    <path d="M459 533c-5 1-6 7-5 12l-3 9c6-1 8-6 8-13Z" fill="#263D34" fill-opacity=".82"/>
+    <path d="M460 546c-6 4-7 11-10 19l-4 14 6 2 8-18-2 22-8 22 10 3 13 1 10-3-8-24 2-15-3-18-7-6Z" fill="#263D34" fill-opacity=".86"/>
+    <path d="m471 550 7 10 7 4-1 4-11-5-6-10" fill="#263D34" fill-opacity=".85"/>
+    <path d="m458 609-3 5-7 2 14 1 1-7m10 0 3 5 11 1-8-5" fill="#263D34" fill-opacity=".73"/>
+    <path d="M462 547c7 2 11 5 14 8l-5 5c-3-6-7-8-11-9Z" fill="#B59255" fill-opacity=".67"/>
+    <path d="m471 557 7 8 10 4-10-2-9-6Z" fill="#B59255" fill-opacity=".49"/>
+    <path d="m464 561-3 22m9-12 2 14m-14 6-4 11m18-6 4 9" fill="none" stroke="#F7F3E8" stroke-width=".7" stroke-opacity=".32"/>
+    <path d="M451 619c20-2 35 0 50 5l-8 3-44-3-11-3Z" fill="#326B75" fill-opacity=".12"/>
+  </g>
+
+  <!-- Lamplight breaks over worn paving; no continuous vanishing-point grid. -->
+  <path d="m205 479 34 10 30 53-27 4-46-43Z" fill="url(#yx-floor-light)"/>
+  <path d="m213 508 35 9 22 20-35-7Zm28 39 41 11 16 17-43-10Zm21 34 37 8 38 38-52-21Z" fill="#B59255" fill-opacity=".105"/>
+  <path d="m497 500 22-2 35 53-25 3Zm36 67 24-4 20 28-30 4Z" fill="#B59255" fill-opacity=".13"/>
   <g fill="none" stroke-linecap="round">
-    <path d="M96 182v14m2 0v8M110 178v22M114 186v10" stroke="#e9bf72" stroke-opacity=".55" stroke-width="1.4" />
-    <path d="M20 160q-2 0-2 14M150 150q-2 14-2 24" stroke="#e9bf72" stroke-opacity=".35" stroke-width="1" />
+    <path d="m282 533 32 26 35 35m13 13 34 34m21 19 51 53 38 31m20 17 44 42" stroke="#263D34" stroke-opacity=".2" stroke-width="1.3"/>
+    <path d="m330 504 38 35m14 14 30 32m20 20 56 53m13 15 37 40 42 36m17 19 33 35" stroke="#326B75" stroke-opacity=".13" stroke-width="1.05"/>
+    <path d="m378 494 45 39m16 14 24 24m32 33 64 57m22 24 52 53" stroke="#263D34" stroke-opacity=".11" stroke-width="1.1"/>
+    <path d="m244 574 32-11m13-4 47-16m-61 58 51-16m13-4 46-16m-65 84 59-21m17-5 48-16m-78 94 47-15m16-5 68-22m-86 103 74-26m18-6 66-23m-69 95 82-29m19-7 41-16" stroke="#263D34" stroke-opacity=".13" stroke-width=".95"/>
+    <path d="m174 559 24 10m9 4 31 11m-55 16 37 14m-7 37 44 17m37 43 42 17m-82 6 39 15m64 36 42 15" stroke="#326B75" stroke-opacity=".10" stroke-width="1.2"/>
+    <path d="m520 634 17-5m7-2 15-3m-12 28 27-8m-12 32 17-5m-51 65 26-8" stroke="#B59255" stroke-opacity=".23" stroke-width="1.35"/>
   </g>
+  <path d="m291 579 12-5 11 6-11 3Zm67 60 17-6 14 7-17 5Zm65 77 24-8 20 10-26 7Zm98 53 31-10 18 10-31 11Z" fill="#326B75" fill-opacity=".055"/>
+  <path d="m184 663 34 14-10 3-30-12Zm105 95 57 22-17 2-44-18Zm325-78 34 34 9 18-27-23Z" fill="#B59255" fill-opacity=".06"/>
 </svg>

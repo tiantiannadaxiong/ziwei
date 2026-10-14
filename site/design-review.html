@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#F7F3E8">
+  <meta name="description" content="《暗香集》當代東方藝術書 · 設計樣本">
+  <title>暗香集 · 詩畫樣本</title>
+  <link rel="manifest" href="./review.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="暗香集 · 樣本">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <script>
+    // Keep the edition's established iPhone/PWA viewport behaviour. The page
+    // scrolls inside the middle grid row; both navigation rows stay outside it.
+    (() => {
+      const root = document.documentElement;
+      const viewport = window.visualViewport;
+      const updateHeight = () => {
+        const standalone = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
+        const visible = viewport?.height || innerHeight;
+        const height = standalone ? Math.max(visible, innerHeight, screen.height || 0) : visible;
+        root.style.setProperty('--viewport-height', `${Math.ceil(height)}px`);
+      };
+      updateHeight();
+      for (const event of ['resize', 'orientationchange', 'pageshow']) addEventListener(event, updateHeight, { passive: true });
+      viewport?.addEventListener('resize', updateHeight, { passive: true });
+    })();
+  </script>
+  <link rel="preload" href="./fonts/LXGWWenKaiTC-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./fonts/HanWangLiSuMedium-TC.ttf?v=1" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./styles.css?v=artbook-5">
+  <script src="./poems.js?v=artbook-5" defer></script>
+  <script src="./review-data.js?v=artbook-5" defer></script>
+  <script src="./reader.js?v=artbook-5" defer></script>
+</head>
+<body>
+  <main class="book" id="book" aria-label="《暗香集》詩畫樣本">
+    <header class="book-toolbar">
+      <button class="contents-trigger" id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc-dialog" aria-label="打開目錄"><span class="contents-icon" aria-hidden="true"></span><span>目錄</span></button>
+      <span class="book-wordmark">暗香集</span>
+      <div class="toolbar-right"><span id="reading-progress" aria-label="閱讀進度" aria-live="polite">開卷</span><button class="music-toggle" id="music-toggle" type="button" aria-label="播放背景音樂" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17V5l10-2v12M9 8l10-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="16" cy="16" rx="3" ry="2"/></svg></button></div>
+    </header>
+    <section class="reading-stage" id="reading" aria-label="詩集頁面">
+      <article class="book-page" id="book-page" tabindex="-1"></article>
+    </section>
+    <nav class="page-controls" aria-label="翻頁">
+      <button id="previous" type="button" aria-label="向前翻頁" disabled><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M29 10H3m7-7-7 7 7 7"/></svg></button>
+      <div class="page-position"><span id="page-folio" aria-live="polite">封面</span><span id="swipe-hint">左右滑動，開始閱讀</span></div>
+      <button id="next" type="button" aria-label="向後翻頁"><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M3 10h26m-7-7 7 7-7 7"/></svg></button>
+    </nav>
+  </main>
+  <dialog class="toc-dialog" id="toc-dialog" aria-labelledby="toc-title">
+    <header class="toc-heading"><div><p class="eyebrow" lang="en">THE COLLECTION</p><h1 id="toc-title">目錄</h1></div><button id="toc-close" type="button" class="dialog-close" aria-label="關閉目錄">×</button></header>
+    <nav class="toc-matter" id="matter-list" aria-label="封面與前後頁"></nav>
+    <ol class="toc-list" id="contents-list"></ol>
+    <footer class="toc-footer"><span>紫薇 · 暗香集</span><span>詩畫樣本</span></footer>
+  </dialog>
+  <audio id="ambient-audio" src="./audio/1.mp3" loop preload="none"></audio>
+  <noscript><p class="noscript-message">請啟用 JavaScript 以閱讀詩集。</p></noscript>
+</body>
+</html>

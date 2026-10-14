@@ -1,83 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc">
-  <title id="title">香江</title>
-  <desc id="desc">深秋的維多利亞港，青綠水色在微風裡層層舒展；兩岸樓影、遠山與一縷淡金暮光隱約相連。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+  <title id="title">香江 · 西風過港</title>
+  <desc id="desc">西風吹過寬闊港面，石青與石綠的浪脊斜向舒展。錯落兩岸退入山腳，細小樓影藏在霧色中；右下近崖與一線白沙承接明亮水光，遠山層層而高。</desc>
   <defs>
-    <radialGradient id="xj-glow">
-      <stop stop-color="#efcc85" stop-opacity=".38" />
-      <stop offset=".48" stop-color="#efcc85" stop-opacity=".14" />
-      <stop offset="1" stop-color="#efcc85" stop-opacity="0" />
-    </radialGradient>
-    <linearGradient id="xj-sky" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#e4e8d8" stop-opacity=".04" />
-      <stop offset="1" stop-color="#c9d8ca" stop-opacity=".18" />
-    </linearGradient>
-    <linearGradient id="xj-ridge" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#91a99a" stop-opacity=".34" />
-      <stop offset="1" stop-color="#aabcae" stop-opacity=".16" />
-    </linearGradient>
-    <linearGradient id="xj-water" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#a9c3b6" stop-opacity=".28" />
-      <stop offset=".58" stop-color="#a9c7bb" stop-opacity=".2" />
-      <stop offset="1" stop-color="#d9e0d0" stop-opacity=".16" />
-    </linearGradient>
-    <linearGradient id="xj-reflection" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#e7c579" stop-opacity=".35" />
-      <stop offset="1" stop-color="#e7c579" stop-opacity="0" />
-    </linearGradient>
+    <linearGradient id="xj-far" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#879B8B" stop-opacity=".34"/><stop offset="1" stop-color="#A4B5A3" stop-opacity=".03"/></linearGradient>
+    <linearGradient id="xj-mountain" x1="0" y1="0" x2=".25" y2="1"><stop stop-color="#5F7E6B" stop-opacity=".74"/><stop offset=".64" stop-color="#6F8F76" stop-opacity=".45"/><stop offset="1" stop-color="#8DA590" stop-opacity=".08"/></linearGradient>
+    <linearGradient id="xj-water" x1="0" y1=".06" x2=".22" y2="1"><stop stop-color="#326B75" stop-opacity=".04"/><stop offset=".33" stop-color="#6F8F76" stop-opacity=".16"/><stop offset=".72" stop-color="#326B75" stop-opacity=".32"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".08"/></linearGradient>
+    <linearGradient id="xj-cliff" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#80947A" stop-opacity=".82"/><stop offset=".56" stop-color="#4B6857" stop-opacity=".94"/><stop offset="1" stop-color="#263D34"/></linearGradient>
+    <linearGradient id="xj-sunwater" x1="0" y1="0" x2="1" y2=".5"><stop stop-color="#B49A68" stop-opacity="0"/><stop offset=".54" stop-color="#D5C49C" stop-opacity=".18"/><stop offset="1" stop-color="#D5C49C" stop-opacity="0"/></linearGradient>
   </defs>
 
-  <!-- A pale late-autumn glow rests behind the ridgeline. -->
-  <circle cx="133" cy="53" r="44" fill="url(#xj-glow)" />
-  <circle cx="133" cy="53" r="12" fill="#efe1b2" fill-opacity=".48" />
-  <circle cx="133" cy="53" r="12" fill="none" stroke="#cbb982" stroke-opacity=".34" stroke-width=".55" />
-  <path d="M128 51c2-2 5-2 7 0m-5 5c2 1 4 1 6 0" fill="none" stroke="#b9a879" stroke-opacity=".45" stroke-width=".5" stroke-linecap="round" />
-
-  <!-- Long, almost transparent strokes suggest the west wind. -->
-  <g fill="none" stroke="#829b8d" stroke-linecap="round">
-    <path d="M5 47c18-8 34-10 51-5 12 3 22 4 34 1" stroke-opacity=".3" stroke-width=".85" />
-    <path d="M13 61c16-5 28-5 41-1m13 1c13 3 25 2 38-2" stroke-opacity=".24" stroke-width=".65" />
-    <path d="M28 75c14-3 26-2 37 1m46-6c12-3 22-3 34 1" stroke-opacity=".2" stroke-width=".55" />
+  <!-- The distant peaks retain a broken silhouette, with air between the planes. -->
+  <path d="M0 336c33-6 48-16 66-25l31-12 33-28 18 5 29-13 25-32 21 12 23-4 21 16 27 8 19 23 33 8 19 22 33 7 28 22 31 6 28 19 37 9 28 21-600 13Z" fill="url(#xj-far)"/>
+  <path d="M355 333 387 318 408 297 432 292 451 272 471 279 499 253 517 260 533 247 553 266 571 264 601 286 624 288 649 311 675 306 704 323 729 329 760 318v103l-381-17Z" fill="#7C998C" fill-opacity=".17"/>
+  <path d="M0 339 24 331 44 313 63 307 88 279 108 281 129 257 146 269 165 247 181 264 205 260 224 279 247 284 264 309 285 317 301 340 325 346 348 369 384 382 400 402 0 422Z" fill="url(#xj-mountain)"/>
+  <path d="M0 340 25 333 43 316 62 310 87 284 106 286 128 261 140 274 121 300 102 309 91 331 65 348 50 376 20 392 0 398Z" fill="#5E7D68" fill-opacity=".35"/>
+  <path d="m165 252 16 17 23-3 20 18 22 6 17 25 21 9 17 23-23-10-18-18-22-4-16-19-21-2-18-17-19 9-18 20 13-30Z" fill="#C0CAB1" fill-opacity=".49"/>
+  <path d="m129 264-8 39-24 31-12 32-25 24 28-15 17-29 26-27 14-43Zm52 10-14 38-26 25-9 36-26 28 34-18 11-36 26-24 14-35Zm48 28 3 26 28 26 8 23 27 17-15-24-27-25-9-30Z" fill="#385B4D" fill-opacity=".21"/>
+  <path d="M0 402c45-10 67-8 101-13 38-5 69-8 105-4 37 5 70 14 103 15l53 8-18 12-104-1-128 8L0 430Z" fill="#819D88" fill-opacity=".23"/>
+  <g fill="none" stroke="#365A4C" stroke-linecap="round">
+    <path d="m58 321-8 11-13 7m42-11-9 21-13 10m75-55-8 16m-7 15-10 13m69-67-7 13m-1 39-8 11-5 19m76-31 7 11m15 13 11 8m-27-3 10 19" stroke-width="1.2" stroke-opacity=".29"/>
+    <path d="m15 371 16-5m60 11 11-7m53-2 8-8m31 12 17 2m48 6 12 8" stroke-width=".85" stroke-opacity=".32"/>
   </g>
 
-  <!-- Far hills and two soft, uneven banks frame the harbor. -->
-  <path d="M0 119c16-8 26-13 39-12 12 1 20 9 31 7 12-2 20-14 31-17 12-4 22 5 34 4 13-1 23-11 36-12 8 0 14 3 20 5v40H0Z" fill="#c2d0c3" fill-opacity=".26" />
-  <path d="M0 125c14-7 24-15 38-14 11 1 18 8 27 7 11-1 20-15 31-19 11-4 19 4 29 4 14 0 24-13 36-14 10-1 19 3 30 8v28H0Z" fill="url(#xj-ridge)" />
-  <path d="M0 125c14-7 24-15 38-14 11 1 18 8 27 7 11-1 20-15 31-19 11-4 19 4 29 4 14 0 24-13 36-14 10-1 19 3 30 8" fill="none" stroke="#789283" stroke-opacity=".46" stroke-width=".7" />
-  <path d="M11 127c17-5 28-7 41-5m57-2c12 2 22 1 32-4m13 0c10-3 19-2 29 2" fill="none" stroke="#e7ecdf" stroke-opacity=".8" stroke-width=".75" stroke-linecap="round" />
+  <!-- The right shore is lower and farther away; no landmark claims the horizon. -->
+  <path d="M455 385c30-5 48-14 68-22l22 2 29-14 19 3 28-10 24 11 32-3 26 14 27 4 30-7v62c-64 2-102-2-148-9-47-7-88-10-157-10Z" fill="#6F8F76" fill-opacity=".28"/>
+  <path d="M505 384c45-10 76-12 112-9 44 4 93 16 143 9v47c-52-2-97-13-139-17-39-5-69-4-116-6Z" fill="#53796B" fill-opacity=".2"/>
+  <path d="m526 374 13-1m34-7 14-2m35 1 18 7m44 6 15 2m28-4 22-3" fill="none" stroke="#263D34" stroke-opacity=".21" stroke-width="1.1" stroke-linecap="round"/>
+  <g fill="#49665C" fill-opacity=".3">
+    <path d="M64 411v-13h6v-10h8v21l7-1v-17h9v19l12-2v-29h8v26l6 1v-16h5v21l10-1v-35h7v34l7 1v-20h8v22l10 1v-12h7v17Z"/>
+    <path d="M181 414v-20h7v18h7v-29h6v31l9 1v-12h7v13l8 1v-18h6v21l8 1v-9h10v12Z"/>
+    <path d="M555 414v-15h6v-10h5v25l9 1v-19h7v21l8 1v-30h6v31l6 1v-14h6v15l8 1v-23h6v25l10 1v-17h7v20l10 1v-13h6v15l9 1v-25h7v25Z"/>
+    <path d="M699 428v-19h7v20h5v-35h6v35l8-1v-23h7v22l9-1v-15h6v14l13-1v8Z"/>
+  </g>
+  <path d="M32 419c61-5 111-4 159-1 40 2 62 8 100 7m226-11c51 1 76 7 114 11 39 5 74 5 110 4" fill="none" stroke="#263D34" stroke-width="1.45" stroke-opacity=".28" stroke-linecap="round"/>
+  <path d="M93 416h21m27 1 17 1m38 2 15 1m331-3 17 1m49 7 20 1m43 3h21" fill="none" stroke="#F7F3E8" stroke-width="1.5" stroke-opacity=".81"/>
 
-  <!-- Quiet clusters of distant towers, softened by sea haze. -->
-  <g fill="#819b8d" fill-opacity=".48">
-    <path d="M13 119v-16h5v16Zm7 0V96h6v23Zm8 0v-13h5v13Zm8 0V89h6v30Zm9 0v-21h5v21Zm7 0V98h7v21Zm10 0v-17h5v17Z" />
-    <path d="M121 119v-15h6v15Zm8 0V94h5v25Zm7 0v-20h7v20Zm9 0V86h5v33Zm7 0v-14h6v14Zm8 0V99h5v20Zm7 0v-18h6v18Z" />
+  <path d="M0 432c104-14 186-6 274 0 90 6 163-23 248-14 85 8 151 24 238 14v468H0Z" fill="url(#xj-water)"/>
+  <path d="M180 459c112-20 207-1 280-8 67-6 135-16 200-7l-13 83c-82-9-150 4-216 11-79 8-149-7-251 4Z" fill="url(#xj-sunwater)"/>
+  <path d="M0 534c73-10 130-3 186-8 63-6 119-25 184-25-67 13-111 35-174 44-63 9-123 1-196 13Zm0 115c79-11 144-8 208-25 63-16 99-42 161-46-50 16-90 49-151 65-73 19-141 17-218 29Zm0 151c92-10 163-26 227-55 54-25 96-45 154-43-56 12-91 37-140 63C166 804 99 815 0 826Z" fill="#326B75" fill-opacity=".075"/>
+
+  <!-- Wind lifts unequal wave crests towards the open right side. -->
+  <g fill="none" stroke="#326B75" stroke-linecap="round">
+    <path d="M77 460c31-2 56-2 83-1m50 2c30 0 54-2 78-6m67-5 53-3m107 5 38 4m96 4 38-1" stroke-width=".85" stroke-opacity=".26"/>
+    <path d="M24 492c38-4 71-2 105-4m84-1c36-2 65-7 90-10m78-1c35-4 56-3 88-5m76 8 42 3m62 0 41-3" stroke-width="1.1" stroke-opacity=".35"/>
+    <path d="M67 555c44-3 70-1 107-6 41-5 66-18 100-23m66-6c28-1 46-5 68-10m89 7c39-6 68-6 104-6" stroke-width="1.3" stroke-opacity=".42"/>
+    <path d="M28 619c47-4 77-2 113-11 32-8 57-21 83-27m74-8c28-4 48-12 70-21m87 4c39-3 70-10 100-20" stroke-width="1.5" stroke-opacity=".43"/>
+    <path d="M69 692c42-5 72-11 101-25 31-15 57-34 89-40m59-4c39-4 70-17 97-29m61-3c31-3 57-13 81-21" stroke-width="1.65" stroke-opacity=".44"/>
+    <path d="M26 776c45-2 78-8 116-24 39-16 66-40 101-49m82-8c34-4 64-15 91-27" stroke-width="1.7" stroke-opacity=".46"/>
+    <path d="M88 847c54-11 90-24 130-50 28-18 55-30 87-34m64-5c31-3 51-10 73-20m-97 97c38-4 64-16 97-32" stroke-width="1.85" stroke-opacity=".46"/>
   </g>
-  <g fill="none" stroke="#829b8d" stroke-opacity=".36" stroke-width=".45">
-    <path d="M24 96v-4m21 27v-20m93-1v-9m21 30v-13" />
+  <g fill="#FFFDF5">
+    <path d="M57 541c46-2 77-4 111-10 25-5 46-12 67-17-26 12-48 21-76 25-34 5-62 2-102 4Zm214-32c28-5 45-11 62-18-15 11-31 18-57 21Z" fill-opacity=".79"/>
+    <path d="M15 599c47 1 80-4 113-14 35-11 57-24 86-28-25 11-47 26-78 34-39 11-72 12-121 10Zm243-55c25-3 44-7 62-15-14 11-32 18-54 18Z" fill-opacity=".88"/>
+    <path d="M101 655c39-7 65-18 95-35 23-13 43-21 67-22-25 6-44 18-66 30-30 16-57 24-96 29Zm238-61c32-4 53-14 77-26-19 15-40 25-67 30Z" fill-opacity=".86"/>
+    <path d="M8 727c48-1 81-7 116-23 34-16 56-34 86-43-28 14-49 35-79 48-35 15-71 20-123 20Zm238-79c23-2 43-8 60-15-14 12-32 17-54 19Z" fill-opacity=".84"/>
+    <path d="M79 807c36-6 65-18 96-36 31-19 48-36 79-45-26 15-46 35-73 50-31 18-61 26-102 33Zm210-79c35-4 57-13 82-26-18 16-41 28-71 31Z" fill-opacity=".9"/>
+    <path d="M177 882c38-13 67-32 95-53 23-17 45-26 73-30-25 8-44 21-67 38-31 22-61 35-101 47Zm195-97c27-7 46-16 66-29-14 16-35 29-60 33Z" fill-opacity=".83"/>
   </g>
-  <g fill="#e4c77e" fill-opacity=".72">
-    <rect x="22" y="102" width="1.2" height="1.4" /><rect x="31" y="110" width="1.2" height="1.4" />
-    <rect x="41" y="94" width="1.2" height="1.4" /><rect x="57" y="105" width="1.2" height="1.4" />
-    <rect x="124" y="110" width="1.2" height="1.4" /><rect x="138" y="100" width="1.2" height="1.4" />
-    <rect x="151" y="92" width="1.2" height="1.4" /><rect x="171" y="105" width="1.2" height="1.4" />
+  <g fill="none" stroke="#FFFDF5" stroke-linecap="round" stroke-opacity=".85">
+    <path d="m38 475 35-2m106 5 27-1m131-17 35-2m114 6 26 1m101 4 29-1" stroke-width="1.3"/>
+    <path d="M414 520c24-2 42-5 62-10m-96 72 25-8m29 50c23-4 42-10 61-18m-88 104 32-13m-179 111 21-12" stroke-width="1.8"/>
   </g>
 
-  <!-- A few sandy shallows remain visible beneath the layered water. -->
-  <path d="M0 142c23-6 43-5 62 0 19 5 35 4 51-1 24-8 49-6 78 1v65H0Z" fill="url(#xj-water)" />
-  <path d="M0 147c22-5 40-4 59 1 19 5 38 4 57-2 24-7 48-6 75 1" fill="none" stroke="#779487" stroke-opacity=".5" stroke-width=".72" />
-  <path d="M0 163c19-5 39-5 59 0 20 5 37 5 56 0 25-7 50-6 76 0v46H0Z" fill="#e6e2ce" fill-opacity=".22" />
-  <path d="M0 165c20-5 39-4 58 1 21 5 39 4 57-1 24-7 48-6 75 0" fill="none" stroke="#fbf7ea" stroke-opacity=".9" stroke-width="1.1" />
-  <path d="M9 178c15-3 29-2 42 1m13 1c14 3 28 3 42-1m18-3c16-3 30-3 44 1m11 1c4 0 7 0 11-1" fill="none" stroke="#78968a" stroke-opacity=".4" stroke-width=".75" stroke-linecap="round" />
-  <path d="M16 192c14-2 27-2 39 1m41 1c17 2 31 1 45-2m12-1c9-1 17-.5 26 1" fill="none" stroke="#9fb2a5" stroke-opacity=".42" stroke-width=".65" stroke-linecap="round" />
-  <path d="M105 135h15l16 70h-46Z" fill="url(#xj-reflection)" />
-  <g fill="none" stroke="#e3c276" stroke-linecap="round" stroke-opacity=".75">
-    <path d="M109 151h7m-9 7h11m-13 8h15m-17 9h18m-21 9h23" stroke-width=".9" />
-  </g>
-
-  <!-- Small reed tips and a few quiet fish-like strokes, kept at the margins. -->
-  <g fill="none" stroke="#718f7f" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M16 204c2-15 5-24 10-31m-5 31c2-11 5-17 10-22m139 21c-2-11-5-18-9-23" stroke-width=".85" />
-    <path d="M24 180q3-5 6 0-3 4-6 0Zm7 7q3-5 6 0-3 4-6 0Zm129-7q3-5 6 0-3 4-6 0Z" fill="#a6bba9" fill-opacity=".46" stroke-opacity=".56" stroke-width=".55" />
-  </g>
-  <g fill="#d9b96d" fill-opacity=".74">
-    <circle cx="25" cy="173" r="1" /><circle cx="31" cy="181" r=".8" /><circle cx="160" cy="181" r=".9" />
-  </g>
+  <!-- A short promontory gives the large harbour a human scale. -->
+  <path d="M760 589c-34 7-53 22-78 35-25 13-48 17-70 30-24 15-40 33-59 49-25 20-49 27-70 44 28-4 47-11 70-20 27-10 51-14 78-20 43-10 82-12 129-23Z" fill="#9AAA89" fill-opacity=".34"/>
+  <path d="M760 631 738 640 718 657 691 664 672 682 649 687 632 706 610 712 593 731 563 740 543 758 515 770 489 792 519 797 552 787 580 784 604 768 637 765 660 748 690 746 716 731 741 730 760 721Z" fill="url(#xj-cliff)"/>
+  <path d="m760 632-23 12-19 17-28 7-16 17-25 8-17 18-20 6-22 18-25 10 24 2 30-15 22-3 24-17 30-4 24-18 28-7 33-21Z" fill="#A2AD8A" fill-opacity=".57"/>
+  <path d="m760 693-29 9-23 14-32 5-22 17-31 4-21 16-33 7-22 15-28 13 33-6 28-3 24-16 33-3 23-17 30-2 26-15 25-1 19-9Z" fill="#263D34" fill-opacity=".68"/>
+  <path d="m728 658-4 24-23 20m-24-20-3 22-20 18m-21-12-1 23-19 22m-38-13 4 16-22 19m151-87 24-8m-83 48 23-7m-81 45 19-3" fill="none" stroke="#263D34" stroke-width="1.6" stroke-opacity=".61" stroke-linecap="round"/>
+  <path d="m752 650-13 8m-34 20-16 6m-29 17-14 11m-32 18-13 10m-41 22-12 8" fill="none" stroke="#F7F3E8" stroke-width="1.35" stroke-opacity=".58" stroke-linecap="round"/>
+  <path d="M760 727c-34 3-59 7-82 18-36 17-60 14-88 30-34 19-56 23-93 22 27 9 56 7 84-4 38-15 58-12 88-27 30-15 57-16 91-21Z" fill="#F7F3E8" fill-opacity=".88"/>
+  <path d="M760 746c-37 1-63 9-91 23-31 15-60 16-83 25m-39 11-27 3m-34 1-21-2" fill="none" stroke="#FFFDF5" stroke-width="2.4" stroke-opacity=".88" stroke-linecap="round"/>
+  <path d="M682 627c11-12 17-26 22-42-2 18-6 30-14 44Zm13-6c12-8 23-12 35-14-9 7-20 11-35 14Zm20-12c2-13 3-23 0-34 8 10 9 19 5 30Z" fill="#486454" fill-opacity=".69"/>
+  <path d="M498 466c12-2 21-2 30-4l-7 5-23 1Zm-166-21 19-2 8 2-26 2Z" fill="#263D34" fill-opacity=".24"/>
 </svg>

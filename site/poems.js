@@ -2,9 +2,9 @@
 window.POEMS = [
   {
     id: "jiaolong", page: 1,
-    image: "./images/jiaolong.svg?v=art-11",
-    imageAlt: "淡月與遠山隱在江霧之中，幾道水脈於留白間緩緩相合，舒展向遼闊江海。",
-    artworkHasSeal: true,
+    image: "./images/jiaolong.svg?v=artbook-5",
+    imageAlt: "幾股近岸水脈穿過墨色岸線，匯入清亮開闊的蔚藍海面。",
+    sealPosition: { x: 91, y: 19 },
     titles: { zh: "《蛟龍》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
     verses: {
       zh: "遼河水，哺我初心故土濃；\n東江水，蘭馨又綻莞城東；\n香江水，紫荊園裡我從容；\n海之融，百川終入大洋中；\n海之翱，蔚藍圖卷屬蛟龍。",
@@ -16,9 +16,9 @@ window.POEMS = [
   },
   {
     id: "mid-autumn", page: 5,
-    image: "./images/mid-autumn.svg?v=art-11",
-    imageAlt: "疏梅枝影斜過秋月，遠山映在水面，幾縷淡金色光影留住團圓的暖意。",
-    artworkHasSeal: true,
+    image: "./images/mid-autumn.svg?v=artbook-5",
+    imageAlt: "冷月停在敞開的窗外，疏枝隨風舒展；窗沿下茶盞與月餅留住團圓的微暖。",
+    sealPosition: { x: 85, y: 82 },
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
     verses: {
       zh: "秋月凝光寒，\n蓮蓉掌中暖。\n窗外風雖冽，\n闔家笑語歡。",
@@ -29,9 +29,9 @@ window.POEMS = [
   },
   {
     id: "double-fifth", page: 9,
-    image: "./images/double-fifth.svg?v=art-11",
-    imageAlt: "艾葉疏疏映在江岸，薄霧與淡金水痕勾出端午時節江面的清寂。",
-    artworkHasSeal: true,
+    image: "./images/double-fifth.svg?v=artbook-5",
+    imageAlt: "近岸艾草翻露灰白葉背，江水繞過濕石，在初夏薄霧中向遠處舒展。",
+    sealPosition: { x: 18, y: 65 },
     titles: { zh: "《話端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
     verses: {
       zh: "五五重午歲又重，\n青箬裹粽意正濃。\n曹娥子胥悲歌起，\n漁樵笠下泣無窮。\n\n三江哀咽東逝水，\n離騷天問傳千歲。\n祭罷魂隨駕鶴歸，\n龍舟艾香驅邪祟。",
@@ -43,8 +43,9 @@ window.POEMS = [
   },
   {
     id: "mother-son", page: 13,
-    image: "./images/mother-son.svg?v=art-14",
-    imageAlt: "一盞燈火留在岸邊的家，遠方的小舟正穿過水面；蘆葦與細浪把母子牽念連在一起。",
+    image: "./images/mother-son.svg?v=artbook-5",
+    imageAlt: "春光照著近岸細草，寬闊水面之外，一扇遠岸小窗靜靜亮著暖燈。",
+    sealPosition: { x: 84, y: 84 },
     titles: { zh: "《母子情》", en: "Mother and Son", fr: "Mère et fils" },
     verses: {
       zh: "端陽翌日偉兒生，\n母子相攜歲月悠。\n猶憶蹣跚頑稚子，\n天涯遠遊母心憂。\n母念兒兮兒念母，\n鶴髮漸添暮歲愁。\n他年衣錦還鄉笑，\n寸草心酬春暉厚。",
@@ -55,8 +56,9 @@ window.POEMS = [
   },
   {
     id: "autumn-moon", page: 16,
-    image: "./images/autumn-moon.svg?v=art-14",
-    imageAlt: "香港與巴黎隔海相望，一輪明月和一道淡金色的水上光路將兩岸連在一起。",
+    image: "./images/autumn-moon.svg?v=artbook-5",
+    imageAlt: "一輪秋月照著兩端水岸，香港山下的淡樓影與巴黎低屋頂共享清冷月色。",
+    sealPosition: { x: 20, y: 81 },
     titles: { zh: "《秋月》", en: "Autumn Moon", fr: "Lune d'automne" },
     verses: {
       zh: "皎月灑清寒，\n蓮蓉餅裡言。\n相隔天涯遠，\n共賞月圓歡。",
@@ -71,8 +73,9 @@ window.POEMS = [
   },
   {
     id: "double-ninth-song", page: 19,
-    image: "./images/double-ninth-song.svg?v=art-14",
-    imageAlt: "秋山上的亭子沐浴在暖陽下；紙鳶、雁影與山腳的菊花點出重陽時節。",
+    image: "./images/double-ninth-song.svg?v=artbook-5",
+    imageAlt: "淺色山徑在青赭秋山間曲折上行，近坡金菊舒捲開放，高空幾點遠雁帶出重陽清氣。",
+    sealPosition: { x: 84, y: 82 },
     titles: { zh: "《九九歌》(1)", en: "The Double Ninth Song (1)", fr: "Chant du Double Neuf (1)" },
     verses: {
       zh: "九九重陽今又重，\n登高賞菊祭先宗。\n秋風秋水越椒香，\n桂花陳釀醉深巷。\n花糕菊糕五色糕，\n遍插茱萸紙鳶搖。\n辭青吟詩寒雁別，\n祈福癸巳好時節。",
@@ -82,8 +85,9 @@ window.POEMS = [
   },
   {
     id: "farewell-to-green", page: 22,
-    image: "./images/farewell-to-green.svg?v=art-14",
-    imageAlt: "一枝嫩綠新芽從淡金色的落葉間生長，在循環的風中迎向下一季。",
+    image: "./images/farewell-to-green.svg?v=artbook-5",
+    imageAlt: "一枝深墨老木斜向上生長，空枝、帶蟲孔的褐金舊葉與透光新芽依自然葉序相接，枝下留有淡水痕。",
+    sealPosition: { x: 82, y: 63 },
     titles: { zh: "《重陽辭青歌》(2)", en: "Song of Bidding Green Farewell (2)", fr: "Chant des adieux au vert (2)" },
     verses: {
       zh: "春來踏青秋辭青，\n秋染黃葉春萌青。\n四季輪迴光陰逝，\n青出於藍青更青。",
@@ -94,8 +98,9 @@ window.POEMS = [
   },
   {
     id: "cold-clothes-festival", page: 25,
-    image: "./images/cold-clothes-festival.svg?v=art-14",
-    imageAlt: "幽深街巷盡頭透出溫暖的門燈，前景的小火與一縷煙氣寄託對先人的思念。",
+    image: "./images/cold-clothes-festival.svg?v=artbook-5",
+    imageAlt: "偏軸舊巷的淡青牆面映著明亮石路，近牆陶盆中一簇暖火升起層疊煙氣，遠窗微明。",
+    sealPosition: { x: 29, y: 82 },
     titles: { zh: "《寒衣節》", en: "Cold Clothes Festival", fr: "Fête des Habits d'hiver" },
     verses: {
       zh: "秋色漸休霜降中，\n寒衣節至祭先宗。\n深巷煙火燃正旺，\n先人得暖心亦融。",
@@ -111,8 +116,9 @@ window.POEMS = [
   },
   {
     id: "singing-to-myself", page: 29,
-    image: "./images/singing-to-myself.svg?v=art-14",
-    imageAlt: "月光落在寧靜的地中海，金色倒影沿著細浪伸向岸邊獨行的人。",
+    image: "./images/singing-to-myself.svg?v=artbook-5",
+    imageAlt: "初月下海色漸淡入空白，白沙岸斜落，薄浪與斷續潮痕緩慢伸展，低小礫石留住近岸的寧靜。",
+    sealPosition: { x: 23, y: 49 },
     titles: { zh: "《自吟》", en: "Singing to Myself", fr: "Chant intime" },
     verses: {
       zh: "月色灑深巷，\n吟詠寄心想。\n漫步遨蒼穹，\n白沙細浪響。",
@@ -128,8 +134,9 @@ window.POEMS = [
   },
   {
     id: "sleeping-lotus", page: 33,
-    image: "./images/sleeping-lotus.svg?v=art-14",
-    imageAlt: "粉色蓮花在碧水上盛開，蓮蓬裡的種子安然入睡，荷葉輕浮在旁。",
+    image: "./images/sleeping-lotus.svg?v=artbook-5",
+    imageAlt: "低垂的粉蓮、微傾的成熟蓮房與翻卷荷葉，在疏朗靜水間相伴入秋。",
+    sealPosition: { x: 81, y: 84 },
     masthead: {
       zh: "紫薇·暗香集",
       en: "Ziwei · Hidden Fragrance Collection",
@@ -150,8 +157,9 @@ window.POEMS = [
   },
   {
     id: "xiangjiang", page: 37,
-    image: "./images/xiangjiang.svg?v=art-14",
-    imageAlt: "深秋的維多利亞港由遠山與兩岸樓影環抱，西風掠過碧綠水面，淡金暮光落在波紋間。",
+    image: "./images/xiangjiang.svg?v=artbook-5",
+    imageAlt: "西風斜掠寬闊港面，青綠浪脊向右舒展；兩岸樓影退入層疊遠山，右下近崖與一線白沙承接水光。",
+    sealPosition: { x: 13, y: 24 },
     masthead: {
       zh: "紫薇·暗香集",
       en: "Ziwei · Hidden Fragrance Collection",
@@ -166,8 +174,9 @@ window.POEMS = [
   },
   {
     id: "yuanxi-stroll", page: 40,
-    image: "./images/yuanxi-stroll.svg?v=art-15",
-    imageAlt: "元宵夜獨行長街，燈火漸疏，遠處燈下有佳人流連，行人在時光流轉中安靜地自賞。",
+    image: "./images/yuanxi-stroll.svg?v=artbook-5",
+    imageAlt: "斜向街巷裡燈火漸疏，極小的獨行身影停在溫暖燈光與空街之間。",
+    sealPosition: { x: 72, y: 80 },
     masthead: {
       zh: "紫薇·暗香集",
       en: "Ziwei · Hidden Fragrance Collection",
@@ -188,8 +197,9 @@ window.POEMS = [
   },
   {
     id: "deep-autumn", page: 44,
-    image: "./images/deep-autumn.svg?v=art-16",
-    imageAlt: "香江岸邊楓林染紅，綠水秋波之上只留一線天光，行人獨立江畔，抬頭俯身之間天地相連，如入夢境。",
+    image: "./images/deep-autumn.svg?v=artbook-5",
+    imageAlt: "左岸近楓以秋赭、暗紅和尚綠葉片交錯，右岸林影漸遠；一線天光落入綠水，紅葉斷影間有極小行人靜立。",
+    sealPosition: { x: 82, y: 20 },
     masthead: {
       zh: "紫薇·暗香集",
       en: "Ziwei · Hidden Fragrance Collection",
@@ -204,8 +214,9 @@ window.POEMS = [
   },
   {
     id: "farewell-song", page: 47,
-    image: "./images/farewell-song.svg?v=art-17",
-    imageAlt: "晨光中的層層遠山與香江水色，岸邊長亭下兩位同窗舉杯作別，左上角垂著柳枝。",
+    image: "./images/farewell-song.svg?v=artbook-5",
+    imageAlt: "左上疏柳帶著晨露垂落，左下長亭一角旁兩位同窗停步；空水與淡金晨光隔開人影和右方層層遠山。",
+    sealPosition: { x: 84, y: 79 },
     masthead: {
       zh: "紫薇·暗香集",
       en: "Ziwei · Hidden Fragrance Collection",

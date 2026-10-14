@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta name="theme-color" content="#e6eee5">
-  <meta name="description" content="《暗香集》——中、英、法三語詩集。">
+  <meta name="theme-color" content="#F7F3E8">
+  <meta name="description" content="《暗香集》當代東方藝術書，中、英、法三語詩集。">
   <title>暗香集 · Whispers of Hidden Fragrance</title>
-  <!-- Added to the home screen, the reader opens without browser chrome. -->
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icons/icon-192.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
@@ -14,67 +13,52 @@
   <meta name="apple-mobile-web-app-title" content="暗香集">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <script>
+    // Keep the edition's established iPhone/PWA viewport behaviour. The page
+    // scrolls inside the middle grid row; both navigation rows stay outside it.
     (() => {
       const root = document.documentElement;
       const viewport = window.visualViewport;
       const updateHeight = () => {
-        const isStandalone = navigator.standalone
-          || window.matchMedia("(display-mode: standalone)").matches;
-        const visibleHeight = viewport?.height || window.innerHeight;
-        // iOS standalone PWAs can report a visual viewport shorter than the
-        // actual display, leaving the home-indicator area on the root canvas.
-        const height = isStandalone
-          ? Math.max(visibleHeight, window.innerHeight, window.screen?.height || 0)
-          : visibleHeight;
-        root.style.setProperty("--viewport-height", `${Math.ceil(height)}px`);
+        const standalone = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
+        const visible = viewport?.height || innerHeight;
+        const height = standalone ? Math.max(visible, innerHeight, screen.height || 0) : visible;
+        root.style.setProperty('--viewport-height', `${Math.ceil(height)}px`);
       };
       updateHeight();
-      window.addEventListener("resize", updateHeight, { passive: true });
-      window.addEventListener("orientationchange", updateHeight, { passive: true });
-      window.addEventListener("pageshow", updateHeight, { passive: true });
-      viewport?.addEventListener("resize", updateHeight, { passive: true });
+      for (const event of ['resize', 'orientationchange', 'pageshow']) addEventListener(event, updateHeight, { passive: true });
+      viewport?.addEventListener('resize', updateHeight, { passive: true });
     })();
   </script>
-  <link rel="preload" href="./fonts/QuanZiKuShuoWenJieZi-5glyph.ttf" as="font" type="font/ttf" crossorigin fetchpriority="high">
-  <link rel="preload" href="./fonts/HanWangLiSuMedium-TC.ttf?v=1" as="font" type="font/ttf" crossorigin fetchpriority="high">
-  <!-- Add the Adobe Fonts Web Project embed code here when the author supplies it. -->
-  <link rel="stylesheet" href="./styles.css?v=ebook-ui-53">
+  <link rel="preload" href="./fonts/LXGWWenKaiTC-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./fonts/HanWangLiSuMedium-TC.ttf?v=1" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./styles.css?v=artbook-5">
+  <script src="./poems.js?v=artbook-5" defer></script>
+  <script src="./edition.js?v=artbook-5" defer></script>
+  <script src="./reader.js?v=artbook-5" defer></script>
 </head>
 <body>
-  <main class="book" id="book" aria-label="《暗香集》電子書">
+  <main class="book" id="book" aria-label="《暗香集》三語詩集">
     <header class="book-toolbar">
-      <button class="toolbar-button" id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc-dialog" aria-label="打開目錄">目錄</button>
-      <span class="book-toolbar-title">暗香集</span>
-      <div class="toolbar-right">
-        <button class="music-toggle" id="music-toggle" type="button" aria-label="播放背景音樂" aria-pressed="false" hidden><span aria-hidden="true">♪</span></button>
-        <span class="reading-progress" id="reading-progress" aria-live="polite">封面</span>
-      </div>
+      <button class="contents-trigger" id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc-dialog" aria-label="打開目錄"><span class="contents-icon" aria-hidden="true"></span><span>目錄</span></button>
+      <span class="book-wordmark">暗香集</span>
+      <div class="toolbar-right"><span id="reading-progress" aria-label="閱讀進度" aria-live="polite">開卷</span><button class="music-toggle" id="music-toggle" type="button" aria-label="播放背景音樂" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17V5l10-2v12M9 8l10-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="16" cy="16" rx="3" ry="2"/></svg></button></div>
     </header>
-
-    <section class="reading-stage" id="reading" aria-label="詩集頁面" aria-live="polite">
-      <article class="book-page cover-page" id="book-page" tabindex="-1"></article>
+    <section class="reading-stage" id="reading" aria-label="詩集頁面">
+      <article class="book-page" id="book-page" tabindex="-1"></article>
     </section>
-
     <nav class="page-controls" aria-label="翻頁">
-      <button type="button" id="previous" aria-label="向前翻頁" disabled><span aria-hidden="true">‹</span></button>
-      <span class="swipe-hint" id="swipe-hint">左右滑動，開始閱讀</span>
-      <button type="button" id="next" aria-label="向後翻頁"><span aria-hidden="true">›</span></button>
+      <button id="previous" type="button" aria-label="向前翻頁" disabled><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M29 10H3m7-7-7 7 7 7"/></svg></button>
+      <div class="page-position"><span id="page-folio" aria-live="polite">封面</span><span id="swipe-hint">左右滑動，開始閱讀</span></div>
+      <button id="next" type="button" aria-label="向後翻頁"><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M3 10h26m-7-7 7 7-7 7"/></svg></button>
     </nav>
   </main>
-
   <dialog class="toc-dialog" id="toc-dialog" aria-labelledby="toc-title">
-    <div class="toc-heading">
-      <div><p class="eyebrow">CONTENTS</p><h2 id="toc-title">目錄</h2></div>
-      <button class="dialog-close" id="toc-close" type="button" aria-label="關閉目錄">×</button>
-    </div>
+    <header class="toc-heading"><div><p class="eyebrow" lang="en">THE COLLECTION</p><h1 id="toc-title">目錄</h1></div><button id="toc-close" type="button" class="dialog-close" aria-label="關閉目錄">×</button></header>
     <nav class="toc-matter" id="matter-list" aria-label="封面與前後頁"></nav>
     <ol class="toc-list" id="contents-list"></ol>
-    <div class="toc-footer"><span>© 2026 紫薇</span><span>三語詩集</span></div>
+    <footer class="toc-footer"><span>紫薇 · 暗香集</span><span>十四首 · 三語詩集</span></footer>
   </dialog>
-
   <audio id="ambient-audio" src="./audio/1.mp3" loop preload="none"></audio>
-
-  <script src="./poems.js?v=ebook-ui-51"></script>
-  <script src="./reader.js?v=ebook-ui-43" defer></script>
+  <noscript><p class="noscript-message">請啟用 JavaScript 以閱讀詩集。</p></noscript>
 </body>
 </html>

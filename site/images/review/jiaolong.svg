@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+  <title id="title">蛟龍：江海相逢</title>
+  <desc id="desc">開闊青藍的江海在遠處漸漸淡入紙白。近岸低平的墨石與細草臨水，幾道水脈繞過石隙，在不規則的淺灘與回流間舒展；細長的波痕疏密相間，暗示水下深藏的力量。</desc>
+  <defs>
+    <linearGradient id="sea" x1="0" y1="250" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#326B75" stop-opacity=".025"/>
+      <stop offset=".28" stop-color="#326B75" stop-opacity=".12"/>
+      <stop offset=".66" stop-color="#326B75" stop-opacity=".34"/>
+      <stop offset=".84" stop-color="#326B75" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#326B75" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shallows" x1="0" y1="0" x2="1" y2=".4">
+      <stop stop-color="#6F8F76" stop-opacity=".25"/>
+      <stop offset=".62" stop-color="#6F8F76" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#6F8F76" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2=".7" y2="1">
+      <stop stop-color="#74836B" stop-opacity=".61"/>
+      <stop offset=".4" stop-color="#425B4B" stop-opacity=".86"/>
+      <stop offset="1" stop-color="#263D34"/>
+    </linearGradient>
+    <linearGradient id="wet-stone" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#6F8F76" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#263D34" stop-opacity=".84"/>
+    </linearGradient>
+  </defs>
+
+  <!-- An open horizon dissolves rather than closing the scene with a skyline. -->
+  <path d="M40 269c87-5 143-4 210-3 95 2 166-4 241-7-114 10-189 10-274 9-62-1-118 2-177 3Z" fill="#326B75" fill-opacity=".13"/>
+  <path d="M581 255c31-2 48-1 76-3 28-1 46-6 72-6-24 8-39 10-64 11-32 2-56 1-84 0Z" fill="#6F8F76" fill-opacity=".16"/>
+  <path d="M0 286c123-16 231-10 346-14 132-4 254-8 414-24v636c-117-6-193 15-286 5-113-12-158-9-259-7-81 2-148-1-215 3Z" fill="url(#sea)"/>
+  <path d="M760 394c-78 19-143 17-206 39-63 23-107 48-170 54-43 4-70-1-106-4 40 21 86 24 135 16 54-9 90-28 137-38 78-17 138-13 210-32Z" fill="#326B75" fill-opacity=".047"/>
+  <path d="M760 539c-68 7-107 24-158 47-65 30-104 61-164 71-32 6-62 2-87 0 41 15 76 17 115 8 62-14 107-43 159-59 46-14 86-19 135-22Z" fill="#326B75" fill-opacity=".061"/>
+  <path d="M760 667c-54 16-97 33-136 58-54 34-92 54-144 61 58 4 97-11 144-29 50-19 90-31 136-39Z" fill="#326B75" fill-opacity=".047"/>
+
+  <!-- Far-water marks flatten and grow sparse with distance. -->
+  <g fill="none" stroke="#326B75" stroke-linecap="round">
+    <path d="M135 287c32-1 56 0 84-1m164-8 57-1m107-5 47-2" stroke-opacity=".2" stroke-width=".7"/>
+    <path d="M172 329c47-1 78 1 122-2m107-6c43-2 70-2 107-5m83-4c41-2 74-6 117-8" stroke-opacity=".23" stroke-width="1"/>
+    <path d="M116 374c42-3 80-2 120-3m140-7c52-1 94-5 132-9m94-3c50-4 85-8 128-14" stroke-opacity=".25" stroke-width="1.15"/>
+  </g>
+  <g fill="none" stroke="#FFFDF5" stroke-linecap="round" stroke-opacity=".86">
+    <path d="M216 300h43m122-7 42-1m189-13 31-1m-567 42 47-2" stroke-width="1.15"/>
+    <path d="M189 345c26-1 48 0 71-1m132-8c27-1 47-1 72-3m157-7 50-4" stroke-width="1.55"/>
+    <path d="M47 370c36-3 60-3 91-2m159-8c32 1 53 0 82-1m144-6c32-2 56-5 88-6" stroke-width="1.8"/>
+  </g>
+
+  <!-- A low bank enters from one side, giving the water a continuous basin. -->
+  <path d="M-15 487c51 6 82 19 120 30 25 7 51 7 77 9 35 2 61 14 90 28 32 15 54 20 89 20-28 13-52 17-79 14-35-5-55-18-91-21-41-3-66 0-105-12-38-12-63-28-101-32Z" fill="url(#shallows)"/>
+  <path d="M-15 532c53 11 91 27 133 30 48 4 76 8 109 27 38 22 61 25 102 21-39 18-63 21-98 13-43-9-66-27-111-29-52-3-93-17-135-34Z" fill="#6F8F76" fill-opacity=".12"/>
+  <path d="M-15 588c47-1 74 12 108 30 30 16 58 19 92 21 41 3 67 17 95 38 26 20 49 29 78 35 24 4 44 14 60 30-50-5-89-14-123-31-34-17-62-32-100-34-47-3-80-15-112-30-35-16-64-25-98-24Z" fill="#6F8F76" fill-opacity=".18"/>
+  <path d="M0 640c51 6 75 25 114 35 30 8 58 9 82 15 31 7 57 23 81 42 35 27 67 40 109 45-28 9-53 10-82 4-47-10-76-33-114-44-27-8-55-8-85-17-33-10-66-24-105-25Z" fill="#F7F3E8" fill-opacity=".62"/>
+
+  <!-- Broad stone planes and low fragments keep their weight close to the shore. -->
+  <path d="M-18 652 13 643 40 648 59 659 89 661 103 674 139 680 162 692 187 697 205 713 237 719 261 739 286 749 298 769 271 779 234 779 203 768 173 765 151 748 117 744 89 731 53 727 25 711-18 704Z" fill="url(#stone)"/>
+  <path d="M-18 651 13 644 39 649 57 659 91 664 102 675 139 682 157 694 126 697 96 687 67 685 40 674 13 674 13 674-18 665Z" fill="#87957B" fill-opacity=".65"/>
+  <path d="m21 675 22 2 25 12 29 1 24 12 32-3 20 16 30 3 30 20-34-3-30-12-30-3-24-14-26 1-25-14-31-6Z" fill="#F7F3E8" fill-opacity=".42"/>
+  <path d="M-18 690 18 692 45 705 77 709 103 723 133 727 156 743 184 745 204 762 234 768 268 775 233 778 203 768 173 765 151 748 117 744 89 731 53 727 25 711-18 704Z" fill="#263D34" fill-opacity=".78"/>
+  <path d="m26 665 8 22 15 17m17-24 9 21 26 21m34-26 2 18 20 19m34-23 5 22 23 20m-20-13 24 3 18 16" fill="none" stroke="#263D34" stroke-opacity=".65" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="m1 680 16 2m33 18 13 5m30 3 12 6m28 7 12 5m43 18 14 4m28 13 13 4" fill="none" stroke="#F7F3E8" stroke-opacity=".46" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M5 717c27 11 41 15 58 16l16 12-31-5-43-17Zm79 30 30 3 15 9-23-1-29-8Zm100 25 25 5 13 10-23-2-21-9Z" fill="#263D34" fill-opacity=".47"/>
+  <path d="m19 739 25 5 9 7-22-2Zm115 29 19 2 11 8-23-2Zm126 19 24 6 15 11-27-4Z" fill="#6F8F76" fill-opacity=".54"/>
+  <path d="M-8 577 20 571 51 580 76 579 98 593 80 604 48 602 26 594-8 594Z" fill="url(#wet-stone)"/>
+  <path d="m-8 578 30-5 26 9 30-1 18 12-23-4-26-1-29-8-26 3Z" fill="#90A18A" fill-opacity=".58"/>
+  <path d="m23 583 6 9 19 5m14-12 9 14" fill="none" stroke="#263D34" stroke-width="1.2" stroke-opacity=".65"/>
+  <path d="m138 615 17-6 28 3 15 8-9 8-27-1-22-6Z" fill="#486253" fill-opacity=".58"/>
+  <path d="m141 616 17-4 23 2 13 7-23-2-18 1Z" fill="#A0AE95" fill-opacity=".6"/>
+  <path d="m244 666 16-4 19 6 8 10-20 2-23-7Z" fill="#486253" fill-opacity=".52"/>
+  <path d="m309 728 22 1 18 10-9 7-20-4-16-8Z" fill="#486253" fill-opacity=".48"/>
+
+  <!-- Backwash curls around the stones, losing its contour in open water. -->
+  <path d="M11 610c37 0 56 14 87 23 32 9 57 8 86 16 33 8 54 25 81 38 22 11 45 17 69 16-29 7-53 3-80-9-30-13-50-27-80-33-33-7-59-7-90-17-29-10-47-20-73-23Z" fill="#FFFDF5" fill-opacity=".71"/>
+  <path d="M169 626c40 9 69 20 95 38 28 20 59 35 91 34 33-1 58-15 83-19-39 18-59 29-89 27-36-3-60-16-92-38-27-19-53-30-88-42Z" fill="#FFFDF5" fill-opacity=".63"/>
+  <path d="M348 756c24 6 43 7 65 2 35-9 51-28 83-31-19 11-36 26-59 34-29 9-53 7-89-5Z" fill="#FFFDF5" fill-opacity=".8"/>
+  <path d="M61 774c39 17 67 20 103 22 37 3 58 16 83 30-39-14-65-18-100-19-32-2-61-11-86-22Z" fill="#FFFDF5" fill-opacity=".69"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M103 603c32 4 58 13 81 24m32 13c28 10 41 22 61 33m20 10c18 7 34 10 50 9" stroke="#326B75" stroke-opacity=".52" stroke-width="1.2"/>
+    <path d="M52 619c19 5 32 13 52 18m35 8c26 3 45 7 63 14m92 45c28 10 51 11 72 6" stroke="#FFFDF5" stroke-opacity=".92" stroke-width="2.1"/>
+    <path d="M187 636c26 9 46 19 65 34m29 18 16 8m-75-14 15 7" stroke="#326B75" stroke-opacity=".43" stroke-width=".9"/>
+    <path d="M362 749c25 6 44 5 67-3 18-7 35-17 54-22m23-3c22-4 40-3 58 2" stroke="#326B75" stroke-opacity=".48" stroke-width="1.3"/>
+    <path d="M374 777c21 1 40-1 57-7m20-9 25-13m-131 15 14 3" stroke="#FFFDF5" stroke-opacity=".83" stroke-width="2"/>
+    <path d="M217 811c28 9 47 21 73 28 33 9 60 8 91 4m30-4c21-2 39-2 59 0" stroke="#326B75" stroke-opacity=".47" stroke-width="1.4"/>
+    <path d="M104 786c24 7 39 8 63 9m19 2c21 3 33 7 50 15m72 30c20 3 37 2 53 1" stroke="#FFFDF5" stroke-opacity=".82" stroke-width="2.2"/>
+  </g>
+
+  <!-- Long oblique traces describe deep flow; their ends remain broken and unequal. -->
+  <g fill="none" stroke="#326B75" stroke-linecap="round">
+    <path d="M232 436c46-3 76-1 111-5m68-7c47-6 77-13 120-16m61-1c47-2 83-8 127-14" stroke-opacity=".35" stroke-width="1.2"/>
+    <path d="M295 506c45 1 76-3 112-9m49-7c49-9 77-7 118-14m62-6c31-1 58-5 86-11" stroke-opacity=".39" stroke-width="1.35"/>
+    <path d="M379 591c49 0 81-8 120-15m74-12c40-8 71-11 113-21" stroke-opacity=".43" stroke-width="1.4"/>
+    <path d="M508 679c44-3 76-13 111-21m50-10c29-3 53-6 80-13" stroke-opacity=".45" stroke-width="1.5"/>
+    <path d="M518 798c52-2 85-15 124-20m50-6c20-2 36-6 58-11" stroke-opacity=".45" stroke-width="1.6"/>
+  </g>
+  <g fill="none" stroke="#FFFDF5" stroke-linecap="round">
+    <path d="M328 452c28-2 49-6 72-10m68-11c30-3 52-6 78-9m110-11 40-6" stroke-opacity=".77" stroke-width="1.6"/>
+    <path d="M363 519c26-1 47-3 70-8m61-11c30-4 55-6 80-11m95-9 31-6" stroke-opacity=".78" stroke-width="1.9"/>
+    <path d="M464 608c33-2 55-9 83-14m83-17 40-7" stroke-opacity=".82" stroke-width="2.2"/>
+    <path d="M578 703c22-3 38-7 58-12m38-9 28-4" stroke-opacity=".84" stroke-width="2.4"/>
+    <path d="M435 871c38-2 64-7 96-12m79-16c29-6 48-9 73-15" stroke-opacity=".8" stroke-width="2.8"/>
+  </g>
+
+  <!-- A few shore grasses lean with the moving water; they are not a border. -->
+  <g fill="none" stroke="#263D34" stroke-linecap="round">
+    <path d="M12 655c8-34 13-58 10-89m-2 83c6-23 18-39 29-54m-23 61c13-23 26-34 43-43m-54 35c-4-20-10-35-21-51" stroke-opacity=".7" stroke-width="1.4"/>
+    <path d="M31 612c4-19 5-35 2-49m11 43c9-9 16-18 20-28" stroke-opacity=".55" stroke-width="1.05"/>
+  </g>
+  <path d="M22 582c-7-8-10-16-7-24 7 5 9 12 7 24Zm13 14c3-9 8-14 15-16-1 8-6 13-15 16Zm16 11c6-8 12-10 19-10-4 7-10 10-19 10Z" fill="#6F8F76" fill-opacity=".74"/>
+  <path d="M252 379c13-2 22-1 31-4l-8 5-23 1Zm247-39 18-2 11 1-29 3Z" fill="#263D34" fill-opacity=".16"/>
+</svg>

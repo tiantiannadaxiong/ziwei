@@ -5,16 +5,36 @@
  * reader an 8 MB revalidation of the poetry face on every visit). Styles,
  * scripts and pages stay network-first, so a new edition always arrives; the
  * cache is only the offline fallback. Bump CACHE when the shell changes. */
-const CACHE = "anxiangji-v43";
+const CACHE = "anxiangji-v48";
 const SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./poems.js",
   "./reader.js",
+  "./edition.js",
+  "./design-review.html",
+  "./review.css",
+  "./review-data.js",
+  "./review.js",
+  "./review.webmanifest",
+  "./images/review/cover-branch.svg?v=artbook-5",
+  "./images/review/jiaolong.svg?v=artbook-5",
+  "./images/review/sleeping-lotus.svg?v=artbook-5",
+  "./images/review/yuanxi-stroll.svg?v=artbook-5",
+  "./images/review/seal-ziwei.svg?v=artbook-5",
+  "./images/review/seal-anxiangji.svg?v=artbook-5",
+  "./images/cover-branch.svg?v=artbook-5",
+  "./images/seal-ziwei.svg?v=artbook-5",
+  "./images/seal-anxiangji.svg?v=artbook-5",
+  ...['jiaolong', 'mid-autumn', 'double-fifth', 'mother-son', 'autumn-moon',
+    'double-ninth-song', 'farewell-to-green', 'cold-clothes-festival',
+    'singing-to-myself', 'sleeping-lotus', 'xiangjiang', 'yuanxi-stroll',
+    'deep-autumn', 'farewell-song'].map(id => `./images/${id}.svg?v=artbook-5`),
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
+  "./icons/icon-maskable-512.png",
   "./icons/apple-touch-icon.png"
 ];
 const IMMUTABLE = /\.(?:ttf|otf|woff2?|png|jpe?g|svg|webp|avif|ico|mp3|m4a)$/i;
@@ -44,13 +64,19 @@ self.addEventListener("fetch", (event) => {
 
   // Pages: network first, cached copy as the offline fallback.
   if (request.mode === "navigate") {
+    const base = new URL("./", self.location.href);
+    const mainDocument = url.pathname === base.pathname
+      || url.pathname === new URL("index.html", base).pathname;
+    // Each document owns its fallback. Visiting the design review must never
+    // replace the published edition's cached index.html (or vice versa).
+    const pageKey = mainDocument ? "./index.html" : url.origin + url.pathname;
     event.respondWith((async () => {
       try {
         const response = await fetch(request);
-        await put("./index.html", response.clone());
+        if (response.ok) await put(pageKey, response.clone());
         return response;
       } catch {
-        return (await caches.match("./index.html")) || Response.error();
+        return (await caches.match(pageKey)) || Response.error();
       }
     })());
     return;

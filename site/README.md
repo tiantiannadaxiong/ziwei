@@ -13,8 +13,15 @@
 | `icons/` | 印章应用图标（192 / 512 / maskable / apple-touch） |
 | `fonts/`、`images/`、`audio/` | 字体、插画、背景音乐 |
 | `preview.mjs` | 本地预览服务器 |
+| `design-review.html`、`review.css`、`review.js`、`review-data.js` | 当代东方艺术书独立样板，复用原始诗文 |
+| `review.webmanifest`、`preview-review.mjs` | 样板的独立安装入口及 8014 端口预览 |
+| `images/review/` | 样板矢量画与共享小篆印章 |
 
 资源均使用相对路径，可部署在 GitHub Pages 项目子路径。
+
+新设计样板使用 `node site/preview-review.mjs` 启动，访问 <http://127.0.0.1:8014/design-review.html>。当前是封面与三首诗画样板阶段，正式入口保留原版；详见根目录 README 的「当代东方艺术书样板」。
+
+当前样板版本、已完成检查及实体 iPhone 待复验事项见 [样板评审记录](design-review.md)。
 
 诗作插图放在 `images/`，并在对应的 `poems.js` 条目中设置相对路径 `image` 与无障碍描述 `imageAlt`。设置后阅读器会在该诗的三语页面之前生成独立插画页，并在图下用 Poetica Chancery IV 排一行英文题词。
 

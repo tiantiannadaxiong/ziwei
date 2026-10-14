@@ -1,0 +1,18 @@
+{
+  "id": "./design-review.html",
+  "name": "暗香集 · 詩畫樣本",
+  "short_name": "暗香集 · 樣本",
+  "lang": "zh-Hant",
+  "start_url": "./design-review.html#cover",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "portrait",
+  "background_color": "#F7F3E8",
+  "theme_color": "#F7F3E8",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

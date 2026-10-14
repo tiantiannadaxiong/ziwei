@@ -1,128 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 226" role="img" aria-labelledby="title desc" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTozZTA2MjY4MS1kODhhLTQ1NmItYWViYi03ZGE4OTE4M2FjODIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaGwoZxIoFwivONspe/c5pr8AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmMzMwN2U4NS03NzEyLTQ4NzgtYmE3YS1jYjNjNDExNjQ4ODBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo35KBM3kNULK7MoCMM+bMkQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggC6yo7GZEIz80gBKRqmYx5OtUbILkg9CCj/NTcfiH4sqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMpCACo72rsot7Hqf9yeHUQAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAGBawDGwCNjTz05au417GsHFix/dVkAlxPU+PjmjWw/mRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBilZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjNlMDYyNjgxLWQ4OGEtNDU2Yi1hZWJiLTdkYTg5MTgzYWM4Mi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjZlN2ZmMzg5LTM2MmUtNGZjNi04ZDMzLTE2MGVhNGM2MzJhNHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCALrKjsZkQjPzSAEpGqZjHk61RsguSD0IKP81Nx+IfiyqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgggmLWlLzdqSvJxSilo5ue5SySI+CV4CdZ55DDoahQpuuiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggipWNmRoxWM7njTWe4NATf8TuhJYw5wcNo30EgiB7+xB0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQLS/sgxUrSS8ZphAOwJbqvqsoMCavh3uBaAFSaHDnbp0xL9rlyM2yz8kTrU7uisk0voecPFf2jprYwasAglYrHw=</c2pa:manifest></metadata>
-  <title id="title">深秋</title>
-  <desc id="desc">香江岸邊楓林染紅，綠水秋波之上只留一線天光，行人獨立江畔，抬頭俯身之間天地相連，如入夢境。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+  <title id="title">深秋 · 天水一線</title>
+  <desc id="desc">左岸近處的楓枝分組伸向江面，秋赭、暗紅與尚綠的葉片疏密相間；右岸林影漸遠，兩岸之間只餘一線明亮天光。紅葉的斷影穿入青綠秋水，一位極小的行人立在岸邊。</desc>
   <defs>
-    <linearGradient id="da-strip" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff4d8" stop-opacity="0" /><stop offset=".5" stop-color="#fff4d8" stop-opacity=".85" /><stop offset="1" stop-color="#fff4d8" stop-opacity="0" /></linearGradient>
-    <radialGradient id="da-sky"><stop stop-color="#f2c66d" stop-opacity="0.6" /><stop offset=".5" stop-color="#f2c66d" stop-opacity="0.2" /><stop offset="1" stop-color="#f2c66d" stop-opacity="0" /></radialGradient>
-    <linearGradient id="da-cliff" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8da18f" stop-opacity="0" /><stop offset=".3" stop-color="#8da18f" stop-opacity=".3" /><stop offset="1" stop-color="#b9c6b8" stop-opacity=".04" /></linearGradient>
-    <linearGradient id="da-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7fa89a" stop-opacity="0.1" /><stop offset="1" stop-color="#6f9a8a" stop-opacity="0.34" /></linearGradient>
+    <linearGradient id="da-ridge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#839B89" stop-opacity=".32"/><stop offset="1" stop-color="#A9B7A2" stop-opacity="0"/></linearGradient>
+    <linearGradient id="da-water" x1=".4" y1="0" x2=".6" y2="1"><stop stop-color="#6F8F76" stop-opacity=".05"/><stop offset=".31" stop-color="#6F8F76" stop-opacity=".22"/><stop offset=".76" stop-color="#326B75" stop-opacity=".34"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".09"/></linearGradient>
+    <linearGradient id="da-bark" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#263D34"/><stop offset=".45" stop-color="#5B6650"/><stop offset=".74" stop-color="#7E8060"/><stop offset="1" stop-color="#3C5140"/></linearGradient>
+    <linearGradient id="da-rust" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#BE8C61" stop-opacity=".62"/><stop offset=".55" stop-color="#A8664E" stop-opacity=".78"/><stop offset="1" stop-color="#805849" stop-opacity=".8"/></linearGradient>
+    <linearGradient id="da-reflect" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#A96851" stop-opacity=".33"/><stop offset="1" stop-color="#B4805D" stop-opacity=".025"/></linearGradient>
+    <linearGradient id="da-bank" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#8C977A" stop-opacity=".75"/><stop offset="1" stop-color="#435D4B" stop-opacity=".9"/></linearGradient>
   </defs>
-  <path d="M74 0h44L102 150H92Z" fill="url(#da-strip)" />
-  <ellipse cx="96" cy="70" rx="34" ry="86" fill="url(#da-sky)" />
-  <path d="M0 0H80L86 50 92 100 96 150 0 160Z" fill="url(#da-cliff)" />
-  <path d="M191 0H112L106 50 101 100 98 150 191 158Z" fill="url(#da-cliff)" />
-  <g>
-    <circle cx="59.7" cy="135.5" r="4.0" fill="#d9805a" fill-opacity="0.49" />
-    <circle cx="9.4" cy="40.4" r="3.8" fill="#d9805a" fill-opacity="0.65" />
-    <circle cx="70.4" cy="27.3" r="3.0" fill="#b95449" fill-opacity="0.42" />
-    <circle cx="12.2" cy="146.0" r="4.9" fill="#d9805a" fill-opacity="0.64" />
-    <circle cx="27.5" cy="56.7" r="3.0" fill="#c9594d" fill-opacity="0.48" />
-    <circle cx="65.1" cy="13.6" r="3.5" fill="#cf6d4f" fill-opacity="0.22" />
-    <circle cx="44.3" cy="106.9" r="5.5" fill="#c9594d" fill-opacity="0.66" />
-    <circle cx="32.9" cy="63.0" r="3.9" fill="#e9c06a" fill-opacity="0.55" />
-    <circle cx="0.8" cy="10.8" r="5.5" fill="#d9805a" fill-opacity="0.16" />
-    <circle cx="47.1" cy="134.3" r="4.0" fill="#b95449" fill-opacity="0.60" />
-    <circle cx="73.3" cy="129.5" r="5.4" fill="#c9594d" fill-opacity="0.44" />
-    <circle cx="47.2" cy="56.9" r="3.4" fill="#cf6d4f" fill-opacity="0.54" />
-    <circle cx="28.7" cy="50.3" r="2.8" fill="#d9805a" fill-opacity="0.60" />
-    <circle cx="2.9" cy="112.1" r="3.4" fill="#cf6d4f" fill-opacity="0.51" />
-    <circle cx="5.1" cy="137.7" r="4.1" fill="#d9805a" fill-opacity="0.42" />
-    <circle cx="72.5" cy="19.6" r="3.0" fill="#e9c06a" fill-opacity="0.29" />
-    <circle cx="26.8" cy="63.0" r="3.7" fill="#b95449" fill-opacity="0.67" />
-    <circle cx="57.7" cy="76.9" r="2.9" fill="#e6a15a" fill-opacity="0.53" />
-    <circle cx="50.4" cy="77.4" r="5.0" fill="#e6a15a" fill-opacity="0.59" />
-    <circle cx="61.1" cy="114.9" r="4.7" fill="#e6a15a" fill-opacity="0.63" />
-    <circle cx="71.2" cy="51.6" r="3.5" fill="#b95449" fill-opacity="0.57" />
-    <circle cx="73.4" cy="54.8" r="4.8" fill="#e9c06a" fill-opacity="0.49" />
-    <circle cx="48.7" cy="28.3" r="5.4" fill="#e9c06a" fill-opacity="0.39" />
-    <circle cx="7.3" cy="101.9" r="4.5" fill="#b95449" fill-opacity="0.53" />
-    <circle cx="50.9" cy="130.6" r="5.6" fill="#d9805a" fill-opacity="0.43" />
-    <circle cx="40.6" cy="98.9" r="4.7" fill="#cf6d4f" fill-opacity="0.60" />
-    <circle cx="90.8" cy="147.0" r="5.3" fill="#c9594d" fill-opacity="0.48" />
-    <circle cx="16.7" cy="32.2" r="4.0" fill="#e9c06a" fill-opacity="0.55" />
-    <circle cx="6.6" cy="33.8" r="3.7" fill="#e6a15a" fill-opacity="0.50" />
-    <circle cx="25.6" cy="63.9" r="5.1" fill="#e6a15a" fill-opacity="0.67" />
-    <circle cx="50.6" cy="48.0" r="4.1" fill="#b95449" fill-opacity="0.47" />
-    <circle cx="32.3" cy="22.9" r="4.3" fill="#b95449" fill-opacity="0.35" />
-    <circle cx="13.1" cy="91.0" r="5.5" fill="#d9805a" fill-opacity="0.56" />
-    <circle cx="32.3" cy="134.4" r="2.9" fill="#b95449" fill-opacity="0.65" />
-    <circle cx="35.3" cy="128.8" r="4.4" fill="#cf6d4f" fill-opacity="0.67" />
-    <circle cx="45.7" cy="64.7" r="5.6" fill="#e9c06a" fill-opacity="0.66" />
-    <circle cx="13.2" cy="7.5" r="5.5" fill="#d9805a" fill-opacity="0.14" />
-    <circle cx="71.9" cy="124.7" r="4.2" fill="#e6a15a" fill-opacity="0.45" />
-    <circle cx="43.6" cy="9.4" r="5.1" fill="#cf6d4f" fill-opacity="0.24" />
-    <circle cx="27.0" cy="92.8" r="4.5" fill="#b95449" fill-opacity="0.64" />
-    <circle cx="11.6" cy="45.2" r="4.4" fill="#cf6d4f" fill-opacity="0.54" />
-    <circle cx="42.7" cy="56.7" r="4.4" fill="#c9594d" fill-opacity="0.38" />
-    <circle cx="50.9" cy="104.1" r="4.7" fill="#d9805a" fill-opacity="0.38" />
-    <circle cx="71.6" cy="66.4" r="4.7" fill="#cf6d4f" fill-opacity="0.57" />
-    <circle cx="42.8" cy="114.7" r="2.6" fill="#e9c06a" fill-opacity="0.55" />
-    <circle cx="59.7" cy="73.0" r="3.1" fill="#cf6d4f" fill-opacity="0.54" />
-    <circle cx="145.3" cy="52.3" r="4.4" fill="#c9594d" fill-opacity="0.40" />
-    <circle cx="160.4" cy="7.7" r="5.5" fill="#e9c06a" fill-opacity="0.18" />
-    <circle cx="104.4" cy="126.9" r="4.5" fill="#c9594d" fill-opacity="0.59" />
-    <circle cx="113.6" cy="93.1" r="3.1" fill="#b95449" fill-opacity="0.44" />
-    <circle cx="125.5" cy="87.4" r="3.8" fill="#b95449" fill-opacity="0.42" />
-    <circle cx="139.3" cy="49.9" r="4.1" fill="#cf6d4f" fill-opacity="0.49" />
-    <circle cx="105.1" cy="105.8" r="4.5" fill="#b95449" fill-opacity="0.47" />
-    <circle cx="185.7" cy="84.3" r="2.8" fill="#d9805a" fill-opacity="0.46" />
-    <circle cx="168.3" cy="79.5" r="3.3" fill="#e6a15a" fill-opacity="0.52" />
-    <circle cx="135.4" cy="23.2" r="3.6" fill="#b95449" fill-opacity="0.41" />
-    <circle cx="143.7" cy="51.2" r="2.7" fill="#cf6d4f" fill-opacity="0.50" />
-    <circle cx="172.3" cy="113.4" r="5.3" fill="#e9c06a" fill-opacity="0.63" />
-    <circle cx="112.7" cy="95.2" r="3.3" fill="#e6a15a" fill-opacity="0.66" />
-    <circle cx="164.2" cy="120.2" r="4.8" fill="#e6a15a" fill-opacity="0.57" />
-    <circle cx="167.4" cy="61.7" r="2.7" fill="#d9805a" fill-opacity="0.44" />
-    <circle cx="131.7" cy="66.3" r="5.4" fill="#e9c06a" fill-opacity="0.48" />
-    <circle cx="142.0" cy="32.0" r="2.8" fill="#e9c06a" fill-opacity="0.61" />
-    <circle cx="142.7" cy="84.6" r="5.1" fill="#e6a15a" fill-opacity="0.58" />
-    <circle cx="168.4" cy="50.1" r="2.7" fill="#e9c06a" fill-opacity="0.52" />
-    <circle cx="186.0" cy="21.2" r="3.5" fill="#cf6d4f" fill-opacity="0.30" />
-    <circle cx="190.4" cy="8.9" r="4.3" fill="#cf6d4f" fill-opacity="0.14" />
-    <circle cx="128.4" cy="72.3" r="4.8" fill="#cf6d4f" fill-opacity="0.52" />
-    <circle cx="170.6" cy="29.6" r="2.7" fill="#b95449" fill-opacity="0.45" />
-    <circle cx="188.8" cy="4.9" r="4.9" fill="#e9c06a" fill-opacity="0.10" />
-    <circle cx="121.6" cy="121.3" r="4.0" fill="#cf6d4f" fill-opacity="0.45" />
-    <circle cx="137.1" cy="48.7" r="2.7" fill="#d9805a" fill-opacity="0.43" />
-    <circle cx="146.3" cy="62.7" r="2.9" fill="#e6a15a" fill-opacity="0.62" />
-    <circle cx="107.9" cy="147.8" r="2.8" fill="#cf6d4f" fill-opacity="0.44" />
-    <circle cx="144.3" cy="87.4" r="4.5" fill="#cf6d4f" fill-opacity="0.38" />
-    <circle cx="191.0" cy="85.0" r="4.0" fill="#e6a15a" fill-opacity="0.63" />
-    <circle cx="128.5" cy="23.0" r="3.3" fill="#c9594d" fill-opacity="0.44" />
-    <circle cx="188.1" cy="101.3" r="4.1" fill="#d9805a" fill-opacity="0.39" />
-    <circle cx="118.2" cy="45.8" r="2.9" fill="#e9c06a" fill-opacity="0.61" />
-    <circle cx="134.6" cy="116.3" r="3.5" fill="#d9805a" fill-opacity="0.55" />
-    <circle cx="111.9" cy="13.6" r="3.4" fill="#cf6d4f" fill-opacity="0.22" />
-    <circle cx="123.5" cy="142.9" r="4.2" fill="#d9805a" fill-opacity="0.49" />
-    <circle cx="130.1" cy="5.8" r="5.1" fill="#cf6d4f" fill-opacity="0.17" />
-    <circle cx="139.1" cy="52.7" r="3.3" fill="#b95449" fill-opacity="0.51" />
-    <circle cx="104.8" cy="146.8" r="4.3" fill="#e9c06a" fill-opacity="0.59" />
-    <circle cx="132.2" cy="71.8" r="5.1" fill="#e6a15a" fill-opacity="0.55" />
-    <circle cx="132.5" cy="113.7" r="3.7" fill="#d9805a" fill-opacity="0.62" />
-    <circle cx="160.3" cy="136.6" r="4.1" fill="#e6a15a" fill-opacity="0.42" />
-    <circle cx="175.7" cy="75.6" r="3.1" fill="#c9594d" fill-opacity="0.61" />
-    <circle cx="168.7" cy="73.7" r="4.2" fill="#c9594d" fill-opacity="0.62" />
-    <circle cx="134.3" cy="5.5" r="4.4" fill="#d9805a" fill-opacity="0.16" />
-    <circle cx="146.7" cy="77.2" r="4.7" fill="#e9c06a" fill-opacity="0.67" />
+
+  <!-- The near and far banks close gently around one uninterrupted seam of light. -->
+  <path d="M0 308 31 292 57 298 91 279 112 290 139 278 161 299 191 306 212 331 242 341 258 364 289 379 307 402 333 416 349 446 381 468 395 493 0 583Z" fill="url(#da-ridge)"/>
+  <path d="M760 276 730 290 705 286 674 310 653 313 631 334 612 337 585 360 560 369 543 391 517 406 504 434 483 451 464 485 444 502l316 91Z" fill="url(#da-ridge)"/>
+  <path d="M760 391c-31-3-47 9-70 16-28 8-42 26-65 36-29 12-48 30-75 42-27 13-51 22-76 43l-26 34 312 86Z" fill="#6F8F76" fill-opacity=".24"/>
+  <path d="M760 467c-33-6-58 4-87 16-29 13-46 29-73 38-37 13-60 31-81 55 36-13 61-15 89-16 39-2 75-8 99-9l53 5Z" fill="#4D735E" fill-opacity=".31"/>
+  <path d="M0 554c73-22 124-30 178-22 61 9 106 29 145 47l54 15-63 22-314 66Z" fill="#6F8F76" fill-opacity=".27"/>
+  <path d="M217 573c68 10 109 30 162 26 39-3 56-26 91-31 52-8 98 9 143 15 47 5 87 8 147 2v315H181Z" fill="url(#da-water)"/>
+  <path d="M424 497c-4 68-8 114-23 167-12 43-29 82-33 121 15-41 34-76 47-120 14-49 16-98 16-168Z" fill="#FFFDF5" fill-opacity=".48"/>
+  <path d="M439 552c20 32 34 60 43 99 10 44 21 74 41 108-14-36-18-66-27-105-10-42-26-75-57-102Z" fill="#FFFDF5" fill-opacity=".21"/>
+
+  <!-- The far maples are small, cool and partly dissolved in their own bank. -->
+  <path d="M644 512c6-28 6-54 1-78l-5-19 6 12 4 29 8-13 9-26-6 30-10 20-2 45Zm47-18c-1-25-7-45-12-62l-10-15 14 12 11 28 9-19 6-21-2 27-10 25 1 23Zm55 4c-10-27-20-47-36-62l-13-10 18 8 16 15 4-19 3-17 2 25-3 18 18 39Z" fill="#435D4B" fill-opacity=".56"/>
+  <path d="M614 431 610 418 622 415 619 405 632 407 639 394 646 402 660 397 660 409 674 416 669 427 680 437 667 443 668 454 653 452 646 463 634 453 621 457 622 443Z" fill="#A77A57" fill-opacity=".55"/>
+  <path d="m667 410 1-13 12 3 7-14 9 8 12-6 5 13 14 1-4 13 11 8-9 10 3 13-16-1-9 11-11-9-15 4-1-15-11-6 8-10Z" fill="#AA6B51" fill-opacity=".54"/>
+  <path d="m704 447-5-10 10-7-2-12 14 2 9-12 8 9 15-1 1 13 6 5v48l-16-3-12 5-7-12-15 1 2-13Z" fill="#9E7652" fill-opacity=".63"/>
+  <path d="m594 485 7-11 10 3 3-13 12 6 11-7 6 10 13 3-6 12 6 11-13 5-5 11-12-4-10 7-8-11-13-2 6-10Z" fill="#AA7A52" fill-opacity=".49"/>
+  <path d="M660 412c-9 11-11 21-13 35m43-35 4 24m39-1 10 17m-121 32-7 10" fill="none" stroke="#744E3D" stroke-width=".95" stroke-opacity=".38"/>
+
+  <!-- A low, angular bank carries the main tree rather than enclosing the picture. -->
+  <path d="M0 651c50-10 93-2 133-13 41-11 75-13 108-3 25 8 46 11 71 8l21 13-26 15-40 8-35 17-35 6-32 23-40 11-37 20-40 2-48 17Z" fill="url(#da-bank)"/>
+  <path d="M0 692 43 689 69 680 105 685 132 675 162 677 188 662 217 664 240 652 272 656 293 650 316 654 297 669 267 676 233 693 199 698 166 721 128 732 90 751 48 753 0 770Z" fill="#263D34" fill-opacity=".56"/>
+  <path d="M0 656c47-8 77-2 107-8 40-7 70-20 105-13l-22 9-36 2-29 10-39 1-31 7-55-1Z" fill="#A9AD88" fill-opacity=".65"/>
+  <path d="m27 694 19-3 21 3 16-8 22 1m36-5 19 2 21-12m34-2 15 1 19-8" fill="none" stroke="#D2D0A8" stroke-width="1.1" stroke-opacity=".6" stroke-linecap="round"/>
+  <path d="M278 675c23-5 36-9 46-20-8 13-20 20-40 25Z" fill="#F7F3E8" fill-opacity=".8"/>
+
+  <!-- The trunk is a varying solid silhouette; thin branches are its continuations. -->
+  <path d="M65 703c30-17 49-41 58-75 8-30 5-67 15-105 8-32 13-54 15-81 2-35 10-60 23-89l15-30-10 42c-8 34-12 58-10 89 2 30-5 58-11 86-7 34-5 64-12 96-5 26-17 48-29 67l17 13-29-3-22 8-17-3Z" fill="url(#da-bark)"/>
+  <path d="M142 554c-6-25-19-44-34-63-17-21-26-45-32-71l-7-33 13 29c10 26 20 45 39 64 16 18 26 33 34 56Zm15-89c19-20 33-39 42-64 7-21 12-44 16-72l8-32-1 43c-2 27-7 51-17 75-11 25-27 45-48 67Zm3-28c-14-24-19-45-20-69-1-20-10-38-24-56l-15-22 22 18c17 17 27 35 30 58 2 23 5 40 13 58Z" fill="#3F5240"/>
+  <path d="M109 491c-28-11-51-14-82-16l-27-4v-7l29 3c32 3 58 8 76 16Zm91-88c23-12 45-19 65-38l19-22-14 26c-19 23-40 34-68 45Zm-58-31c-10-20-23-31-45-44l-23-18 29 13c25 13 37 25 45 43Zm36-15c18-15 28-31 31-54l2-25 4 29c-1 23-11 41-29 59Z" fill="#435540"/>
+  <path d="M80 695c29-28 45-53 52-86 6-27 5-52 12-77m5-42c8-31 12-52 12-77m-11 222c-6 18-14 31-24 44" fill="none" stroke="#B7AE84" stroke-width="2.1" stroke-opacity=".56" stroke-linecap="round"/>
+  <path d="m139 586 2-21m3-17 3-17m9-39 4-23m-37 163-6 15m23-46 2-10m11-75 4-12" fill="none" stroke="#263D34" stroke-width="2.1" stroke-opacity=".77" stroke-linecap="round"/>
+  <path d="m134 529 4 11m3 53 6 9m-19 50 3 10m22-190 7 10m3-53 5 6" fill="none" stroke="#D4C49B" stroke-width=".9" stroke-opacity=".6" stroke-linecap="round"/>
+
+  <!-- Unequal foliage masses leave the forked structure visible between them. -->
+  <path d="m13 371 3-18 18 1 4-18 19 5 12-18 16 8 20-7 10 15 18-2 8 19 19 6-5 18 13 15-11 16 4 21-20 7-9 18-21-4-13 12-18-10-21 4-9-17-20-3 1-20-16-12 9-17Z" fill="url(#da-rust)"/>
+  <path d="m107 287 7-18 17 5 11-19 16 8 16-10 14 13 20-1 3 19 18 9-5 18 13 16-12 13 2 21-21 4-8 15-21-6-16 11-16-13-18 4-5-19-19-7 5-20-10-11Z" fill="#BA875B" fill-opacity=".74"/>
+  <path d="m186 339 2-16 19-1 7-19 17 7 15-14 15 12 21-2 5 18 19 7-6 20 11 15-16 13-2 20-20-2-11 16-18-8-17 9-13-16-20 1-3-19-16-8 10-17Z" fill="url(#da-rust)"/>
+  <path d="m8 436 14-9 14 10 19-7 13 13 17-3 6 17 17 5-3 20 12 14-14 13-4 18-21-2-14 11-18-9-17 7-10-16-19-5-1-19-9-9Z" fill="#9A674D" fill-opacity=".84"/>
+  <path d="m74 526 10-13 13 7 16-10 12 11 18 1 1 17 15 12-10 14 4 18-18 7-8 15-17-6-16 7-10-13-19 1-3-16-15-9 7-14-5-16Z" fill="#A97D52" fill-opacity=".67"/>
+  <path d="m10 380 14 9 17-4 13 13 14-4 10 17 19 2-3 17-21 7-15-9-19 4-9-14-19-1-3-18-8-7Z" fill="#754E3E" fill-opacity=".5"/>
+  <path d="m148 284 17 7 17-5 14 11 16 1 8 15-12 13-20-1-14 10-16-12-18-1-4-18Z" fill="#CB9A65" fill-opacity=".55"/>
+  <path d="m230 351 15 9 18-5 10 14 18 3-1 18-17 3-13 12-16-8-18 3-5-18-13-8 7-12Z" fill="#805346" fill-opacity=".45"/>
+  <path d="m80 357 14-4 11 13 17 1-1 17-10 9-16-6-15 6-8-13Z" fill="#637654" fill-opacity=".74"/>
+  <path d="m197 306 11-8 10 9 14-1 3 12-10 10-14-4-12 7-7-13Z" fill="#6F8059" fill-opacity=".59"/>
+
+  <!-- Individual maple leaves turn edge-on, open and folded, without becoming a pattern. -->
+  <g fill="#A8664C">
+    <path d="m44 337 4-15 7 10 8-5-1 12 11 2-11 8 2 10-11-4-8 7-1-12-10-6Z"/>
+    <path d="m98 323-4-13 12 5 5-10 4 13 10-3-5 11 9 6-14 3-3 11-8-10-12 2 4-9-9-6Z"/>
+    <path d="m125 278 6-15 5 10 11-2-6 12 7 8-13 1-6 11-5-12-13-3 9-7-2-10Z"/>
+    <path d="m236 307 2-17 9 11 11-4-3 12 10 6-13 5-1 12-11-9-11 5 2-12-11-4Z"/>
+    <path d="m294 350 9-11 1 11 10 1-8 10 3 9-10-3-8 8-3-13-11-3 11-5Z"/>
+    <path d="m32 510 4-15 7 8 10-3-3 13 9 5-11 4-3 11-8-8-12 3 2-12-9-5Z"/>
+    <path d="m126 589 10-9-1 11 10 3-10 8 1 10-9-5-10 6 1-13-10-5 12-2Z"/>
   </g>
-  <g fill="none" stroke="#6b4f45" stroke-opacity=".5" stroke-linecap="round" stroke-width=".9">
-    <path d="M30 150c1-14 0-26 2-38M62 148c-1-12 1-22 4-34M150 150c-1-14 0-24-3-36M172 152c0-12 1-20 4-30" />
+  <g fill="#C49965">
+    <path d="m20 395 4-11 6 8 9-3-3 10 8 5-10 3-3 10-6-8-10 1 4-9-7-4Z"/>
+    <path d="m69 441 8-12 3 11 12-1-8 10 5 9-12-2-7 9-3-12-11-3 10-6Z"/>
+    <path d="m148 336 2-13 8 8 9-4-1 11 9 5-10 5-2 9-9-6-10 4 2-11-9-3Z"/>
+    <path d="m216 381 6-13 5 10 9-2-3 11 8 6-11 3-4 11-7-10-11 1 4-10-9-6Z"/>
+    <path d="m98 552 3-12 7 8 9-3-3 11 7 6-10 2-2 9-7-7-10 2 3-10-7-4Z"/>
   </g>
-  <path d="M0 150c30-4 60-4 94 0 34 4 64 3 97-1v77H0Z" fill="url(#da-water)" />
-  <path d="M94 150h5l2 50h-9Z" fill="#fff4d8" fill-opacity=".35" />
-  <g stroke-linecap="round" fill="none">
-    <path d="M24 160v14M34 162v16M54 160v12M66 163v14M138 160v14M152 162v16M170 160v12" stroke="#c9594d" stroke-opacity=".38" stroke-width="2.2" />
-    <path d="M10 168c22-4 44-3 64 1m32 0c24-3 50-3 74 1M20 186c26-3 48-3 70 0m22 0c22-2 44-2 62 1" stroke="#6f9a8a" stroke-opacity=".5" stroke-width=".8" />
-    <path d="M94 168c3 1 6 1 9 0m-6 8h5" stroke="#e9bf72" stroke-opacity=".7" stroke-width="1" />
+  <g fill="#744E3F" fill-opacity=".76">
+    <path d="m60 372 5-11 4 9 9-2-3 10 6 5-9 3-3 9-6-7-9 1 3-9-6-4Z"/>
+    <path d="m163 274 8-10 1 9 10 1-8 7 2 10-8-4-8 6 1-11-9-3 10-2Z"/>
+    <path d="m261 379 4-11 5 8 8-2-2 10 8 3-9 4-2 9-7-7-9 3 2-10-6-3Z"/>
+    <path d="m13 465 6-10 2 9 9-1-5 8 6 6-10 1-4 8-5-8-10-1 5-8Z"/>
   </g>
-  <g>
-    <ellipse cx="46" cy="200" rx="7" ry="1.6" fill="#7d8f84" fill-opacity=".3" />
-    <circle cx="46" cy="176" r="2.4" fill="#5f776b" />
-    <path d="M42.8 179.5c-1 7-2 14-3 20h13c-1-6-2-13-1-20Z" fill="#6f877a" fill-opacity=".92" />
-    <path d="M43 181q-3 6-3 11M49.5 181q3 5 4 10" stroke="#6f877a" stroke-width="1.4" stroke-linecap="round" fill="none" />
+  <g fill="none" stroke="#6C4A3B" stroke-width=".7" stroke-opacity=".65" stroke-linecap="round">
+    <path d="m49 354 3-18m50-1 4-17m26-19 1-21m107 45 4-17m-25 94 4-18m-177 142 1-18m88 108-1-17m-62-150 3-15m68-92 5-14m-55 217 3-12"/>
   </g>
-  <path transform="translate(24 206) rotate(20) scale(0.7)" d="M0 -8L2 -4 6 -5 4 -1 8 0 4 3 5 7 1 5 0 9 -1 5 -5 7 -4 3 -8 0 -4 -1 -6 -5 -2 -4Z" fill="#c9594d" fill-opacity=".8" />
-  <path transform="translate(150 196) rotate(-30) scale(0.6)" d="M0 -8L2 -4 6 -5 4 -1 8 0 4 3 5 7 1 5 0 9 -1 5 -5 7 -4 3 -8 0 -4 -1 -6 -5 -2 -4Z" fill="#e6a15a" fill-opacity=".8" />
-  <path transform="translate(120 214) rotate(50) scale(0.5)" d="M0 -8L2 -4 6 -5 4 -1 8 0 4 3 5 7 1 5 0 9 -1 5 -5 7 -4 3 -8 0 -4 -1 -6 -5 -2 -4Z" fill="#d9805a" fill-opacity=".8" />
-  <path transform="translate(164 214) rotate(10) scale(0.55)" d="M0 -8L2 -4 6 -5 4 -1 8 0 4 3 5 7 1 5 0 9 -1 5 -5 7 -4 3 -8 0 -4 -1 -6 -5 -2 -4Z" fill="#b95449" fill-opacity=".8" />
+  <path d="M53 423c-18 10-32 14-53 15m91-39c-13 11-23 19-36 24m109-81 6-13m55 39 11-10m-76 197 17 9m-44 16-12 7" fill="none" stroke="#70503E" stroke-width="1.05" stroke-opacity=".48" stroke-linecap="round"/>
+
+  <!-- Reflections are broken laterally, allowing green water between the red planes. -->
+  <path d="M215 684c24 2 43-5 66-10l-16 26-28 16 11 18-25 18 9 19-29 14 10 17-21 25-34-3 17-30-7-24 22-20-5-19 23-18-10-22Z" fill="url(#da-reflect)"/>
+  <path d="M595 574c33 3 60 11 93 10l-20 20-25 6 14 21-30 9 14 21-28 15 10 26-26-12-10-26 10-18-14-19 12-21-19-12Z" fill="#A56E4D" fill-opacity=".16"/>
+  <path d="m267 688 29-5 26 2-15 7-37 4Zm-32 44 31-4 20 2-20 8-39 3Zm-25 56 33-6 25 3-16 8-40 4Zm-20 44 35-3 28 4-27 7-37-2Zm407-224 32 1 19 5-25 3-28-4Zm16 37 30 2 15 5-30 3-20-4Zm-11 38 30 5 17 6-24 1-29-7Z" fill="#AC7253" fill-opacity=".38"/>
+  <path d="m228 710 25-5 29 2-20 4-28 3Zm-16 51 34-2 17 4-31 5-28-2Zm-8 54 30 2 13 5-30 2-21-5Zm412-189 36 3 15 5-34 1Zm-12 48 28 4 17 5-25 1Z" fill="#D3A16C" fill-opacity=".39"/>
+  <path d="M288 706c33-8 53-6 80-10m-93 52c31-6 51-4 76-8m100-39c29-1 49 2 69 0m40 24c29 4 49 3 69 9m-291 74c33-5 57-4 85-7m97-23c35 2 60 7 87 7" fill="none" stroke="#326B75" stroke-width="1.2" stroke-opacity=".42" stroke-linecap="round"/>
+  <path d="M337 629c22-3 39-3 58-6m39 19 29 1m-77 44c25-4 42-5 60-5m-104 65c25-5 44-5 66-9m61-16c26 0 42 3 62 2m-201 61c24-5 44-7 67-7m73 42c35 3 61 4 89 2m-242 39c41-4 67-9 100-10" fill="none" stroke="#FFFDF5" stroke-width="1.8" stroke-opacity=".82" stroke-linecap="round"/>
+  <path d="M413 578h23m-73 48 22-3m119 34 24 2m-200 77 20-3m130 30 26 1m-80 80 36-2m126-40 29 3" fill="none" stroke="#FFFDF5" stroke-width="1.2" stroke-opacity=".67" stroke-linecap="round"/>
+
+  <!-- A minute still figure makes the tree and the reflected sky feel immense. -->
+  <path d="M268 619c-3-1-5 1-5 4 0 3 2 5 5 4 3 0 4-2 4-4s-2-4-4-4Zm-3 10c-3 5-3 12-5 18l8 1 6-2-3-16-3-1Z" fill="#263D34" fill-opacity=".68"/>
+  <path d="m265 647-1 7m6-7 2 6m-7-19-5 6" fill="none" stroke="#263D34" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".7"/>
+  <path d="M258 657c9-1 13 0 20-1" fill="none" stroke="#263D34" stroke-width="1" stroke-opacity=".22"/>
+  <path d="m84 649 6-9 7 5 7-6 2 10 10 2-8 6 1 7-10-3-7 4-1-8-8-3Zm123 2 5-6 4 5 6-1-3 6 4 5-7 1-3 5-4-6-6-1Z" fill="#AD7C50" fill-opacity=".73"/>
+  <path d="m294 766 7-3 6 4-8 2Zm208-31 8 2 2 4-9-2Zm-156 75 7-3 4 3-8 3Z" fill="#AC7253" fill-opacity=".65"/>
 </svg>
