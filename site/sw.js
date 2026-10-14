@@ -5,7 +5,7 @@
  * reader an 8 MB revalidation of the poetry face on every visit). Styles,
  * scripts and pages stay network-first, so a new edition always arrives; the
  * cache is only the offline fallback. Bump CACHE when the shell changes. */
-const CACHE = "anxiangji-v48";
+const CACHE = "anxiangji-v49";
 const SHELL = [
   "./",
   "./index.html",
@@ -51,7 +51,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)));
+    await Promise.all(keys.filter((key) => key.startsWith("anxiangji-") && key !== CACHE).map((key) => caches.delete(key)));
     await self.clients.claim();
   })());
 });
