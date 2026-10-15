@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="wd-title wd-desc">
+  <title id="wd-title">話冬日 · 寒巷初燈</title>
+  <desc id="wd-desc">暮色與飛雪籠住深巷，枯樹在石路留下橫斜的淡影。近處高懸的街燈透出微暖，裹緊冬衣的行人快步走過；一縷白氣在臉旁散開，積雪、足跡與薄霧漸次融入紙白。</desc>
+  <defs>
+    <linearGradient id="wd-air" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#326B75" stop-opacity="0"/><stop offset=".48" stop-color="#326B75" stop-opacity=".11"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".025"/></linearGradient>
+    <linearGradient id="wd-left" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#526D61" stop-opacity=".19"/><stop offset=".7" stop-color="#326B75" stop-opacity=".09"/><stop offset="1" stop-color="#326B75" stop-opacity=".025"/></linearGradient>
+    <linearGradient id="wd-right" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#326B75" stop-opacity=".19"/><stop offset=".65" stop-color="#6F8F76" stop-opacity=".1"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".02"/></linearGradient>
+    <linearGradient id="wd-road" x1="0" y1="0" x2=".4" y2="1"><stop stop-color="#326B75" stop-opacity=".015"/><stop offset=".62" stop-color="#326B75" stop-opacity=".12"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".025"/></linearGradient>
+    <radialGradient id="wd-glow"><stop stop-color="#E5C78A" stop-opacity=".34"/><stop offset=".4" stop-color="#E5C78A" stop-opacity=".14"/><stop offset="1" stop-color="#E5C78A" stop-opacity="0"/></radialGradient>
+    <linearGradient id="wd-glass" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#E5C78A" stop-opacity=".9"/><stop offset=".55" stop-color="#F4E4B5"/><stop offset="1" stop-color="#CBA164" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="wd-bark" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#263D34"/><stop offset=".5" stop-color="#6A7966"/><stop offset="1" stop-color="#435B50"/></linearGradient>
+  </defs>
+  <!-- Pale architecture and an open lane dissolve together into the snow. -->
+  <path d="M48 269c113-17 216-9 317 6 113 18 211-12 348-5v520H48Z" fill="url(#wd-air)"/>
+  <path d="m48 375 107 12 78 26 63 22 38 36 4 106-47 59L48 791Z" fill="url(#wd-left)"/>
+  <path d="m338 473 35-22 54-9 37 12 2 91-29 23-46-6-51 26Z" fill="#326B75" opacity=".045"/>
+  <path d="m711 370-86 17-65 34-48 27-39 8-5 98 34 44 211 177Z" fill="url(#wd-right)"/>
+  <path d="M338 569c41-20 76-25 123-17 31 23 64 48 101 83 52 49 99 102 151 155v38H48V800c80-51 135-94 185-139 42-39 74-70 105-92Z" fill="url(#wd-road)"/>
+  <path d="M390 566c29 17 41 34 69 52 36 23 74 49 98 78 28 36 57 58 81 92-40-29-68-49-97-83-26-29-60-53-94-75-26-19-45-41-57-64Z" fill="#FFFDF5" opacity=".51"/>
+  <path d="M334 577c-40 42-75 78-127 124-46 41-91 70-159 111 70-29 117-63 167-104 53-44 88-85 119-131Z" fill="#F7F3E8" opacity=".74"/>
+  <!-- Broken eaves, a shutter and a quiet distant window. -->
+  <path d="m43 370 30-5 77 12 86 27 64 23 35 35 4 13-10-4-38-34-59-22-81-27-76-12-27 4Z" fill="#435B50" opacity=".62"/>
+  <path d="m44 366 30-5 79 12 84 27 63 23 34 33-12-5-26-24-62-22-82-27-78-11-28 4Z" fill="#F7F3E8" opacity=".9"/>
+  <path d="m62 387 59 8 2 213-61 33Z" fill="#526D61" opacity=".07"/>
+  <path d="m66 393 51 8 2 203-52 28m17-235 1 224m15-221 1 212m-34-158 51 3m-50 66 51-8m-50 65 51-16" fill="none" stroke="#526D61" stroke-width="1.2" opacity=".24"/>
+  <path d="m153 420 2 190m88-163 1 129m-81 38 56-21m-33-111 4 0m91 23 5 1" fill="none" stroke="#526D61" stroke-width="1.3" opacity=".15"/>
+  <path d="m709 365-87 17-64 34-48 26-33 8-7 9 42-9 51-27 63-33 86-17Z" fill="#526D61" opacity=".52"/>
+  <path d="m709 361-85 17-67 34-49 26-31 8-4 5 36-8 52-27 65-33 84-17Z" fill="#F7F3E8" opacity=".91"/>
+  <path d="m627 419 35-15 0 151-36-31Z" fill="#526D61" opacity=".07"/>
+  <path d="m630 422 28-12 0 138m-14-132 0 119m-14-64 28-3" fill="none" stroke="#526D61" stroke-width="1" opacity=".18"/>
+  <path d="m395 474 16-2 1 22-16 1Z" fill="#D6B77B" opacity=".4"/>
+  <path d="m402 475 0 18m-7-9 15-1" fill="none" stroke="#7F7A54" stroke-width=".8" opacity=".36"/>
+  <path d="m376 540 49-2 23 6m-101 29 23-6m90-9 20 11" fill="none" stroke="#6F8F76" stroke-width="1" opacity=".15"/>
+  <!-- The lamp is tall, slender and the only concentrated warmth. -->
+  <ellipse cx="243" cy="433" rx="89" ry="107" fill="url(#wd-glow)"/>
+  <path d="m218 713 8-300 4-40 7-21 5-8 10-6 14-1 11 6 4 9-4 2-5-7-9-4-10 1-8 5-6 9-4 17-3 38-7 300Z" fill="#435B50"/>
+  <path d="m221 704 8-291 5-40 6-20m6-9 11-5 11 2" fill="none" stroke="#9CA78E" stroke-width="1.1" opacity=".67"/>
+  <path d="m263 347 0 17m-13 7 32-1-4 42-23 1Z" fill="url(#wd-glass)"/>
+  <path d="m246 369 9-9 22 0 10 8-4 5-32 1Z" fill="#435B50"/>
+  <path d="m255 374 3 36m20-37-3 37m-10-37 1 39" fill="none" stroke="#526D61" stroke-width="1.3"/>
+  <path d="m254 412 24-1 3 4-5 4-17 0-5-3Zm10 7 3 9 3-9Z" fill="#435B50"/>
+  <path d="m249 367 9-5 17 0 8 5" fill="none" stroke="#F7F3E8" stroke-width="1.7" opacity=".85"/>
+  <path d="m211 711 22 0 7 7-36 1Z" fill="#526D61" opacity=".72"/>
+  <path d="M240 499c-4 52-8 101-1 139 5 28 8 54-3 87l38-1c-2-33-17-54-21-85-6-39-5-83-13-140Z" fill="#D6B77B" opacity=".065"/>
+  <!-- Bare trees repeat at different depths and never form a decorative grid. -->
+  <path d="M656 772c-6-50-5-101-12-143-6-36-19-68-28-97-9-31-11-60-9-89l5-28 6-5-3 36c0 31 6 57 16 84 14 36 22 67 27 103 6 45 6 89 13 135Z" fill="url(#wd-bark)"/>
+  <path d="M619 537c-22-21-35-40-44-66-9-29-11-57-22-76l-19-23 3-2 23 21c15 24 16 49 26 76 9 24 22 38 39 53Zm23 63c4-28 13-50 25-68 11-17 17-40 21-64l5-23 4 1-3 25c-3 29-12 49-23 68-13 21-17 43-20 67Z" fill="#435B50"/>
+  <path d="m607 463-28-25-12-28-17-15-1-4 21 15 15 27 24 19m6-13 25-25 16-31 15-13 3 1-15 16-13 31-29 34m-44 13-18-6-22-17 1-3 24 13 17 4m111 61 20-11 15-18 3 2-14 22-26 15" fill="#435B50" opacity=".87"/>
+  <path d="m580 434-16-4-16-14-17-5 0-3 20 4 17 13 13 3m59-15-1-27 10-24-2-14 4 0 3 15-9 25 2 19m27-22 1-23 10-17 0-14 3 0 3 16-10 17-1 18" fill="none" stroke="#435B50" stroke-width="2" stroke-linecap="round" opacity=".82"/>
+  <path d="M663 755c-4-43-3-84-10-122-5-31-16-64-25-90m-5-19-7-28m-3-14-1-23m36 110 9-20 12-17m-91-76-5-21" fill="none" stroke="#A5AF98" stroke-width="1.1" opacity=".48"/>
+  <path d="M505 567c-3-29-2-56-8-80l-10-32 3-2 12 32 5 36 7-19 11-17 2 1-10 21-8 32 4 27Z" fill="#6F8F76" opacity=".32"/>
+  <path d="m501 512-17-16-8-20 2-1 11 19 13 12m-7-19 2-27 8-19 2 1-6 20-1 24" fill="none" stroke="#6F8F76" stroke-width="1.3" opacity=".34"/>
+  <!-- Shadows stretch across snow and break before becoming a dark frame. -->
+  <path d="m653 745-84-22-51-25-51-2-27-15 3-4 27 13 49 1 54 25 83 20Zm-18-74-57-12-21-19-47-5-25-12 2-3 27 10 46 3 24 18 53 11Z" fill="#526D61" opacity=".13"/>
+  <path d="m572 718-18-27-24-8-17-20 2-2 19 18 25 8 19 30m-32-64-31-2-20-10 1-2 22 8 29 1" fill="none" stroke="#526D61" stroke-width="2" opacity=".13"/>
+  <path d="m642 765-20 10 25-3m15-2 24 10" fill="none" stroke="#435B50" stroke-width="1.8" opacity=".4"/>
+  <!-- One bundled figure, a scarf and a small breath against the dusk. -->
+  <path d="M405 622c-4-1-7 2-8 6l1 8 8 3 6-5 0-7Z" fill="#B3A185"/>
+  <path d="m395 625 4-8 8-2 7 5 1 9-9-1-10 1Z" fill="#526D61"/>
+  <path d="m399 635-5 9-3 20-5 28 20 7 13-6-5-26-3-20-6-8Z" fill="#435B50"/>
+  <path d="m399 647-2 20-6 22 13 4 7-3-7-25 2-21Z" fill="#6A7966" opacity=".58"/>
+  <path d="m397 690-3 16-10 13 7 3 12-14 3-12m3-1 8 13 1 17 8-1-2-21-10-13" fill="#435B50"/>
+  <path d="m384 718-6 6 15 0-1-4m25 3 0 6 15-1-6-5" fill="#263D34"/>
+  <path d="m396 639 10-3 10 5-2 7-13-4-8 1Z" fill="#9B7656"/>
+  <path d="m412 642 15 7 12 0-5 5-13-2-11-5Z" fill="#B59255" opacity=".7"/>
+  <path d="m395 650-9 16 5 7 7-15m14-9 6 17 8 3-1 5-12-5-4-14" fill="#435B50"/>
+  <path d="M394 634c-10-4-16-10-26-10-7 0-12-4-15-9 3 10 10 12 18 13 7 2 13 8 23 6Z" fill="#FFFDF5" opacity=".87"/>
+  <path d="M386 635c-10-1-17-6-25-6" fill="none" stroke="#F7F3E8" stroke-width="1.2" opacity=".64"/>
+  <path d="m402 732-9 2-5 4 10 0 7-3m-24 16-8 2-6 4 10 0 7-3m35-7 9 1 6 4-9-1m-70 20-10 2-5 5 10-1" fill="#526D61" opacity=".15"/>
+  <!-- Snow gathers on branches, sill edges and the near paving. -->
+  <path d="m545 398 20 17m17 22 22 18m38-44 13-25m-8 142 11-15m-171-15 10 10" fill="none" stroke="#FFFDF5" stroke-width="1.6" stroke-linecap="round" opacity=".84"/>
+  <path d="m63 635 61-31m503-80 36 31m-278 173 12 1m-186-7 28 0m382 56 49 8" fill="none" stroke="#F7F3E8" stroke-width="2" opacity=".8"/>
+  <path d="M60 783c72-31 125-63 178-64-55 11-107 44-170 71Zm452-17c61 14 99 32 166 42-69 1-113-24-166-42Z" fill="#FFFDF5" opacity=".37"/>
+  <path d="m81 809 49-4m25-17 26-1m29 27 41-3m31-17 32 1m165 19 43 4m44-18 32 6m57 8 26 1" fill="none" stroke="#F7F3E8" stroke-width="1.6" stroke-linecap="round" opacity=".73"/>
+  <!-- Unequal drifting flakes follow one light wind through the lane. -->
+  <g fill="#FFFDF5" opacity=".87">
+    <ellipse cx="116" cy="296" rx="1.7" ry="2.2"/><ellipse cx="199" cy="329" rx="1.2" ry="1.8"/>
+    <ellipse cx="302" cy="280" rx="1.8" ry="2.5"/><ellipse cx="381" cy="331" rx="1.4" ry="2"/>
+    <ellipse cx="462" cy="282" rx="1.2" ry="1.9"/><ellipse cx="555" cy="317" rx="1.6" ry="2.2"/>
+    <ellipse cx="666" cy="292" rx="1.4" ry="2"/><ellipse cx="336" cy="394" rx="1.9" ry="2.6"/>
+    <ellipse cx="433" cy="371" rx="1.2" ry="1.7"/><ellipse cx="512" cy="408" rx="1.7" ry="2.3"/>
+    <ellipse cx="592" cy="387" rx="1.4" ry="2"/><ellipse cx="104" cy="478" rx="1.5" ry="2.1"/>
+    <ellipse cx="183" cy="521" rx="2" ry="2.6"/><ellipse cx="287" cy="479" rx="1.2" ry="1.9"/>
+    <ellipse cx="363" cy="506" rx="1.7" ry="2.2"/><ellipse cx="451" cy="485" rx="1.4" ry="2"/>
+    <ellipse cx="548" cy="544" rx="1.8" ry="2.4"/><ellipse cx="682" cy="519" rx="1.3" ry="1.8"/>
+    <ellipse cx="136" cy="590" rx="1.6" ry="2.2"/><ellipse cx="267" cy="571" rx="1.2" ry="1.8"/>
+    <ellipse cx="335" cy="604" rx="2" ry="2.7"/><ellipse cx="465" cy="593" rx="1.5" ry="2"/>
+    <ellipse cx="568" cy="632" rx="1.8" ry="2.3"/><ellipse cx="705" cy="667" rx="1.6" ry="2.1"/>
+    <ellipse cx="117" cy="697" rx="2" ry="2.8"/><ellipse cx="281" cy="688" rx="1.5" ry="2.1"/>
+    <ellipse cx="346" cy="753" rx="1.8" ry="2.4"/><ellipse cx="481" cy="714" rx="1.6" ry="2.3"/>
+    <ellipse cx="580" cy="782" rx="1.5" ry="2"/><ellipse cx="238" cy="786" rx="1.9" ry="2.5"/>
+  </g>
+  <path d="m165 302 4 7m96 42 4 8m87-53 4 7m56 29 4 8m89-28 4 7m106 32 4 7m-264 79 4 8m69-24 5 9m77 30 4 7m79-6 4 8m-366 45 5 8m98 50 4 7m88-22 4 8m103 38 4 7m-344 9 4 8m91 18 5 9m102 18 4 8m102 35 4 7m104 35 5 9m-335 28 4 8" fill="none" stroke="#FFFDF5" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+</svg>
