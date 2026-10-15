@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="70 90 600 740" role="img" aria-labelledby="title desc">
   <title id="title">疏梅有香</title>
-  <desc id="desc">暖白冬光裡，院牆只留淡淡轉角。老梅從左下曲折生長，兩叢疏枝向上、向右舒展，粉白與淡胭脂的花有開有合。細枝間留出大片空白，幾點花苞和地上的落瓣含蓄呼應，不題詩，不加框。</desc>
+  <desc id="desc">暖白冬光裡，院牆只留淡淡轉角。老梅從左下曲折生長，兩叢疏枝向上、向右舒展，粉白與淡胭脂的花有開有合。疏密有別的雪點與細緻雪花緩緩飄落，細枝間留出大片空白，幾點花苞和地上的落瓣含蓄呼應，不題詩，不加框。</desc>
   <defs>
     <linearGradient id="wall" x1="0" y1="0" x2=".8" y2="1">
       <stop stop-color="#E9D7B7" stop-opacity=".38"/><stop offset=".55" stop-color="#EADBC2" stop-opacity=".15"/><stop offset="1" stop-color="#F7F3E8" stop-opacity="0"/>
@@ -131,4 +131,33 @@
   <path d="M320 788c8-6 16-3 14 2-3 5-11 4-14-2Z" fill="#DEA08E" opacity=".65"/>
   <path d="M416 766c4-8 11-8 13-3-2 5-8 7-13 3Z" fill="#F0CCB8"/>
   <path d="M241 808c6-2 11 0 11 3-5 3-9 1-11-3Z" fill="#DCB098" opacity=".6"/>
+
+  <!-- Snowfall begins: additions leave the original painting intact. -->
+  <defs>
+    <g id="snow-crystal" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0-9V9M-7.8-4.5 7.8 4.5M-7.8 4.5 7.8-4.5M-2.8-6 0-3.8 2.8-6M-2.8 6 0 3.8 2.8 6M-6.5-1.5-3.3-1.9-4.5-5M6.5 1.5 3.3 1.9 4.5 5M-6.5 1.5-3.3 1.9-4.5 5M6.5-1.5 3.3-1.9 4.5-5" stroke="#D4D9D0" stroke-width="1.9" stroke-opacity=".28"/>
+      <path d="M0-9V9M-7.8-4.5 7.8 4.5M-7.8 4.5 7.8-4.5M-2.8-6 0-3.8 2.8-6M-2.8 6 0 3.8 2.8 6M-6.5-1.5-3.3-1.9-4.5-5M6.5 1.5 3.3 1.9 4.5 5M-6.5 1.5-3.3 1.9-4.5 5M6.5-1.5 3.3-1.9 4.5-5" stroke="#FFFEFA" stroke-width="1.05"/>
+    </g>
+  </defs>
+  <style>
+    .snow-drift{animation:plum-snow 28s linear infinite;pointer-events:none}
+    .snow-drift.far{animation-duration:41s;animation-delay:-17s}
+    .snow-drift.middle{animation-duration:31s;animation-delay:-8s}
+    .snow-drift.near{animation-duration:25s;animation-delay:-19s}
+    .snow-drift.crystals{animation-duration:34s;animation-delay:-13s}
+    @keyframes plum-snow{0%{transform:translate(-6px,-25px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translate(9px,29px);opacity:0}}
+    @media(prefers-reduced-motion:reduce){.snow-drift{animation:none;transform:none;opacity:1}}
+  </style>
+  <g id="snow-far" class="snow-drift far" fill="#FFFEFA" fill-opacity="0.68"><ellipse cx="124" cy="155" rx="1.6" ry="1.89"/><ellipse cx="198" cy="211" rx="1.8" ry="2.12"/><ellipse cx="368" cy="119" rx="1.5" ry="1.77"/><ellipse cx="446" cy="187" rx="1.9" ry="2.24"/><ellipse cx="605" cy="227" rx="1.5" ry="1.77"/><ellipse cx="654" cy="304" rx="1.8" ry="2.12"/><ellipse cx="116" cy="355" rx="1.6" ry="1.89"/><ellipse cx="302" cy="376" rx="1.8" ry="2.12"/><ellipse cx="401" cy="338" rx="1.5" ry="1.77"/><ellipse cx="523" cy="301" rx="1.7" ry="2.01"/><ellipse cx="615" cy="467" rx="1.5" ry="1.77"/><ellipse cx="239" cy="488" rx="1.5" ry="1.77"/><ellipse cx="374" cy="533" rx="1.9" ry="2.24"/><ellipse cx="557" cy="569" rx="1.6" ry="1.89"/><ellipse cx="102" cy="635" rx="1.8" ry="2.12"/><ellipse cx="309" cy="678" rx="1.6" ry="1.89"/><ellipse cx="435" cy="714" rx="1.8" ry="2.12"/><ellipse cx="608" cy="751" rx="1.5" ry="1.77"/></g>
+<g id="snow-middle" class="snow-drift middle" fill="#FFFEFA" fill-opacity="0.88"><ellipse cx="154" cy="243" rx="2.6" ry="3.07"/><ellipse cx="275" cy="158" rx="2.3" ry="2.71"/><ellipse cx="484" cy="113" rx="2.4" ry="2.83"/><ellipse cx="559" cy="213" rx="2.5" ry="2.95"/><ellipse cx="636" cy="365" rx="2.4" ry="2.83"/><ellipse cx="346" cy="323" rx="2.5" ry="2.95"/><ellipse cx="179" cy="426" rx="2.2" ry="2.60"/><ellipse cx="454" cy="476" rx="2.6" ry="3.07"/><ellipse cx="533" cy="422" rx="2.3" ry="2.71"/><ellipse cx="289" cy="550" rx="2.5" ry="2.95"/><ellipse cx="650" cy="594" rx="2.2" ry="2.60"/><ellipse cx="408" cy="615" rx="2.6" ry="3.07"/><ellipse cx="238" cy="709" rx="2.3" ry="2.71"/><ellipse cx="514" cy="765" rx="2.6" ry="3.07"/></g>
+<g id="snow-near" class="snow-drift near" fill="#FFFEFA" fill-opacity="0.96"><ellipse cx="112" cy="449" rx="3.3" ry="3.89"/><ellipse cx="398" cy="228" rx="3" ry="3.54"/><ellipse cx="591" cy="313" rx="3.2" ry="3.78"/><ellipse cx="355" cy="454" rx="3.4" ry="4.01"/><ellipse cx="533" cy="635" rx="3.1" ry="3.66"/><ellipse cx="326" cy="761" rx="3.2" ry="3.78"/></g>
+  <g id="snow-crystals" class="snow-drift crystals" opacity=".9">
+    <use href="#snow-crystal" transform="translate(146 292) rotate(13) scale(.64)"/>
+    <use href="#snow-crystal" transform="translate(375 190) rotate(-9) scale(.55)"/>
+    <use href="#snow-crystal" transform="translate(570 487) rotate(22) scale(.83)"/>
+    <use href="#snow-crystal" transform="translate(340 589) rotate(-18) scale(.72)"/>
+    <use href="#snow-crystal" transform="translate(606 688) rotate(8) scale(.6)"/>
+  </g>
+  <path d="M331 301c15-9 30-13 44-18m86-70 17-6M300 485c17-3 31-3 43-3m122-45 19-2" fill="none" stroke="#FFFEFA" stroke-width="2.3" stroke-linecap="round" opacity=".75"/>
+  <!-- Snowfall ends. -->
 </svg>

@@ -2,6 +2,8 @@
 
 本目錄是 GitHub Pages 的靜態站點根目錄，完整說明見 [倉庫 README](../README.md)。
 
+正式版與樣板封面同步加入自然飄雪，保留原有梅枝構圖。SVG 內以四層輕量 CSS 動畫緩慢飄動，`prefers-reduced-motion: reduce` 時切換為靜態雪景；包含 38 顆雪點、5 枚精細雪花與少量枝上薄雪。
+
 《話冬日》三語均分兩段，每段六行，依原稿保留兩組文字，中文使用繁體。中、英、法三語紙本頁碼為 72–74，配 `images/winter-days.svg`「寒巷初燈」；入口為 `#winter-days-image`、`#winter-days-zh`、`#winter-days-en`、`#winter-days-fr`。後記與作者簡介為 75–76。
 
 《看一下》三語正文各四行，中文使用繁體，落款為「2024.10.25 於香港」，英法原文及落款保留。中、英、法三語紙本頁碼為 69–71，配 `images/just-a-look.svg`「楓隙桂影」；入口為 `#just-a-look-image`、`#just-a-look-zh`、`#just-a-look-en`、`#just-a-look-fr`。後記與作者簡介為 75–76。
@@ -24,7 +26,7 @@
 
 在倉庫根目錄執行 `node site/preview.mjs`，訪問 <http://127.0.0.1:8000/>。樣板另有 `preview-review.mjs`，使用 8014 端口。全部資源為相對路徑，支持 GitHub Pages 項目子路徑。
 
-當前資源版本為 `artbook-19`，緩存為 `anxiangji-v63`。更改資源時同步入口 URL 的版本，更改外殼時遞增 `sw.js` 的緩存名。
+當前資源版本為 `artbook-20`，緩存為 `anxiangji-v64`。更改資源時同步入口 URL 的版本，更改外殼時遞增 `sw.js` 的緩存名。
 
 運行 `node tools/check-artbook.mjs` 檢查全書資源與緩存；已有 Playwright 時，運行 `node tools/review-browser.mjs artifacts/artbook-review http://127.0.0.1:8000/` 生成瀏覽器驗收記錄與截圖。詳情見 [評審記錄](design-review.md)。
 

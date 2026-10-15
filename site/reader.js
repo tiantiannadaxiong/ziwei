@@ -74,7 +74,7 @@
     const plate = node('figure', 'cover-plate', undefined, page);
     const image = node('img', '', undefined, plate);
     image.src = edition.cover;
-    image.alt = '淡淡院牆前，老梅曲折向上，疏枝舒展；粉白花朵與胭脂花苞錯落相映，冬光與暗香留在枝間的空白裡。';
+    image.alt = '淡淡院牆前，老梅曲折向上，疏枝舒展；粉白花朵與胭脂花苞錯落相映，細雪在冬光中緩緩飄落，暗香留在枝間的空白裡。';
     image.decoding = 'async';
     const author = node('div', 'cover-author', undefined, page);
     const signature = node('div', 'author-signature', undefined, author);
