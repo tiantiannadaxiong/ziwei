@@ -1,2 +1,2 @@
 /* Compatibility for saved sample links. */
-import("./reader.js?v=artbook-16");
+import("./reader.js?v=artbook-17");

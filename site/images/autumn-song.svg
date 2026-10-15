@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="as-title as-desc">
+  <title id="as-title">秋歌 · 菊岸秋聲</title>
+  <desc id="as-desc">秋菊在近岸黃草與濕石間開放，溪水從金黃收穫田地旁緩緩流過。遠處幾間村舍、疏雲、淡月與一行雁影退入青綠薄霧，明亮的秋收與綿長的秋思共留於紙白。</desc>
+  <defs>
+    <linearGradient id="as-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6F8F76" stop-opacity="0"/><stop offset=".5" stop-color="#6F8F76" stop-opacity=".09"/><stop offset="1" stop-color="#326B75" stop-opacity=".025"/></linearGradient>
+    <linearGradient id="as-far" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6F8F76" stop-opacity=".2"/><stop offset="1" stop-color="#6F8F76" stop-opacity="0"/></linearGradient>
+    <linearGradient id="as-ridge" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#6F8F76" stop-opacity=".37"/><stop offset=".65" stop-color="#326B75" stop-opacity=".11"/><stop offset="1" stop-color="#6F8F76" stop-opacity="0"/></linearGradient>
+    <linearGradient id="as-water" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#326B75" stop-opacity=".035"/><stop offset=".55" stop-color="#326B75" stop-opacity=".23"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".08"/></linearGradient>
+    <linearGradient id="as-field" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#D3BB7E" stop-opacity=".22"/><stop offset=".5" stop-color="#C6A466" stop-opacity=".55"/><stop offset="1" stop-color="#B59255" stop-opacity=".15"/></linearGradient>
+    <linearGradient id="as-bank" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#8C977A" stop-opacity=".44"/><stop offset=".6" stop-color="#526D61" stop-opacity=".65"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".08"/></linearGradient>
+    <linearGradient id="as-rock" x1="0" y1="0" x2=".5" y2="1"><stop stop-color="#84977E"/><stop offset="1" stop-color="#435B50"/></linearGradient>
+    <radialGradient id="as-moon"><stop stop-color="#FFFDF5" stop-opacity=".7"/><stop offset="1" stop-color="#FFFDF5" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- The moon is pale enough to share the same air as cloud and paper. -->
+  <path d="M77 285c126-31 235-4 331-9 105-5 190-29 304-9v309H77Z" fill="url(#as-sky)"/>
+  <circle cx="506" cy="298" r="65" fill="url(#as-moon)"/>
+  <circle cx="506" cy="298" r="39" fill="#FFFDF5" opacity=".88"/>
+  <path d="M349 326c76-5 120 4 160 3 51-2 88-11 143-7-51 4-88 17-138 17-61 0-101-11-165-13Z" fill="#F7F3E8" opacity=".69"/>
+  <path d="M91 343c67-6 117 6 173 7 44 1 73-4 118-7-46 12-77 15-121 13-61-2-102-14-170-13Z" fill="#F7F3E8" opacity=".65"/>
+  <!-- Five small geese form an open, uneven line rather than a repeated symbol. -->
+  <path d="M259 298c-8-8-13-10-21-9 8 2 13 7 19 12l4 1c7-6 13-9 21-9-9-3-16 0-23 5Z" fill="#526D61" opacity=".7"/>
+  <path d="M299 313c-6-7-11-9-17-8 6 3 9 6 15 11l3 0c6-5 10-7 17-7-7-2-13 0-18 4Z" fill="#526D61" opacity=".63"/>
+  <path d="M334 330c-5-6-9-7-15-7 6 2 9 6 13 9l3 1c5-5 9-7 15-7-6-2-11 0-16 4Z" fill="#526D61" opacity=".56"/>
+  <path d="M297 283c-6-5-10-6-15-5 6 2 9 5 13 8l3 0c5-4 9-5 14-5-6-2-10-1-15 2Z" fill="#526D61" opacity=".51"/>
+  <path d="M328 272c-4-4-8-5-12-4 4 1 7 4 10 6l3 0c4-3 7-4 12-4-5-2-9-1-13 2Z" fill="#526D61" opacity=".43"/>
+  <!-- Low hills, village roofs and pale fields gather below the sky. -->
+  <path d="m48 466 42-28 29 9 38-41 28 16 40-47 31 17 29-11 36 35 27-13 35 31 35-13 33 29 34-8 34 24 34-9 38 20 40-11 45 21v134H48Z" fill="url(#as-far)"/>
+  <path d="M49 513c59-19 87-59 125-69 35 13 50 40 78 47 34-9 57-30 79-34 36 19 48 45 81 56 45 13 66 10 99 3 64-14 121-15 201-3v103H49Z" fill="url(#as-ridge)"/>
+  <path d="M66 511c46-19 74-47 104-52l24 16 30 22-29-7-24-15c-34 7-60 26-105 36Z" fill="#F7F3E8" opacity=".39"/>
+  <path d="M389 509c77-13 141-8 206-22 43-9 80-12 117-4v115c-74-9-128-15-188-6-50 8-95 4-146-14Z" fill="#B59255" opacity=".07"/>
+  <path d="m542 476 0-28 24-10 27 13 0 26Z" fill="#DCD4B9" opacity=".83"/>
+  <path d="m566 445 27 8v24l-27 1Z" fill="#6F8F76" opacity=".18"/>
+  <path d="m534 447 15-7 15-11 32 15 8 0-5 7-9-1-26-13-14 10-13 7Z" fill="#526D61" opacity=".67"/>
+  <path d="m549 452 6-3v12l-6 2m22-10 9 4v18l-9 0" fill="#435B50" opacity=".38"/>
+  <path d="m605 478 0-19 18-9 22 10 0 18Z" fill="#DCD4B9" opacity=".69"/>
+  <path d="m600 459 21-15 27 11 6 0-4 6-8-1-20-9-17 12Z" fill="#526D61" opacity=".48"/>
+  <path d="m623 459 7 3v14l-7 0" fill="#435B50" opacity=".29"/>
+  <path d="m524 482 71 0m12 1 43 0m-127 7 49 1" fill="none" stroke="#6F8F76" stroke-width="1.2" opacity=".26"/>
+  <!-- Unequal harvest terraces follow the bend of the water. -->
+  <path d="M423 522c79-14 173-13 289 9v41c-94-23-181-24-276-13l-52-7Z" fill="url(#as-field)"/>
+  <path d="M428 565c92-6 184 0 284 30v46c-97-37-207-41-313-36l-44-13Z" fill="url(#as-field)"/>
+  <path d="M399 612c107 3 214 20 313 65v58c-102-49-213-78-334-85l-38-13Z" fill="url(#as-field)"/>
+  <path d="M439 550c100-7 179 0 273 25m-297 27c106-2 203 10 297 45m-324 7c109 7 214 35 324 83" fill="none" stroke="#6F8F76" stroke-width="3" opacity=".31"/>
+  <path d="M458 532c84-8 156 0 234 17m-245 30c79 2 158 12 231 34m-264 12c101 11 186 32 267 69" fill="none" stroke="#F7F3E8" stroke-width="1.5" opacity=".55"/>
+  <path d="M511 511c-5 14 6 27 23 41 15 12 37 21 44 39 6 16 4 30 17 46 17 21 49 34 61 54 8 15 3 27-1 42l13 5c7-22 8-35-3-51-15-24-46-35-61-55-11-15-8-31-14-45-9-22-30-29-49-44-17-13-28-23-24-34Z" fill="#F7F3E8" opacity=".64"/>
+  <!-- The stream widens into a quiet, open foreground. -->
+  <path d="M380 516c-2 26 41 35 38 58-2 19-42 28-58 47-20 23-5 43 13 62 24 25 18 44-6 58-45 28-59 49-58 79l-137 12c-9-39 19-76 61-102 45-27 62-40 53-63-9-22-3-43 21-62 24-20 68-30 79-48 8-14-15-28-6-41Z" fill="url(#as-water)"/>
+  <path d="M386 578c-35 19-61 30-70 50-11 25 14 42 12 60-2 21-34 37-58 52-31 20-44 36-50 59 13-22 28-36 58-54 30-19 62-33 62-58 1-23-23-37-11-59 11-19 33-31 57-50Z" fill="#F7F3E8" opacity=".7"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="m368 600 23-7m-67 41 25-8m-22 33 24-4m-5 28 23 3m-38 24 25-5m-68 29 29-9m-64 35 25-8m-50 37 34-9m-14 27 36-8m-37 31 32-4" stroke="#F7F3E8" stroke-width="1.8" opacity=".7"/>
+    <path d="m350 611 16-5m-47 36 17-4m8 42 16 2m-29 29 18-5m-47 28 15-5m-57 32 24-7m-43 47 22-5" stroke="#326B75" stroke-width=".9" opacity=".26"/>
+    <path d="m360 582 18-7m-39 35 18-7m-8 99 16-4m-69 53 22-8m-51 39 25-6" stroke="#B59255" stroke-width=".9" opacity=".27"/>
+  </g>
+  <!-- Short bundles and clipped stubble suggest the work of harvest. -->
+  <path d="m616 588-8 20 22 4-8-22Zm29 14-7 17 20 5-6-20Z" fill="#B59255" opacity=".74"/>
+  <path d="m609 605 18 4m12 7 16 5m-43-20 3-13m4 15 0-15m5 17-1-13m19 22 3-12m2 14 0-12m5 15 0-10" fill="none" stroke="#E4CF98" stroke-width="1.1" opacity=".74"/>
+  <path d="m477 541 2-6m9 8 1-7m13 8 1-7m28 2 1-6m17 9 2-7m30 10 1-6m22 11 2-7m31 11 2-7m29 12 1-6m-220 42 1-7m14 8 2-7m14 8 1-7m47 12 2-7m18 11 2-7m41 20 2-8m39 21 3-7m-171 29 2-8m17 12 2-7m18 13 2-8m25 16 2-7m34 22 2-7m23 18 2-8" fill="none" stroke="#9D8B5C" stroke-width="1" opacity=".49"/>
+  <!-- The nearest bank holds three differently turned chrysanthemum heads. -->
+  <path d="M49 686c39-19 69-36 102-31 39 7 55 33 79 46l41 6c-28 26-51 43-64 69-18 7-43 6-72-1-32-8-58-4-86 7Z" fill="url(#as-bank)"/>
+  <path d="m75 716 33-20 49 7 32 33-19 24-61-4-35-17Z" fill="url(#as-rock)"/>
+  <path d="m80 716 29-15 37 7 18 18-34-12-19 1-27 14Z" fill="#A9B29B" opacity=".68"/>
+  <path d="m77 737 36 14 47 3m-48-38 8 18m27-17 14 21m-25 10 14-2" fill="none" stroke="#263D34" stroke-width="1.2" opacity=".38"/>
+  <path d="M188 739c-8-43-12-78-20-110l-7-48m25 130c12-29 33-53 55-84m-65 62c-19-12-34-27-46-49" fill="none" stroke="#526D61" stroke-width="3" stroke-linecap="round"/>
+  <path d="M177 684c-27-3-44-14-58-34l14 3-2-11 12 8 4-9 10 14 10-2 0 14 9 5Z" fill="#6F8F76"/>
+  <path d="M189 712c23-6 39-18 48-37l-12 4 0-11-11 8-5-7-8 15-11 1 4 12Z" fill="#526D61" opacity=".86"/>
+  <path d="M172 656c-19-5-31-15-38-30l11 2 1-10 10 9 7-4 4 13 9 2-3 10Z" fill="#839B89"/>
+  <path d="m126 654 46 26m23 25 35-25m-50-8-7-24" fill="none" stroke="#C5C7A0" stroke-width="1" opacity=".68"/>
+  <!-- Golden petals curl and overlap; the centres stay small and irregular. -->
+  <g fill="#C2A062">
+    <path d="M162 580c-8-7-12-22-8-30 7 5 12 17 8 30Zm2-1c0-14 5-28 12-32 4 10-2 23-12 32Zm4 2c7-13 18-23 26-22-1 11-13 21-26 22Zm2 3c12-8 26-11 32-5-6 9-19 11-32 5Zm0 4c14-2 25 2 28 10-10 3-21-2-28-10Zm-3 3c10 7 16 20 12 27-8-4-14-16-12-27Zm-4 0c2 13-3 25-11 28-3-10 3-21 11-28Zm-4-1c-6 12-17 20-25 17 3-10 13-17 25-17Zm-3-4c-13 5-26 4-30-4 8-6 21-3 30 4Zm1-4c-13-2-24-11-24-19 11 0 21 7 24 19Zm1-2c-11-8-16-20-13-26 9 5 14 15 13 26Z"/>
+  </g>
+  <g fill="#D8BA79">
+    <path d="M161 584c-5-8-5-17-1-22 5 6 5 14 1 22Zm4 0c2-9 7-15 13-16 0 8-6 14-13 16Zm2 3c8-5 17-5 20 0-6 5-13 5-20 0Zm-2 3c6 6 7 14 4 18-5-5-7-11-4-18Zm-4 0c-3 8-9 13-15 12 2-7 8-11 15-12Zm-3-4c-9-1-16-6-16-11 8 0 13 5 16 11Z"/>
+  </g>
+  <path d="m158 583 6-3 6 4-2 6-7 2-5-5Z" fill="#967D4C"/>
+  <path d="m161 583 4 1-1 4m-4-1 4 1" fill="none" stroke="#E9D19B" stroke-width="1"/>
+  <!-- A smaller ochre flower turns towards the stream. -->
+  <g fill="#B59255">
+    <path d="M238 626c-8-8-9-19-5-24 6 5 8 15 5 24Zm3-1c1-10 7-19 13-21 2 8-4 17-13 21Zm3 2c9-8 20-10 25-5-6 7-15 9-25 5Zm0 3c11 1 20 7 20 14-8 0-16-7-20-14Zm-3 3c7 8 9 18 4 22-6-5-8-14-4-22Zm-3 0c-2 10-9 18-15 17 1-8 8-15 15-17Zm-3-3c-11 5-22 3-25-3 8-5 17-3 25 3Zm0-3c-11-2-19-9-18-15 9 1 15 8 18 15Z"/>
+  </g>
+  <path d="M239 627c-3-7-3-13 1-16 4 5 3 10-1 16Zm3 2c7-3 13-3 16 1-5 4-10 3-16-1Zm-3 4c2 6 0 12-4 14-2-6 0-10 4-14Zm-3-4c-6 1-12-2-13-6 6-1 10 1 13 6Z" fill="#D9BC7C"/>
+  <ellipse cx="239" cy="629" rx="5" ry="4" fill="#8D7950"/>
+  <!-- The palest head is partly folded, with a green calyx underneath. -->
+  <path d="M129 637c-13-4-20-13-17-20 8 2 14 9 17 20Zm3-1c-5-11-3-21 2-25 5 7 5 16-2 25Zm3 1c3-10 11-17 17-16-1 9-8 14-17 16Zm0 3c9-3 17-1 19 5-8 3-14 0-19-5Zm-5 1c-8 4-17 2-20-4 7-3 14-1 20 4Z" fill="#D8CEAA"/>
+  <path d="m122 639 8 3 10-3-6 9-7-1Z" fill="#6F8F76"/>
+  <!-- Autumn grass and fallen leaves keep the nearest edge irregular. -->
+  <path d="m58 751 7-32m-5 23-9-15m11 10 13-17m-4 46 10-32m-6 22 12-15m8 33-2-22m8 24 6-19m110-15 12-25m-8 20 14-11m-16 21 14-11" fill="none" stroke="#A38F5E" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+  <path d="m120 787 16-5 17 9-18 2Zm100-22 13-7 17 4-15 8Z" fill="#AA7955" opacity=".56"/>
+  <path d="m130 788 15 3m80-28 17 0m-164 23 25 3m63 9 32-2m-60 18 23 1m196 8 31-1" fill="none" stroke="#B59255" stroke-width=".9" opacity=".3"/>
+</svg>
