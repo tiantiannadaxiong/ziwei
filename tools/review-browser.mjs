@@ -186,14 +186,14 @@ try {
     await page.locator('#toc-close').click();
     await page.locator('#toc-open').click();
     await page.locator('#contents-list li').first().locator('button[lang="fr"]').click();
-    assert.equal(new URL(page.url()).hash, '#jiaolong-fr');
+    assert.equal(new URL(page.url()).hash, `#${selected[0].id}-fr`);
     assert.equal(await page.locator('#toc-dialog').evaluate(element => element.open), false);
     await page.locator('.language-nav button[lang="en"]').click();
-    assert.equal(new URL(page.url()).hash, '#jiaolong-en');
+    assert.equal(new URL(page.url()).hash, `#${selected[0].id}-en`);
     await page.keyboard.press('ArrowRight');
-    assert.equal(new URL(page.url()).hash, '#jiaolong-fr');
+    assert.equal(new URL(page.url()).hash, `#${selected[0].id}-fr`);
     await page.keyboard.press('ArrowLeft');
-    assert.equal(new URL(page.url()).hash, '#jiaolong-en');
+    assert.equal(new URL(page.url()).hash, `#${selected[0].id}-en`);
     assert.equal(await page.locator('#book-page').evaluate(element => getComputedStyle(element).animationName), 'none');
 
     // The same music control is available at every width; automatic playback

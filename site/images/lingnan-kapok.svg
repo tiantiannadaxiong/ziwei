@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="lk-title lk-desc">
+  <title id="lk-title">嶺南木棉 · 赤焰向天</title>
+  <desc id="lk-desc">無葉的木棉老幹向上分枝，赤紅厚瓣花朵在枝梢如焰開放，黝褐花蕊與青灰樹皮相映。下方一朵墜花落在淺赭地面，斷續塵痕與細碎砂礫托住花的分量，枝間留出大片紙白。</desc>
+  <defs>
+    <linearGradient id="lk-bark" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#435B50"/><stop offset=".36" stop-color="#7A8470"/><stop offset=".7" stop-color="#9C9E85"/><stop offset="1" stop-color="#526D61"/></linearGradient>
+    <linearGradient id="lk-red" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#E39860"/><stop offset=".5" stop-color="#C76A46"/><stop offset="1" stop-color="#A94E3F"/></linearGradient>
+    <linearGradient id="lk-deep" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#CE7950"/><stop offset=".6" stop-color="#B4513F"/><stop offset="1" stop-color="#8E4439"/></linearGradient>
+    <linearGradient id="lk-earth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#B59255" stop-opacity=".035"/><stop offset=".5" stop-color="#B59255" stop-opacity=".13"/><stop offset="1" stop-color="#B59255" stop-opacity="0"/></linearGradient>
+    <radialGradient id="lk-dust"><stop stop-color="#B59255" stop-opacity=".22"/><stop offset=".5" stop-color="#B59255" stop-opacity=".09"/><stop offset="1" stop-color="#B59255" stop-opacity="0"/></radialGradient>
+    <g id="lk-open">
+      <path d="M-2 5C-24-5-32-33-18-41-2-51 13-24 2 4Z" fill="url(#lk-deep)"/>
+      <path d="M1 3C-6-21 5-48 23-42 43-35 26-9 1 3Z" fill="url(#lk-red)"/>
+      <path d="M3 4C26-14 51-9 47 9 44 29 17 25 3 4Z" fill="#C96B45"/>
+      <path d="M2 5C27 14 32 40 16 46-4 54-15 25 2 5Z" fill="url(#lk-deep)"/>
+      <path d="M0 5C-8 32-35 43-43 25-53 6-23-3 0 5Z" fill="url(#lk-red)"/>
+      <path d="M-5-3C-14-11-20-24-20-33M8-5c5-15 10-23 17-29M13 5c14 1 20 3 27 6M4 14c3 13 3 20 7 26M-10 10c-13 4-20 10-27 14" fill="none" stroke="#F0B479" stroke-width="1.3" stroke-linecap="round" opacity=".55"/>
+      <path d="m-11 1 9-9 14 5 5 12-12 9-15-6Z" fill="#8E4439"/>
+      <g fill="none" stroke="#574B3A" stroke-width="1.45" stroke-linecap="round">
+        <path d="M-5 4-20-9M-2 1-12-17M2 0 2-21M5 1 14-17M8 4 24-10M9 8 27 6M6 11 19 23M2 12 3 29M-3 11-13 25M-7 8-25 14M-8 4-28-1M0 5-6-9M3 5 11-7M4 8 16 13M0 9-5 20M-4 7-15 8"/>
+      </g>
+      <g fill="#4F4939">
+        <ellipse cx="-20" cy="-9" rx="3.2" ry="2" transform="rotate(32 -20 -9)"/><ellipse cx="-12" cy="-17" rx="2.8" ry="2.1"/>
+        <ellipse cx="2" cy="-21" rx="2.5" ry="2"/><ellipse cx="14" cy="-17" rx="3" ry="2" transform="rotate(-31 14 -17)"/>
+        <ellipse cx="24" cy="-10" rx="3.1" ry="2.1"/><ellipse cx="27" cy="6" rx="2.8" ry="2"/>
+        <ellipse cx="19" cy="23" rx="2.8" ry="2"/><ellipse cx="3" cy="29" rx="2.6" ry="2.1"/>
+        <ellipse cx="-13" cy="25" rx="3" ry="2"/><ellipse cx="-25" cy="14" rx="2.7" ry="2.1"/>
+        <ellipse cx="-28" cy="-1" rx="3" ry="2"/><circle cx="-6" cy="-9" r="2.2"/><circle cx="11" cy="-7" r="2.2"/>
+        <circle cx="16" cy="13" r="2.3"/><circle cx="-5" cy="20" r="2.1"/><circle cx="-15" cy="8" r="2.1"/>
+      </g>
+      <path d="m-4 4 6-3 5 5-3 6-7-2Z" fill="#C6965D"/>
+    </g>
+    <g id="lk-cup">
+      <path d="M-3 17C-29 6-43-21-30-29-14-36 0-7-3 17Z" fill="url(#lk-deep)"/>
+      <path d="M-1 15C-18-10-15-40 0-41 18-42 19-9-1 15Z" fill="url(#lk-red)"/>
+      <path d="M1 16C6-12 27-34 38-22 51-8 24 18 1 16Z" fill="#C96B45"/>
+      <path d="M-3 16C-17 2-38-1-40 12-40 26-12 34-3 16Z" fill="#B4513F"/>
+      <path d="M0 17C14 0 36-3 40 9 45 24 15 33 0 17Z" fill="url(#lk-deep)"/>
+      <path d="M-11 8-20-11M-6 5-8-19M0 4 3-22M7 5 19-14M11 9 30-4" fill="none" stroke="#574B3A" stroke-width="1.5" stroke-linecap="round"/>
+      <g fill="#4F4939"><ellipse cx="-20" cy="-11" rx="3" ry="2"/><ellipse cx="-8" cy="-19" rx="2.8" ry="2"/><ellipse cx="3" cy="-22" rx="2.6" ry="2"/><ellipse cx="19" cy="-14" rx="3" ry="2"/><ellipse cx="30" cy="-4" rx="2.7" ry="2"/></g>
+      <path d="m-16 20 14 6 15-7 1 11-12 9-15-8Z" fill="#6A6950"/>
+      <path d="m1 36 0 16" fill="none" stroke="#6B7054" stroke-width="3.2"/>
+    </g>
+    <g id="lk-bud">
+      <path d="M0 10C-13 3-16-17-7-21 5-26 15-6 0 10Z" fill="url(#lk-deep)"/>
+      <path d="M-5-16C1-12 5-7 4 0" fill="none" stroke="#E8A56A" stroke-width="1.4"/>
+      <path d="m-9 4 8 7 9-5-1 11-10 1-7-8Z" fill="#6A6950"/>
+      <path d="m-2 17-1 12" fill="none" stroke="#6B7054" stroke-width="2.2"/>
+    </g>
+  </defs>
+  <!-- No foliage: the open paper makes every red flower carry weight. -->
+  <path d="M249 355c126-13 214 9 322-3 50-6 96-8 141-3-82 0-127 21-197 22-92 0-169-24-266-16Z" fill="#B59255" opacity=".035"/>
+  <path d="M75 736c100-12 161-4 229-17 75-14 130-4 204 10 71 13 123 6 204 13v88H75Z" fill="url(#lk-earth)"/>
+  <!-- A grey, thorned trunk divides into long bare boughs. -->
+  <path d="M119 798c8-46 21-79 33-113 12-37 15-75 19-111 5-44 15-79 35-109 17-26 28-48 30-75 2-25-5-47 1-69 6-23 21-37 39-50-13 20-22 35-23 54-1 23 5 41 0 68-5 31-18 55-34 81-17 29-25 62-28 102-4 43-11 78-23 111-11 31-18 68-20 107Z" fill="url(#lk-bark)"/>
+  <path d="M150 788c3-34 10-63 21-94 12-36 17-76 19-108m3-20c4-39 14-68 31-96m7-14 14-31m2-18 3-21" fill="none" stroke="#C5C7A5" stroke-width="2" stroke-linecap="round" opacity=".62"/>
+  <path d="M131 790c8-39 17-66 28-100 10-33 13-67 15-97m3-26c5-40 14-68 31-95m26-46c8-25 2-46 3-64" fill="none" stroke="#354D42" stroke-width="1.5" opacity=".59"/>
+  <path d="M207 478c20-26 38-42 61-52 25-11 47-26 66-46 23-24 37-46 60-63 25-20 53-23 77-40 24-18 35-43 55-61-10 24-24 49-48 69-23 19-51 23-73 41-21 17-36 39-58 62-21 23-44 40-69 51-24 11-43 29-61 51Z" fill="url(#lk-bark)"/>
+  <path d="M188 586c25-37 48-59 77-70 35-13 62-9 90-19 28-10 44-29 67-41 27-14 51-14 78-23-22 16-49 17-71 29-23 12-42 33-69 43-30 11-57 9-89 20-29 10-54 34-77 73Z" fill="#7A8470"/>
+  <!-- Branches rise, turn and taper at unequal lengths. -->
+  <g fill="none" stroke="#657361" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M269 432c-9-31-11-54-4-77 8-26 8-53 1-78" stroke-width="5"/>
+    <path d="M267 354c-19-15-28-32-33-53l-3-27" stroke-width="2.8"/>
+    <path d="M267 309c15-14 24-27 28-45" stroke-width="2"/>
+    <path d="M331 385c-5-24-1-49 4-72 7-28 4-53-3-77l-7-27" stroke-width="4.4"/>
+    <path d="M335 306c-16-17-23-32-24-51" stroke-width="2.2"/>
+    <path d="M391 325c5-23 7-42 2-63l-10-28" stroke-width="3.3"/>
+    <path d="M397 287c15-12 23-24 28-40" stroke-width="1.9"/>
+    <path d="M463 284c-1-23 6-43 17-62l15-24" stroke-width="3.4"/>
+    <path d="M477 231c-7-13-9-24-7-39" stroke-width="1.7"/>
+    <path d="M483 277c24 5 45 4 64-5 23-11 38-28 58-39" stroke-width="3.7"/>
+    <path d="M550 272c-1-16 6-30 15-43l15-16" stroke-width="2"/>
+    <path d="M263 520c-9-21-14-38-13-60l5-24" stroke-width="3.7"/>
+    <path d="M350 502c7-20 8-39 2-57l-10-20" stroke-width="3"/>
+    <path d="M426 458c0-20 7-37 19-49l15-14" stroke-width="2.8"/>
+    <path d="M444 413c-1-12 1-22 5-30" stroke-width="1.6"/>
+    <path d="M470 443c18 4 33 2 49-6l23-15" stroke-width="2.1"/>
+    <path d="M176 676c-22-20-38-38-42-64l-3-31" stroke-width="4.1"/>
+    <path d="M137 625c-13-8-22-19-27-32" stroke-width="2.1"/>
+  </g>
+  <path d="m156 683-8-13 11 2m23-47-7-12 10 3m19-83-6-12 9 4m37-79-3-11 8 4m44-28-3-10 8 2m84-67-2-8 7 0m63-40-1-8 7 2" fill="#435B50" opacity=".6"/>
+  <path d="m177 563 5 9 4-2m-22 152 7 4m59-245 5 4m80-75 7 0m82-74 6-2" fill="none" stroke="#C5C7A5" stroke-width="1.1" opacity=".55"/>
+  <!-- Thick five-petalled cups face upward like small flames. -->
+  <use href="#lk-cup" transform="translate(265 270) rotate(-13) scale(.93)"/>
+  <use href="#lk-open" transform="translate(231 274) rotate(-23) scale(.65)"/>
+  <use href="#lk-cup" transform="translate(324 205) rotate(9) scale(.86)"/>
+  <use href="#lk-open" transform="translate(383 233) rotate(15) scale(.77)"/>
+  <use href="#lk-cup" transform="translate(493 196) rotate(15) scale(.87)"/>
+  <use href="#lk-open" transform="translate(543 269) rotate(-17) scale(.9)"/>
+  <use href="#lk-cup" transform="translate(605 230) rotate(34) scale(.62)"/>
+  <use href="#lk-open" transform="translate(253 431) rotate(17) scale(1.02)"/>
+  <use href="#lk-cup" transform="translate(342 423) rotate(-14) scale(.8)"/>
+  <use href="#lk-open" transform="translate(458 395) rotate(31) scale(.83)"/>
+  <use href="#lk-cup" transform="translate(132 578) rotate(-20) scale(.73)"/>
+  <use href="#lk-bud" transform="translate(295 261) rotate(26) scale(.7)"/>
+  <use href="#lk-bud" transform="translate(311 252) rotate(-19) scale(.63)"/>
+  <use href="#lk-bud" transform="translate(425 244) rotate(26) scale(.64)"/>
+  <use href="#lk-bud" transform="translate(470 190) rotate(-12) scale(.6)"/>
+  <use href="#lk-bud" transform="translate(578 211) rotate(34) scale(.57)"/>
+  <use href="#lk-bud" transform="translate(449 380) rotate(12) scale(.64)"/>
+  <use href="#lk-bud" transform="translate(540 421) rotate(48) scale(.55)"/>
+  <!-- The fallen flower is heavy; dust lifts only close to the point of impact. -->
+  <ellipse cx="474" cy="765" rx="96" ry="46" fill="url(#lk-dust)"/>
+  <path d="M414 782c25-12 55-16 91-10l28 7c-34 5-64 6-97 9Z" fill="#7F7A54" opacity=".12"/>
+  <use href="#lk-open" transform="translate(475 762) rotate(26) scale(.72 .42)"/>
+  <path d="M433 753c-14-8-25-10-37-6-11 3-15 1-22-4 5 9 15 10 25 7 12-3 23-1 34 3Zm69-1c15-12 30-13 44-8 10 4 19 3 29-2-7 9-18 10-30 6-13-4-25-4-43 4Z" fill="#B59255" opacity=".1"/>
+  <path d="M411 760c-19-5-32-4-48 1m162-1c20-7 34-8 52-4m-187 20 19-2m123 5 22-3m-110 23 32-2" fill="none" stroke="#B59255" stroke-width="1" stroke-linecap="round" opacity=".29"/>
+  <g fill="#9D8B64" opacity=".43"><ellipse cx="405" cy="740" rx="1.4" ry="1"/><ellipse cx="390" cy="756" rx="1.1" ry=".8"/><ellipse cx="423" cy="735" rx="1.6" ry="1.1"/><ellipse cx="538" cy="734" rx="1.3" ry=".9"/><ellipse cx="554" cy="752" rx="1.6" ry="1"/><ellipse cx="569" cy="763" rx="1.1" ry=".8"/></g>
+  <path d="m357 795 10-3 8 3-11 3Zm216-14 8-4 10 2-10 5Zm-376 22 22-4 13 4-22 4Z" fill="#B59255" opacity=".18"/>
+  <path d="m87 816 50-3m94-2 37 1m51-18 21 1m174 18 36-1m45-5 25 1" fill="none" stroke="#B59255" stroke-width=".9" opacity=".18"/>
+</svg>
