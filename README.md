@@ -55,7 +55,7 @@ node tools/review-browser.mjs artifacts/artbook-review http://127.0.0.1:8000/
 node tools/review-browser.mjs artifacts/artbook-sample http://127.0.0.1:8000/ review
 ```
 
-浏览器工具需已有 Playwright，必要时通过 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安装的 Edge；仅用于开发，网站没有新增运行依赖。输出目录包含整页截图、绘画局部、`index.html` 图集和 `checks.json` 验收记录；`artifacts/` 不纳入版本管理。当前资源版为 `artbook-7`，离线缓存为 `anxiangji-v51`；检查结果和实体设备待复验范围见 [评审记录](site/design-review.md)。
+浏览器工具需已有 Playwright，必要时通过 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安装的 Edge；仅用于开发，网站没有新增运行依赖。输出目录包含整页截图、绘画局部、`index.html` 图集和 `checks.json` 验收记录；`artifacts/` 不纳入版本管理。当前资源版为 `artbook-8`，离线缓存为 `anxiangji-v52`；检查结果和实体设备待复验范围见 [评审记录](site/design-review.md)。
 
 ## 发布与离线
 

@@ -1,52 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
   <title id="title">疏影，未顯之香</title>
-  <desc id="desc">一枝老梅從清淺的水邊橫斜而起，枯潤的枝身間疏疏開著白梅與淡粉梅。紙白的月色隱在枝後，水中只留下斷續的墨影與花影。</desc>
+  <desc id="desc">一枝老梅從清淺的水邊橫斜而起，溫潤的棕墨枝身間疏疏開著暖白、桃粉與珊瑚色的梅花。淺金月色融入杏暖霞光，清碧水中映著斷續的金光與花影，留白間透出明亮溫柔的春意。</desc>
   <defs>
     <linearGradient id="water" x1="0" y1="0" x2=".9" y2=".3">
-      <stop stop-color="#6F8F76" stop-opacity="0"/>
-      <stop offset=".37" stop-color="#6F8F76" stop-opacity=".075"/>
-      <stop offset=".72" stop-color="#326B75" stop-opacity=".065"/>
-      <stop offset="1" stop-color="#326B75" stop-opacity="0"/>
+      <stop stop-color="#83B6A0" stop-opacity="0"/>
+      <stop offset=".37" stop-color="#83B6A0" stop-opacity=".14"/>
+      <stop offset=".72" stop-color="#56A3A5" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#56A3A5" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="moon" cx=".4" cy=".38" r=".64">
-      <stop offset=".6" stop-color="#FFFDF5" stop-opacity=".8"/>
-      <stop offset=".94" stop-color="#FFFDF5" stop-opacity=".5"/>
-      <stop offset="1" stop-color="#6F8F76" stop-opacity=".025"/>
+      <stop stop-color="#FFF4D2" stop-opacity=".96"/>
+      <stop offset=".65" stop-color="#FFE5A3" stop-opacity=".77"/>
+      <stop offset=".94" stop-color="#F6CD88" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#E9BB78" stop-opacity=".08"/>
     </radialGradient>
     <linearGradient id="wood" x1="0" y1="1" x2="1" y2="0">
-      <stop stop-color="#263D34"/>
-      <stop offset=".52" stop-color="#35463B"/>
-      <stop offset="1" stop-color="#4C5848"/>
+      <stop stop-color="#715540"/>
+      <stop offset=".52" stop-color="#8A7050"/>
+      <stop offset="1" stop-color="#A58B5E"/>
     </linearGradient>
     <linearGradient id="petal" x1=".25" y1="0" x2=".6" y2="1">
-      <stop stop-color="#FFFDF5"/>
-      <stop offset=".74" stop-color="#F1E7DC"/>
-      <stop offset="1" stop-color="#D7ACA0"/>
+      <stop stop-color="#FFF7DE"/>
+      <stop offset=".74" stop-color="#FFD9B8"/>
+      <stop offset="1" stop-color="#EEAB88"/>
     </linearGradient>
     <linearGradient id="rose" x1="0" y1="0" x2=".7" y2="1">
-      <stop stop-color="#F0DAD3"/>
-      <stop offset=".75" stop-color="#D9AAA2"/>
-      <stop offset="1" stop-color="#C48782"/>
+      <stop stop-color="#FFD7C4"/>
+      <stop offset=".75" stop-color="#F3A08A"/>
+      <stop offset="1" stop-color="#DD7867"/>
+    </linearGradient>
+    <radialGradient id="warm-air">
+      <stop stop-color="#FFD68F" stop-opacity=".32"/>
+      <stop offset=".5" stop-color="#F5C39F" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#F5C39F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rose-air">
+      <stop stop-color="#F4B69B" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#F4B69B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold-water" x1="0" y1="0" x2="1" y2=".2">
+      <stop stop-color="#F0B486" stop-opacity="0"/>
+      <stop offset=".36" stop-color="#F0B486" stop-opacity=".12"/>
+      <stop offset=".68" stop-color="#E6BF68" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#E6BF68" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Light is left as paper, not a luminous object laid over it. -->
-  <circle cx="812" cy="222" r="106" fill="url(#moon)" opacity=".68"/>
-  <path d="M750 137c23-17 53-22 81-18 26 3 48 15 64 35" fill="none" stroke="#6F8F76" stroke-opacity=".09" stroke-width=".8"/>
-  <path d="M889 281c-17 24-42 38-71 42" fill="none" stroke="#6F8F76" stroke-opacity=".075" stroke-width=".7"/>
+  <!-- Warm, open washes leave the paper visible around the original branch. -->
+  <ellipse cx="737" cy="315" rx="300" ry="243" fill="url(#warm-air)"/>
+  <ellipse cx="387" cy="475" rx="284" ry="157" fill="url(#rose-air)"/>
+  <circle cx="812" cy="222" r="106" fill="url(#moon)" opacity=".9"/>
+  <path d="M750 137c23-17 53-22 81-18 26 3 48 15 64 35" fill="none" stroke="#D6A75C" stroke-opacity=".18" stroke-width=".8"/>
+  <path d="M889 281c-17 24-42 38-71 42" fill="none" stroke="#D6A75C" stroke-opacity=".14" stroke-width=".7"/>
 
   <!-- A shallow wash has open edges; long unpainted passages remain water. -->
   <path d="M150 578c102-40 207-37 308-19 88 15 148-18 247-16 88 2 161-8 236-26-42 31-96 46-144 53 62 4 114 1 177-10-69 27-139 34-204 35-113 1-173 30-282 13-100-15-194-9-282 16 38-24 84-39 127-42-69-4-121-1-183 14Z" fill="url(#water)"/>
-  <path d="M95 635c94-16 185-7 267 3 97 12 194 0 269-10 100-13 212-9 306-23-117 31-207 30-301 42-99 12-174 17-267 4-81-10-177-15-274-16Z" fill="#6F8F76" fill-opacity=".038"/>
+  <path d="M95 635c94-16 185-7 267 3 97 12 194 0 269-10 100-13 212-9 306-23-117 31-207 30-301 42-99 12-174 17-267 4-81-10-177-15-274-16Z" fill="#91AC72" fill-opacity=".038"/>
+  <path d="M224 602c99-21 162-4 240-6 109-3 186-36 290-40 66-3 121-10 175-22-69 28-117 35-178 40-101 8-171 35-280 36-94 0-160-14-247-2Z" fill="url(#gold-water)"/>
   <g fill="none" stroke-linecap="round">
-    <path d="M266 568c54-7 96-5 148 2m102-4c61-4 101-12 143-14m94-2c38-4 76-7 108-13" stroke="#6F8F76" stroke-opacity=".27" stroke-width="1.05"/>
-    <path d="M205 601c44-3 79 0 118 4m52 4c55 7 102 10 158 5m119-12c55-4 94-4 144-8" stroke="#326B75" stroke-opacity=".22" stroke-width=".85"/>
-    <path d="M401 648c47 4 96 1 137-4m-309-1c28-1 53 0 77 2m403-18c42-2 79-3 120-8" stroke="#263D34" stroke-opacity=".14" stroke-width=".65"/>
+    <path d="M266 568c54-7 96-5 148 2m102-4c61-4 101-12 143-14m94-2c38-4 76-7 108-13" stroke="#91AC72" stroke-opacity=".27" stroke-width="1.05"/>
+    <path d="M205 601c44-3 79 0 118 4m52 4c55 7 102 10 158 5m119-12c55-4 94-4 144-8" stroke="#57A1A1" stroke-opacity=".22" stroke-width=".85"/>
+    <path d="M401 648c47 4 96 1 137-4m-309-1c28-1 53 0 77 2m403-18c42-2 79-3 120-8" stroke="#715540" stroke-opacity=".14" stroke-width=".65"/>
     <path d="M486 584c67 5 117-8 156-10m-309 18c28 3 54 6 81 6m388-34c34-3 58-7 84-11" stroke="#FFFDF5" stroke-opacity=".92" stroke-width="2.5"/>
   </g>
 
   <!-- Broken reflections remember the direction of the living branch. -->
-  <g fill="#263D34" fill-opacity=".105">
+  <g fill="#715540" fill-opacity=".105">
     <path d="M83 655c75-15 128-22 185-19 28 2 48 7 71 9-27 1-50-1-74-2-57-1-113 6-182 16Z"/>
     <path d="M360 651c40 5 67 5 100 1l46 5c-60 7-99 4-146-3Z"/>
     <path d="M521 658c35-3 54-4 84-2l48 11c-47-5-84-7-132-5Z"/>
@@ -54,17 +73,17 @@
     <path d="M399 673c27-4 42-3 63-1l23 4-43-1-43 2Z"/>
     <path d="M541 689l34-6 35 2-28 1-41 6Z"/>
   </g>
-  <path d="M237 638c18-5 27-8 36-15m85 21c21-6 31-12 45-15m99 25c18-5 33-7 48-6" fill="none" stroke="#263D34" stroke-opacity=".12" stroke-width="1.2"/>
+  <path d="M237 638c18-5 27-8 36-15m85 21c21-6 31-12 45-15m99 25c18-5 33-7 48-6" fill="none" stroke="#715540" stroke-opacity=".12" stroke-width="1.2"/>
 
   <!-- The main limb changes thickness at scars and forks. -->
   <path d="M-24 650c42-24 80-43 120-61l23-15 14-1c27-12 48-25 74-35 17-7 34-11 51-16l9-10 15 1c20-8 32-20 50-28l21-3c20-9 37-24 55-35 18-11 36-15 57-23l15-13 16-3c29-16 54-42 79-61l19-8 12-13c28-17 58-24 86-41 20-12 29-31 47-47l18-7 12-14c27-18 59-22 86-37 28-16 44-33 70-58-17 26-35 45-63 63-25 15-56 20-82 37l-18 19-12 7c-19 17-33 39-54 53-26 17-55 24-81 41l-15 17-18 9c-25 20-48 47-76 63l-25 8-17 11c-17 8-34 14-50 25-20 13-36 28-59 36l-17 13-20 3c-19 9-34 19-56 26l-18 4-14 10c-29 12-52 20-80 35-29 15-50 28-80 41-38 17-69 38-105 63l-29-15Z" fill="url(#wood)"/>
-  <path d="M0 645c39-19 70-33 101-45l26-15c31-10 59-29 86-38m19-6c25-6 42-13 61-22l28-15 23-8m21-10c23-9 43-29 64-40l40-15m16-9c13-5 22-13 33-20m24-15c18-12 31-26 45-37" fill="none" stroke="#6F8F76" stroke-opacity=".4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M0 645c39-19 70-33 101-45l26-15c31-10 59-29 86-38m19-6c25-6 42-13 61-22l28-15 23-8m21-10c23-9 43-29 64-40l40-15m16-9c13-5 22-13 33-20m24-15c18-12 31-26 45-37" fill="none" stroke="#91AC72" stroke-opacity=".4" stroke-width="2.5" stroke-linecap="round"/>
   <path d="M20 649c41-19 63-24 95-36m19-9c14-7 28-15 38-19m52-25c31-15 43-18 59-23m38-20c18-5 34-12 51-20m98-53c19-13 32-17 48-25" fill="none" stroke="#F7F3E8" stroke-opacity=".7" stroke-width="1.4" stroke-linecap="round"/>
-  <path d="M86 604c2 6 7 8 12 9m104-69c6 6 10 7 15 6m107-45c2 6 6 8 10 8m89-59c6 3 9 4 13 2m77-42c0 4 4 6 7 7m93-78c4 5 7 6 12 4m65-43c2 3 5 5 8 5" fill="none" stroke="#1F332D" stroke-opacity=".7" stroke-width="1.4"/>
+  <path d="M86 604c2 6 7 8 12 9m104-69c6 6 10 7 15 6m107-45c2 6 6 8 10 8m89-59c6 3 9 4 13 2m77-42c0 4 4 6 7 7m93-78c4 5 7 6 12 4m65-43c2 3 5 5 8 5" fill="none" stroke="#604431" stroke-opacity=".7" stroke-width="1.4"/>
   <path d="M109 604c11-5 20-6 30-10-9 1-15 1-22 2Zm194-88 18-9-11 10Zm100-49 13-13-5 15Zm141-64 17-14-9 14Z" fill="#F7F3E8" fill-opacity=".55"/>
 
   <!-- Uneven twig lengths and changing angles make an old, living tree. -->
-  <g fill="#263D34">
+  <g fill="#715540">
     <path d="M180 579c6-25 11-48 7-67-4-20-16-31-28-45-11-13-15-28-15-44 4 19 11 30 25 42 17 16 24 33 24 53 0 21-6 41-8 58Z"/>
     <path d="M187 529c14-8 19-18 19-33 0-7-2-13-1-20l4 15c3 16-4 30-18 42Z"/>
     <path d="M317 507c8-16 18-34 18-52-1-15-9-29-5-45 3-16 16-25 25-38 10-14 14-30 16-48 2 21-3 39-13 54-8 12-19 23-21 35-2 16 6 29 5 44-1 21-12 41-19 54Z"/>
@@ -81,81 +100,81 @@
     <path d="M868 183c7-18 14-29 26-39 8-7 13-15 15-27 1 14-3 23-12 31-11 11-17 22-24 37Z"/>
     <path d="M930 151c9-3 16-1 25 1-10 1-16 1-28 3Z"/>
   </g>
-  <g fill="none" stroke="#6F8F76" stroke-opacity=".46" stroke-linecap="round" stroke-width="1">
+  <g fill="none" stroke="#91AC72" stroke-opacity=".46" stroke-linecap="round" stroke-width="1">
     <path d="M185 559c4-18 5-33 2-46m151-54c-1-16-6-28-4-40m220-46c3-14 2-28-2-42m144-66c0-10-1-18-2-27m68-13c0-12-2-21-8-32"/>
   </g>
-  <g fill="#263D34">
+  <g fill="#715540">
     <path d="m227 538-6-16 9 10 9 1Zm48-21 1-15 5 12Zm106-42-4-16 9 9Zm80-41-3-12 8 8Zm170-104 1-13 5 9Zm204-124 10 1-8 3Z"/>
   </g>
 
   <!-- A full white flower: five different petal silhouettes, not a rosette. -->
   <g transform="translate(328 443)">
-    <path d="M1 2c-10-1-18-8-18-17 0-6 5-12 11-10 7 2 9 14 7 27Z" fill="url(#petal)" stroke="#C7A396" stroke-width=".7"/>
-    <path d="M0 1c-1-13 4-25 12-28 6-2 12 3 11 9-2 9-13 16-23 19Z" fill="#FFFDF5" stroke="#C7A396" stroke-width=".7"/>
-    <path d="M2 1c11-5 22-4 26 3 4 7-1 14-8 14-8 0-14-7-18-17Z" fill="url(#petal)" stroke="#C7A396" stroke-width=".7"/>
-    <path d="M1 1c8 7 10 17 5 23-4 6-13 7-17 1-4-7 0-17 12-24Z" fill="#F3E9DF" stroke="#C7A396" stroke-width=".7"/>
-    <path d="M0 2c-6 9-16 12-23 7-6-5-6-12 0-15 7-4 16 0 23 8Z" fill="url(#petal)" stroke="#C7A396" stroke-width=".7"/>
+    <path d="M1 2c-10-1-18-8-18-17 0-6 5-12 11-10 7 2 9 14 7 27Z" fill="url(#petal)" stroke="#D29479" stroke-width=".7"/>
+    <path d="M0 1c-1-13 4-25 12-28 6-2 12 3 11 9-2 9-13 16-23 19Z" fill="#FFFDF5" stroke="#D29479" stroke-width=".7"/>
+    <path d="M2 1c11-5 22-4 26 3 4 7-1 14-8 14-8 0-14-7-18-17Z" fill="url(#petal)" stroke="#D29479" stroke-width=".7"/>
+    <path d="M1 1c8 7 10 17 5 23-4 6-13 7-17 1-4-7 0-17 12-24Z" fill="#FFE9CE" stroke="#D29479" stroke-width=".7"/>
+    <path d="M0 2c-6 9-16 12-23 7-6-5-6-12 0-15 7-4 16 0 23 8Z" fill="url(#petal)" stroke="#D29479" stroke-width=".7"/>
     <path d="M-5 6-9 11M0 5l2 10M3 4l9 8M3 0l11-4M1-3l3-11M-2-3l-7-8M-4 1l-11 1" fill="none" stroke="#B18D67" stroke-width=".72" stroke-linecap="round"/>
-    <g fill="#A27B50"><circle cx="-9" cy="11" r="1.3"/><circle cx="2" cy="15" r="1.15"/><circle cx="12" cy="12" r="1.15"/><circle cx="14" cy="-4" r="1.15"/><circle cx="4" cy="-14" r="1.2"/><circle cx="-9" cy="-11" r="1.2"/><circle cx="-15" cy="2" r="1.1"/></g>
-    <path d="M-4 0q5-5 9 1l-3 5Z" fill="#BC8F81"/>
+    <g fill="#B78A38"><circle cx="-9" cy="11" r="1.3"/><circle cx="2" cy="15" r="1.15"/><circle cx="12" cy="12" r="1.15"/><circle cx="14" cy="-4" r="1.15"/><circle cx="4" cy="-14" r="1.2"/><circle cx="-9" cy="-11" r="1.2"/><circle cx="-15" cy="2" r="1.1"/></g>
+    <path d="M-4 0q5-5 9 1l-3 5Z" fill="#D98A70"/>
   </g>
 
   <!-- A near-side rose blossom still holds its folded cup. -->
   <g transform="translate(174 499) rotate(-15)">
-    <path d="M1 9c-13-2-20-10-18-20 1-5 6-8 9-5 5 5 8 15 9 25Z" fill="url(#rose)" stroke="#B6867E" stroke-width=".65"/>
-    <path d="M1 8c-7-10-8-22-2-28 4-4 11-2 11 4 0 9-4 17-9 24Z" fill="#F0D7CE" stroke="#B6867E" stroke-width=".65"/>
-    <path d="M2 8C8-5 17-11 22-7c6 5 1 16-20 15Z" fill="#D2A095" stroke="#B6867E" stroke-width=".65"/>
+    <path d="M1 9c-13-2-20-10-18-20 1-5 6-8 9-5 5 5 8 15 9 25Z" fill="url(#rose)" stroke="#C9826B" stroke-width=".65"/>
+    <path d="M1 8c-7-10-8-22-2-28 4-4 11-2 11 4 0 9-4 17-9 24Z" fill="#FFCEB4" stroke="#C9826B" stroke-width=".65"/>
+    <path d="M2 8C8-5 17-11 22-7c6 5 1 16-20 15Z" fill="#ED977E" stroke="#C9826B" stroke-width=".65"/>
     <path d="M-7 3c6-4 11-5 17-2" fill="none" stroke="#F7F3E8" stroke-opacity=".9" stroke-width="1.1"/>
-    <path d="M-6 7 1 12l9-7-2 10-6-1-5 4Z" fill="#59674E"/>
-    <path d="M2 14 0 27" stroke="#263D34" stroke-width="1.3"/>
+    <path d="M-6 7 1 12l9-7-2 10-6-1-5 4Z" fill="#879858"/>
+    <path d="M2 14 0 27" stroke="#715540" stroke-width="1.3"/>
   </g>
 
   <!-- A turned flower opens toward the unpainted page. -->
   <g transform="translate(480 392) rotate(21)">
-    <path d="M-1 5c-8-1-17-5-18-13-1-5 3-9 8-7 6 2 8 12 10 20Z" fill="url(#petal)" stroke="#C7A396" stroke-width=".65"/>
-    <path d="M-1 5c-7-10-8-22-2-26 6-4 12 2 11 8-1 7-6 13-9 18Z" fill="#FFFDF5" stroke="#C7A396" stroke-width=".65"/>
-    <path d="M0 5c1-10 9-18 15-16 7 2 6 10 1 14-4 4-9 5-16 2Z" fill="url(#petal)" stroke="#C7A396" stroke-width=".65"/>
-    <path d="M-2 5c6 6 13 7 18 4-2 7-12 8-17 3Z" fill="#DFC1B4"/>
-    <path d="M-5 8 2 12l7-6-2 9-9 1Z" fill="#65745D"/>
+    <path d="M-1 5c-8-1-17-5-18-13-1-5 3-9 8-7 6 2 8 12 10 20Z" fill="url(#petal)" stroke="#D29479" stroke-width=".65"/>
+    <path d="M-1 5c-7-10-8-22-2-26 6-4 12 2 11 8-1 7-6 13-9 18Z" fill="#FFFDF5" stroke="#D29479" stroke-width=".65"/>
+    <path d="M0 5c1-10 9-18 15-16 7 2 6 10 1 14-4 4-9 5-16 2Z" fill="url(#petal)" stroke="#D29479" stroke-width=".65"/>
+    <path d="M-2 5c6 6 13 7 18 4-2 7-12 8-17 3Z" fill="#F2BD9D"/>
+    <path d="M-5 8 2 12l7-6-2 9-9 1Z" fill="#8C9D62"/>
     <path d="M-1 5-6-6m8 9 3-13M3 5l8-7" fill="none" stroke="#AA8964" stroke-width=".7"/>
     <g fill="#B29369"><circle cx="-6" cy="-6" r="1.2"/><circle cx="5" cy="-10" r="1.1"/><circle cx="11" cy="-2" r="1.2"/></g>
   </g>
 
   <!-- A smaller, almost white bloom seen obliquely. -->
   <g transform="translate(690 285) rotate(-26)">
-    <path d="M0 1c-10-1-16-7-13-13 4-7 11-2 13 13Z" fill="#FFFDF5" stroke="#C7A396" stroke-width=".6"/>
-    <path d="M0 0c-4-11-1-21 5-20 8 1 7 13-5 20Z" fill="url(#petal)" stroke="#C7A396" stroke-width=".6"/>
-    <path d="M0 0c7-10 17-12 20-6 3 7-6 12-20 6Z" fill="#FFFDF5" stroke="#C7A396" stroke-width=".6"/>
-    <path d="M1 1c12-1 19 5 14 11-5 6-12 0-14-11Z" fill="url(#petal)" stroke="#C7A396" stroke-width=".6"/>
-    <path d="M0 1c3 10-1 17-7 16-7-2-5-12 7-16Z" fill="#E9D4C7" stroke="#C7A396" stroke-width=".6"/>
+    <path d="M0 1c-10-1-16-7-13-13 4-7 11-2 13 13Z" fill="#FFFDF5" stroke="#D29479" stroke-width=".6"/>
+    <path d="M0 0c-4-11-1-21 5-20 8 1 7 13-5 20Z" fill="url(#petal)" stroke="#D29479" stroke-width=".6"/>
+    <path d="M0 0c7-10 17-12 20-6 3 7-6 12-20 6Z" fill="#FFFDF5" stroke="#D29479" stroke-width=".6"/>
+    <path d="M1 1c12-1 19 5 14 11-5 6-12 0-14-11Z" fill="url(#petal)" stroke="#D29479" stroke-width=".6"/>
+    <path d="M0 1c3 10-1 17-7 16-7-2-5-12 7-16Z" fill="#F7CCA9" stroke="#D29479" stroke-width=".6"/>
     <path d="M-1 1-8-5m8 3 1-10m3 10 8-4M4 2l7 5M0 4l-3 7" fill="none" stroke="#AC8A63" stroke-width=".65"/>
-    <g fill="#A98456"><circle cx="-8" cy="-5" r="1"/><circle cx="1" cy="-12" r="1"/><circle cx="12" cy="-6" r="1"/><circle cx="11" cy="7" r="1"/><circle cx="-3" cy="11" r="1"/></g>
-    <circle r="2.5" fill="#B78F7F"/>
+    <g fill="#BA8D3E"><circle cx="-8" cy="-5" r="1"/><circle cx="1" cy="-12" r="1"/><circle cx="12" cy="-6" r="1"/><circle cx="11" cy="7" r="1"/><circle cx="-3" cy="11" r="1"/></g>
+    <circle r="2.5" fill="#D28D70"/>
   </g>
 
   <!-- The last flowers are small: a half-open cup, a bud, and a spent calyx. -->
   <g transform="translate(755 182) rotate(-24)">
-    <path d="M0 7c-9-3-15-12-11-17 5-6 12 4 11 17Z" fill="url(#rose)" stroke="#BD8E83" stroke-width=".6"/>
-    <path d="M0 7c-2-10 2-19 8-17 7 3 3 14-8 17Z" fill="#F4E7DC" stroke="#BD8E83" stroke-width=".6"/>
-    <path d="M1 8c4-7 12-10 15-4 2 6-7 10-15 4Z" fill="#E6C6BC" stroke="#BD8E83" stroke-width=".6"/>
-    <path d="M-4 7 2 11l6-4-1 8-8 1Z" fill="#65745D"/>
+    <path d="M0 7c-9-3-15-12-11-17 5-6 12 4 11 17Z" fill="url(#rose)" stroke="#CA8E70" stroke-width=".6"/>
+    <path d="M0 7c-2-10 2-19 8-17 7 3 3 14-8 17Z" fill="#FFE7C6" stroke="#CA8E70" stroke-width=".6"/>
+    <path d="M1 8c4-7 12-10 15-4 2 6-7 10-15 4Z" fill="#F4B59C" stroke="#CA8E70" stroke-width=".6"/>
+    <path d="M-4 7 2 11l6-4-1 8-8 1Z" fill="#8C9D62"/>
   </g>
   <g transform="translate(889 143) rotate(38)">
-    <path d="M0 8c-7-5-8-14-2-18 7-1 12 7 2 18Z" fill="#C8948A" stroke="#9A7770" stroke-width=".6"/>
-    <path d="M-2-7c3 1 5 4 5 7" fill="none" stroke="#F4DFD5" stroke-width="1.2"/>
-    <path d="m-4 4 4 7 5-6-1 9-6-1Z" fill="#56654E"/>
+    <path d="M0 8c-7-5-8-14-2-18 7-1 12 7 2 18Z" fill="#E88B76" stroke="#B77D63" stroke-width=".6"/>
+    <path d="M-2-7c3 1 5 4 5 7" fill="none" stroke="#FFE5BC" stroke-width="1.2"/>
+    <path d="m-4 4 4 7 5-6-1 9-6-1Z" fill="#7C904F"/>
   </g>
-  <path d="m401 340-6-5 3 10 7-1 3-8-6 3m153-112-5-7 1 11 6 2 5-6-6 1m344-35-5-5 3 8 7 1 3-6-7 2" fill="#6A6D51"/>
-  <path d="M399 337c-4-2-6-6-3-9 3-2 7 1 6 5Z" fill="#BD8B81"/>
-  <path d="M548 220c-5-6-4-12 0-15 5 1 7 8 0 15Z" fill="#D4AAA0"/>
+  <path d="m401 340-6-5 3 10 7-1 3-8-6 3m153-112-5-7 1 11 6 2 5-6-6 1m344-35-5-5 3 8 7 1 3-6-7 2" fill="#9B9E60"/>
+  <path d="M399 337c-4-2-6-6-3-9 3-2 7 1 6 5Z" fill="#DF8E73"/>
+  <path d="M548 220c-5-6-4-12 0-15 5 1 7 8 0 15Z" fill="#EDAD8D"/>
 
   <!-- Lichen, scars, and loose petals are deliberate, isolated accents. -->
-  <g fill="#6F8F76" fill-opacity=".63">
+  <g fill="#91AC72" fill-opacity=".63">
     <path d="m104 607 6-4 3 3-5 4Zm13-6 3-2 2 2-4 2Zm139-56 5-4 4 2-3 5Zm11-7 4-2 2 2-3 2Zm271-142 5-4 3 2-4 4Zm11-9 3-2 2 1-1 3Z"/>
     <path d="m377 483 6-2 1 4-5 1Zm268-154 4-2 2 2-3 2Z"/>
   </g>
-  <path d="M585 516c7-7 15-5 15 0-1 5-8 7-15 0Z" fill="#E4BCB1" fill-opacity=".76"/>
-  <path d="M665 584c3-6 10-8 13-4-1 5-6 7-13 4Z" fill="#E0B5AC" fill-opacity=".67"/>
-  <path d="M435 608c5-4 10-3 12 0-3 3-7 3-12 0Z" fill="#E6C4BA" fill-opacity=".74"/>
-  <path d="M652 591c11 3 24 3 35 0m-263 25c10 2 20 2 28 0" fill="none" stroke="#6F8F76" stroke-opacity=".22" stroke-width=".75" stroke-linecap="round"/>
+  <path d="M585 516c7-7 15-5 15 0-1 5-8 7-15 0Z" fill="#F3A78D" fill-opacity=".76"/>
+  <path d="M665 584c3-6 10-8 13-4-1 5-6 7-13 4Z" fill="#EF9C85" fill-opacity=".67"/>
+  <path d="M435 608c5-4 10-3 12 0-3 3-7 3-12 0Z" fill="#F4BE9E" fill-opacity=".74"/>
+  <path d="M652 591c11 3 24 3 35 0m-263 25c10 2 20 2 28 0" fill="none" stroke="#91AC72" stroke-opacity=".22" stroke-width=".75" stroke-linecap="round"/>
 </svg>
