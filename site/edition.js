@@ -1,8 +1,8 @@
 /* Artwork and page resources for the complete static edition. Poetry, dates,
    notes and print folios remain in poems.js. */
 window.ARTBOOK_EDITION = Object.freeze({
-  version: 'artbook-14',
+  version: 'artbook-15',
   document: './index.html',
-  cover: './images/cover-branch.svg?v=artbook-14',
+  cover: './images/cover-branch.svg?v=artbook-15',
   sealBase: './images/'
 });

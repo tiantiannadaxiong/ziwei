@@ -143,8 +143,11 @@ try {
         if (poem.masthead?.[language]) assert.equal(await page.locator('.poem-masthead').textContent(), poem.masthead[language]);
         if (language === 'zh') assert.ok(info.bodySize >= 27, 'Chinese font is never reduced to fit');
         else assert.equal(info.bodySize, 23, 'Latin body remains 23px at every viewport');
-        if (language === 'zh' && poem.note) {
-          assert.equal(await page.locator('.annotation-text').textContent(), poem.note);
+        const note = typeof poem.note === 'string' ? (language === 'zh' ? poem.note : '') : poem.note?.[language];
+        if (note) {
+          assert.equal(await page.locator('.annotation-text').textContent(), note);
+          assert.equal(await page.locator('.annotation-text').getAttribute('lang'), language === 'zh' ? 'zh-Hant' : language);
+          assert.equal(await page.locator('.annotation-folio').textContent(), String(poem.page + (typeof poem.note === 'string' ? 3 : ['zh', 'en', 'fr'].indexOf(language))).padStart(2, '0'));
           assert.equal(info.noteSize, 22);
         }
       }

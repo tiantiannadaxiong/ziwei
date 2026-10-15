@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="wild-title wild-desc">
+  <title id="wild-title">狂野 · 風雨過簷</title>
+  <desc id="wild-desc">一角深墨屋簷迎著急雨，右側秋樹被狂風吹向一旁。銅紅與秋赭落葉在斜雨間翻飛，遠山隱入層疊雨霧；石地積水映著簷影，斷枝與碎瓦留在風雨過後。</desc>
+  <defs>
+    <linearGradient id="wi-mist" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#326B75" stop-opacity=".02"/><stop offset=".5" stop-color="#738C82" stop-opacity=".14"/><stop offset="1" stop-color="#326B75" stop-opacity=".025"/></linearGradient>
+    <linearGradient id="wi-hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6F8F76" stop-opacity=".15"/><stop offset="1" stop-color="#6F8F76" stop-opacity="0"/></linearGradient>
+    <linearGradient id="wi-wall" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#526D61" stop-opacity=".16"/><stop offset=".6" stop-color="#6F8F76" stop-opacity=".07"/><stop offset="1" stop-color="#6F8F76" stop-opacity="0"/></linearGradient>
+    <linearGradient id="wi-floor" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#326B75" stop-opacity=".02"/><stop offset=".58" stop-color="#326B75" stop-opacity=".17"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".035"/></linearGradient>
+    <linearGradient id="wi-bark" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#263D34"/><stop offset=".5" stop-color="#6A7966"/><stop offset="1" stop-color="#435B50"/></linearGradient>
+    <linearGradient id="wi-leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C1A169"/><stop offset=".55" stop-color="#AA7955"/><stop offset="1" stop-color="#805849"/></linearGradient>
+  </defs>
+  <!-- The far shore is almost lost in successive veils of rain. -->
+  <path d="m222 456 37-26 24 9 36-38 26 15 34-42 27 19 27-12 33 35 33-11 40 30 29-8 41 25 37-8 53 22 13 117H222Z" fill="url(#wi-hill)"/>
+  <path d="M219 408c81-30 143-9 220 12 76 20 170 22 274-3v218c-109-38-173-30-253-13-86 18-154 8-241-22Z" fill="url(#wi-mist)"/>
+  <path d="M230 470c98-25 162-9 229 3 90 17 158 7 255-5-77 29-163 38-242 21-81-18-151-23-242-19Z" fill="#F7F3E8" opacity=".69"/>
+  <path d="M247 525c78-18 139-7 193 5 82 20 171 20 274-2-94 40-188 39-272 18-71-17-121-22-195-21Z" fill="#F7F3E8" opacity=".78"/>
+  <path d="M329 577c99-13 153 6 223 9 56 3 99-7 162-19-51 25-102 36-163 32-77-6-129-24-222-22Z" fill="#F7F3E8" opacity=".65"/>
+  <!-- An oblique eave is the heaviest ink mass, balanced by open weather. -->
+  <path d="M47 321 181 351 303 391 310 646 277 692 48 742Z" fill="url(#wi-wall)"/>
+  <path d="m49 287 36-9 58 20 35 7 65 23 54 16 24 26-14 12-70-26-61-17-53-19-52-10-22-12Z" fill="#435B50" opacity=".4"/>
+  <path d="m44 308 27-5 51 15 58 13 62 21 61 19 29 18-6 10-27-10-60-20-64-18-56-17-50-11-22-3Z" fill="#263D34"/>
+  <path d="m54 300 23-5 50 15 54 14 61 21 63 19 16 14-21-5-58-18-64-19-55-13-46-15-21 2Z" fill="#6A7966" opacity=".78"/>
+  <path d="m68 328 48 14 57 15 65 20 64 21 13 13-8 6-16-10-56-18-65-19-55-15-43-15Z" fill="#435B50"/>
+  <path d="m76 334 0 16 7 4 4-17m39 12 1 16 7 4 4-16m42 12 0 17 8 4 3-17m45 14 0 15 8 5 3-17m35 12 0 14 7 5 4-16" fill="#263D34" opacity=".76"/>
+  <g fill="none" stroke="#F7F3E8" stroke-linecap="round">
+    <path d="m62 314 37 10m13 3 42 10m19 4 47 15m18 6 49 15m14 5 18 9" stroke-width="1.3" opacity=".65"/>
+    <path d="m94 312 6 12m30-3 7 13m31-4 8 14m36-3 8 16m32-4 8 15m33-2 9 16" stroke-width=".9" opacity=".36"/>
+  </g>
+  <path d="m73 375 1 226 67 16 0-225Z" fill="#526D61" opacity=".09"/>
+  <path d="m77 379 1 217 58 15m-38-225 1 215m19-210 1 214m-42-162 59 16m-59 60 59 15" fill="none" stroke="#435B50" stroke-width="1.3" opacity=".24"/>
+  <path d="m178 408 2 224m85-199 4 196" fill="none" stroke="#435B50" stroke-width="1.8" opacity=".19"/>
+  <path d="m48 682 113-28 103-2 47-28-3 24-48 23-92 0-120 29Z" fill="#6F8F76" opacity=".19"/>
+  <path d="m50 690 112-26 100-3m-194 2 2-34m99-19 10 2m74-65 3 39m-45-139 1 38" fill="none" stroke="#F7F3E8" stroke-width="1.5" opacity=".55"/>
+  <!-- Water runs off individual tile ends before breaking into spray. -->
+  <g fill="none" stroke="#326B75" stroke-linecap="round">
+    <path d="m83 356 13 30m8 15 17 38m18-69 18 39m8 16 16 35m-3-74 12 25m14 27 21 43m13-73 17 36m12 26 15 30m-10-77 16 33m10 19 22 44" stroke-width="1.35" opacity=".44"/>
+    <path d="m101 390 4 7m19 49 5 10m32-40 5 9m23 43 5 9m0-62 4 8m31 66 5 9m22-45 5 10m12-3 4 8m38 45 6 10" stroke-width="1.7" opacity=".38"/>
+  </g>
+  <!-- A wind-bent tree and its stripped branches move with the rain. -->
+  <path d="M585 807c-7-65-2-124-16-176-9-37-28-67-43-94-19-33-30-60-32-91l7-28 6 6-3 24c4 31 19 58 36 85 23 37 37 66 45 104 10 48 8 108 15 167Z" fill="url(#wi-bark)"/>
+  <path d="M562 622c-4-32-5-61 1-84 8-26 14-47 9-71l5-21 5 3-2 21c4 29-5 53-9 73-5 24-1 51 1 77Zm-37-85c-26-15-53-29-63-53-7-16-7-31-14-44l3-3c13 16 11 31 19 46 11 21 33 30 56 41Z" fill="#435B50"/>
+  <path d="m499 454 27-21 31-8 19-15 3 2-17 20-30 8-30 26Zm70 81 32-20 14-27 5-2-10 31-39 28Z" fill="#435B50"/>
+  <path d="m463 491-33-8-20-21-26-12 0-4 29 10 23 20 25 5m111-10 27-15 14-18 4 1-14 22-29 20" fill="#435B50" opacity=".81"/>
+  <path d="M594 794c-6-58-2-117-14-163-8-35-23-63-42-94m-8-13-19-33m-9-20-3-18m72 155-4-35 2-25m2-11 6-22m-110-17-6-12" fill="none" stroke="#A7AE8E" stroke-width="1.4" opacity=".52"/>
+  <path d="m584 807-18 7-14-1m44-4 25 6m-36 4 10 4" fill="none" stroke="#435B50" stroke-width="2.2" opacity=".48"/>
+  <!-- The last attached leaves are pulled horizontally, with unequal silhouettes. -->
+  <path d="M521 435c14-16 32-14 49-11-11 10-27 21-49 11Z" fill="url(#wi-leaf)"/>
+  <path d="m529 434 32-8" fill="none" stroke="#E3CF9F" stroke-width="1" opacity=".7"/>
+  <path d="M576 464c15-8 33-4 45 4-16 6-31 10-45-4Z" fill="#8D9571"/>
+  <path d="m581 465 29 2" fill="none" stroke="#D2C89D" stroke-width=".9" opacity=".7"/>
+  <path d="M431 481c-6-14-19-23-36-23 8 13 18 25 36 23Z" fill="#AA7955" opacity=".85"/>
+  <path d="M609 516c9-10 23-9 35-6-7 7-20 14-35 6Z" fill="#A78B5D"/>
+  <!-- Leaves turn in the air; no two share the same posture. -->
+  <path d="m363 407 15-2 20 9-19 7-7-9Z" fill="#B59255" opacity=".83"/>
+  <path d="m413 562 9-16 20 2-11 9-5 10Z" fill="#AA6B51"/>
+  <path d="M468 604c16-5 26 1 38 8-15 6-25 7-38-8Z" fill="url(#wi-leaf)"/>
+  <path d="m636 572 16-9 22 4-11 6-17 5Z" fill="#B59255" opacity=".8"/>
+  <path d="M335 518c5-8 14-11 21-12-1 10-9 15-21 12Z" fill="#6F8F76"/>
+  <path d="m525 684 13-2 12 14-15-3Z" fill="#AA6B51" opacity=".78"/>
+  <path d="M651 663c8-14 24-16 35-13-7 9-18 17-35 13Z" fill="#9D8960"/>
+  <path d="m690 492 11 1 11 8-14 1Z" fill="#B59255" opacity=".7"/>
+  <path d="m379 415 8 0m38 143 9-7m43 55 21 5m145-39 19-4m-129 120 10 4m119-30 15-8" fill="none" stroke="#E3CF9F" stroke-width=".9" opacity=".73"/>
+  <path d="m352 405 10 4m49 158 5-6m48 40 7 3m162-29 6-4m11 95 5-4" fill="none" stroke="#435B50" stroke-width="1" opacity=".65"/>
+  <!-- Broken sheets of rain all follow the same wind, without a full-screen filter. -->
+  <g fill="none" stroke="#326B75" stroke-linecap="round">
+    <path d="m345 280 28 53m31-66 23 43m24 12 31 58m22-90 22 43m23 28 28 53m30-91 23 44m17 29 25 47m-335-29 22 41m32-4 27 53m18-105 19 37m37 20 24 43m20-67 22 42m47-6 20 37m-266 6 20 38m28-17 23 45m51-22 19 36m43-7 26 48m33-55 23 43m-294-12 22 41m28 6 22 42m43-32 19 37m35-26 23 43m46-24 20 39m-290-5 20 37m28-6 24 46m39-21 19 36m-155 12 21 39m31-10 21 40m40-20 22 40m42-9 18 34m36-11 21 40" stroke-width="1" opacity=".23"/>
+    <path d="m380 341 9 17m47-11 7 14m49 27 9 16m33-63 7 14m41 66 9 17m49-64 8 16m-296 66 9 16m51 26 8 14m33-20 8 16m94 31 8 15m55-50 8 15m-274 43 9 16m57 39 8 15m51-18 8 16m41 51 8 15m-203-8 8 15m38 49 7 13m43-20 9 16m66 19 7 14m39-29 8 16" stroke-width="1.4" opacity=".3"/>
+  </g>
+  <!-- Shallow puddles carry fragments of eave, bark and rust-red leaves. -->
+  <path d="M49 718c75-28 126-32 180-20 61 13 103 9 156-5 67-18 118-13 170 11 55 26 105 38 158 42v85c-71 3-119-13-174-20-82-9-145 6-223 9-89 4-174-3-267-14Z" fill="url(#wi-floor)"/>
+  <path d="m78 745 108-25 57 10-69 11-60 18Zm38 34 74-16 37 8-61 13Z" fill="#435B50" opacity=".08"/>
+  <path d="m577 769 17 3 4 32-15-5Z" fill="#435B50" opacity=".13"/>
+  <path d="m68 729 55-12m22-3 36-4m48 15 57 5m32-1 45-7m58-3 32 2m-358 42 31-5m112-13 38 4m33 2 38-1m66-5 38 1m-160 34 42 2m29 0 54-4m43 9 37 1m-61 20 55-2m-281-2 43 3m103 8 47 1m58 13 44-1m-328-5 36 2" fill="none" stroke="#F7F3E8" stroke-width="1.8" stroke-linecap="round" opacity=".7"/>
+  <path d="m222 759 28-9 24 8 17-7 35 11-4 5-34-10-15 7-25-7-22 7Z" fill="#435B50" opacity=".84"/>
+  <path d="m274 759 8-17 18-8 2 2-16 9-6 15m-29-5-11-11-17-1" fill="none" stroke="#435B50" stroke-width="2"/>
+  <path d="m363 760 22-8 19 10-5 13-24 2Z" fill="#6A7966" opacity=".67"/>
+  <path d="m367 761 16-5 14 7-20 3Z" fill="#B0B69A" opacity=".6"/>
+  <path d="m149 780 16-6 15 10-19 1Zm188 19 18-8 20 5-18 8Zm109-40 16-9 17 9-19 5Zm68 39 14-5 20 8-24 3Z" fill="url(#wi-leaf)"/>
+  <path d="m160 782 13 1m171 14 19 0m-13 7 9 2m94-48 17 1m46 42 19 1" fill="none" stroke="#E3CF9F" stroke-width=".8" opacity=".7"/>
+  <path d="m137 783 13-2m181 22 8-5m99-36 9-3m62 45 7-3" fill="none" stroke="#435B50" stroke-width="1" opacity=".6"/>
+  <ellipse cx="208" cy="734" rx="17" ry="3" fill="none" stroke="#326B75" stroke-width=".9" opacity=".28"/>
+  <path d="M182 734c5 5 15 7 26 7m11-1 12-3m191 46c7 3 14 3 20 0m-27 5c13 3 25 3 35-1" fill="none" stroke="#326B75" stroke-width=".8" stroke-linecap="round" opacity=".2"/>
+</svg>

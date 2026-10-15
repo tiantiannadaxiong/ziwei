@@ -20,6 +20,12 @@
   const languages = { zh: '繁體中文', en: 'English', fr: 'Français' };
   const tags = { zh: '中', en: 'EN', fr: 'FR' };
   const langTag = code => code === 'zh' ? 'zh-Hant' : code;
+  const noteTitles = { zh: '中文註釋', en: 'Note', fr: 'Note' };
+  const notePrefixes = { zh: '註:', en: 'Note:', fr: 'Note :' };
+  const noteFor = (poem, language) => typeof poem.note === 'string' ? (language === 'zh' ? poem.note : '') : poem.note?.[language];
+  // Existing Chinese notes retain their separate print folios. Short notes
+  // supplied in three languages share the folio of their language's poem.
+  const noteFolio = (poem, language) => poem.page + (typeof poem.note === 'string' ? 3 : ['zh', 'en', 'fr'].indexOf(language));
   const sequence = [{ type: 'cover', hash: 'cover' }];
   matter.front.forEach(item => sequence.push({ type: 'matter', item, hash: item.id }));
   poems.forEach(poem => {
@@ -112,14 +118,17 @@
     });
     const meta = typeof poem.meta === 'string' ? (language === 'zh' ? poem.meta : '') : poem.meta?.[language];
     if (meta) node('p', 'poem-meta', meta, content).lang = langTag(language);
-    if (language === 'zh' && poem.note) {
+    const note = noteFor(poem, language);
+    if (note) {
       const notes = node('section', 'annotation-section', undefined, content);
       notes.id = `notes-${poem.id}`;
       notes.setAttribute('aria-labelledby', `${notes.id}-title`);
       const header = node('header', 'annotation-header', undefined, notes);
-      node('h2', 'annotation-title', '中文註釋', header).id = `${notes.id}-title`;
-      node('span', 'annotation-folio', String(poem.page + 3).padStart(2, '0'), header);
-      node('p', 'annotation-text', poem.note, notes).lang = 'zh-Hant';
+      const noteTitle = node('h2', 'annotation-title', typeof poem.note === 'string' ? noteTitles[language] : notePrefixes[language], header);
+      noteTitle.id = `${notes.id}-title`;
+      noteTitle.lang = langTag(language);
+      node('span', 'annotation-folio', String(noteFolio(poem, language)).padStart(2, '0'), header);
+      node('p', 'annotation-text', note, notes).lang = langTag(language);
     }
   }
 
@@ -195,7 +204,7 @@
         const annotation = page.querySelector('.annotation-section');
         if (annotation) {
           page.scrollTop += annotation.getBoundingClientRect().top - page.getBoundingClientRect().top - 24;
-          pageFolio.textContent = `第 ${entry.poem.page + 3} 頁 · 中文註釋`;
+          pageFolio.textContent = `第 ${noteFolio(entry.poem, entry.language)} 頁 · ${noteTitles[entry.language]}`;
         }
       };
       alignNotes();
@@ -227,10 +236,13 @@
 
   page.addEventListener('scroll', () => {
     const entry = sequence[current];
-    if (entry.type !== 'poem' || entry.language !== 'zh' || !entry.poem.note) return;
+    if (entry.type !== 'poem' || !noteFor(entry.poem, entry.language)) return;
     const annotation = page.querySelector('.annotation-section');
-    const readingNotes = annotation.getBoundingClientRect().top < page.getBoundingClientRect().top + page.clientHeight * .45;
-    pageFolio.textContent = readingNotes ? `第 ${entry.poem.page + 3} 頁 · 中文註釋` : `第 ${entry.poem.page} 頁`;
+    const reachedEnd = page.scrollTop > 0 && page.scrollTop + page.clientHeight >= page.scrollHeight - 2;
+    const noteLinked = location.hash.endsWith('-notes') && page.scrollHeight <= page.clientHeight + 1;
+    const readingNotes = noteLinked || reachedEnd || annotation.getBoundingClientRect().top < page.getBoundingClientRect().top + page.clientHeight * .45;
+    const folio = entry.poem.page + ['zh', 'en', 'fr'].indexOf(entry.language);
+    pageFolio.textContent = readingNotes ? `第 ${noteFolio(entry.poem, entry.language)} 頁 · ${noteTitles[entry.language]}` : `第 ${folio} 頁`;
   }, { passive: true });
 
   function contentsButton(text, parent, hash, className = '') {
