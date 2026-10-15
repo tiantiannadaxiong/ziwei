@@ -1,6 +1,8 @@
 # 《暗香集》三语诗集
 
-静态 HTML、CSS 和 JavaScript 艺术书，部署在 GitHub Pages，可安装到手机主屏离线阅读。全书已采用当代东方设计：暖纸底色、深墨文字、疏影、水痕与月光，包含新封面和全部 15 幅原生 SVG 诗作插图。
+静态 HTML、CSS 和 JavaScript 艺术书，部署在 GitHub Pages，可安装到手机主屏离线阅读。全书设计取意王安石《梅花》，以「凌寒独自开」的坚韧和「为有暗香来」的含蓄呼应母亲的性格。暖纸、梅枝般的棕灰墨色、墙角形细线和页眉一朵淡梅贯穿阅读，作为安静的暗线；15 首诗及其原生 SVG 插图各自保留原有意境。
+
+题记采用《梅花》四句，前言与后记呼应母亲的坚韧与温柔。封面不放题诗，以曲折向上、疏密相间的老梅和淡淡院墙重新构图，保留书名、译名及作者印与签名。诗作正文、三语译文、注释、日期、印章位置与纸本页码均保留。
 
 ## 阅读与字体
 
@@ -55,7 +57,7 @@ node tools/review-browser.mjs artifacts/artbook-review http://127.0.0.1:8000/
 node tools/review-browser.mjs artifacts/artbook-sample http://127.0.0.1:8000/ review
 ```
 
-浏览器工具需已有 Playwright，必要时通过 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安装的 Edge；仅用于开发，网站没有新增运行依赖。输出目录包含整页截图、绘画局部、`index.html` 图集和 `checks.json` 验收记录；`artifacts/` 不纳入版本管理。当前资源版为 `artbook-9`，离线缓存为 `anxiangji-v53`；检查结果和实体设备待复验范围见 [评审记录](site/design-review.md)。
+浏览器工具需已有 Playwright，必要时通过 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安装的 Edge；仅用于开发，网站没有新增运行依赖。输出目录包含整页截图、绘画局部、`index.html` 图集和 `checks.json` 验收记录；`artifacts/` 不纳入版本管理。当前资源版为 `artbook-12`，离线缓存为 `anxiangji-v56`；检查结果和实体设备待复验范围见 [评审记录](site/design-review.md)。
 
 ## 发布与离线
 

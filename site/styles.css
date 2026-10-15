@@ -10,12 +10,14 @@
 :root{
   color-scheme:light;
   --paper:#f7f3e8;
-  --ink:#263d34;
-  --secondary:#54665c;
-  --stone:#326b75;
+  --ink:#393832;
+  --secondary:#66645c;
+  --stone:#746958;
   --vermillion:#b44d3b;
-  --gold:#9c7940;
-  --line:#cdcdbb;
+  --gold:#907047;
+  --line:#d5cdbf;
+  --plum:#b8756c;
+  --petal:radial-gradient(ellipse 2.5px 3px at 50% 22%,var(--plum) 90%,transparent),radial-gradient(ellipse 3px 2.5px at 77% 43%,var(--plum) 90%,transparent),radial-gradient(ellipse 2.5px 3px at 67% 75%,var(--plum) 90%,transparent),radial-gradient(ellipse 2.5px 3px at 33% 75%,var(--plum) 90%,transparent),radial-gradient(ellipse 3px 2.5px at 23% 43%,var(--plum) 90%,transparent);
   --support:"WenKai TC","Kaiti TC","KaiTi","Noto Serif CJK TC",serif;
   --title:"HanWang LiSu",var(--support);
   --latin:Alegreya,Georgia,"Times New Roman",serif;
@@ -36,14 +38,17 @@ button[hidden]{display:none!important}
 .contents-trigger{display:flex;gap:10px;align-items:center;justify-self:start;min-height:44px;padding:0 5px 0 0;border:0;background:none;font-size:16px;letter-spacing:.1em}
 .contents-icon{display:block;width:16px;height:12px;border-top:1px solid currentColor;border-bottom:1px solid currentColor;position:relative}
 .contents-icon::after{position:absolute;inset:5px 4px auto 0;border-top:1px solid currentColor;content:""}
-.book-wordmark{font:16px var(--title);letter-spacing:.24em;text-indent:.24em}
+.book-wordmark{position:relative;font:16px var(--title);letter-spacing:.24em;text-indent:.24em}
+/* A corner and one small blossom carry the book's quiet thread. The plates
+   retain their own seasons and colours; no motif is laid over the artwork. */
+.book-wordmark::after{position:absolute;top:50%;left:calc(100% + 6px);width:12px;height:12px;transform:translateY(-50%);background:var(--petal);opacity:.7;content:"";pointer-events:none}
 .toolbar-right{display:flex;align-items:center;justify-self:end;gap:7px}
 #reading-progress{color:var(--secondary);font:15px/1 var(--latin);white-space:nowrap}
 .music-toggle{display:grid;place-items:center;justify-self:end;width:44px;height:44px;border:0;background:none;color:var(--secondary)}
 .music-toggle svg{width:21px;height:21px;stroke:currentColor;stroke-width:1.1;fill:none}
 .music-toggle[aria-pressed="true"]{color:var(--vermillion)}
 .reading-stage{position:relative;min-width:0;min-height:0;overflow:hidden;isolation:isolate;touch-action:pan-y}
-.book-page{position:relative;width:100%;height:100%;min-width:0;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b4bba8 transparent;outline:0;padding:30px 6px 32px;-webkit-overflow-scrolling:touch}
+.book-page{position:relative;width:100%;height:100%;min-width:0;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#bdb5a7 transparent;outline:0;padding:30px 6px 32px;-webkit-overflow-scrolling:touch}
 .book-page:focus-visible{outline:1px solid var(--stone);outline-offset:-1px}
 .page-controls{position:relative;z-index:3;display:grid;grid-template-columns:52px minmax(0,1fr)52px;align-items:center;min-height:0;border-top:1px solid var(--line);background:var(--paper)}
 .page-controls button{display:grid;place-items:center;width:48px;height:48px;border:0;background:none;color:var(--ink)}
@@ -57,16 +62,14 @@ button[hidden]{display:none!important}
 #swipe-hint{color:var(--secondary);font-size:15px;letter-spacing:.06em}
 
 /* A typographic opening with a single painted plate, no decorative frame. */
-.cover-page{display:grid;grid-template-rows:auto minmax(0,1fr)auto;gap:8px;overflow:hidden;padding:38px 8px 25px}
+.cover-page{display:grid;grid-template-rows:auto minmax(0,1fr)auto;gap:4px;overflow:hidden;padding:30px 8px 16px}
 .cover-kicker{margin:0 0 20px;color:var(--secondary);font-size:15px;letter-spacing:.14em}
 .cover-title{margin:0 0 14px;font:400 clamp(60px,16vw,80px)/1.2 var(--title);letter-spacing:.14em}
 .cover-english{max-width:24ch;margin:0;color:var(--stone);font:400 clamp(24px,6.2vw,30px)/1.12 Poetica,var(--latin)}
 .cover-french{margin:8px 0 0;color:#82654e;font:400 21px/1.25 Poetica,var(--latin)}
 .cover-plate{display:grid;align-items:center;min-height:0;margin:0 -8px}
 .cover-plate img{display:block;width:100%;height:100%;min-height:0;object-fit:contain}
-.cover-author{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
-.cover-epigraph{margin:0;color:var(--secondary);font-size:15px;line-height:1.9;letter-spacing:.1em}
-.cover-verse{display:block}
+.cover-author{display:flex;justify-content:flex-end;align-items:flex-end}
 .author-signature{display:flex;align-items:center;gap:15px}
 .author-signature .seal{width:34px;height:44px;flex:none}
 .signature{margin:0 0 -2px;font:700 32px/1.1 Bickham,"Poetica Chancery",var(--latin);color:var(--ink)}
@@ -80,7 +83,7 @@ button[hidden]{display:none!important}
 .poem-masthead{margin:0 0 16px;color:var(--secondary);font-size:15px;line-height:1.65}
 .poem-title{margin:0;font:400 39px/1.4 var(--title);letter-spacing:.06em;overflow-wrap:anywhere}
 .poem-title[lang="en"],.poem-title[lang="fr"]{font:400 37px/1.12 var(--latin);letter-spacing:-.015em}
-.poem-heading::after{display:block;width:24px;height:2px;margin-top:22px;background:var(--stone);content:""}
+.poem-heading::after{display:block;width:28px;height:12px;margin-top:22px;border-left:1px solid var(--stone);border-bottom:1px solid var(--stone);content:""}
 .language-nav{display:flex;gap:2px;align-items:center}
 .language-nav button{min-width:44px;min-height:44px;padding:6px;border:0;border-bottom:1px solid transparent;background:none;color:var(--secondary);font:23px/1 "Poetica Small Caps",var(--support)}
 .language-nav button[aria-current="true"]{border-bottom-color:var(--stone);color:var(--ink)}
@@ -96,7 +99,7 @@ button[hidden]{display:none!important}
 .annotation-header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:14px}
 .annotation-title{margin:0;font:400 18px/1.6 var(--support);letter-spacing:.09em}
 .annotation-folio{font:italic 16px var(--latin);color:var(--gold)}
-.annotation-text{margin:0;color:#3c5146;font:22px/1.85 var(--support);white-space:pre-line;overflow-wrap:break-word}
+.annotation-text{margin:0;color:var(--ink);font:22px/1.85 var(--support);white-space:pre-line;overflow-wrap:break-word}
 
 .illustration-page{display:flex;flex-direction:column;padding:24px 0 16px;overflow:hidden}
 .illustration-heading{flex:0 0 auto;text-align:center;color:var(--secondary);font-size:15px;letter-spacing:.3em;text-indent:.3em}
@@ -112,13 +115,15 @@ button[hidden]{display:none!important}
 .matter-content{width:min(100%,570px);margin:auto;padding:44px 0}
 .matter-index{margin:0 0 24px;color:var(--gold);font:italic 22px var(--latin)}
 .matter-title{margin:0;font:400 37px/1.4 var(--title);letter-spacing:.12em}
+.matter-title::after{display:block;width:28px;height:12px;margin-top:22px;border-left:1px solid var(--stone);border-bottom:1px solid var(--stone);content:""}
 .matter-text{margin:32px 0 0;font:24px/1.9 var(--support);white-space:pre-line}
 .matter-colophon .matter-text{font-size:18px;line-height:2.15;color:var(--secondary)}
-.matter-epigraph .matter-text{max-width:9em;font-size:30px;line-height:2.1;letter-spacing:.07em}
+.matter-epigraph .matter-text{max-width:9em;font-family:var(--title);font-size:30px;line-height:2.1;letter-spacing:.07em}
+.matter-afterword .matter-content::after{display:block;width:12px;height:12px;margin-top:32px;background:var(--petal);opacity:.7;content:""}
 
 .toc-dialog{width:min(700px,calc(100vw - 28px));max-height:min(88svh,820px);padding:28px 24px 20px;border:1px solid var(--line);background:var(--paper);color:var(--ink);overflow:hidden}
 .toc-dialog[open]{display:flex;flex-direction:column}
-.toc-dialog::backdrop{background:#263d3460}
+.toc-dialog::backdrop{background:#39383260}
 .toc-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex:none;padding:0 0 20px;border-bottom:1px solid var(--line)}
 .eyebrow{margin:0 0 10px;color:var(--secondary);font:15px/1.2 "Poetica Small Caps",var(--latin);letter-spacing:.14em}
 .toc-heading h1{margin:0;font:400 36px/1.3 var(--title);letter-spacing:.14em}
@@ -126,7 +131,7 @@ button[hidden]{display:none!important}
 .toc-matter{display:flex;flex:none;flex-wrap:wrap;gap:0 14px;padding:12px 0;border-bottom:1px solid var(--line)}
 .toc-matter button{min-width:44px;min-height:44px;padding:4px 0;border:0;background:none;font-size:16px;color:var(--secondary)}
 .toc-list{display:grid;grid-template-columns:1fr;flex:1 1 auto;min-height:0;list-style:none;overflow:auto;overscroll-behavior:contain;margin:0;padding:0;counter-reset:poem}
-.toc-list li{display:grid;grid-template-columns:28px 1fr;align-content:center;gap:3px 10px;position:relative;padding:21px 0 17px;border-bottom:1px solid #dddccd}
+.toc-list li{display:grid;grid-template-columns:28px 1fr;align-content:center;gap:3px 10px;position:relative;padding:21px 0 17px;border-bottom:1px solid var(--line)}
 .toc-list li::before{grid-row:span 2;padding-top:4px;color:var(--gold);font:italic 17px var(--latin);counter-increment:poem;content:counter(poem,decimal-leading-zero)}
 .toc-title-button{justify-self:start;text-align:left;min-width:44px;min-height:44px;padding:0;border:0;background:none;font:400 25px/1.4 var(--title)}
 .toc-links{display:flex;flex-wrap:wrap;gap:0 15px}
@@ -141,16 +146,15 @@ button[hidden]{display:none!important}
 @keyframes turn-backward{from{opacity:.4;transform:translateX(-7px)}to{opacity:1;transform:none}}
 
 @media(min-width:760px){
-  body{background:#ecece2}
+  body{background:#e9e5dd}
   .book{padding:18px 62px 14px;background:var(--paper)}
   .book-page{padding-inline:24px}
-  .cover-page{padding-top:40px;padding-bottom:24px}
+  .cover-page{padding-top:30px;padding-bottom:16px}
   .cover-title{font-size:90px}
   .cover-kicker{margin-bottom:22px}
   .cover-english{max-width:none;font-size:31px}
   .cover-french{font-size:23px}
   .cover-plate{margin:0 -20px}
-  .cover-epigraph{font-size:16px}
   .author-signature .seal{width:38px;height:50px}
   .signature{font-size:37px}
   .poem-heading{margin-top:38px;margin-bottom:32px}
@@ -168,19 +172,17 @@ button[hidden]{display:none!important}
   .cover-plate{margin-inline:0}
   .cover-kicker{letter-spacing:.04em}
   .cover-title{font-size:57px}
-  .cover-epigraph{font-size:15px;letter-spacing:0}
   .author-signature{gap:8px}
   .signature{font-size:28px}
 }
 @media(max-height:690px){
   .book{grid-template-rows:48px minmax(0,1fr)60px;padding-top:max(4px,env(safe-area-inset-top));padding-bottom:max(4px,env(safe-area-inset-bottom))}
-  .cover-page{padding-top:24px;padding-bottom:16px}
+  .cover-page{padding-top:18px;padding-bottom:12px}
   .cover-kicker{margin-bottom:12px}
   .cover-title{margin-bottom:9px;font-size:57px}
   .cover-english{font-size:24px}
   .cover-french{font-size:19px;margin-top:5px}
   .cover-plate{min-height:90px}
-  .cover-epigraph{font-size:15px}
   .illustration-page{padding-top:14px;padding-bottom:10px}
   .illustration-title{margin-top:8px;font-size:29px}
   .illustration-figure{margin-top:10px;gap:8px}
@@ -195,7 +197,6 @@ button[hidden]{display:none!important}
   .cover-french{font-size:18px}
   .cover-plate{grid-column:2;grid-row:1/3;min-height:0;margin:0}
   .cover-author{grid-column:1;grid-row:2}
-  .cover-epigraph{display:block;line-height:1.55}
   .cover-page{overflow:auto}
   .illustration-page{display:grid;grid-template-columns:100px 1fr;grid-template-rows:auto 1fr;column-gap:20px}
   .illustration-heading{grid-column:1;grid-row:1}

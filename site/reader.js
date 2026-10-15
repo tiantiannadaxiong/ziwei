@@ -68,13 +68,9 @@
     const plate = node('figure', 'cover-plate', undefined, page);
     const image = node('img', '', undefined, plate);
     image.src = edition.cover;
-    image.alt = '暖白院牆轉角前，幾枝梅迎寒綻放，粉白花瓣與珊瑚花苞映著杏金冬光。';
+    image.alt = '淡淡院牆前，老梅曲折向上，疏枝舒展；粉白花朵與胭脂花苞錯落相映，冬光與暗香留在枝間的空白裡。';
     image.decoding = 'async';
     const author = node('div', 'cover-author', undefined, page);
-    const epigraph = node('p', 'cover-epigraph', undefined, author);
-    for (const line of ['牆角數枝梅，', '凌寒獨自開。', '遙知不是雪，', '為有暗香來。']) {
-      node('span', 'cover-verse', line, epigraph);
-    }
     const signature = node('div', 'author-signature', undefined, author);
     seal('ziwei', 'author-seal', signature);
     node('p', 'signature', 'Ziwei', signature).lang = 'en';
