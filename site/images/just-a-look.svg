@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="jl-title jl-desc">
+  <title id="jl-title">看一下 · 楓隙桂影</title>
+  <desc id="jl-desc">一枝紅楓從右上方探入，秋紅與淺赭葉片在近處疏密相映。枝葉間望見桂林石峰，青綠峰林由近及遠漸淡入薄霧；江水映著斷續山影，一葉小竹筏輕輕掠過，留住不忍眨眼的一瞬。</desc>
+  <defs>
+    <linearGradient id="jl-far" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6F8F76" stop-opacity=".18"/><stop offset="1" stop-color="#6F8F76" stop-opacity="0"/></linearGradient>
+    <linearGradient id="jl-middle" x1="0" y1="0" x2=".1" y2="1"><stop stop-color="#6F8F76" stop-opacity=".43"/><stop offset=".7" stop-color="#326B75" stop-opacity=".16"/><stop offset="1" stop-color="#6F8F76" stop-opacity="0"/></linearGradient>
+    <linearGradient id="jl-near" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#435B50" stop-opacity=".7"/><stop offset=".5" stop-color="#6F8F76" stop-opacity=".57"/><stop offset="1" stop-color="#8EA18B" stop-opacity=".4"/></linearGradient>
+    <linearGradient id="jl-water" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#326B75" stop-opacity=".04"/><stop offset=".6" stop-color="#326B75" stop-opacity=".25"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".075"/></linearGradient>
+    <linearGradient id="jl-reflect" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#526D61" stop-opacity=".2"/><stop offset="1" stop-color="#326B75" stop-opacity="0"/></linearGradient>
+    <linearGradient id="jl-rock" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#839B89" stop-opacity=".8"/><stop offset=".7" stop-color="#435B50" stop-opacity=".88"/><stop offset="1" stop-color="#6F8F76" stop-opacity=".04"/></linearGradient>
+    <linearGradient id="jl-bark" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#263D34"/><stop offset=".6" stop-color="#6B7054"/><stop offset="1" stop-color="#435B50"/></linearGradient>
+    <linearGradient id="jl-red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C99A70"/><stop offset=".45" stop-color="#BC7C5B"/><stop offset="1" stop-color="#975B4B"/></linearGradient>
+  </defs>
+  <!-- Far, soft stone peaks have rounded shoulders rather than alpine ridges. -->
+  <path d="M49 491c24-7 32-28 39-48 6-17 15-28 26-27 13 4 15 25 25 29 14-3 18-30 24-45 6-16 16-28 29-23 12 4 15 28 21 43 9 20 26 14 36 28 12 16 25 25 41 20 12-4 14-27 23-36 9-12 20-10 28 1 9 11 11 23 25 25 13-10 17-38 28-48 10-7 18 0 25 13 7 17 9 36 25 45 22 14 36 6 47 16 12 11 27 14 43 12 13-2 16-23 25-30 8-7 17-6 24 2 9 10 9 24 25 27 21 7 37-2 56 10v115H49Z" fill="url(#jl-far)"/>
+  <path d="M182 524c12-21 22-34 36-37 20-5 25-24 28-44 3-23 4-45 16-56 12-12 23-7 30 9 5 13 5 34 13 38 14-1 17-20 24-27 9-10 18-6 23 7 7 18 6 40 18 51 11 8 21 4 32 15 12 10 14 26 31 28 18 3 26-16 31-35 5-20 5-50 18-60 11-10 22-4 27 9 8 17 6 37 17 45 13 10 17-8 27-7 11 2 18 19 26 32 9 15 22 17 37 21l37 69H182Z" fill="url(#jl-middle)"/>
+  <!-- The nearest karst groups hold the deepest green, with quiet vertical folds. -->
+  <path d="M49 557c18-12 27-30 34-53 8-28 13-43 29-54 14-11 19-39 22-63 3-27 7-48 21-51 15 0 23 21 28 45 4 22 4 47 19 57 19 12 22 32 26 52 5 24 20 37 39 45l16 39H49Z" fill="url(#jl-near)"/>
+  <path d="M68 548c12-23 23-38 32-64 8-23 22-31 28-51 7-22 11-57 21-77-6 30-6 58-11 80-5 23-22 32-30 55-10 26-24 42-40 57Z" fill="#F7F3E8" opacity=".23"/>
+  <path d="M163 346c4 28 3 59 9 80 6 22 15 30 19 51 4 22 10 40 23 58-23-14-28-34-32-56-4-21-16-32-19-53-4-26 1-49 0-80Z" fill="#263D34" opacity=".13"/>
+  <path d="M484 552c11-20 24-36 34-63 7-21 9-40 18-52 10-13 13-39 14-62 2-22 6-40 18-43 15-1 20 20 23 42 2 19 3 35 15 42 17 9 20 25 28 35 11 6 17-12 22-28 6-20 6-49 18-55 12-3 19 16 21 36 3 21 0 45 9 56l9 16v108H484Z" fill="url(#jl-near)" opacity=".82"/>
+  <path d="M534 533c3-22 5-42 14-59 12-22 11-46 12-68 1-25 1-49 8-64-4 23 1 47 0 69-1 26-4 47-16 68-9 17-11 34-18 54Z" fill="#F7F3E8" opacity=".25"/>
+  <path d="M583 362c2 31 3 48 15 59 14 11 21 22 26 44 3 14 12 32 23 44-18-7-28-24-33-41-7-21-9-31-23-43-16-16-10-37-8-63Z" fill="#263D34" opacity=".12"/>
+  <g fill="none" stroke="#435B50" stroke-linecap="round" opacity=".17">
+    <path d="m151 391-4 26m-3 15-4 19m39-11 7 19m-17 35 5 28m-62-39-8 25m455-104-1 26m-4 15-4 18m39-16 8 19m-27 7-5 28m91-48-1 22m2 14 6 18" stroke-width="1.1"/>
+  </g>
+  <!-- A narrow white veil keeps the hills from becoming a solid backdrop. -->
+  <path d="M49 532c85-7 139 9 197 4 65-5 104-22 159-17 63 6 101 25 165 22 48-2 86-10 142-10v15c-54-4-89 6-140 10-71 5-108-14-171-20-57-6-96 12-155 16-63 5-120-13-197-6Z" fill="#F7F3E8" opacity=".79"/>
+  <!-- Broad, light water gives the eye somewhere to rest between the peaks. -->
+  <path d="M49 551c89 0 141 11 204 1 62-9 107-19 157-10 65 11 100 24 159 17 57-7 98-9 143-4v272H49Z" fill="url(#jl-water)"/>
+  <path d="M83 562c19 12 24 27 28 46 4 19 13 33 10 53-1 16-10 36-8 57 10-24 22-40 25-60 4-24-10-36-12-55-2-16-8-28-16-40Zm63 1c-1 24 11 36 14 55 2 17-3 30 3 51 8-21 13-38 8-54-6-18-8-34-7-50Zm399 9c-7 24-3 42-10 60-8 20-21 36-18 55 5-20 22-35 29-52 9-21 3-39 10-61Zm35 5c3 21 18 35 20 55 2 15-3 33 3 51 4-19 11-34 8-53-3-20-13-34-14-55Z" fill="url(#jl-reflect)"/>
+  <path d="M178 585c88-8 140-6 216-1 65 5 116 9 178 1-62 17-118 16-179 10-77-8-129-12-215-10Z" fill="#F7F3E8" opacity=".41"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="m74 577 43 1m27 0 27 2m54-1 49-5m18-2 29-2m31 2 35 3m53 3 41 3m33 3 42-1m65-4 44-1m-543 39 38-3m31-2 45 0m31 6 33-1m46-2 51 0m45 6 36 3m39-2 35-2m-282 29 44-3m31 2 37 1m38 4 33 0m-377 18 46-3m31-2 47 1m39 8 40-3m31 6 42-2m38-1 37 1m-327 28 46-2m33 5 34-1m39-3 43 3m-255 31 39-1m33 6 43-3m30 7 39-1m58-3 31 1m-209 31 48-2m36 9 40-3m-251 11 36 2" stroke="#F7F3E8" stroke-width="1.8" opacity=".73"/>
+    <path d="m110 596 25 1m58-6 32-1m254 10 31 1m94-2 28-1m-362 35 26-2m39 3 29 0m122 12 28-1m-320 38 33-1m213 14 27-2m-186 37 29 1m37 6 33-2m-145 27 34-1m114 11 29 1m-53 30 31-1" stroke="#326B75" stroke-width=".9" opacity=".24"/>
+    <path d="m202 609 24-1m156 20 30 1m-186 60 26 1m161 37 23-1m-268 48 28 1" stroke="#B59255" stroke-width=".9" opacity=".24"/>
+  </g>
+  <!-- A small bamboo raft marks scale, leaving the landscape as the subject. -->
+  <path d="m310 645 58-7 11 3-57 8Z" fill="#A9986C" opacity=".85"/>
+  <path d="m315 644 54-6m-51 8 53-7m-48 9 53-7m-47 1 1 6m14-8 1 6m14-8 1 6" fill="none" stroke="#526D61" stroke-width=".8" opacity=".64"/>
+  <path d="m341 633 3-12 5 1 2 11 5 5-17 2Z" fill="#435B50"/>
+  <path d="m339 620 8-6 9 5-10 4Z" fill="#B59255"/>
+  <path d="m349 627 12 7 17 21" fill="none" stroke="#435B50" stroke-width="1.1"/>
+  <path d="m304 656 25 0m8 1 37-4m5 1 14-2" fill="none" stroke="#326B75" stroke-width=".9" opacity=".23"/>
+  <!-- Near rock and grasses give the foreground an irregular, open edge. -->
+  <path d="m562 778 28-24 36-5 27 16 22 7 38 32v25H531Z" fill="url(#jl-rock)"/>
+  <path d="m580 778 15-16 30-5 17 12-22-2-21 8-14 10Z" fill="#A9B29B" opacity=".61"/>
+  <path d="m599 781 15 17 36 12m-22-43 14 22m-72 8 15-1m83 18 15 6" fill="none" stroke="#263D34" stroke-width="1.2" opacity=".42"/>
+  <path d="m686 799-5-38m2 24-14-17m14 10 10-26m-3 50 8-29m-1 17 12-14" fill="none" stroke="#6F8F76" stroke-width="1.5" stroke-linecap="round" opacity=".75"/>
+  <!-- A maple branch enters from the upper right and leaves the central view open. -->
+  <path d="M716 277c-30 10-46 31-69 46-24 16-46 23-70 18-28-6-46-25-66-45l-22-29-6 1 18 32c22 27 42 48 72 54 29 7 54-1 79-17 25-16 42-36 64-43Z" fill="url(#jl-bark)"/>
+  <path d="M642 331c11 22 17 46 11 68l-22 31 3 3 27-30c9-25 5-48-6-72Zm-63 20c-3 23-10 40-24 51l-25 10 0 4 29-8c18-10 25-28 31-55Z" fill="#435B50"/>
+  <path d="m678 310-6-25 8-24-4-2-10 25 3 31m-52 28 2-21-10-20-4 1 8 21-6 21m-77-25 4-19-6-18-4 0 4 18-7 14m129 64 20 3 19 14 3-2-20-18-22-4m-97 21-11-18-17-10-3 2 16 12 8 18" fill="#435B50"/>
+  <path d="M708 286c-26 11-42 30-62 43-23 15-45 22-68 17m-14-3-24-12m-14-10-21-22m147 49 6 22m-77-9-6 22" fill="none" stroke="#B5A77A" stroke-width="1.2" opacity=".6"/>
+  <!-- Warm leaves overlap at different scales; their veins never become lettering. -->
+  <path d="m663 275-12-10 15-3-3-16 16 7 10-16 8 16 17-5-4 17 14 9-15 9 0 15-17-4-8 13-9-15-16 4 4-16Z" fill="url(#jl-red)"/>
+  <path d="m612 310-12-13 17-1-1-17 16 9 11-15 6 17 18-3-7 17 14 10-18 7-2 16-15-6-11 13-6-17-17 2 7-15Z" fill="#A96851"/>
+  <path d="m570 335-12-12 16-2-2-16 16 7 11-15 6 16 17-4-6 16 13 9-16 8-1 15-15-5-10 13-7-15-16 2 6-14Z" fill="url(#jl-red)"/>
+  <path d="m516 295-9-10 12-1-1-12 12 7 8-11 5 13 13-2-5 12 10 7-13 6-1 11-11-4-8 10-4-12-13 1 5-11Z" fill="#BE9364"/>
+  <path d="m490 265-8-9 11-2-2-11 12 5 7-10 5 11 12-3-4 11 9 7-11 6 0 10-11-3-6 9-5-11-12 2 4-10Z" fill="#AA7955"/>
+  <path d="m647 386-11-11 15-1-2-15 14 8 10-13 5 15 16-3-6 14 12 9-15 7-1 13-14-5-9 11-6-14-14 1 6-13Z" fill="#B67E5A"/>
+  <path d="m619 427-10-11 13-1-1-13 13 7 9-12 5 13 14-2-5 13 10 7-13 6-1 13-13-5-8 11-5-13-14 1 6-12Z" fill="url(#jl-red)"/>
+  <path d="m547 394-9-10 12-1-1-12 11 6 9-10 4 12 13-2-5 12 10 7-13 5-1 11-11-4-8 10-4-12-13 1 6-11Z" fill="#C29A6D"/>
+  <path d="m696 396-8-9 11-1 0-11 10 6 8-9 4 11 12-2-5 11 9 6-12 5-1 10-10-3-7 8-4-10-11 0 4-10Z" fill="#9F6451"/>
+  <path d="m693 333-7-8 10-1-1-10 10 5 7-8 3 10 10-2-4 10 8 6-10 4-1 9-9-3-6 8-4-10-10 1 4-9Z" fill="#8C977A"/>
+  <g fill="none" stroke="#E5CF9B" stroke-width=".9" stroke-linecap="round" opacity=".72">
+    <path d="m690 300-10-38m6 22-18-11m18 6 14-14m-54 70-8-35m4 20-17-11m17 6 15-12m-58 55-9-33m5 19-15-9m16 4 14-12m-53-4-6-26m3 16-12-8m12 3 11-8m-14 126-6-26m3 16-12-8m13 3 11-9m75 10-6-28m4 17-14-9m14 4 11-10m-27 70-6-27m3 17-12-9m13 3 12-9m63-24-5-24m3 14-12-8m12 4 10-8"/>
+  </g>
+  <path d="m657 358 7 7m-102 32 4 8m-32-83 8 6m96 113 7 6m56-22 8 4" fill="none" stroke="#435B50" stroke-width="1" opacity=".64"/>
+  <!-- A single drifting leaf echoes the near branch without filling the river. -->
+  <path d="m469 701 13-4 18 7-17 5Z" fill="#AA7955" opacity=".62"/>
+  <path d="m475 704 18 1m-31 7 24 0m8-2 13-1m83 102 28 2m-56 17 25-1" fill="none" stroke="#B59255" stroke-width=".9" opacity=".3"/>
+</svg>

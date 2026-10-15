@@ -2,7 +2,7 @@
 window.POEMS = [
   {
     id: "jiaolong", page: 1,
-    image: "./images/jiaolong.svg?v=artbook-17",
+    image: "./images/jiaolong.svg?v=artbook-18",
     imageAlt: "幾股近岸水脈穿過墨色岸線，匯入清亮開闊的蔚藍海面。",
     sealPosition: { x: 91, y: 19 },
     titles: { zh: "《蛟龍》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
@@ -16,7 +16,7 @@ window.POEMS = [
   },
   {
     id: "mid-autumn", page: 5,
-    image: "./images/mid-autumn.svg?v=artbook-17",
+    image: "./images/mid-autumn.svg?v=artbook-18",
     imageAlt: "冷月停在敞開的窗外，疏枝隨風舒展；窗沿下茶盞與月餅留住團圓的微暖。",
     sealPosition: { x: 85, y: 82 },
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
@@ -29,7 +29,7 @@ window.POEMS = [
   },
   {
     id: "double-fifth", page: 9,
-    image: "./images/double-fifth.svg?v=artbook-17",
+    image: "./images/double-fifth.svg?v=artbook-18",
     imageAlt: "近岸艾草翻露灰白葉背，江水繞過濕石，在初夏薄霧中向遠處舒展。",
     sealPosition: { x: 18, y: 65 },
     titles: { zh: "《話端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
@@ -43,7 +43,7 @@ window.POEMS = [
   },
   {
     id: "mother-son", page: 13,
-    image: "./images/mother-son.svg?v=artbook-17",
+    image: "./images/mother-son.svg?v=artbook-18",
     imageAlt: "春光照著近岸細草，寬闊水面之外，一扇遠岸小窗靜靜亮著暖燈。",
     sealPosition: { x: 84, y: 84 },
     titles: { zh: "《母子情》", en: "Mother and Son", fr: "Mère et fils" },
@@ -56,7 +56,7 @@ window.POEMS = [
   },
   {
     id: "autumn-moon", page: 16,
-    image: "./images/autumn-moon.svg?v=artbook-17",
+    image: "./images/autumn-moon.svg?v=artbook-18",
     imageAlt: "一輪秋月照著兩端水岸，香港山下的淡樓影與巴黎低屋頂共享清冷月色。",
     sealPosition: { x: 20, y: 81 },
     titles: { zh: "《秋月》", en: "Autumn Moon", fr: "Lune d'automne" },
@@ -73,7 +73,7 @@ window.POEMS = [
   },
   {
     id: "double-ninth-song", page: 19,
-    image: "./images/double-ninth-song.svg?v=artbook-17",
+    image: "./images/double-ninth-song.svg?v=artbook-18",
     imageAlt: "淺色山徑在青赭秋山間曲折上行，近坡金菊舒捲開放，高空幾點遠雁帶出重陽清氣。",
     sealPosition: { x: 84, y: 82 },
     titles: { zh: "《九九歌》(1)", en: "The Double Ninth Song (1)", fr: "Chant du Double Neuf (1)" },
@@ -85,7 +85,7 @@ window.POEMS = [
   },
   {
     id: "farewell-to-green", page: 22,
-    image: "./images/farewell-to-green.svg?v=artbook-17",
+    image: "./images/farewell-to-green.svg?v=artbook-18",
     imageAlt: "一枝深墨老木斜向上生長，空枝、帶蟲孔的褐金舊葉與透光新芽依自然葉序相接，枝下留有淡水痕。",
     sealPosition: { x: 82, y: 63 },
     titles: { zh: "《重陽辭青歌》(2)", en: "Song of Bidding Green Farewell (2)", fr: "Chant des adieux au vert (2)" },
@@ -98,7 +98,7 @@ window.POEMS = [
   },
   {
     id: "cold-clothes-festival", page: 25,
-    image: "./images/cold-clothes-festival.svg?v=artbook-17",
+    image: "./images/cold-clothes-festival.svg?v=artbook-18",
     imageAlt: "偏軸舊巷的淡青牆面映著明亮石路，近牆陶盆中一簇暖火升起層疊煙氣，遠窗微明。",
     sealPosition: { x: 29, y: 82 },
     titles: { zh: "《寒衣節》", en: "Cold Clothes Festival", fr: "Fête des Habits d'hiver" },
@@ -116,7 +116,7 @@ window.POEMS = [
   },
   {
     id: "singing-to-myself", page: 29,
-    image: "./images/singing-to-myself.svg?v=artbook-17",
+    image: "./images/singing-to-myself.svg?v=artbook-18",
     imageAlt: "初月下海色漸淡入空白，白沙岸斜落，薄浪與斷續潮痕緩慢伸展，低小礫石留住近岸的寧靜。",
     sealPosition: { x: 23, y: 49 },
     titles: { zh: "《自吟》", en: "Singing to Myself", fr: "Chant intime" },
@@ -134,7 +134,7 @@ window.POEMS = [
   },
   {
     id: "sleeping-lotus", page: 33,
-    image: "./images/sleeping-lotus.svg?v=artbook-17",
+    image: "./images/sleeping-lotus.svg?v=artbook-18",
     imageAlt: "低垂的粉蓮、微傾的成熟蓮房與翻卷荷葉，在疏朗靜水間相伴入秋。",
     sealPosition: { x: 81, y: 84 },
     masthead: {
@@ -157,7 +157,7 @@ window.POEMS = [
   },
   {
     id: "xiangjiang", page: 37,
-    image: "./images/xiangjiang.svg?v=artbook-17",
+    image: "./images/xiangjiang.svg?v=artbook-18",
     imageAlt: "西風斜掠寬闊港面，青綠浪脊向右舒展；兩岸樓影退入層疊遠山，右下近崖與一線白沙承接水光。",
     sealPosition: { x: 13, y: 24 },
     masthead: {
@@ -174,7 +174,7 @@ window.POEMS = [
   },
   {
     id: "yuanxi-stroll", page: 40,
-    image: "./images/yuanxi-stroll.svg?v=artbook-17",
+    image: "./images/yuanxi-stroll.svg?v=artbook-18",
     imageAlt: "斜向街巷裡燈火漸疏，極小的獨行身影停在溫暖燈光與空街之間。",
     sealPosition: { x: 72, y: 80 },
     masthead: {
@@ -197,7 +197,7 @@ window.POEMS = [
   },
   {
     id: "deep-autumn", page: 44,
-    image: "./images/deep-autumn.svg?v=artbook-17",
+    image: "./images/deep-autumn.svg?v=artbook-18",
     imageAlt: "左岸近楓以秋赭、暗紅和尚綠葉片交錯，右岸林影漸遠；一線天光落入綠水，紅葉斷影間有極小行人靜立。",
     sealPosition: { x: 82, y: 20 },
     masthead: {
@@ -214,7 +214,7 @@ window.POEMS = [
   },
   {
     id: "farewell-song", page: 47,
-    image: "./images/farewell-song.svg?v=artbook-17",
+    image: "./images/farewell-song.svg?v=artbook-18",
     imageAlt: "左上疏柳帶著晨露垂落，左下長亭一角旁兩位同窗停步；空水與淡金晨光隔開人影和右方層層遠山。",
     sealPosition: { x: 84, y: 79 },
     masthead: {
@@ -237,7 +237,7 @@ window.POEMS = [
   },
   {
     id: "welcoming-grandchild", page: 51,
-    image: "./images/welcoming-grandchild.svg?v=artbook-17",
+    image: "./images/welcoming-grandchild.svg?v=artbook-18",
     imageAlt: "蒼枝舒展新花，石青春燕低首照看暖巢中的雛鳥；遠處淡山、湖水與一扇暖窗，共藏三代相親的春意。",
     sealPosition: { x: 83, y: 81 },
     titles: { zh: "《添丁賀》", en: "Welcoming a Grandchild", fr: "Pour la naissance d’un petit-enfant" },
@@ -255,7 +255,7 @@ window.POEMS = [
   {
     "id": "kongming",
     "page": 54,
-    "image": "./images/kongming.svg?v=artbook-17",
+    "image": "./images/kongming.svg?v=artbook-18",
     "imageAlt": "蒼柏掩映山下祠宇，層巒在淡墨雲氣中遠去；近處一柄羽扇斜倚書卷，案上一點燈火，上方一顆微星，寄託孔明的忠誠與遺思。",
     "sealPosition": {
       "x": 85,
@@ -280,7 +280,7 @@ window.POEMS = [
   {
     id: "praise-generals",
     page: 57,
-    image: "./images/praise-generals.svg?v=artbook-17",
+    image: "./images/praise-generals.svg?v=artbook-18",
     imageAlt: "長江在青綠遠山間向東舒展，岸上戰馬駐足，營旗隨風；近處長刀與畫戟斜立，一盞酒留在石上，英雄往事融入江流與紙白。",
     sealPosition: {
       x: 85,
@@ -305,7 +305,7 @@ window.POEMS = [
   {
     id: "wild",
     page: 60,
-    image: "./images/wild.svg?v=artbook-17",
+    image: "./images/wild.svg?v=artbook-18",
     imageAlt: "屋簷下急雨斜落，狂風將秋枝與散葉吹向一側；雨霧吞沒遠處山影，石地積水中留著落葉、斷枝與一片碎瓦。",
     sealPosition: {
       x: 86,
@@ -335,7 +335,7 @@ window.POEMS = [
   {
     id: "great-wall",
     page: 63,
-    image: "./images/great-wall.svg?v=artbook-17",
+    image: "./images/great-wall.svg?v=artbook-18",
     imageAlt: "近處紅楓與秋赭葉片疏密交錯，枝間望見古長城與方形烽臺沿青綠山脊起伏，遠處城牆漸淡入紙白與薄霧。",
     sealPosition: {
       x: 85,
@@ -360,7 +360,7 @@ window.POEMS = [
   {
     id: "autumn-song",
     page: 66,
-    image: "./images/autumn-song.svg?v=artbook-17",
+    image: "./images/autumn-song.svg?v=artbook-18",
     imageAlt: "近岸秋菊在枯草間舒展，溪水繞過金黃收穫田地與遠處村舍；淡月、疏雲與一行雁影留在薄霧中，秋光與靜思相伴。",
     sealPosition: {
       x: 85,
@@ -380,6 +380,31 @@ window.POEMS = [
       zh: "2024.10.26於香港",
       en: "26 October 2024, Hong Kong",
       fr: "26 octobre 2024, Hong Kong"
+    }
+  },
+  {
+    id: "just-a-look",
+    page: 69,
+    image: "./images/just-a-look.svg?v=artbook-18",
+    imageAlt: "近處紅楓從右上方探入，枝葉間留出桂林峰林與江水的遠景；青綠石峰層疊起伏，薄霧與倒影漸淡，一葉竹筏輕輕掠過水面。",
+    sealPosition: {
+      x: 85,
+      y: 82
+    },
+    titles: {
+      zh: "《看一下》",
+      en: "Just a Look",
+      fr: "Juste un regard"
+    },
+    verses: {
+      zh: "桂林山水甲天下,\n透過紅楓看一下。\n美得不敢眨一下,\n唯恐漏掉這一下!",
+      en: "Guilin’s hills and waters, the world’s finest sight,\nThrough maple leaves I take a peek, so bright;\nSo lovely that I dare not blink an eye,\nLest one fleeting moment slip me by.",
+      fr: "Guilin, monts et eaux, les plus beaux sous les cieux,\nÀ travers les érables, je jette un coup d’œil, heureux ;\nSi beau que je n’ose cligner des yeux,\nDe peur de manquer cet instant précieux."
+    },
+    meta: {
+      zh: "2024.10.25 於香港",
+      en: "25 October 2024, Hong Kong",
+      fr: "25 octobre 2024, Hong Kong"
     }
   }
 ];
@@ -407,11 +432,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "69", label: "後記",
+      id: "afterword", folio: "72", label: "後記",
       body: "翻過四時的風景，仍記得牆角那幾枝梅。\n\n母親的堅韌與溫柔，藏在詩句未曾說盡的地方。願合卷之後，那縷暗香仍在，輕輕陪伴讀詩的人。"
     },
     {
-      id: "about", folio: "70", label: "作者簡介",
+      id: "about", folio: "73", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]

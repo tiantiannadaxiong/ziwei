@@ -7,7 +7,7 @@ vm.runInNewContext(await readFile(new URL('site/poems.js', root), 'utf8'), sourc
 vm.runInNewContext(await readFile(new URL('site/review-data.js', root), 'utf8'), source);
 vm.runInNewContext(await readFile(new URL('site/edition.js', root), 'utf8'), source);
 const { POEMS, MATTER, ARTBOOK_REVIEW: edition } = source.window;
-assert.equal(POEMS.length, 20);
+assert.equal(POEMS.length, 21);
 const selected = POEMS.filter(poem => edition.poemIds.includes(poem.id));
 assert.equal(selected.length, 6);
 assert.deepEqual(Array.from(selected, poem => poem.id), Array.from(edition.poemIds));
@@ -20,7 +20,7 @@ for (const [id, artwork] of Object.entries(edition.artwork)) {
 }
 const full = source.window.ARTBOOK_EDITION;
 assert.equal(full.version, edition.version);
-assert.equal(1 + MATTER.front.length + MATTER.back.length + POEMS.length * 4, 87);
+assert.equal(1 + MATTER.front.length + MATTER.back.length + POEMS.length * 4, 91);
 const kongming = POEMS.find(poem => poem.id === 'kongming');
 assert.ok(kongming, 'Kongming poem is included');
 assert.deepEqual(['zh', 'en', 'fr'].map(language => kongming.verses[language].split('\n').length), [7, 14, 14]);
@@ -34,7 +34,7 @@ for (const poem of [kongming, generals]) {
   assert.equal(poem.meta.zh, '2018.10.30 於香港寶湖');
   assert.doesNotMatch(poem.verses.zh, /[读余载顾庐请预对烧烟风唤战获托担陨军书师华诸铭记滚长东国将关温斩胜枪赵龙斗扬汉盖强辕门双韦无敌马约争]/, `${poem.id}: Traditional Chinese text`);
 }
-assert.deepEqual(Array.from(MATTER.back, item => item.folio), ['69', '70']);
+assert.deepEqual(Array.from(MATTER.back, item => item.folio), ['72', '73']);
 const wild = POEMS.find(poem => poem.id === 'wild');
 assert.ok(wild, 'Wild poem is included');
 assert.equal(wild.page, 60);
@@ -57,6 +57,13 @@ assert.equal(autumnSong.titles.zh, '《秋歌》');
 assert.equal(autumnSong.meta.zh, '2024.10.26於香港');
 assert.deepEqual(['zh', 'en', 'fr'].map(language => autumnSong.verses[language].split('\n').length), [6, 6, 6]);
 assert.doesNotMatch(autumnSong.verses.zh, /[风凉叶黄云气绵长怅]/);
+const justALook = POEMS.find(poem => poem.id === 'just-a-look');
+assert.ok(justALook, 'Just a Look poem is included');
+assert.equal(justALook.page, 69);
+assert.equal(justALook.titles.zh, '《看一下》');
+assert.equal(justALook.meta.zh, '2024.10.25 於香港');
+assert.deepEqual(['zh', 'en', 'fr'].map(language => justALook.verses[language].split('\n').length), [4, 4, 4]);
+assert.doesNotMatch(justALook.verses.zh, /[过红枫这]/);
 for (const poem of POEMS) {
   assert.ok(poem.image && poem.imageAlt, `${poem.id}: artwork and description`);
   assert.equal(new URL(poem.image, 'https://example.test/').searchParams.get('v'), full.version);
@@ -78,7 +85,7 @@ for (const url of images) {
   assert.doesNotMatch(svg, /<(?:image|text|script|foreignObject|feTurbulence)\b/);
   assert.doesNotMatch(svg, /(?:href|src)=["'](?:https?:|data:)/);
 }
-console.log(`Source: complete edition has 87 leaves and 20 vector plates; review has 28 leaves. All entry resources agree on ${full.version}.`);
+console.log(`Source: complete edition has 91 leaves and 21 vector plates; review has 28 leaves. All entry resources agree on ${full.version}.`);
 
 // Regression: a review visit must not overwrite the published offline book.
 // Exercise the actual service-worker fetch handler under a project subpath.
@@ -115,6 +122,7 @@ assert.ok(preloaded.has(key(generals.image)), 'Generals illustration is preloade
 assert.ok(preloaded.has(key(wild.image)), 'Wild illustration is preloaded for offline reading');
 assert.ok(preloaded.has(key(greatWall.image)), 'Great Wall illustration is preloaded for offline reading');
 assert.ok(preloaded.has(key(autumnSong.image)), 'Autumn Song illustration is preloaded for offline reading');
+assert.ok(preloaded.has(key(justALook.image)), 'Just a Look illustration is preloaded for offline reading');
 handlers.activate({ waitUntil(promise) { lifecycle = promise; } });
 await lifecycle;
 assert.ok(!cacheNames.has('anxiangji-v44'));
