@@ -327,7 +327,8 @@ try {
       ['singing-to-myself',[760,900],[180,440,370,330]],
       ['xiangjiang',[760,900],[300,470,370,330]],
       ['deep-autumn',[760,900],[30,350,380,350]],
-      ['farewell-song',[760,900],[0,390,380,350]]
+      ['farewell-song',[760,900],[0,390,380,350]],
+      ['welcoming-grandchild',[760,900],[340,390,220,250]]
     ] : [])
   ];
   for (const [name, box, crop] of detailCrops) {
@@ -356,7 +357,7 @@ try {
     await artPage.setViewportSize({width:1300,height:1797});
     await artPage.setContent(`<style>html,body{margin:0;background:#f7f3e8;color:#263d34}body{display:grid;grid-template-columns:repeat(5,260px)}figure{margin:0}figcaption{height:36px;text-align:center;font:17px/36px Georgia,serif}img{display:block;width:260px;height:auto}</style>${allBoards.join('')}`);
     await artPage.screenshot({path:resolve(output,'all-artwork.png'),fullPage:true});
-    screenshots.unshift({filename:'all-artwork.png',label:'封面與全部十四幅插圖 · 整頁並覽'});
+    screenshots.unshift({filename:'all-artwork.png',label:`封面與全部 ${selected.length} 幅插圖 · 整頁並覽`});
   }
   await artContext.close();
   assert.deepEqual(errors, [], 'no page runtime errors');

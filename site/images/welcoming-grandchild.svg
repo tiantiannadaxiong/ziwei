@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+  <title id="title">添丁賀 · 春滿暖巢</title>
+  <desc id="desc">蒼老的花枝托住一窩新生，粉白春花錯落開放。一隻石青春燕俯身照看探頭的雛鳥，另一隻掠過空闊春光；遠岸的暖窗、淡山與湖水，寄託古稀得孫、三代相親的喜悅。</desc>
+  <defs>
+    <linearGradient id="tg-water" x1="0" y1="0" x2=".2" y2="1"><stop stop-color="#326B75" stop-opacity="0"/><stop offset=".5" stop-color="#326B75" stop-opacity=".09"/><stop offset="1" stop-color="#6F8F76" stop-opacity="0"/></linearGradient>
+    <radialGradient id="tg-light"><stop stop-color="#D7B56D" stop-opacity=".14"/><stop offset="1" stop-color="#D7B56D" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tg-wood" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#263D34" stop-opacity=".91"/><stop offset=".55" stop-color="#566454" stop-opacity=".86"/><stop offset="1" stop-color="#87947B" stop-opacity=".67"/></linearGradient>
+    <linearGradient id="tg-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#263D34"/><stop offset=".45" stop-color="#326B75"/><stop offset="1" stop-color="#203F49"/></linearGradient>
+    <linearGradient id="tg-breast" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#FAEDCF"/><stop offset=".65" stop-color="#E3D6B7"/><stop offset="1" stop-color="#B4B49B"/></linearGradient>
+    <linearGradient id="tg-petal" x1="0" y1="0" x2=".5" y2="1"><stop stop-color="#F9ECE2"/><stop offset=".62" stop-color="#EACCC3"/><stop offset="1" stop-color="#CB9696"/></linearGradient>
+    <linearGradient id="tg-nest" x1="0" y1="0" x2=".25" y2="1"><stop stop-color="#BCA477"/><stop offset=".42" stop-color="#9D8E67"/><stop offset="1" stop-color="#5A6650"/></linearGradient>
+    <g id="tg-flower">
+      <path d="M0 2C-9 0-15-9-10-15-5-20 2-14 3-6 6-17 15-17 18-10 21-3 12 1 5 2 17 5 17 15 10 18 3 21 0 12-1 6-4 18-14 19-18 12-21 5-11 1-5 1-15-4-14-13-8-14" fill="url(#tg-petal)"/>
+      <path d="M-1 1-7-9M1 1 11-7M2 4 9 12M-2 5-10 11" fill="none" stroke="#B87E83" stroke-width=".65" stroke-opacity=".5"/>
+      <path d="M0 3-5-3M0 3 1-6M0 3 7-1M0 3 6 8M0 3-5 8" fill="none" stroke="#B18E4E" stroke-width=".8"/>
+      <g fill="#A98545"><circle cx="-5" cy="-3" r="1.1"/><circle cx="1" cy="-6" r="1.1"/><circle cx="7" cy="-1" r="1"/><circle cx="6" cy="8" r="1"/><circle cx="-5" cy="8" r="1"/></g>
+      <circle cx="0" cy="3" r="2.2" fill="#A66E73"/>
+    </g>
+    <g id="tg-bud"><path d="M0 5C-8 1-8-8-2-12 4-13 9-5 6 1L2 7Z" fill="#CB9696"/><path d="M-2-9C-4-5-3-1 0 2" fill="none" stroke="#F4DDD1" stroke-width="2"/><path d="M-4 2 0 7 5 3 2 10Z" fill="#6F8F76"/></g>
+  </defs>
+
+  <!-- Warm paper remains the brightest colour; the lake dissolves into it. -->
+  <ellipse cx="446" cy="339" rx="272" ry="281" fill="url(#tg-light)"/>
+  <path d="M71 632C186 612 240 638 342 626S548 587 698 610L706 842C555 818 487 858 361 840S168 827 57 850Z" fill="url(#tg-water)"/>
+  <path d="M372 627 408 605 427 611 472 574 502 594 531 580 580 613 613 601 684 625 704 637C587 626 478 643 372 637Z" fill="#6F8F76" fill-opacity=".08"/>
+  <path d="M444 646 488 624 512 631 551 613 594 632 633 622 691 643C592 643 521 657 444 651Z" fill="#326B75" fill-opacity=".08"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M315 697c42-4 63-2 92-5m32-4c40 0 74-8 105-8m42-1 65-3M203 758c35 3 64-1 91-1m60-4 58-1m68-4 49-6" stroke="#326B75" stroke-width="1" stroke-opacity=".19"/>
+    <path d="M291 721c45-1 82-4 118-8m67-6c57-4 101-6 158-5M252 795c41 3 74 0 109-2m79-5 73-7" stroke="#FFFDF5" stroke-width="2" stroke-opacity=".85"/>
+  </g>
+  <!-- A small inhabited shore, never a competing focal point. -->
+  <path d="M536 658c24-8 52-4 78-8s52-1 81-4" fill="none" stroke="#6F8F76" stroke-width="6" stroke-opacity=".16"/>
+  <path d="m579 618 29-13 34 18-3 29-58 4Z" fill="#C7C7AC" fill-opacity=".48"/>
+  <path d="m576 621 32-21 40 22-7 4-34-18-27 17Z" fill="#526D59" fill-opacity=".57"/>
+  <path d="m582 628 23-12-1 37-23 3Z" fill="#6F8F76" fill-opacity=".22"/>
+  <path d="m617 630 12 1v13l-12 1Z" fill="#D6B16A" fill-opacity=".8"/>
+  <path d="m622 631v13m-5-7 12 0" fill="none" stroke="#6F6848" stroke-width=".8"/>
+  <path d="m614 666 18-2-5 3-12 1m4 7 10-1-3 2" fill="none" stroke="#B59255" stroke-width="1.4" stroke-opacity=".3"/>
+
+  <!-- Old wood curves upward; small new shoots continue its living line. -->
+  <path d="M79 777C95 694 113 602 124 517 137 433 117 363 128 300 136 246 166 211 212 185 269 153 332 151 391 129 431 114 460 98 490 80 457 112 431 132 397 145 340 169 278 173 222 203 178 228 155 259 149 304 139 367 160 436 147 522 133 614 116 698 104 779Z" fill="url(#tg-wood)"/>
+  <path d="M133 465C178 443 219 430 263 436 303 442 335 475 369 501 414 536 456 547 515 549 463 561 413 550 366 520 327 496 297 463 261 454 217 443 178 456 137 477Z" fill="url(#tg-wood)"/>
+  <path d="M146 324C188 311 210 286 237 258 261 232 288 219 325 209 289 226 264 244 245 268 219 301 189 321 145 333Z" fill="#566454" fill-opacity=".79"/>
+  <path d="M250 443c11-37 13-64 5-94 15 28 17 61 8 96m116 68c11-16 28-25 50-30-20 11-33 22-39 36" fill="#566454" fill-opacity=".8"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M93 758c17-85 35-166 42-240 8-81-8-153 3-209m16-42c14-26 36-47 63-62m28-14c32-13 65-20 93-28M160 456c35-15 66-19 94-15m32 9c32 15 53 38 76 54" stroke="#C1B991" stroke-width="2.2" stroke-opacity=".57"/>
+    <path d="m108 674-3 27m15-96 4-28m14-77-3-22m1-76-3-26m13-61 3-17m27-57 13-12m47-32 13-5m58-19 16-4m-88 272 12 2m39 18 12 10" stroke="#263D34" stroke-width="2.4" stroke-opacity=".58"/>
+    <path d="M198 215c-4-23-13-39-26-53m87 14c8-28 19-45 35-61m35 38c17 6 35 8 52 3m-149 108c-10-17-13-33-9-48m64 12c6-17 17-29 33-37M122 575c-27-25-48-36-72-40m82 19c34-22 54-44 66-71M266 377c18-9 28-20 34-34" stroke="#566454" stroke-width="2.3" stroke-opacity=".8"/>
+    <path d="m174 164-10-20m18 33 15-9m96-52 6-17m-15 27-14-13m107 43 20-5m-80 45 13-9M67 542l-16-18m137-24 19-6m-10-10 2-15" stroke="#6F8F76" stroke-width="1.3"/>
+  </g>
+  <g fill="#6F8F76" fill-opacity=".84">
+    <path d="M279 131c-18-5-24-15-23-29 13 4 21 13 23 29Zm17-15c-3-15 1-26 13-34 3 15-2 26-13 34ZM218 237c-16-6-21-17-17-29 12 6 18 16 17 29ZM298 346c4-16 13-24 27-25-4 14-13 22-27 25ZM182 511c-1-17 5-28 18-35 2 15-5 27-18 35ZM61 536c-15-1-24-8-28-21 14 1 23 8 28 21Z"/>
+  </g>
+  <g fill="#A8B78E">
+    <path d="M329 196c1-12 7-21 18-24-1 12-7 20-18 24Zm-132-29c5-13 13-18 24-17-5 12-13 18-24 17ZM392 152c8-11 17-14 28-10-9 10-18 13-28 10ZM198 473c-9-7-11-16-7-25 8 7 11 15 7 25Z"/>
+  </g>
+  <!-- Unequal blossoms, buds and turned petals keep the branch airy. -->
+  <use href="#tg-flower" transform="translate(166 149) rotate(-23) scale(1.08)"/>
+  <use href="#tg-flower" transform="translate(190 179) rotate(28) scale(.76)"/>
+  <use href="#tg-bud" transform="translate(154 131) rotate(-34) scale(.7)"/>
+  <use href="#tg-flower" transform="translate(225 212) rotate(49) scale(.88)"/>
+  <use href="#tg-bud" transform="translate(213 193) rotate(-16) scale(.8)"/>
+  <use href="#tg-flower" transform="translate(271 117) rotate(-38) scale(.95)"/>
+  <use href="#tg-flower" transform="translate(303 99) rotate(15) scale(.7)"/>
+  <use href="#tg-bud" transform="translate(320 87) rotate(38) scale(.66)"/>
+  <use href="#tg-flower" transform="translate(337 189) rotate(33) scale(.87)"/>
+  <use href="#tg-flower" transform="translate(359 168) rotate(-14) scale(.72)"/>
+  <use href="#tg-bud" transform="translate(385 155) rotate(71) scale(.75)"/>
+  <use href="#tg-flower" transform="translate(417 129) rotate(-31) scale(.85)"/>
+  <use href="#tg-bud" transform="translate(456 106) rotate(53) scale(.7)"/>
+  <use href="#tg-flower" transform="translate(291 352) rotate(21) scale(.9)"/>
+  <use href="#tg-bud" transform="translate(316 332) rotate(40) scale(.7)"/>
+  <use href="#tg-flower" transform="translate(194 485) rotate(-35) scale(.8)"/>
+  <use href="#tg-flower" transform="translate(63 534) rotate(-18) scale(.88)"/>
+  <use href="#tg-bud" transform="translate(45 520) rotate(-46) scale(.7)"/>
+  <path d="M371 253c6-4 11-3 14 2-5 6-10 5-14-2Zm-137 97c4-5 9-6 13-2-2 6-8 7-13 2Zm342 219c5-2 10 0 11 6-7 3-11 1-11-6Z" fill="#DDB7AE" fill-opacity=".66"/>
+
+  <!-- The nest is woven, not a smooth bowl: a dark cup above rough straw. -->
+  <g transform="translate(0 -54)">
+  <ellipse cx="464" cy="559" rx="73" ry="18" fill="#52604B"/>
+  <ellipse cx="466" cy="561" rx="59" ry="10" fill="#263D34" fill-opacity=".7"/>
+  <!-- A new life looks upward from the shelter of the cup. -->
+  <path d="M449 556c-2-14 0-27 10-32 13-7 25 1 27 13l-3 23Z" fill="#9D9F85"/>
+  <path d="M454 539c2-9 9-13 17-10 8 3 10 12 8 20l-21 7Z" fill="#D6CFAD"/>
+  <path d="m459 531 8-11 10 12-10-3Z" fill="#C19258"/>
+  <path d="m461 532 6-5 8 5-7 7Z" fill="#9D6552"/>
+  <circle cx="456" cy="537" r="1.8" fill="#263D34"/>
+  <path d="m449 541-5-3m7-9-4-3m35 20 5-3" fill="none" stroke="#B6B69A" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M392 559c34 17 106 21 145-1-4 26-18 49-43 57-20 6-45 4-64-6-20-11-32-28-38-50Z" fill="url(#tg-nest)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M388 558c45 26 105 27 153-1m-140 20c34 21 82 25 124-3m-111 19c27 19 63 23 96-1m-80 15c21 9 47 12 66 1m-97-46c30 7 66 4 91-3m-66 20c36 14 68 10 96-1" stroke="#D2BD8A" stroke-width="1.7"/>
+    <path d="m389 568 39 18 42-12 54 18m-119-12 39 20 53-21 35 4m-105 20 40-13 38 12m-89-43 22 32 34 19m-5-51 17 27 23 9m-68-35-13 19m73-21-9 23-25 25" stroke="#52604B" stroke-width="1.25" stroke-opacity=".8"/>
+    <path d="m385 562 27-1m-16 14-12 7m29 15-9 10m38 6-6 11m43-8 9 8m29-26 14 5m4-34 13 2m-40 16 12 2m-80-10 18 3m24 23 12-3" stroke="#A48D63" stroke-width="1.4"/>
+  </g>
+
+  </g>
+
+  <!-- The feet meet the fork; the lowered beak approaches the waiting chick. -->
+  <g transform="translate(-26 20)">
+  <path d="m381 466-37 64 30-20 2 29 25-62Z" fill="#263D34"/>
+  <path d="m380 476-24 43 18-17m12-22-8 42" fill="none" stroke="#527A7A" stroke-width="1.3"/>
+  <path d="M372 463c-1-25 14-48 36-51 21-4 43 8 49 29 4 17-4 35-21 45-24 13-55 5-64-23Z" fill="url(#tg-breast)"/>
+  <path d="M372 463c-5-27 14-53 39-55 11-1 22 4 28 11-18-1-28 12-35 30-7 19-17 25-30 26Z" fill="url(#tg-wing)"/>
+  <path d="M379 448c7-22 17-31 32-33-9 13-10 29-17 42-6 12-11 15-20 18Z" fill="#274A52"/>
+  <path d="M384 445c6-16 12-22 20-26m-23 37c6-13 10-19 16-25m-20 35 12-19" fill="none" stroke="#70958E" stroke-width="1.1" stroke-opacity=".63"/>
+  <path d="M428 425c3-14 17-20 29-13 11 6 16 20 8 30l-13 8-17-8Z" fill="url(#tg-wing)"/>
+  <path d="M446 433c5-1 12 1 17 6l-8 13-13-8Z" fill="#BB8268"/>
+  <path d="m461 440 17 12-18-4Z" fill="#3E4C3F"/>
+  <circle cx="455" cy="427" r="2.8" fill="#172C2B"/><circle cx="455.6" cy="426.4" r=".85" fill="#F7F3E8"/>
+  <path d="M411 481 407 498m19-14-6 17m-17-3 12 2m-1 0-7 5m11-4 11 1m-8 0 4 5" fill="none" stroke="#6A6852" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M415 455c8 6 17 8 24 5m-25 4c6 4 13 5 18 4" fill="none" stroke="#ACAE93" stroke-width=".85" stroke-opacity=".55"/>
+  </g>
+
+  <!-- A second swallow brings movement into the generous upper-right sky. -->
+  <g transform="translate(579 322) rotate(-16) scale(.78)">
+    <path d="M-9 10C-40 6-67-15-90-51-57-38-30-23-6-9Z" fill="url(#tg-wing)"/>
+    <path d="M5-8C26-38 40-71 43-103 58-65 46-25 22 4Z" fill="url(#tg-wing)"/>
+    <path d="M-13 7C-6-8 8-16 21-9 34-1 28 14 12 21-3 25-15 20-13 7Z" fill="url(#tg-breast)"/>
+    <path d="M-15 7C-9-9 3-15 17-12L11 0-5 16Z" fill="#274A52"/>
+    <path d="m-7 18-33 32 21-6-1 15 30-39Z" fill="#263D34"/>
+    <path d="M16-11c6-9 17-8 22 0 6 9-1 16-10 16L19 1Z" fill="#274A52"/>
+    <path d="m28 1 8-3-3 11-10 3Z" fill="#BB8268"/>
+    <path d="m37-2 14 4-15 2Z" fill="#263D34"/>
+    <circle cx="33" cy="-7" r="1.8" fill="#172C2B"/>
+    <path d="M-19-10c-21-12-39-22-56-31m63 24c-17-5-31-12-43-20M20-16c12-22 18-44 22-66m-14 60c11-17 17-32 20-48" fill="none" stroke="#7A9B92" stroke-width="1.1" stroke-opacity=".55"/>
+  </g>
+  <path d="M85 785c18-3 30-2 40 0m-53 10c23-2 42-1 59 2" fill="none" stroke="#6F8F76" stroke-width="1.1" stroke-opacity=".21" stroke-linecap="round"/>
+</svg>
