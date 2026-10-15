@@ -7,7 +7,7 @@ vm.runInNewContext(await readFile(new URL('site/poems.js', root), 'utf8'), sourc
 vm.runInNewContext(await readFile(new URL('site/review-data.js', root), 'utf8'), source);
 vm.runInNewContext(await readFile(new URL('site/edition.js', root), 'utf8'), source);
 const { POEMS, MATTER, ARTBOOK_REVIEW: edition } = source.window;
-assert.equal(POEMS.length, 15);
+assert.equal(POEMS.length, 16);
 const selected = POEMS.filter(poem => edition.poemIds.includes(poem.id));
 assert.equal(selected.length, 6);
 assert.deepEqual(Array.from(selected, poem => poem.id), Array.from(edition.poemIds));
@@ -20,7 +20,12 @@ for (const [id, artwork] of Object.entries(edition.artwork)) {
 }
 const full = source.window.ARTBOOK_EDITION;
 assert.equal(full.version, edition.version);
-assert.equal(1 + MATTER.front.length + MATTER.back.length + POEMS.length * 4, 67);
+assert.equal(1 + MATTER.front.length + MATTER.back.length + POEMS.length * 4, 71);
+const kongming = POEMS.find(poem => poem.id === 'kongming');
+assert.ok(kongming, 'Kongming poem is included');
+assert.deepEqual(['zh', 'en', 'fr'].map(language => kongming.verses[language].split('\n').length), [7, 14, 14]);
+assert.equal(kongming.page, 54);
+assert.deepEqual(Array.from(MATTER.back, item => item.folio), ['57', '58']);
 for (const poem of POEMS) {
   assert.ok(poem.image && poem.imageAlt, `${poem.id}: artwork and description`);
   assert.equal(new URL(poem.image, 'https://example.test/').searchParams.get('v'), full.version);
@@ -42,7 +47,7 @@ for (const url of images) {
   assert.doesNotMatch(svg, /<(?:image|text|script|foreignObject|feTurbulence)\b/);
   assert.doesNotMatch(svg, /(?:href|src)=["'](?:https?:|data:)/);
 }
-console.log(`Source: complete edition has 67 leaves and 15 vector plates; review has 28 leaves. All entry resources agree on ${full.version}.`);
+console.log(`Source: complete edition has 71 leaves and 16 vector plates; review has 28 leaves. All entry resources agree on ${full.version}.`);
 
 // Regression: a review visit must not overwrite the published offline book.
 // Exercise the actual service-worker fetch handler under a project subpath.
@@ -53,9 +58,11 @@ const key = input => new URL(typeof input === 'string' ? input : input.url, base
 let online = true;
 let responseBody = '';
 const missingShell = [];
+const preloaded = new Set();
 const cache = {
   async put(input, response) { storage.set(key(input), response); },
   async add(input) {
+    preloaded.add(key(input));
     try { await readFile(new URL(`site/${new URL(key(input)).pathname.slice('/ziwei/'.length) || 'index.html'}`, root)); }
     catch (error) { missingShell.push(input); throw error; }
   }
@@ -72,6 +79,7 @@ let lifecycle;
 handlers.install({ waitUntil(promise) { lifecycle = promise; } });
 await lifecycle;
 assert.deepEqual(missingShell, [], 'every offline shell resource exists');
+assert.ok(preloaded.has(key(kongming.image)), 'Kongming illustration is preloaded for offline reading');
 handlers.activate({ waitUntil(promise) { lifecycle = promise; } });
 await lifecycle;
 assert.ok(!cacheNames.has('anxiangji-v44'));

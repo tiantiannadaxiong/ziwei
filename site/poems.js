@@ -2,7 +2,7 @@
 window.POEMS = [
   {
     id: "jiaolong", page: 1,
-    image: "./images/jiaolong.svg?v=artbook-12",
+    image: "./images/jiaolong.svg?v=artbook-13",
     imageAlt: "幾股近岸水脈穿過墨色岸線，匯入清亮開闊的蔚藍海面。",
     sealPosition: { x: 91, y: 19 },
     titles: { zh: "《蛟龍》", en: "The Dragon in the Waters", fr: "Le dragon des eaux" },
@@ -16,7 +16,7 @@ window.POEMS = [
   },
   {
     id: "mid-autumn", page: 5,
-    image: "./images/mid-autumn.svg?v=artbook-12",
+    image: "./images/mid-autumn.svg?v=artbook-13",
     imageAlt: "冷月停在敞開的窗外，疏枝隨風舒展；窗沿下茶盞與月餅留住團圓的微暖。",
     sealPosition: { x: 85, y: 82 },
     titles: { zh: "《中秋》", en: "Mid-Autumn Festival", fr: "La fête de la mi-automne" },
@@ -29,7 +29,7 @@ window.POEMS = [
   },
   {
     id: "double-fifth", page: 9,
-    image: "./images/double-fifth.svg?v=artbook-12",
+    image: "./images/double-fifth.svg?v=artbook-13",
     imageAlt: "近岸艾草翻露灰白葉背，江水繞過濕石，在初夏薄霧中向遠處舒展。",
     sealPosition: { x: 18, y: 65 },
     titles: { zh: "《話端午》", en: "The Double Fifth Festival", fr: "La fête du Double Cinq" },
@@ -43,7 +43,7 @@ window.POEMS = [
   },
   {
     id: "mother-son", page: 13,
-    image: "./images/mother-son.svg?v=artbook-12",
+    image: "./images/mother-son.svg?v=artbook-13",
     imageAlt: "春光照著近岸細草，寬闊水面之外，一扇遠岸小窗靜靜亮著暖燈。",
     sealPosition: { x: 84, y: 84 },
     titles: { zh: "《母子情》", en: "Mother and Son", fr: "Mère et fils" },
@@ -56,7 +56,7 @@ window.POEMS = [
   },
   {
     id: "autumn-moon", page: 16,
-    image: "./images/autumn-moon.svg?v=artbook-12",
+    image: "./images/autumn-moon.svg?v=artbook-13",
     imageAlt: "一輪秋月照著兩端水岸，香港山下的淡樓影與巴黎低屋頂共享清冷月色。",
     sealPosition: { x: 20, y: 81 },
     titles: { zh: "《秋月》", en: "Autumn Moon", fr: "Lune d'automne" },
@@ -73,7 +73,7 @@ window.POEMS = [
   },
   {
     id: "double-ninth-song", page: 19,
-    image: "./images/double-ninth-song.svg?v=artbook-12",
+    image: "./images/double-ninth-song.svg?v=artbook-13",
     imageAlt: "淺色山徑在青赭秋山間曲折上行，近坡金菊舒捲開放，高空幾點遠雁帶出重陽清氣。",
     sealPosition: { x: 84, y: 82 },
     titles: { zh: "《九九歌》(1)", en: "The Double Ninth Song (1)", fr: "Chant du Double Neuf (1)" },
@@ -85,7 +85,7 @@ window.POEMS = [
   },
   {
     id: "farewell-to-green", page: 22,
-    image: "./images/farewell-to-green.svg?v=artbook-12",
+    image: "./images/farewell-to-green.svg?v=artbook-13",
     imageAlt: "一枝深墨老木斜向上生長，空枝、帶蟲孔的褐金舊葉與透光新芽依自然葉序相接，枝下留有淡水痕。",
     sealPosition: { x: 82, y: 63 },
     titles: { zh: "《重陽辭青歌》(2)", en: "Song of Bidding Green Farewell (2)", fr: "Chant des adieux au vert (2)" },
@@ -98,7 +98,7 @@ window.POEMS = [
   },
   {
     id: "cold-clothes-festival", page: 25,
-    image: "./images/cold-clothes-festival.svg?v=artbook-12",
+    image: "./images/cold-clothes-festival.svg?v=artbook-13",
     imageAlt: "偏軸舊巷的淡青牆面映著明亮石路，近牆陶盆中一簇暖火升起層疊煙氣，遠窗微明。",
     sealPosition: { x: 29, y: 82 },
     titles: { zh: "《寒衣節》", en: "Cold Clothes Festival", fr: "Fête des Habits d'hiver" },
@@ -116,7 +116,7 @@ window.POEMS = [
   },
   {
     id: "singing-to-myself", page: 29,
-    image: "./images/singing-to-myself.svg?v=artbook-12",
+    image: "./images/singing-to-myself.svg?v=artbook-13",
     imageAlt: "初月下海色漸淡入空白，白沙岸斜落，薄浪與斷續潮痕緩慢伸展，低小礫石留住近岸的寧靜。",
     sealPosition: { x: 23, y: 49 },
     titles: { zh: "《自吟》", en: "Singing to Myself", fr: "Chant intime" },
@@ -134,7 +134,7 @@ window.POEMS = [
   },
   {
     id: "sleeping-lotus", page: 33,
-    image: "./images/sleeping-lotus.svg?v=artbook-12",
+    image: "./images/sleeping-lotus.svg?v=artbook-13",
     imageAlt: "低垂的粉蓮、微傾的成熟蓮房與翻卷荷葉，在疏朗靜水間相伴入秋。",
     sealPosition: { x: 81, y: 84 },
     masthead: {
@@ -157,7 +157,7 @@ window.POEMS = [
   },
   {
     id: "xiangjiang", page: 37,
-    image: "./images/xiangjiang.svg?v=artbook-12",
+    image: "./images/xiangjiang.svg?v=artbook-13",
     imageAlt: "西風斜掠寬闊港面，青綠浪脊向右舒展；兩岸樓影退入層疊遠山，右下近崖與一線白沙承接水光。",
     sealPosition: { x: 13, y: 24 },
     masthead: {
@@ -174,7 +174,7 @@ window.POEMS = [
   },
   {
     id: "yuanxi-stroll", page: 40,
-    image: "./images/yuanxi-stroll.svg?v=artbook-12",
+    image: "./images/yuanxi-stroll.svg?v=artbook-13",
     imageAlt: "斜向街巷裡燈火漸疏，極小的獨行身影停在溫暖燈光與空街之間。",
     sealPosition: { x: 72, y: 80 },
     masthead: {
@@ -197,7 +197,7 @@ window.POEMS = [
   },
   {
     id: "deep-autumn", page: 44,
-    image: "./images/deep-autumn.svg?v=artbook-12",
+    image: "./images/deep-autumn.svg?v=artbook-13",
     imageAlt: "左岸近楓以秋赭、暗紅和尚綠葉片交錯，右岸林影漸遠；一線天光落入綠水，紅葉斷影間有極小行人靜立。",
     sealPosition: { x: 82, y: 20 },
     masthead: {
@@ -214,7 +214,7 @@ window.POEMS = [
   },
   {
     id: "farewell-song", page: 47,
-    image: "./images/farewell-song.svg?v=artbook-12",
+    image: "./images/farewell-song.svg?v=artbook-13",
     imageAlt: "左上疏柳帶著晨露垂落，左下長亭一角旁兩位同窗停步；空水與淡金晨光隔開人影和右方層層遠山。",
     sealPosition: { x: 84, y: 79 },
     masthead: {
@@ -237,7 +237,7 @@ window.POEMS = [
   },
   {
     id: "welcoming-grandchild", page: 51,
-    image: "./images/welcoming-grandchild.svg?v=artbook-12",
+    image: "./images/welcoming-grandchild.svg?v=artbook-13",
     imageAlt: "蒼枝舒展新花，石青春燕低首照看暖巢中的雛鳥；遠處淡山、湖水與一扇暖窗，共藏三代相親的春意。",
     sealPosition: { x: 83, y: 81 },
     titles: { zh: "《添丁賀》", en: "Welcoming a Grandchild", fr: "Pour la naissance d’un petit-enfant" },
@@ -250,6 +250,31 @@ window.POEMS = [
       zh: "23.6.19於香港寶湖",
       en: "Hong Kong · 23.6.19",
       fr: "Hong Kong · 23.6.19"
+    }
+  },
+  {
+    "id": "kongming",
+    "page": 54,
+    "image": "./images/kongming.svg?v=artbook-13",
+    "imageAlt": "蒼柏掩映山下祠宇，層巒在淡墨雲氣中遠去；近處一柄羽扇斜倚書卷，案上一點燈火，上方一顆微星，寄託孔明的忠誠與遺思。",
+    "sealPosition": {
+      "x": 85,
+      "y": 83
+    },
+    "titles": {
+      "zh": "《西蜀丞相孔明篇》",
+      "en": "Ode to Kongming, Chancellor of Shu",
+      "fr": "Ode à Kongming, chancelier de Shu"
+    },
+    "verses": {
+      "zh": "隆中苦读十余载,三顾茅庐请出山;\n预知乾坤隆中对,火烧博望新野烟;\n呼风唤雨赤壁战,七擒孟获南疆安;\n六出祁山伐曹魏,忠臣托孤一肩担;\n五丈原中星陨落,定军山下祠堂幽;\n名垂青史戒子书,出师一表世代流;\n华夏忠良诸葛亮,千古铭记永不朽!",
+      "en": "Ten years he studied at Longzhong, in the hills’ retreat,\nThree visits to his cottage drew him out, his fate to meet.\nHe foresaw the realm’s shape in his Longzhong Plan so wise,\nAnd fire swept Bowang and Xinye, smoke in the skies.\nHe called the wind and summoned rain at Red Cliffs’ battle line,\nSeven times he caught Meng Huo, the south at peace by design.\nSix marches from Qishan against Wei, a loyal minister bore\nThe orphan’s trust upon his back, faithful to the core.\nA star fell on Wuzhang Plains; his life drew to its close,\nAt Dingjun’s foot his shrine stands still, in tranquil repose.\nHis name in history stands firm, his Letter to His Son,\nHis Memorial on Setting Forth, through ages carried on.\nZhuge Liang, loyal to China’s cause, whose name time cannot fade,\nRemembered through a thousand years, his glory undecayed.",
+      "fr": "Dix ans d’étude à Longzhong, au cœur de sa retraite,\nTrois visites à sa chaumière exaucèrent leur requête.\nSon Plan de Longzhong a prédit les destins,\nLe feu brûla Bowang, Xinye, dans les lointains.\nAux Falaises Rouges, il appela vent et pluie,\nSept fois il prit Meng Huo : le Sud en paix, rien ne bouge.\nSix marches depuis Qishan contre Wei, il s’est engagé,\nFidèle ministre, à l’orphelin du roi, il s’est dévoué.\nAux plaines de Wuzhang une étoile est tombée,\nAu pied de Dingjun, son temple repose, vénéré.\nSon nom dans l’histoire, la Lettre à son fils l’atteste,\nLe Mémoire de l’expédition, d’âge en âge, nous reste.\nZhuge Liang, loyal et grand de la Chine éternelle,\nMémoire de mille ans, gloire à jamais immortelle."
+    },
+    "meta": {
+      "zh": "2018.10.30 于香港宝湖",
+      "en": "Written in Hong Kong, 30 October 2018",
+      "fr": "Écrit à Hong Kong, le 30 octobre 2018"
     }
   }
 ];
@@ -277,11 +302,11 @@ window.MATTER = {
   ],
   back: [
     {
-      id: "afterword", folio: "54", label: "後記",
+      id: "afterword", folio: "57", label: "後記",
       body: "翻過四時的風景，仍記得牆角那幾枝梅。\n\n母親的堅韌與溫柔，藏在詩句未曾說盡的地方。願合卷之後，那縷暗香仍在，輕輕陪伴讀詩的人。"
     },
     {
-      id: "about", folio: "55", label: "作者簡介",
+      id: "about", folio: "58", label: "作者簡介",
       body: "紫薇以詩記錄水土、記憶與心中未散的幽香。《暗香集》以中文、英文和法文呈現詩作。"
     }
   ]

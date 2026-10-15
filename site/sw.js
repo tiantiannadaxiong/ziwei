@@ -5,7 +5,7 @@
  * reader an 8 MB revalidation of the poetry face on every visit). Styles,
  * scripts and pages stay network-first, so a new edition always arrives; the
  * cache is only the offline fallback. Bump CACHE when the shell changes. */
-const CACHE = "anxiangji-v56";
+const CACHE = "anxiangji-v57";
 const SHELL = [
   "./",
   "./index.html",
@@ -18,19 +18,19 @@ const SHELL = [
   "./review-data.js",
   "./review.js",
   "./review.webmanifest",
-  "./images/review/cover-branch.svg?v=artbook-12",
-  "./images/review/jiaolong.svg?v=artbook-12",
-  "./images/review/sleeping-lotus.svg?v=artbook-12",
-  "./images/review/yuanxi-stroll.svg?v=artbook-12",
-  "./images/review/seal-ziwei.svg?v=artbook-12",
-  "./images/review/seal-anxiangji.svg?v=artbook-12",
-  "./images/cover-branch.svg?v=artbook-12",
-  "./images/seal-ziwei.svg?v=artbook-12",
-  "./images/seal-anxiangji.svg?v=artbook-12",
+  "./images/review/cover-branch.svg?v=artbook-13",
+  "./images/review/jiaolong.svg?v=artbook-13",
+  "./images/review/sleeping-lotus.svg?v=artbook-13",
+  "./images/review/yuanxi-stroll.svg?v=artbook-13",
+  "./images/review/seal-ziwei.svg?v=artbook-13",
+  "./images/review/seal-anxiangji.svg?v=artbook-13",
+  "./images/cover-branch.svg?v=artbook-13",
+  "./images/seal-ziwei.svg?v=artbook-13",
+  "./images/seal-anxiangji.svg?v=artbook-13",
   ...['jiaolong', 'mid-autumn', 'double-fifth', 'mother-son', 'autumn-moon',
     'double-ninth-song', 'farewell-to-green', 'cold-clothes-festival',
     'singing-to-myself', 'sleeping-lotus', 'xiangjiang', 'yuanxi-stroll',
-    'deep-autumn', 'farewell-song', 'welcoming-grandchild'].map(id => `./images/${id}.svg?v=artbook-12`),
+    'deep-autumn', 'farewell-song', 'welcoming-grandchild', 'kongming'].map(id => `./images/${id}.svg?v=artbook-13`),
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
