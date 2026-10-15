@@ -1,19 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
-  <title id="title">疏影，未顯之香</title>
-  <desc id="desc">一枝老梅從清淺的水邊橫斜而起，溫潤的棕墨枝身間疏疏開著暖白、桃粉與珊瑚色的梅花。淺金月色融入杏暖霞光，清碧水中映著斷續的金光與花影，留白間透出明亮溫柔的春意。</desc>
+  <title id="title">牆角疏梅 · 暗香自來</title>
+  <desc id="desc">取意《梅花》：暖白院牆在冬光裡轉折，幾枝老梅迎寒獨開。暖白與桃粉花瓣似雪而有生意，珊瑚花苞映著杏金光，薄雪停在牆沿與地面，暗香留在明亮的空白之間。</desc>
   <defs>
-    <linearGradient id="water" x1="0" y1="0" x2=".9" y2=".3">
-      <stop stop-color="#83B6A0" stop-opacity="0"/>
-      <stop offset=".37" stop-color="#83B6A0" stop-opacity=".14"/>
-      <stop offset=".72" stop-color="#56A3A5" stop-opacity=".12"/>
-      <stop offset="1" stop-color="#56A3A5" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="moon" cx=".4" cy=".38" r=".64">
-      <stop stop-color="#FFF4D2" stop-opacity=".96"/>
-      <stop offset=".65" stop-color="#FFE5A3" stop-opacity=".77"/>
-      <stop offset=".94" stop-color="#F6CD88" stop-opacity=".42"/>
-      <stop offset="1" stop-color="#E9BB78" stop-opacity=".08"/>
-    </radialGradient>
     <linearGradient id="wood" x1="0" y1="1" x2="1" y2="0">
       <stop stop-color="#715540"/>
       <stop offset=".52" stop-color="#8A7050"/>
@@ -29,51 +17,48 @@
       <stop offset=".75" stop-color="#F3A08A"/>
       <stop offset="1" stop-color="#DD7867"/>
     </linearGradient>
-    <radialGradient id="warm-air">
-      <stop stop-color="#FFD68F" stop-opacity=".32"/>
-      <stop offset=".5" stop-color="#F5C39F" stop-opacity=".17"/>
-      <stop offset="1" stop-color="#F5C39F" stop-opacity="0"/>
+    <radialGradient id="winter-light">
+      <stop stop-color="#FFDB9E" stop-opacity=".28"/>
+      <stop offset=".5" stop-color="#F8C9A4" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#F8C9A4" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="rose-air">
-      <stop stop-color="#F4B69B" stop-opacity=".2"/>
-      <stop offset="1" stop-color="#F4B69B" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="gold-water" x1="0" y1="0" x2="1" y2=".2">
-      <stop stop-color="#F0B486" stop-opacity="0"/>
-      <stop offset=".36" stop-color="#F0B486" stop-opacity=".12"/>
-      <stop offset=".68" stop-color="#E6BF68" stop-opacity=".23"/>
-      <stop offset="1" stop-color="#E6BF68" stop-opacity="0"/>
+    <linearGradient id="wall-light" x1=".25" y1="0" x2=".5" y2="1">
+      <stop stop-color="#F8DDB0" stop-opacity=".65"/>
+      <stop offset=".48" stop-color="#F0D5B2" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#F7F3E8" stop-opacity=".04"/>
+    </linearGradient>
+    <linearGradient id="wall-side" x1="1" y1=".1" x2="0" y2="1">
+      <stop stop-color="#CBB697" stop-opacity=".41"/>
+      <stop offset=".6" stop-color="#DDCDB5" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#F7F3E8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="snow-ground" x1="0" y1="0" x2=".9" y2=".1">
+      <stop stop-color="#D4C6AC" stop-opacity="0"/>
+      <stop offset=".36" stop-color="#C7CDB5" stop-opacity=".14"/>
+      <stop offset=".74" stop-color="#E6BC83" stop-opacity=".11"/>
+      <stop offset="1" stop-color="#E6BC83" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Warm, open washes leave the paper visible around the original branch. -->
-  <ellipse cx="737" cy="315" rx="300" ry="243" fill="url(#warm-air)"/>
-  <ellipse cx="387" cy="475" rx="284" ry="157" fill="url(#rose-air)"/>
-  <circle cx="812" cy="222" r="106" fill="url(#moon)" opacity=".9"/>
-  <path d="M750 137c23-17 53-22 81-18 26 3 48 15 64 35" fill="none" stroke="#D6A75C" stroke-opacity=".18" stroke-width=".8"/>
-  <path d="M889 281c-17 24-42 38-71 42" fill="none" stroke="#D6A75C" stroke-opacity=".14" stroke-width=".7"/>
-
-  <!-- A shallow wash has open edges; long unpainted passages remain water. -->
-  <path d="M150 578c102-40 207-37 308-19 88 15 148-18 247-16 88 2 161-8 236-26-42 31-96 46-144 53 62 4 114 1 177-10-69 27-139 34-204 35-113 1-173 30-282 13-100-15-194-9-282 16 38-24 84-39 127-42-69-4-121-1-183 14Z" fill="url(#water)"/>
-  <path d="M95 635c94-16 185-7 267 3 97 12 194 0 269-10 100-13 212-9 306-23-117 31-207 30-301 42-99 12-174 17-267 4-81-10-177-15-274-16Z" fill="#91AC72" fill-opacity=".038"/>
-  <path d="M224 602c99-21 162-4 240-6 109-3 186-36 290-40 66-3 121-10 175-22-69 28-117 35-178 40-101 8-171 35-280 36-94 0-160-14-247-2Z" fill="url(#gold-water)"/>
+  <!-- Winter light is diffuse: warmth belongs to the paper, without a moon. -->
+  <ellipse cx="675" cy="297" rx="329" ry="262" fill="url(#winter-light)"/>
+  <!-- Two softly weathered planes meet at the garden corner. -->
+  <path d="m71 319 178 56-2 238-172-60Z" fill="url(#wall-side)"/>
+  <path d="m249 375 634-118-3 241-633 115Z" fill="url(#wall-light)"/>
+  <path d="m70 319 178 53 636-117-5 10-628 118-181-57Z" fill="#F5E4C9" fill-opacity=".78"/>
+  <path d="m72 318 176 51 115-20m43-8 138-26m39-7 147-27m40-8 110-20" fill="none" stroke="#FFFDF6" stroke-width="5.6" stroke-linecap="round" stroke-opacity=".88"/>
+  <path d="m249 384-1 75m0 26-1 62m0 19v29" fill="none" stroke="#AD9677" stroke-width="1.25" stroke-opacity=".29"/>
+  <path d="m79 329 155 48m33 2 91-17m207-38 87-16m104-20 94-16" fill="none" stroke="#C5A279" stroke-width="1" stroke-opacity=".24"/>
+  <!-- Small plaster marks stay local; the wall fades before it becomes a frame. -->
   <g fill="none" stroke-linecap="round">
-    <path d="M266 568c54-7 96-5 148 2m102-4c61-4 101-12 143-14m94-2c38-4 76-7 108-13" stroke="#91AC72" stroke-opacity=".27" stroke-width="1.05"/>
-    <path d="M205 601c44-3 79 0 118 4m52 4c55 7 102 10 158 5m119-12c55-4 94-4 144-8" stroke="#57A1A1" stroke-opacity=".22" stroke-width=".85"/>
-    <path d="M401 648c47 4 96 1 137-4m-309-1c28-1 53 0 77 2m403-18c42-2 79-3 120-8" stroke="#715540" stroke-opacity=".14" stroke-width=".65"/>
-    <path d="M486 584c67 5 117-8 156-10m-309 18c28 3 54 6 81 6m388-34c34-3 58-7 84-11" stroke="#FFFDF5" stroke-opacity=".92" stroke-width="2.5"/>
+    <path d="m288 431 38-6m-33 13 16-3m63 73 32-5m213-122 38-7m-27 13 18-3m103 60 29-4m-209 71 35-7" stroke="#D5B78E" stroke-opacity=".3" stroke-width="1"/>
+    <path d="m110 386 24 7m40 85 21 6m-79 29 17 4" stroke="#AE9D85" stroke-opacity=".21" stroke-width=".85"/>
+    <path d="m351 464 62-12m221-22 52-10m-229 99 57-11" stroke="#FFF9EA" stroke-opacity=".76" stroke-width="1.8"/>
   </g>
-
-  <!-- Broken reflections remember the direction of the living branch. -->
-  <g fill="#715540" fill-opacity=".105">
-    <path d="M83 655c75-15 128-22 185-19 28 2 48 7 71 9-27 1-50-1-74-2-57-1-113 6-182 16Z"/>
-    <path d="M360 651c40 5 67 5 100 1l46 5c-60 7-99 4-146-3Z"/>
-    <path d="M521 658c35-3 54-4 84-2l48 11c-47-5-84-7-132-5Z"/>
-    <path d="M304 635l22-11 46-3-38 6-15 9Z"/>
-    <path d="M399 673c27-4 42-3 63-1l23 4-43-1-43 2Z"/>
-    <path d="M541 689l34-6 35 2-28 1-41 6Z"/>
-  </g>
-  <path d="M237 638c18-5 27-8 36-15m85 21c21-6 31-12 45-15m99 25c18-5 33-7 48-6" fill="none" stroke="#715540" stroke-opacity=".12" stroke-width="1.2"/>
+  <!-- A little snow lends meaning to the white petals, leaving the scene light. -->
+  <path d="M92 612c107-13 176 4 266-1 124-8 239-43 355-49 75-4 133-11 198-24-80 29-139 34-206 40-112 9-227 46-347 47-102 2-171-10-266-6Z" fill="url(#snow-ground)"/>
+  <path d="M110 640c91-20 167-10 244-9 113 2 198-26 286-32 77-5 137-5 203-18-55 21-110 24-173 29-106 9-186 35-302 33-91-2-163-9-258-3Z" fill="#FFFDF6" fill-opacity=".69"/>
+  <path d="M203 650c49-7 78-4 114-3m78-5 69-7m107-17 45-5m112-21 61-6" fill="none" stroke="#C6B494" stroke-opacity=".24" stroke-width="1" stroke-linecap="round"/>
 
   <!-- The main limb changes thickness at scars and forks. -->
   <path d="M-24 650c42-24 80-43 120-61l23-15 14-1c27-12 48-25 74-35 17-7 34-11 51-16l9-10 15 1c20-8 32-20 50-28l21-3c20-9 37-24 55-35 18-11 36-15 57-23l15-13 16-3c29-16 54-42 79-61l19-8 12-13c28-17 58-24 86-41 20-12 29-31 47-47l18-7 12-14c27-18 59-22 86-37 28-16 44-33 70-58-17 26-35 45-63 63-25 15-56 20-82 37l-18 19-12 7c-19 17-33 39-54 53-26 17-55 24-81 41l-15 17-18 9c-25 20-48 47-76 63l-25 8-17 11c-17 8-34 14-50 25-20 13-36 28-59 36l-17 13-20 3c-19 9-34 19-56 26l-18 4-14 10c-29 12-52 20-80 35-29 15-50 28-80 41-38 17-69 38-105 63l-29-15Z" fill="url(#wood)"/>
@@ -168,13 +153,13 @@
   <path d="M399 337c-4-2-6-6-3-9 3-2 7 1 6 5Z" fill="#DF8E73"/>
   <path d="M548 220c-5-6-4-12 0-15 5 1 7 8 0 15Z" fill="#EDAD8D"/>
 
-  <!-- Lichen, scars, and loose petals are deliberate, isolated accents. -->
+
+  <!-- Sparse lichen, fresh buds and fallen petals carry the only small accents. -->
   <g fill="#91AC72" fill-opacity=".63">
     <path d="m104 607 6-4 3 3-5 4Zm13-6 3-2 2 2-4 2Zm139-56 5-4 4 2-3 5Zm11-7 4-2 2 2-3 2Zm271-142 5-4 3 2-4 4Zm11-9 3-2 2 1-1 3Z"/>
     <path d="m377 483 6-2 1 4-5 1Zm268-154 4-2 2 2-3 2Z"/>
   </g>
   <path d="M585 516c7-7 15-5 15 0-1 5-8 7-15 0Z" fill="#F3A78D" fill-opacity=".76"/>
-  <path d="M665 584c3-6 10-8 13-4-1 5-6 7-13 4Z" fill="#EF9C85" fill-opacity=".67"/>
-  <path d="M435 608c5-4 10-3 12 0-3 3-7 3-12 0Z" fill="#F4BE9E" fill-opacity=".74"/>
-  <path d="M652 591c11 3 24 3 35 0m-263 25c10 2 20 2 28 0" fill="none" stroke="#91AC72" stroke-opacity=".22" stroke-width=".75" stroke-linecap="round"/>
+  <path d="M665 607c3-6 10-8 13-4-1 5-6 7-13 4Z" fill="#EF9C85" fill-opacity=".67"/>
+  <path d="M435 635c5-4 10-3 12 0-3 3-7 3-12 0Z" fill="#F4BE9E" fill-opacity=".74"/>
 </svg>
