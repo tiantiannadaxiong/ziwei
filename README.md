@@ -1,70 +1,72 @@
-# 《暗香集》三语诗集
+# 《暗香集》三語詩集
 
-静态 HTML、CSS 和 JavaScript 艺术书，部署在 GitHub Pages，可安装到手机主屏离线阅读。全书设计取意王安石《梅花》，以「凌寒独自开」的坚韧和「为有暗香来」的含蓄呼应母亲的性格。暖纸、梅枝般的棕灰墨色、墙角形细线和页眉一朵淡梅贯穿阅读，作为安静的暗线；16 首诗及其原生 SVG 插图各自保留原有意境。
+靜態 HTML、CSS 和 JavaScript 藝術書，部署在 GitHub Pages，可安裝到手機主屏離線閱讀。全書設計取意王安石《梅花》，以「凌寒獨自開」的堅韌和「為有暗香來」的含蓄呼應母親的性格。暖紙、梅枝般的棕灰墨色、牆角形細線和頁眉一朵淡梅貫穿閱讀，作為安靜的暗線；17 首詩及其原生 SVG 插圖各自保留原有意境。
 
-题记采用《梅花》四句，前言与后记呼应母亲的坚韧与温柔。封面不放题诗，以曲折向上、疏密相间的老梅和淡淡院墙重新构图，保留书名、译名及作者印与签名。诗作正文、三语译文、注释、日期、印章位置与纸本页码均保留。
+題記採用《梅花》四句，前言與後記呼應母親的堅韌與溫柔。封面不放題詩，以曲折向上、疏密相間的老梅和淡淡院牆重新構圖，保留書名、譯名及作者印與簽名。詩作正文、三語譯文、注釋、日期、印章位置與紙本頁碼均保留。
 
-新增《西蜀丞相孔明篇》按作者提供的中文七行、英文十四行及法文十四行原文收录，保留三语落款。配「羽扇遺芳」原生 SVG：近景羽扇、书卷与孤灯，远处苍柏、山下祠宇和微星，延续全书的纸白、石青石绿、浅赭及共享小篆印。
+新增《西蜀丞相孔明篇》按作者提供的中文七行、英文十四行及法文十四行原文收錄，保留三語落款。配「羽扇遺芳」原生 SVG：近景羽扇、書卷與孤燈，遠處蒼柏、山下祠宇和微星，延續全書的紙白、石青石綠、淺赭及共享小篆印。
 
-## 阅读与字体
+新增《讚將》以繁體收錄中文六行、英文及法文各十二行，保留原有措辭、標點、分行與三語落款。配「江流英名」原生 SVG，以長江、戰馬、營旗、長刀、畫戟與溫酒呼應詩意。中文內容統一使用繁體，後續稿件按 `AGENTS.md` 的用字規則處理。
 
-封面 → 版权页 → 献词 → 题记 → 前言 → 各诗（独立插图、中文、英文、法文）→ 后记 → 作者简介，共 **71 个阅读页**。中文注释与原诗同页滚动，原有诗作的纸本页码保持不变；新增《添丁賀》中、英、法三语为 51–53 页，《西蜀丞相孔明篇》中、英、法三语为 54–56 页，后记与作者简介顺延至 57–58 页；插图不占纸本页码。《添丁賀》按要求采用中文润色稿及英法译文，落款保留「23.6.19於香港寶湖」。
+## 閱讀與字體
 
-手机和桌面均为单页阅读，正文在中间纸页滚动，顶部目录、音乐、进度及底部翻页按钮常驻。支持左右滑动、方向键、按钮翻页、语言切换和深链接；减少动态效果设置下关闭翻页动画。音乐仅在窄屏尝试自动播放，浏览器可能要求首次操作后才能播放。
+封面 → 版權頁 → 獻詞 → 題記 → 前言 → 各詩（獨立插圖、中文、英文、法文）→ 後記 → 作者簡介，共 **75 個閱讀頁**。中文注釋與原詩同頁滾動，原有詩作的紙本頁碼保持不變；新增《添丁賀》中、英、法三語為 51–53 頁，《西蜀丞相孔明篇》中、英、法三語為 54–56 頁，《讚將》中、英、法三語為 57–59 頁，後記與作者簡介順延至 60–61 頁；插圖不佔紙本頁碼。《添丁賀》按要求採用中文潤色稿及英法譯文，落款保留「23.6.19於香港寶湖」。
 
-| 用途 | 字体与字号 |
+手機和桌面均為單頁閱讀，正文在中間紙頁滾動，頂部目錄、音樂、進度及底部翻頁按鈕常駐。支持左右滑動、方向鍵、按鈕翻頁、語言切換和深鏈接；減少動態效果設置下關閉翻頁動畫。音樂僅在窄屏嘗試自動播放，瀏覽器可能要求首次操作後才能播放。
+
+| 用途 | 字體與字號 |
 |---|---|
-| 中文诗句 | 王汉宗中隶书繁（HanWang LiSu），手机 27px、桌面 29px，行高 1.8 |
-| 中文诗题、封面书名 | 王汉宗中隶书繁（HanWang LiSu） |
-| 中文注释 | LXGW WenKai TC，22px，行高 1.85 |
-| 英法诗句 | Alegreya，23px，行高 1.65 |
-| 英法诗题 | 较大字号 Alegreya |
-| 封面译名 | Poetica Std |
-| 英法语种标签、页眉小标题 | Poetica Roman Small Capitals |
-| 插图短英文题词 | Poetica Chancery IV |
-| 封面英文签名 | Bickham Script Pro 3 Bold |
-| 日期、辅助文字 | 至少 15px |
+| 中文詩句 | 王漢宗中隸書繁（HanWang LiSu），手機 27px、桌面 29px，行高 1.8 |
+| 中文詩題、封面書名 | 王漢宗中隸書繁（HanWang LiSu） |
+| 中文注釋 | LXGW WenKai TC，22px，行高 1.85 |
+| 英法詩句 | Alegreya，23px，行高 1.65 |
+| 英法詩題 | 較大字號 Alegreya |
+| 封面譯名 | Poetica Std |
+| 英法語種標簽、頁眉小標題 | Poetica Roman Small Capitals |
+| 插圖短英文題詞 | Poetica Chancery IV |
+| 封面英文簽名 | Bickham Script Pro 3 Bold |
+| 日期、輔助文字 | 至少 15px |
 
-字体文件及授权文本位于 `site/fonts/`。Alegreya 与文楷 TC 使用 SIL Open Font License；隶书为 GPL 字体；全字库说文解字的来源与政府资料开放授权见目录中的 notice；其余字体由作者提供。字体失败时回退至系统字体。
+字體文件及授權文本位於 `site/fonts/`。Alegreya 與文楷 TC 使用 SIL Open Font License；隸書為 GPL 字體；全字庫說文解字的來源與政府資料開放授權見目錄中的 notice；其余字體由作者提供。字體失敗時回退至系統字體。
 
-封面只呈现一枚「紫薇」印，插图各一枚「暗香集」印。印文由现有小篆字体提取为共享矢量轮廓，页面统一呈现。`sealPosition: { x, y }` 表示印章中心在画幅中的百分比位置。绘画不嵌入位图，不依赖外部图片、字体或持续运行的复杂滤镜。
+封面只呈現一枚「紫薇」印，插圖各一枚「暗香集」印。印文由現有小篆字體提取為共享矢量輪廓，頁面統一呈現。`sealPosition: { x, y }` 表示印章中心在畫幅中的百分比位置。繪畫不嵌入位圖，不依賴外部圖片、字體或持續運行的復雜濾鏡。
 
 ## 文件
 
-| 路径 | 作用 |
+| 路徑 | 作用 |
 |---|---|
-| `site/poems.js` | `window.POEMS` 与 `window.MATTER`：原始内容、页码、插图和印位 |
-| `site/edition.js` | 正式版封面、资源版本与共享印章路径 |
-| `site/reader.js`、`site/styles.css` | 两个入口共用的阅读交互与版式 |
-| `site/index.html` | 全书正式入口 |
-| `site/design-review.html`、`site/review-data.js` | 六首诗、三幅插图的独立样板入口，共 28 页 |
-| `site/review.js`、`site/review.css` | 已保存的旧样板资源链接的兼容入口 |
-| `site/manifest.webmanifest`、`site/review.webmanifest` | 全书与样板的安装入口 |
-| `site/sw.js`、`site/icons/` | 离线缓存与应用图标 |
-| `site/fonts/`、`site/images/`、`site/audio/` | 本地字体、SVG 与背景音乐 |
-| `tools/build-review-seals.mjs` | 从现有小篆字体重新提取样板共享印章 |
-| `tools/check-artbook.mjs` | 全书资源、版本、矢量及离线缓存回归检查 |
-| `tools/review-browser.mjs` | 开发用浏览器验收与截图图集，默认检查正式版 |
+| `site/poems.js` | `window.POEMS` 與 `window.MATTER`：原始內容、頁碼、插圖和印位 |
+| `site/edition.js` | 正式版封面、資源版本與共享印章路徑 |
+| `site/reader.js`、`site/styles.css` | 兩個入口共用的閱讀交互與版式 |
+| `site/index.html` | 全書正式入口 |
+| `site/design-review.html`、`site/review-data.js` | 六首詩、三幅插圖的獨立樣板入口，共 28 頁 |
+| `site/review.js`、`site/review.css` | 已保存的舊樣板資源鏈接的兼容入口 |
+| `site/manifest.webmanifest`、`site/review.webmanifest` | 全書與樣板的安裝入口 |
+| `site/sw.js`、`site/icons/` | 離線緩存與應用圖標 |
+| `site/fonts/`、`site/images/`、`site/audio/` | 本地字體、SVG 與背景音樂 |
+| `tools/build-review-seals.mjs` | 從現有小篆字體重新提取樣板共享印章 |
+| `tools/check-artbook.mjs` | 全書資源、版本、矢量及離線緩存回歸檢查 |
+| `tools/review-browser.mjs` | 開發用瀏覽器驗收與截圖圖集，默認檢查正式版 |
 
-## 本地预览与验收
+## 本地預覽與驗收
 
-在仓库根目录执行 `node site/preview.mjs`，打开 <http://127.0.0.1:8000/>。独立样板可执行 `node site/preview-review.mjs`，打开 <http://127.0.0.1:8014/design-review.html>；独立端口可区分旧 PWA 缓存。预览服务器提供正确的字体、SVG 和应用清单 MIME 类型。
+在倉庫根目錄執行 `node site/preview.mjs`，打開 <http://127.0.0.1:8000/>。獨立樣板可執行 `node site/preview-review.mjs`，打開 <http://127.0.0.1:8014/design-review.html>；獨立端口可區分舊 PWA 緩存。預覽服務器提供正確的字體、SVG 和應用清單 MIME 類型。
 
-深链接示例：`#cover`、`#jiaolong-image`、`#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#double-fifth-notes`、`#farewell-song-zh`、`#afterword`、`#about`。有注释的诗支持 `-notes` 链接。
+深鏈接示例：`#cover`、`#jiaolong-image`、`#jiaolong-zh`、`#jiaolong-en`、`#jiaolong-fr`、`#double-fifth-notes`、`#farewell-song-zh`、`#afterword`、`#about`。有注釋的詩支持 `-notes` 鏈接。
 
 ```powershell
 node tools/check-artbook.mjs
 node tools/review-browser.mjs artifacts/artbook-review http://127.0.0.1:8000/
-# 检查独立样板：
+# 檢查獨立樣板：
 node tools/review-browser.mjs artifacts/artbook-sample http://127.0.0.1:8000/ review
 ```
 
-浏览器工具需已有 Playwright，必要时通过 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安装的 Edge；仅用于开发，网站没有新增运行依赖。输出目录包含整页截图、绘画局部、`index.html` 图集和 `checks.json` 验收记录；`artifacts/` 不纳入版本管理。当前资源版为 `artbook-13`，离线缓存为 `anxiangji-v57`；检查结果和实体设备待复验范围见 [评审记录](site/design-review.md)。
+瀏覽器工具需已有 Playwright，必要時通過 `PLAYWRIGHT_MODULE` 指向已有包，Windows 使用已安裝的 Edge；僅用于開發，網站沒有新增運行依賴。輸出目錄包含整頁截圖、繪畫局部、`index.html` 圖集和 `checks.json` 驗收記錄；`artifacts/` 不納入版本管理。當前資源版為 `artbook-14`，離線緩存為 `anxiangji-v58`；檢查結果和實體設備待復驗範圍見 [評審記錄](site/design-review.md)。
 
-## 发布与离线
+## 發布與離線
 
-`.github/workflows/jekyll-gh-pages.yml` 在推送到 `main` 后将 `site/` 发布为静态 GitHub Pages，Pages 来源需设为 **GitHub Actions**。资源均为相对路径，支持项目子路径。更改样式、脚本或图片时同步对应 URL 的资源版本；更改页面外壳时递增 `sw.js` 中的 `CACHE`。
+`.github/workflows/jekyll-gh-pages.yml` 在推送到 `main` 後將 `site/` 發布為靜態 GitHub Pages，Pages 來源需設為 **GitHub Actions**。資源均為相對路徑，支持項目子路徑。更改樣式、腳本或圖片時同步對應 URL 的資源版本；更改頁面外殼時遞增 `sw.js` 中的 `CACHE`。
 
-页面、脚本与样式网络优先，字体、图片、音乐按 URL 缓存。首次加载在 worker 接管后预热全书字体与插图，全部下载成功后才具有完整离线资源；慢网、下载失败或存储不足时可能仅部分可用。音乐需播放后缓存。正式版和样板各自保留离线文档；升级只清理《暗香集》的旧缓存。返回前台时检查页面资源版本，发现新版后保留当前深链接刷新。
+頁面、腳本與樣式網絡優先，字體、圖片、音樂按 URL 緩存。首次加載在 worker 接管後預熱全書字體與插圖，全部下載成功後才具有完整離線資源；慢網、下載失敗或存儲不足時可能僅部分可用。音樂需播放後緩存。正式版和樣板各自保留離線文檔；升級只清理《暗香集》的舊緩存。返回前臺時檢查頁面資源版本，發現新版後保留當前深鏈接刷新。
 
-Android 使用菜单中的「安装应用／添加到主屏幕」；iOS Safari 使用分享菜单中的「添加到主屏幕」。应用清单采用 fullscreen，iOS 回退至 standalone。沿用已有 iPhone 高度处理；Safari 和主屏 PWA 的前后台恢复、地址栏变化及横竖切换仍需实体 iPhone 复验。
+Android 使用菜單中的「安裝應用／添加到主屏幕」；iOS Safari 使用分享菜單中的「添加到主屏幕」。應用清單採用 fullscreen，iOS 回退至 standalone。沿用已有 iPhone 高度處理；Safari 和主屏 PWA 的前後臺恢復、地址欄變化及橫豎切換仍需實體 iPhone 復驗。

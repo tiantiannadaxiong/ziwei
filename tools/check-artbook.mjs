@@ -7,7 +7,7 @@ vm.runInNewContext(await readFile(new URL('site/poems.js', root), 'utf8'), sourc
 vm.runInNewContext(await readFile(new URL('site/review-data.js', root), 'utf8'), source);
 vm.runInNewContext(await readFile(new URL('site/edition.js', root), 'utf8'), source);
 const { POEMS, MATTER, ARTBOOK_REVIEW: edition } = source.window;
-assert.equal(POEMS.length, 16);
+assert.equal(POEMS.length, 17);
 const selected = POEMS.filter(poem => edition.poemIds.includes(poem.id));
 assert.equal(selected.length, 6);
 assert.deepEqual(Array.from(selected, poem => poem.id), Array.from(edition.poemIds));
@@ -20,12 +20,21 @@ for (const [id, artwork] of Object.entries(edition.artwork)) {
 }
 const full = source.window.ARTBOOK_EDITION;
 assert.equal(full.version, edition.version);
-assert.equal(1 + MATTER.front.length + MATTER.back.length + POEMS.length * 4, 71);
+assert.equal(1 + MATTER.front.length + MATTER.back.length + POEMS.length * 4, 75);
 const kongming = POEMS.find(poem => poem.id === 'kongming');
 assert.ok(kongming, 'Kongming poem is included');
 assert.deepEqual(['zh', 'en', 'fr'].map(language => kongming.verses[language].split('\n').length), [7, 14, 14]);
 assert.equal(kongming.page, 54);
-assert.deepEqual(Array.from(MATTER.back, item => item.folio), ['57', '58']);
+const generals = POEMS.find(poem => poem.id === 'praise-generals');
+assert.ok(generals, 'Generals poem is included');
+assert.deepEqual(['zh', 'en', 'fr'].map(language => generals.verses[language].split('\n').length), [6, 12, 12]);
+assert.equal(generals.page, 57);
+assert.equal(generals.titles.zh, '《讚將》');
+for (const poem of [kongming, generals]) {
+  assert.equal(poem.meta.zh, '2018.10.30 於香港寶湖');
+  assert.doesNotMatch(poem.verses.zh, /[读余载顾庐请预对烧烟风唤战获托担陨军书师华诸铭记滚长东国将关温斩胜枪赵龙斗扬汉盖强辕门双韦无敌马约争]/, `${poem.id}: Traditional Chinese text`);
+}
+assert.deepEqual(Array.from(MATTER.back, item => item.folio), ['60', '61']);
 for (const poem of POEMS) {
   assert.ok(poem.image && poem.imageAlt, `${poem.id}: artwork and description`);
   assert.equal(new URL(poem.image, 'https://example.test/').searchParams.get('v'), full.version);
@@ -47,7 +56,7 @@ for (const url of images) {
   assert.doesNotMatch(svg, /<(?:image|text|script|foreignObject|feTurbulence)\b/);
   assert.doesNotMatch(svg, /(?:href|src)=["'](?:https?:|data:)/);
 }
-console.log(`Source: complete edition has 71 leaves and 16 vector plates; review has 28 leaves. All entry resources agree on ${full.version}.`);
+console.log(`Source: complete edition has 75 leaves and 17 vector plates; review has 28 leaves. All entry resources agree on ${full.version}.`);
 
 // Regression: a review visit must not overwrite the published offline book.
 // Exercise the actual service-worker fetch handler under a project subpath.
@@ -80,6 +89,7 @@ handlers.install({ waitUntil(promise) { lifecycle = promise; } });
 await lifecycle;
 assert.deepEqual(missingShell, [], 'every offline shell resource exists');
 assert.ok(preloaded.has(key(kongming.image)), 'Kongming illustration is preloaded for offline reading');
+assert.ok(preloaded.has(key(generals.image)), 'Generals illustration is preloaded for offline reading');
 handlers.activate({ waitUntil(promise) { lifecycle = promise; } });
 await lifecycle;
 assert.ok(!cacheNames.has('anxiangji-v44'));
